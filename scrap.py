@@ -34,36 +34,42 @@ def purge_db():
     except Exception as e:
         print(f"An error occurred while purging the database: {e}")
 
-# Define the scrap_articles function
-def scrap_articles(language_code):
+def scrap_articles(language_code, search_query):
     try:
-        country_code = 'US'  # Default country code to 'US'
-        
-        if language_code == 'FR':
-            country_code = 'FR'  # Set country code to 'FR' for French
-        elif language_code == 'ES':
-            country_code = 'ES'  # Set country code to 'ES' for Spanish
+        # Define language and country mappings based on language_code
+        language_mappings = {
+            'EN': {'language': 'en-US', 'country': 'US'},
+            'FR': {'language': 'fr', 'country': 'FR'},
+            'ES': {'language': 'es', 'country': 'ES'},
+            # Add more mappings as needed
+        }
 
-        gn = GoogleNews(lang=language_code, country=country_code)
-        search_results = gn.search(SEARCH_QUERY)
-        data = []
+        language_info = language_mappings.get(language_code)
+        if language_info:
+            gn = GoogleNews(lang=language_info['language'], country=language_info['country'])
 
-        for entry in search_results['entries'][:NUM_ARTICLES_TO_SCRAP]:
-            try:
-                article = Article(entry['link'])
-                article.download()
-                article.parse()
-                data.append({
-                    "Title": article.title,
-                    "Source": entry['source'],
-                    "Published Time": entry['published'],
-                    "Article URL": entry['link'],
-                    "Content": article.text
-                })
-            except Exception as e:
-                print(f"An error occurred while processing an article: {e}")
+            search_results = gn.search(search_query)  # Use the provided search_query
+            data = []
 
-        return data
+            for entry in search_results['entries'][:NUM_ARTICLES_TO_SCRAP]:
+                try:
+                    article = Article(entry['link'])
+                    article.download()
+                    article.parse()
+                    data.append({
+                        "Title": article.title,
+                        "Source": entry.get('source', ''),  # Use get method to handle missing source gracefully
+                        "Published Time": entry['published'],
+                        "Article URL": entry['link'],
+                        "Content": article.text
+                    })
+                except Exception as e:
+                    print(f"An error occurred while processing an article: {e}")
+
+            return data
+        else:
+            print("Selected language is not supported.")
+            return None
     except Exception as e:
         print(f"An error occurred during scraping: {e}")
 
@@ -110,9 +116,9 @@ def query_mongodb():
             print("Source:", document.get("Source"))
             print("Published Time:", document.get("Published Time"))
             print("Article URL:", document.get("Article URL"))
-            print("Content:")
-            # print(document.get("Content")) #uncomment if  u wanna check article text scraped
-            # print("\n" + "=" * 50 + "\n") ##uncomment if  u wanna check article text scraped
+            #print("Content:")
+            #print(document.get("Content")) #uncomment if  u wanna check article text scraped
+            print("\n" + "=" * 50 + "\n") ##uncomment if  u wanna check article text scraped
 
         if count == 0:
             print("No articles found in the MongoDB collection.")
@@ -125,8 +131,6 @@ def query_mongodb():
 # ...
 
 def main():
-    global SEARCH_QUERY  # Declare SEARCH_QUERY as global
-
     parser = argparse.ArgumentParser(description="Scrape and manage data in MongoDB")
     parser.add_argument("--purge", action="store_true", help="Purge (clear) the MongoDB collection")
     parser.add_argument("--scrap", choices=SUPPORTED_LANGUAGES.keys(), help="Scrape data for a specific language")
@@ -140,18 +144,24 @@ def main():
 
     if args.scrap:
         language = args.scrap  # Get the selected language from the command line
-        google_news_language_code = SUPPORTED_LANGUAGES.get(language)
-        if google_news_language_code:
-            scraped_data = scrap_articles(google_news_language_code)
-            if scraped_data:
-                print(f"Scraped {len(scraped_data)} articles in {language}.")
-                insert_option = input("Do you want to store the scraped data in the database? (yes/no): ").strip().lower()
-                if insert_option == "yes":
-                    insert_data_into_mongodb(scraped_data)
-                else:
-                    print("Scraped data not stored in the database.")
-        else:
-            print("Selected language is not supported.")
+        search_query = SEARCH_QUERY  # Default search query
+
+        # Define specific search queries for each language
+        if language == 'EN':
+            search_query = "finance"
+        elif language == 'ES':
+            search_query = "instituciones financieras"
+        elif language == 'FR':
+            search_query = "institution financière"
+
+        scraped_data = scrap_articles(language, search_query)
+        if scraped_data:
+            print(f"Scraped {len(scraped_data)} articles in {language}.")
+            insert_option = input("Do you want to store the scraped data in the database? (yes/no): ").strip().lower()
+            if insert_option == "yes":
+                insert_data_into_mongodb(scraped_data)
+            else:
+                print("Scraped data not stored in the database.")
 
     if args.query:
         query_mongodb()
