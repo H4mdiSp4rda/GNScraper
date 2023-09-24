@@ -1,14 +1,22 @@
 import argparse
 from newspaper import Article
-import pygooglenews
+from pygooglenews import GoogleNews
 import pymongo
 
 # Constants
-SEARCH_QUERY = "banking industry partnership news"
-NUM_ARTICLES_TO_SCRAP = 10
+SEARCH_QUERY = "finance"
+NUM_ARTICLES_TO_SCRAP = 50
 MONGODB_URL = "mongodb://172.17.0.2:27017/"
 DB_NAME = "gns_raw"
 COLLECTION_NAME = "articles"
+
+# Define a list of supported languages and their corresponding Google News language codes
+SUPPORTED_LANGUAGES = {
+    'EN': 'en',
+    'FR': 'fr',
+    'ES': 'es',
+    # Add more languages and codes as needed
+}
 
 # Create a MongoDB client and select the database and collection
 def connect_to_mongodb():
@@ -27,9 +35,16 @@ def purge_db():
         print(f"An error occurred while purging the database: {e}")
 
 # Define the scrap_articles function
-def scrap_articles():
+def scrap_articles(language_code):
     try:
-        gn = pygooglenews.GoogleNews()
+        country_code = 'US'  # Default country code to 'US'
+        
+        if language_code == 'FR':
+            country_code = 'FR'  # Set country code to 'FR' for French
+        elif language_code == 'ES':
+            country_code = 'ES'  # Set country code to 'ES' for Spanish
+
+        gn = GoogleNews(lang=language_code, country=country_code)
         search_results = gn.search(SEARCH_QUERY)
         data = []
 
@@ -52,7 +67,6 @@ def scrap_articles():
     except Exception as e:
         print(f"An error occurred during scraping: {e}")
 
-# Define the insert_data_into_mongodb function
 # Define the insert_data_into_mongodb function
 def insert_data_into_mongodb(data):
     try:
@@ -108,11 +122,14 @@ def query_mongodb():
     except Exception as e:
         print(f"An error occurred while querying the database: {e}")
 
-# Create a function to handle command-line arguments
+# ...
+
 def main():
+    global SEARCH_QUERY  # Declare SEARCH_QUERY as global
+
     parser = argparse.ArgumentParser(description="Scrape and manage data in MongoDB")
     parser.add_argument("--purge", action="store_true", help="Purge (clear) the MongoDB collection")
-    parser.add_argument("--scrap", action="store_true", help="Scrape data")
+    parser.add_argument("--scrap", choices=SUPPORTED_LANGUAGES.keys(), help="Scrape data for a specific language")
     parser.add_argument("--query", action="store_true", help="Query the MongoDB collection")
 
     args = parser.parse_args()
@@ -122,18 +139,22 @@ def main():
         purge_db()
 
     if args.scrap:
-        scraped_data = scrap_articles()
-        if scraped_data:
-            print(f"Scraped {len(scraped_data)} articles.")
-            insert_option = input("Do you want to store the scraped data in the database? (yes/no): ").strip().lower()
-            if insert_option == "yes":
-                insert_data_into_mongodb(scraped_data)
-            else:
-                print("Scraped data not stored in the database.")
+        language = args.scrap  # Get the selected language from the command line
+        google_news_language_code = SUPPORTED_LANGUAGES.get(language)
+        if google_news_language_code:
+            scraped_data = scrap_articles(google_news_language_code)
+            if scraped_data:
+                print(f"Scraped {len(scraped_data)} articles in {language}.")
+                insert_option = input("Do you want to store the scraped data in the database? (yes/no): ").strip().lower()
+                if insert_option == "yes":
+                    insert_data_into_mongodb(scraped_data)
+                else:
+                    print("Scraped data not stored in the database.")
+        else:
+            print("Selected language is not supported.")
 
     if args.query:
         query_mongodb()
 
 if __name__ == "__main__":
     main()
-
