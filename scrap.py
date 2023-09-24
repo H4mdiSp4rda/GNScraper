@@ -35,6 +35,7 @@ def purge_db():
     except Exception as e:
         print(f"An error occurred while purging the database: {e}")
 
+# Define the scrap_articles function
 def scrap_articles(language_code, search_query):
     try:
         # Define language and country mappings based on language_code
@@ -62,7 +63,8 @@ def scrap_articles(language_code, search_query):
                         "Source": entry.get('source', ''),  # Use get method to handle missing source gracefully
                         "Published Time": entry['published'],
                         "Article URL": entry['link'],
-                        "Content": article.text
+                        "Content": article.text,
+                        "Language": language_code  # Set the Language field
                     })
                 except Exception as e:
                     print(f"An error occurred while processing an article: {e}")
@@ -99,6 +101,7 @@ def insert_data_into_mongodb(data):
     except Exception as e:
         print(f"An error occurred while inserting data into MongoDB: {e}")
 
+
 # Define the query_mongodb function
 def query_mongodb():
     try:
@@ -117,6 +120,7 @@ def query_mongodb():
             print("Source:", document.get("Source"))
             print("Published Time:", document.get("Published Time"))
             print("Article URL:", document.get("Article URL"))
+            print("Language:", document.get("Language"))  # Print the Language field
             print("Content:")
             print(document.get("Content")) #uncomment if  u wanna check article text scraped
             print("\n" + "=" * 50 + "\n") ##uncomment if  u wanna check article text scraped
