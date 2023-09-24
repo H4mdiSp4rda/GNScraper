@@ -1,11 +1,12 @@
 import argparse
+import sys
 from newspaper import Article
 from pygooglenews import GoogleNews
 import pymongo
 
 # Constants
 SEARCH_QUERY = "finance"
-NUM_ARTICLES_TO_SCRAP = 50
+NUM_ARTICLES_TO_SCRAP = 20
 MONGODB_URL = "mongodb://172.17.0.2:27017/"
 DB_NAME = "gns_raw"
 COLLECTION_NAME = "articles"
@@ -116,8 +117,8 @@ def query_mongodb():
             print("Source:", document.get("Source"))
             print("Published Time:", document.get("Published Time"))
             print("Article URL:", document.get("Article URL"))
-            #print("Content:")
-            #print(document.get("Content")) #uncomment if  u wanna check article text scraped
+            print("Content:")
+            print(document.get("Content")) #uncomment if  u wanna check article text scraped
             print("\n" + "=" * 50 + "\n") ##uncomment if  u wanna check article text scraped
 
         if count == 0:
@@ -135,6 +136,11 @@ def main():
     parser.add_argument("--purge", action="store_true", help="Purge (clear) the MongoDB collection")
     parser.add_argument("--scrap", choices=SUPPORTED_LANGUAGES.keys(), help="Scrape data for a specific language")
     parser.add_argument("--query", action="store_true", help="Query the MongoDB collection")
+
+    # Add the --help option as a default action
+    if len(sys.argv) == 1:
+        parser.print_help(sys.stderr)
+        sys.exit(1)
 
     args = parser.parse_args()
     scraped_data = None  # Initialize scraped_data
