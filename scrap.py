@@ -3,10 +3,15 @@ import sys
 from newspaper import Article
 from pygooglenews import GoogleNews
 import pymongo
+from tqdm import tqdm
+import logging  # Import the logging module
+from newspaper.article import ArticleException
+import requests.exceptions
+
 
 # Constants
 SEARCH_QUERY = "finance"
-NUM_ARTICLES_TO_SCRAP = 20
+NUM_ARTICLES_TO_SCRAP = 10
 MONGODB_URL = "mongodb://172.17.0.2:27017/"
 DB_NAME = "gns_raw"
 COLLECTION_NAME = "articles"
@@ -37,6 +42,7 @@ def purge_db():
 
 # Define the scrap_articles function
 def scrap_articles(language_code, search_query):
+    success = False  # Initialize a success flag
     try:
         # Define language and country mappings based on language_code
         language_mappings = {
@@ -53,28 +59,44 @@ def scrap_articles(language_code, search_query):
             search_results = gn.search(search_query)  # Use the provided search_query
             data = []
 
-            for entry in search_results['entries'][:NUM_ARTICLES_TO_SCRAP]:
-                try:
-                    article = Article(entry['link'])
-                    article.download()
-                    article.parse()
-                    data.append({
-                        "Title": article.title,
-                        "Source": entry.get('source', ''),  # Use get method to handle missing source gracefully
-                        "Published Time": entry['published'],
-                        "Article URL": entry['link'],
-                        "Content": article.text,
-                        "Language": language_code  # Set the Language field
-                    })
-                except Exception as e:
-                    print(f"An error occurred while processing an article: {e}")
+        error_count = 0  # Initialize a count for errors
 
-            return data
+        for entry in tqdm(search_results['entries'][:NUM_ARTICLES_TO_SCRAP], desc="Scraping Progress", mininterval=1.0):
+            try:
+                article = Article(entry['link'])
+                article.download()
+                article.parse()
+                data.append({
+                    "Title": article.title,
+                    "Source": entry.get('source', ''),
+                    "Published Time": entry['published'],
+                    "Article URL": entry['link'],
+                    "Content": article.text,
+                    "Language": language_code
+                })
+            except ArticleException as e:
+                error_count += 1
+                logging.error(f"ArticleException: {e}")
+            except requests.exceptions.HTTPError as e:
+                error_count += 1
+                logging.error(f"HTTPError (403 Forbidden): {e}")
+            except Exception as e:
+                error_count += 1
+                logging.error(f"An error occurred while processing an article: {e}")
+
+        if error_count > 0:
+            print(f"Scraping completed with {error_count} errors. Check 'scraping_errors.log' for details.")
         else:
-            print("Selected language is not supported.")
-            return None
+            success = True  # Set the success flag to True
+            # Log a message only when no errors are encountered
+            logging.error('No errors found during scraping.')
+
+        return success, data
     except Exception as e:
         print(f"An error occurred during scraping: {e}")
+        return False, None  # Return False for the success flag and None for data in case of an error
+
+
 
 # Define the insert_data_into_mongodb function
 def insert_data_into_mongodb(data):
@@ -121,8 +143,8 @@ def query_mongodb():
             print("Published Time:", document.get("Published Time"))
             print("Article URL:", document.get("Article URL"))
             print("Language:", document.get("Language"))  # Print the Language field
-            print("Content:")
-            print(document.get("Content")) #uncomment if  u wanna check article text scraped
+            # print("Content:")
+            # print(document.get("Content")) #uncomment if  u wanna check article text scraped
             print("\n" + "=" * 50 + "\n") ##uncomment if  u wanna check article text scraped
 
         if count == 0:
@@ -132,8 +154,6 @@ def query_mongodb():
 
     except Exception as e:
         print(f"An error occurred while querying the database: {e}")
-
-# ...
 
 def main():
     parser = argparse.ArgumentParser(description="Scrape and manage data in MongoDB")
@@ -149,8 +169,24 @@ def main():
     args = parser.parse_args()
     scraped_data = None  # Initialize scraped_data
 
+    # Specify the log file name
+    log_filename = 'scraping_errors.log'
+
+    if args.scrap:
+        # Configure the logger to append to the same log file when scraping
+        logging.basicConfig(filename=log_filename, level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
+        # Add a separator message at the beginning of scraping
+        logging.error('=== Script Execution Start (Scraping) ===')
+
     if args.purge:
         purge_db()
+        # Exit after purging without adding any messages
+        sys.exit(0)
+
+    if args.query:
+        query_mongodb()
+        # Exit after querying without adding any messages
+        sys.exit(0)
 
     if args.scrap:
         language = args.scrap  # Get the selected language from the command line
@@ -164,7 +200,8 @@ def main():
         elif language == 'FR':
             search_query = "institution financière"
 
-        scraped_data = scrap_articles(language, search_query)
+        success, scraped_data = scrap_articles(language, search_query)
+
         if scraped_data:
             print(f"Scraped {len(scraped_data)} articles in {language}.")
             insert_option = input("Do you want to store the scraped data in the database? (yes/no): ").strip().lower()
@@ -173,8 +210,8 @@ def main():
             else:
                 print("Scraped data not stored in the database.")
 
-    if args.query:
-        query_mongodb()
+        # Add a separator message at the end of scraping
+        logging.error('=== Script Execution End (Scraping) ===')
 
 if __name__ == "__main__":
     main()
