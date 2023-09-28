@@ -43,9 +43,7 @@ To manage data in MongoDB using the provided script, you can use the following c
 
 - `--scrap`: Use this argument to initiate data scraping. Specify the desired language for scraping by providing one of the supported language codes (e.g., "EN" for English, "FR" for French, "ES" for Spanish). For example:
   `python script.py --scrap EN`
-- `--query`: Use this argument to query the MongoDB collection and retrieve stored data. Execute it as follows:
-  `python script.py --query`
-- `--purge`: Clear (purge) the MongoDB collection and remove all data by using this argument:
-  `python script.py --purge`
+- `--query`: Use this argument to query the MongoDB collection and retrieve stored data.
+- `--purge`: Clear (purge) the MongoDB collection and remove all data by using this argument.
 
 
