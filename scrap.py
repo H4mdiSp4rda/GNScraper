@@ -1,103 +1,39 @@
 import argparse
 import sys
-from newspaper import Article
-from pygooglenews import GoogleNews
+import logging
+from newspaper import Article, ArticleException
 import pymongo
 from tqdm import tqdm
-import logging  # Import the logging module
-from newspaper.article import ArticleException
 import requests.exceptions
-
-EN_SEARCH_TERMS = [
-    "scandal",
-    "fraud",
-    "trial",
-    "court",
-    "appeal",
-    "charged",
-    "allegation",
-    "accused",
-    "fined",
-    "fine",
-    "corruption",
-    "attack",
-    "leaked",
-    "incident",
-    "hack",
-    "cyberattack",
-    "money laundering",
-    "misconduct",
-    "sanction breach",
-    "Panama Papers",
-    "Pandora Papers",
-    "Paradise Papers",
-    "Luanda Leaks",
-    "default",
-    "insolvency",
-    "suspension",
-    "suspended",
-    "default",
-    "collapse",
-    "bank run",
-    "outlook",
-    "confirms",
-    "reaffirms",
-    "downgrade",
-    "negative",
-    "positive",
-    "stable",
-    "supervision",
-    "regulator",
-    "non-performing",
-    "undercapitalized",
-    "ESG",
-    "sustainability",
-    "sustainable",
-    "low-carbon",
-    "green loans",
-    "green finance",
-    "SDG",
-    "resettlement",
-    "land-grabbing",
-    "biodiversity",
-    "investment",
-    "invests",
-    "import",
-    "financing",
-    "signed",
-    "deal",
-    "loan",
-    "signs",
-    "pre-export financing",
-    "commodity financing",
-    "trade commodity financing",
-    "export flows"
-]
+from pygooglenews import GoogleNews
 
 
 # Constants
-SEARCH_QUERY = "finance"
 NUM_ARTICLES_TO_SCRAP = 10
 MONGODB_URL = "mongodb://172.17.0.2:27017/"
 DB_NAME = "gns_raw"
 COLLECTION_NAME = "articles"
 
-# Define a list of supported languages and their corresponding Google News language codes
-SUPPORTED_LANGUAGES = {
-    'EN': 'en',
-    'FR': 'fr',
-    'ES': 'es',
-    # Add more languages and codes as needed
+# Language mapping for regions
+language_mapping = {
+    "fr": ["fr-FR", "fr-SN"],
+    "ar": ["ar-EG", "ar-AE"],
 }
 
-# Create a MongoDB client and select the database and collection
+# Define search terms for different languages
+SEARCH_TERMS = {
+    'fr': ["scandale", "fraude"],
+    'ar': ["فضيحة", "احتيال"],
+}
+
+# Connect to MongoDB and return the collection
 def connect_to_mongodb():
     client = pymongo.MongoClient(MONGODB_URL)
     db = client[DB_NAME]
     collection = db[COLLECTION_NAME]
     return collection
 
-# Define the purge_db function
+# Purge (clear) the MongoDB collection
 def purge_db():
     try:
         collection = connect_to_mongodb()
@@ -106,29 +42,28 @@ def purge_db():
     except Exception as e:
         print(f"An error occurred while purging the database: {e}")
 
-# Define the scrap_articles function
-def scrap_articles(language_code, search_query):
+# Scrape articles for a given language and search terms
+def scrap_articles(language_code):
     success = False  # Initialize a success flag
     try:
-        # Define language and country mappings based on language_code
-        language_mappings = {
-            'EN': {'language': 'en-US', 'country': 'US'},
-            'FR': {'language': 'fr', 'country': 'FR'},
-            'ES': {'language': 'es', 'country': 'ES'},
-            # Add more mappings as needed
-        }
+        regions = language_mapping.get(language_code, [])
+        if not regions:
+            print(f"No regions defined for language: {language_code}")
+            return []
 
-        language_info = language_mappings.get(language_code)
-        if language_info:
-            gn = GoogleNews(lang=language_info['language'], country=language_info['country'])
+        gn = GoogleNews(lang=language_code)  # Use the language code directly
 
-            # Use a single progress bar for the global scraping progress
-            pbar = tqdm(total=NUM_ARTICLES_TO_SCRAP * len(EN_SEARCH_TERMS), desc="Scraping Progress", mininterval=1.0)
+        # Calculate the total number of articles to scrape based on the language and search terms
+        total_articles_to_scrape = NUM_ARTICLES_TO_SCRAP * len(regions) * len(SEARCH_TERMS.get(language_code, []))
 
-            data = []
-            error_count = 0  # Initialize a count for errors
+        # Use a single progress bar for the global scraping progress
+        pbar = tqdm(total=total_articles_to_scrape, desc="Scraping Progress", mininterval=1.0)
 
-            for term in EN_SEARCH_TERMS:
+        data = []
+        error_count = 0  # Initialize a count for errors
+
+        for region_code in regions:
+            for term in SEARCH_TERMS.get(language_code, []):
                 search_results = gn.search(term)  # Use the search term
 
                 for entry in search_results['entries'][:NUM_ARTICLES_TO_SCRAP]:
@@ -143,7 +78,7 @@ def scrap_articles(language_code, search_query):
                             "Article URL": entry['link'],
                             "Content": article.text,
                             "Language": language_code,
-                            "Search Term": term  # Include the search term in the data
+                            "Search Term": term,  # Include the search term in the data
                         })
                         pbar.update(1)  # Increment the progress bar for each article scraped
                     except ArticleException as e:
@@ -159,24 +94,22 @@ def scrap_articles(language_code, search_query):
                         logging.error(f"An error occurred while processing an article: {e}")
                         pbar.update(1)  # Increment the progress bar for errors
 
-            pbar.close()  # Close the progress bar
+        pbar.close()  # Close the progress bar
 
-            if error_count > 0:
-                print(f"Scraping completed with {error_count} errors. Check 'scraping_errors.log' for details.")
-            else:
-                success = True  # Set the success flag to True
-                # Log a message only when no errors are encountered
-                logging.error('No errors found during scraping.')
+        if error_count > 0:
+            print(f"Scraping completed with {error_count} errors. Check 'scraping_errors.log' for details.")
+        else:
+            success = True  # Set the success flag to True
+            # Log a message only when no errors are encountered
+            logging.error('No errors found during scraping.')
 
-            return success, data
+        return success, data
     except Exception as e:
         print(f"An error occurred during scraping: {e}")
         return False, None  # Return False for the success flag and None for data in case of an error
 
-
-
 # Define the insert_data_into_mongodb function
-def insert_data_into_mongodb(data):
+def insert_data_into_mongodb(data, language):
     try:
         collection = connect_to_mongodb()
         inserted_count = 0  # Initialize the count of inserted documents
@@ -184,6 +117,13 @@ def insert_data_into_mongodb(data):
 
         if data:
             for article_data in data:
+                # Use the language to determine the region from language_mapping
+                regions = language_mapping.get(language, [])
+                region = regions[0] if regions else "Unknown"
+
+                # Add the region to the document
+                article_data["Region"] = region
+
                 # Check if an article with the same URL already exists
                 existing_article = collection.find_one({"Article URL": article_data["Article URL"]})
                 if not existing_article:
@@ -226,7 +166,11 @@ def query_mongodb():
             print("Source:", document.get("Source"))
             print("Published Time:", document.get("Published Time"))
             print("Article URL:", document.get("Article URL"))
-            print("Language:", document.get("Language"))            # print("Content:")
+            print("Language:", document.get("Language"))       
+            region = document.get("Region")
+            if region:
+                print("Region:", region)     
+            # print("Content:")
             # print(document.get("Content")) #uncomment if  u wanna check article text scraped
             print("\n" + "=" * 50 + "\n")
 
@@ -242,7 +186,7 @@ def query_mongodb():
 def main():
     parser = argparse.ArgumentParser(description="Scrape and manage data in MongoDB")
     parser.add_argument("--purge", action="store_true", help="Purge (clear) the MongoDB collection")
-    parser.add_argument("--scrap", choices=SUPPORTED_LANGUAGES.keys(), help="Scrape data for a specific language")
+    parser.add_argument("--scrap", choices=language_mapping.keys(), help="Scrape data for a specific language")
     parser.add_argument("--query", action="store_true", help="Query the MongoDB collection")
 
     # Add the --help option as a default action
@@ -274,17 +218,9 @@ def main():
 
     if args.scrap:
         language = args.scrap  # Get the selected language from the command line
-        search_query = SEARCH_QUERY  # Default search query
+        search_terms = SEARCH_TERMS.get(language, [])  # Default search terms based on language
 
-        # Define specific search queries for each language
-        if language == 'EN':
-            search_query = "finance"
-        elif language == 'ES':
-            search_query = "instituciones financieras"
-        elif language == 'FR':
-            search_query = "institution financière"
-
-        success, scraped_data = scrap_articles(language, search_query)
+        success, scraped_data = scrap_articles(language)
 
         if scraped_data:
             print(f"Scraped {len(scraped_data)} articles in {language}.")

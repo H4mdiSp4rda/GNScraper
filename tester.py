@@ -1,37 +1,39 @@
 import argparse
 import sys
+import logging
 from newspaper import Article
-from pygooglenews import GoogleNews
 import pymongo
 from tqdm import tqdm
-import logging  # Import the logging module
-from newspaper.article import ArticleException
 import requests.exceptions
 
+# Define search terms for different regions
+SEARCH_TERMS = {
+    'fr-FR': ["scandale", "fraude"],
+    'fr-SN': ["scandale", "fraude"],
+    'ar-EG': ["فضيحة", "احتيال"],
+    'ar-AE': ["فضيحة", "احتيال"],
+}
 
 # Constants
-SEARCH_QUERY = "finance"
 NUM_ARTICLES_TO_SCRAP = 10
-MONGODB_URL = "mongodb://172.17.0.2:27017/"
+MONGODB_URL = "mongodb://localhost:27017/"
 DB_NAME = "gns_raw"
 COLLECTION_NAME = "articles"
 
-# Define a list of supported languages and their corresponding Google News language codes
-SUPPORTED_LANGUAGES = {
-    'EN': 'en',
-    'FR': 'fr',
-    'ES': 'es',
-    # Add more languages and codes as needed
+# Language mapping for regions
+language_mapping = {
+    "fr": ["fr-FR", "fr-SN"],
+    "ar": ["ar-EG", "ar-AE"],
 }
 
-# Create a MongoDB client and select the database and collection
+# Connect to MongoDB and return the collection
 def connect_to_mongodb():
     client = pymongo.MongoClient(MONGODB_URL)
     db = client[DB_NAME]
     collection = db[COLLECTION_NAME]
     return collection
 
-# Define the purge_db function
+# Purge (clear) the MongoDB collection
 def purge_db():
     try:
         collection = connect_to_mongodb()
@@ -40,61 +42,59 @@ def purge_db():
     except Exception as e:
         print(f"An error occurred while purging the database: {e}")
 
-# Define the scrap_articles function
-def scrap_articles(language_code, search_query):
-    success = False  # Initialize a success flag
+# Scrape articles for a given language and search terms
+def scrap_articles(language):
     try:
-        # Define language and country mappings based on language_code
-        language_mappings = {
-            'EN': {'language': 'en-US', 'country': 'US'},
-            'FR': {'language': 'fr', 'country': 'FR'},
-            'ES': {'language': 'es', 'country': 'ES'},
-            # Add more mappings as needed
-        }
+        regions = language_mapping.get(language, [])
+        if not regions:
+            print(f"No regions defined for language: {language}")
+            return
 
-        language_info = language_mappings.get(language_code)
-        if language_info:
-            gn = GoogleNews(lang=language_info['language'], country=language_info['country'])
+        gn = Article()
 
-            search_results = gn.search(search_query)  # Use the provided search_query
-            data = []
+        scraped_data = []
+        error_count = 0
 
-        error_count = 0  # Initialize a count for errors
+        for region_code in regions:
+            search_terms = SEARCH_TERMS.get(region_code, [])
 
-        for entry in tqdm(search_results['entries'][:NUM_ARTICLES_TO_SCRAP], desc="Scraping Progress", mininterval=1.0):
-            try:
-                article = Article(entry['link'])
-                article.download()
-                article.parse()
-                data.append({
-                    "Title": article.title,
-                    "Source": entry.get('source', ''),
-                    "Published Time": entry['published'],
-                    "Article URL": entry['link'],
-                    "Content": article.text,
-                    "Language": language_code
-                })
-            except ArticleException as e:
-                error_count += 1
-                logging.error(f"ArticleException: {e}")
-            except requests.exceptions.HTTPError as e:
-                error_count += 1
-                logging.error(f"HTTPError (403 Forbidden): {e}")
-            except Exception as e:
-                error_count += 1
-                logging.error(f"An error occurred while processing an article: {e}")
+            for term in search_terms:
+                gn.set_language(region_code)
+                search_results = gn.search(term, num=NUM_ARTICLES_TO_SCRAP)
+
+                for entry in search_results:
+                    try:
+                        article = Article(entry.link)
+                        article.download()
+                        article.parse()
+                        scraped_data.append({
+                            "Title": article.title,
+                            "Source": entry.source,
+                            "Published Time": entry.published,
+                            "Article URL": entry.link,
+                            "Content": article.text,
+                            "Region": region_code,
+                            "Search Term": term,
+                        })
+                    except ArticleException as e:
+                        error_count += 1
+                        logging.error(f"ArticleException: {e}")
+                    except requests.exceptions.HTTPError as e:
+                        error_count += 1
+                        logging.error(f"HTTPError (403 Forbidden): {e}")
+                    except Exception as e:
+                        error_count += 1
+                        logging.error(f"An error occurred while processing an article: {e}")
 
         if error_count > 0:
             print(f"Scraping completed with {error_count} errors. Check 'scraping_errors.log' for details.")
         else:
-            success = True  # Set the success flag to True
-            # Log a message only when no errors are encountered
-            logging.error('No errors found during scraping.')
+            print(f"Scraped {len(scraped_data)} articles for language: {language}")
 
-        return success, data
+        return scraped_data
     except Exception as e:
         print(f"An error occurred during scraping: {e}")
-        return False, None  # Return False for the success flag and None for data in case of an error
+        return []
 
 
 
