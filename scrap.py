@@ -8,6 +8,72 @@ import logging  # Import the logging module
 from newspaper.article import ArticleException
 import requests.exceptions
 
+EN_SEARCH_TERMS = [
+    "scandal",
+    "fraud",
+    "trial",
+    "court",
+    "appeal",
+    "charged",
+    "allegation",
+    "accused",
+    "fined",
+    "fine",
+    "corruption",
+    "attack",
+    "leaked",
+    "incident",
+    "hack",
+    "cyberattack",
+    "money laundering",
+    "misconduct",
+    "sanction breach",
+    "Panama Papers",
+    "Pandora Papers",
+    "Paradise Papers",
+    "Luanda Leaks",
+    "default",
+    "insolvency",
+    "suspension",
+    "suspended",
+    "default",
+    "collapse",
+    "bank run",
+    "outlook",
+    "confirms",
+    "reaffirms",
+    "downgrade",
+    "negative",
+    "positive",
+    "stable",
+    "supervision",
+    "regulator",
+    "non-performing",
+    "undercapitalized",
+    "ESG",
+    "sustainability",
+    "sustainable",
+    "low-carbon",
+    "green loans",
+    "green finance",
+    "SDG",
+    "resettlement",
+    "land-grabbing",
+    "biodiversity",
+    "investment",
+    "invests",
+    "import",
+    "financing",
+    "signed",
+    "deal",
+    "loan",
+    "signs",
+    "pre-export financing",
+    "commodity financing",
+    "trade commodity financing",
+    "export flows"
+]
+
 
 # Constants
 SEARCH_QUERY = "finance"
@@ -56,42 +122,53 @@ def scrap_articles(language_code, search_query):
         if language_info:
             gn = GoogleNews(lang=language_info['language'], country=language_info['country'])
 
-            search_results = gn.search(search_query)  # Use the provided search_query
+            # Use a single progress bar for the global scraping progress
+            pbar = tqdm(total=NUM_ARTICLES_TO_SCRAP * len(EN_SEARCH_TERMS), desc="Scraping Progress", mininterval=1.0)
+
             data = []
+            error_count = 0  # Initialize a count for errors
 
-        error_count = 0  # Initialize a count for errors
+            for term in EN_SEARCH_TERMS:
+                search_results = gn.search(term)  # Use the search term
 
-        for entry in tqdm(search_results['entries'][:NUM_ARTICLES_TO_SCRAP], desc="Scraping Progress", mininterval=1.0):
-            try:
-                article = Article(entry['link'])
-                article.download()
-                article.parse()
-                data.append({
-                    "Title": article.title,
-                    "Source": entry.get('source', ''),
-                    "Published Time": entry['published'],
-                    "Article URL": entry['link'],
-                    "Content": article.text,
-                    "Language": language_code
-                })
-            except ArticleException as e:
-                error_count += 1
-                logging.error(f"ArticleException: {e}")
-            except requests.exceptions.HTTPError as e:
-                error_count += 1
-                logging.error(f"HTTPError (403 Forbidden): {e}")
-            except Exception as e:
-                error_count += 1
-                logging.error(f"An error occurred while processing an article: {e}")
+                for entry in search_results['entries'][:NUM_ARTICLES_TO_SCRAP]:
+                    try:
+                        article = Article(entry['link'])
+                        article.download()
+                        article.parse()
+                        data.append({
+                            "Title": article.title,
+                            "Source": entry.get('source', ''),
+                            "Published Time": entry['published'],
+                            "Article URL": entry['link'],
+                            "Content": article.text,
+                            "Language": language_code,
+                            "Search Term": term  # Include the search term in the data
+                        })
+                        pbar.update(1)  # Increment the progress bar for each article scraped
+                    except ArticleException as e:
+                        error_count += 1
+                        logging.error(f"ArticleException: {e}")
+                        pbar.update(1)  # Increment the progress bar for errors
+                    except requests.exceptions.HTTPError as e:
+                        error_count += 1
+                        logging.error(f"HTTPError (403 Forbidden): {e}")
+                        pbar.update(1)  # Increment the progress bar for errors
+                    except Exception as e:
+                        error_count += 1
+                        logging.error(f"An error occurred while processing an article: {e}")
+                        pbar.update(1)  # Increment the progress bar for errors
 
-        if error_count > 0:
-            print(f"Scraping completed with {error_count} errors. Check 'scraping_errors.log' for details.")
-        else:
-            success = True  # Set the success flag to True
-            # Log a message only when no errors are encountered
-            logging.error('No errors found during scraping.')
+            pbar.close()  # Close the progress bar
 
-        return success, data
+            if error_count > 0:
+                print(f"Scraping completed with {error_count} errors. Check 'scraping_errors.log' for details.")
+            else:
+                success = True  # Set the success flag to True
+                # Log a message only when no errors are encountered
+                logging.error('No errors found during scraping.')
+
+            return success, data
     except Exception as e:
         print(f"An error occurred during scraping: {e}")
         return False, None  # Return False for the success flag and None for data in case of an error
@@ -131,26 +208,33 @@ def query_mongodb():
         cursor = collection.find()
 
         count = 0  # Initialize a count variable
+        duplicate_count = 0  # Initialize a count for duplicate documents
 
-        for _ in cursor:
-            count += 1  # Increment the count for each document
-
-        cursor.rewind()  # Rewind the cursor to the beginning for printing
+        seen_urls = set()  # Create a set to store unique Article URLs
 
         for document in cursor:
+            count += 1  # Increment the count for each document
+
+            # Check if the Article URL is already seen (indicating a duplicate)
+            if document.get("Article URL") in seen_urls:
+                duplicate_count += 1
+                print(f"Duplicate article found (URL: {document.get('Article URL')})")
+            else:
+                seen_urls.add(document.get("Article URL"))
+
             print("Title:", document.get("Title"))
             print("Source:", document.get("Source"))
             print("Published Time:", document.get("Published Time"))
             print("Article URL:", document.get("Article URL"))
-            print("Language:", document.get("Language"))  # Print the Language field
-            # print("Content:")
+            print("Language:", document.get("Language"))            # print("Content:")
             # print(document.get("Content")) #uncomment if  u wanna check article text scraped
-            print("\n" + "=" * 50 + "\n") ##uncomment if  u wanna check article text scraped
+            print("\n" + "=" * 50 + "\n")
 
         if count == 0:
             print("No articles found in the MongoDB collection.")
         else:
             print(f"Number of articles found in the MongoDB collection: {count}")
+            print(f"Number of duplicate articles found: {duplicate_count}")
 
     except Exception as e:
         print(f"An error occurred while querying the database: {e}")

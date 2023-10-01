@@ -1,186 +1,28 @@
 import argparse
+import sys
 from newspaper import Article
 from pygooglenews import GoogleNews
 import pymongo
 from tqdm import tqdm
+import logging  # Import the logging module
+from newspaper.article import ArticleException
+import requests.exceptions
+
 
 # Constants
-NUM_ARTICLES_TO_SCRAP = 20
+SEARCH_QUERY = "finance"
+NUM_ARTICLES_TO_SCRAP = 10
 MONGODB_URL = "mongodb://172.17.0.2:27017/"
 DB_NAME = "gns_raw"
 COLLECTION_NAME = "articles"
 
-# Define the supported regions and their Google News country codes for each language
+# Define a list of supported languages and their corresponding Google News language codes
 SUPPORTED_LANGUAGES = {
-    'FR': ['CM', 'CI', 'BJ', 'SN', 'GN'],
-    'AR': ['EG', 'AE', 'OM', 'TN', 'MA'],
-    'ES': ['MX', 'CO', 'PE', 'AR', 'GT'],
-    'PT': ['BR', 'AO', 'MZ', 'GW', 'CV'],
-    'RU': ['RU', 'BY', 'UZ', 'KZ', 'UA'],
+    'EN': 'en',
+    'FR': 'fr',
+    'ES': 'es',
+    # Add more languages and codes as needed
 }
-
-# Define the list of themes with their associated search queries for each language
-SEARCH_THEMES = {
-    'Compliance Risk': [
-        'scandale financier',
-        'fraude financière',
-        'procès financier',
-        'tribunal financier',
-        'appel financier',
-        'accusé de scandale financier',
-        # ... (other queries in the language related to compliance risk)
-    ],
-    'Credit Risk / Rating': [
-        'risque de crédit',
-        'notation financière',
-        'défaut financier',
-        'insolvabilité financière',
-        'suspension financière',
-        # ... (other queries in the language related to credit risk/rating)
-    ],
-    'ESG': [
-        'ESG',
-        'durabilité',
-        'finance verte',
-        'prêts verts',
-        # ... (other queries in the language related to ESG)
-    ],
-    'Opportunity': [
-        'investissement financier',
-        'financement financier',
-        'accord financier',
-        # ... (other queries in the language related to opportunity)
-    ],
-}
-
-SEARCH_THEMES_AR = {
-    'Compliance Risk': [
-        'فضيحة مالية',
-        'احتيال مالي',
-        'محكمة مالية',
-        'استئناف مالي',
-        'اتهم بفضيحة مالية',
-        # ... (other queries in Arabic related to compliance risk)
-    ],
-    'Credit Risk / Rating': [
-        'مخاطر الائتمان',
-        'تقييم مالي',
-        'افلاس مالي',
-        'عدم السداد المالي',
-        'تعليق مالي',
-        # ... (other queries in Arabic related to credit risk/rating)
-    ],
-    'ESG': [
-        'ESG',
-        'استدامة',
-        'تمويل أخضر',
-        'قروض خضراء',
-        # ... (other queries in Arabic related to ESG)
-    ],
-    'Opportunity': [
-        'استثمار مالي',
-        'تمويل مالي',
-        'اتفاق مالي',
-        # ... (other queries in Arabic related to opportunity)
-    ],
-}
-SEARCH_THEMES_ES = {
-    'Compliance Risk': [
-        'escándalo financiero',
-        'fraude financiero',
-        'juicio financiero',
-        'apelación financiera',
-        'acusado de escándalo financiero',
-        # ... (other queries in Spanish related to compliance risk)
-    ],
-    'Credit Risk / Rating': [
-        'riesgo crediticio',
-        'calificación financiera',
-        'incumplimiento financiero',
-        'insolvencia financiera',
-        'suspensión financiera',
-        # ... (other queries in Spanish related to credit risk/rating)
-    ],
-    'ESG': [
-        'ESG',
-        'sostenibilidad',
-        'financiamiento verde',
-        'préstamos verdes',
-        # ... (other queries in Spanish related to ESG)
-    ],
-    'Opportunity': [
-        'inversión financiera',
-        'financiamiento financiero',
-        'acuerdo financiero',
-        # ... (other queries in Spanish related to opportunity)
-    ],
-}
-
-SEARCH_THEMES_PT = {
-    'Compliance Risk': [
-        'escândalo financeiro',
-        'fraude financeira',
-        'processo financeiro',
-        'recurso financeiro',
-        'acusado de escândalo financeiro',
-        # ... (other queries in Portuguese related to compliance risk)
-    ],
-    'Credit Risk / Rating': [
-        'risco de crédito',
-        'classificação financeira',
-        'incumprimento financeiro',
-        'insolvência financeira',
-        'suspensão financeira',
-        # ... (other queries in Portuguese related to credit risk/rating)
-    ],
-    'ESG': [
-        'ESG',
-        'sustentabilidade',
-        'financiamento verde',
-        'empréstimos verdes',
-        # ... (other queries in Portuguese related to ESG)
-    ],
-    'Opportunity': [
-        'investimento financeiro',
-        'financiamento financeiro',
-        'acordo financeiro',
-        # ... (other queries in Portuguese related to opportunity)
-    ],
-}
-
-SEARCH_THEMES_RU = {
-    'Compliance Risk': [
-        'финансовый скандал',
-        'финансовое мошенничество',
-        'финансовое судебное разбирательство',
-        'финансовая аппеляция',
-        'обвинен в финансовом скандале',
-        # ... (other queries in Russian related to compliance risk)
-    ],
-    'Credit Risk / Rating': [
-        'кредитный риск',
-        'финансовое рейтингование',
-        'дефолт по финансам',
-        'финансовая несостоятельность',
-        'финансовая приостановка',
-        # ... (other queries in Russian related to credit risk/rating)
-    ],
-    'ESG': [
-        'ESG',
-        'устойчивость',
-        'зеленое финансирование',
-        'зеленые кредиты',
-        # ... (other queries in Russian related to ESG)
-    ],
-    'Opportunity': [
-        'финансовые инвестиции',
-        'финансовое финансирование',
-        'финансовое соглашение',
-        # ... (other queries in Russian related to opportunity)
-    ],
-}
-
-
 
 # Create a MongoDB client and select the database and collection
 def connect_to_mongodb():
@@ -199,42 +41,64 @@ def purge_db():
         print(f"An error occurred while purging the database: {e}")
 
 # Define the scrap_articles function
-def scrap_articles(language_code, regions, themes):
+def scrap_articles(language_code, search_query):
+    success = False  # Initialize a success flag
     try:
-        gn = GoogleNews(lang=language_code, country=','.join(regions))
+        # Define language and country mappings based on language_code
+        language_mappings = {
+            'EN': {'language': 'en-US', 'country': 'US'},
+            'FR': {'language': 'fr', 'country': 'FR'},
+            'ES': {'language': 'es', 'country': 'ES'},
+            # Add more mappings as needed
+        }
 
-        data = []
+        language_info = language_mappings.get(language_code)
+        if language_info:
+            gn = GoogleNews(lang=language_info['language'], country=language_info['country'])
 
-        for theme, search_queries in themes.items():
-            for query in search_queries:
-                search_results = gn.search(query)
+            search_results = gn.search(search_query)  # Use the provided search_query
+            data = []
 
-                # Create a tqdm progress bar for the articles
-                progress_bar = tqdm(search_results['entries'][:NUM_ARTICLES_TO_SCRAP], desc=f'Scraping {theme}')
+        error_count = 0  # Initialize a count for errors
 
-                for entry in progress_bar:
-                    try:
-                        article = Article(entry['link'])
-                        article.download()
-                        article.parse()
-                        data.append({
-                            "Title": article.title,
-                            "Source": entry.get('source', ''),
-                            "Published Time": entry['published'],
-                            "Article URL": entry['link'],
-                            "Content": article.text,
-                            "Language": language_code
-                        })
-                    except Exception as e:
-                        # Handle errors by printing a message and continue scraping
-                        print(f"Error scraping an article: {e}")
-                        continue
+        for entry in tqdm(search_results['entries'][:NUM_ARTICLES_TO_SCRAP], desc="Scraping Progress", mininterval=1.0):
+            try:
+                article = Article(entry['link'])
+                article.download()
+                article.parse()
+                data.append({
+                    "Title": article.title,
+                    "Source": entry.get('source', ''),
+                    "Published Time": entry['published'],
+                    "Article URL": entry['link'],
+                    "Content": article.text,
+                    "Language": language_code
+                })
+            except ArticleException as e:
+                error_count += 1
+                logging.error(f"ArticleException: {e}")
+            except requests.exceptions.HTTPError as e:
+                error_count += 1
+                logging.error(f"HTTPError (403 Forbidden): {e}")
+            except Exception as e:
+                error_count += 1
+                logging.error(f"An error occurred while processing an article: {e}")
 
-        return data
+        if error_count > 0:
+            print(f"Scraping completed with {error_count} errors. Check 'scraping_errors.log' for details.")
+        else:
+            success = True  # Set the success flag to True
+            # Log a message only when no errors are encountered
+            logging.error('No errors found during scraping.')
+
+        return success, data
     except Exception as e:
         print(f"An error occurred during scraping: {e}")
+        return False, None  # Return False for the success flag and None for data in case of an error
 
-# ... (insert_data_into_mongodb, query_mongodb, and main functions remain unchanged)
+
+
+# Define the insert_data_into_mongodb function
 def insert_data_into_mongodb(data):
     try:
         collection = connect_to_mongodb()
@@ -279,8 +143,8 @@ def query_mongodb():
             print("Published Time:", document.get("Published Time"))
             print("Article URL:", document.get("Article URL"))
             print("Language:", document.get("Language"))  # Print the Language field
-            print("Content:")
-            print(document.get("Content")) #uncomment if  u wanna check article text scraped
+            # print("Content:")
+            # print(document.get("Content")) #uncomment if  u wanna check article text scraped
             print("\n" + "=" * 50 + "\n") ##uncomment if  u wanna check article text scraped
 
         if count == 0:
@@ -293,28 +157,61 @@ def query_mongodb():
 
 def main():
     parser = argparse.ArgumentParser(description="Scrape and manage data in MongoDB")
-    parser.add_argument("--language", choices=SUPPORTED_LANGUAGES.keys(), required=True, help="Select the language for scraping")
+    parser.add_argument("--purge", action="store_true", help="Purge (clear) the MongoDB collection")
+    parser.add_argument("--scrap", choices=SUPPORTED_LANGUAGES.keys(), help="Scrape data for a specific language")
+    parser.add_argument("--query", action="store_true", help="Query the MongoDB collection")
+
+    # Add the --help option as a default action
+    if len(sys.argv) == 1:
+        parser.print_help(sys.stderr)
+        sys.exit(1)
+
     args = parser.parse_args()
+    scraped_data = None  # Initialize scraped_data
 
-    language = args.language
-    regions = SUPPORTED_LANGUAGES.get(language)
-    language_code = language[:2]  # Get the first two characters of the language name as the language code
+    # Specify the log file name
+    log_filename = 'scraping_errors.log'
 
-    if regions:
-        # Get the themes and language-specific queries for the selected language
-        themes = SEARCH_THEMES.get(language, {})  # Default to an empty dictionary if themes are not defined for the language
+    if args.scrap:
+        # Configure the logger to append to the same log file when scraping
+        logging.basicConfig(filename=log_filename, level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
+        # Add a separator message at the beginning of scraping
+        logging.error('=== Script Execution Start (Scraping) ===')
 
-        scraped_data = scrap_articles(language_code, regions, themes)
+    if args.purge:
+        purge_db()
+        # Exit after purging without adding any messages
+        sys.exit(0)
+
+    if args.query:
+        query_mongodb()
+        # Exit after querying without adding any messages
+        sys.exit(0)
+
+    if args.scrap:
+        language = args.scrap  # Get the selected language from the command line
+        search_query = SEARCH_QUERY  # Default search query
+
+        # Define specific search queries for each language
+        if language == 'EN':
+            search_query = "finance"
+        elif language == 'ES':
+            search_query = "instituciones financieras"
+        elif language == 'FR':
+            search_query = "institution financière"
+
+        success, scraped_data = scrap_articles(language, search_query)
 
         if scraped_data:
-            print(f"Scraped {len(scraped_data)} articles in {language_code} for the selected themes.")
+            print(f"Scraped {len(scraped_data)} articles in {language}.")
             insert_option = input("Do you want to store the scraped data in the database? (yes/no): ").strip().lower()
             if insert_option == "yes":
                 insert_data_into_mongodb(scraped_data)
             else:
                 print("Scraped data not stored in the database.")
-    else:
-        print("Selected language is not supported.")
+
+        # Add a separator message at the end of scraping
+        logging.error('=== Script Execution End (Scraping) ===')
 
 if __name__ == "__main__":
     main()
