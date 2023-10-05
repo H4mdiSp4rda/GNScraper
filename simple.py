@@ -1,14 +1,8 @@
 import argparse
-import logging
-from pygooglenews import GoogleNews
-from newspaper import Article
-import time
+from newspaper import Config, Article
+import requests.exceptions
 
-MAX_ARTICLES_TO_SCRAP = 10  # Edit this constant to set the maximum number of articles to scrap
-LOG_FILE = 'scraper.log'  # Specify the log file name
-
-# Configure logging
-logging.basicConfig(filename=LOG_FILE, level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
+MAX_ARTICLES_TO_SCRAP = 2
 
 LANGUAGE_CONFIG = {
     'fr': {
@@ -23,46 +17,48 @@ LANGUAGE_CONFIG = {
     },
 }
 
-def scrap_articles(language):
-    if language not in LANGUAGE_CONFIG:
-        print(f"Language '{language}' not supported.")
-        return
 
-    config = LANGUAGE_CONFIG[language]
-    search_terms = config["search_terms"]
-    countries = config["countries"]
-    for term in search_terms:
-        for country in countries:
+def scrape_articles(language):
+    config = Config()
+    config.browser_user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
+
+    for term in LANGUAGE_CONFIG[language]["search_terms"]:
+        for country in LANGUAGE_CONFIG[language]["countries"]:
             print(f"Scraping: Language: {language}, Country: {country}, Search Term: {term}")
-            gn = GoogleNews(lang=language, country=country)
-            search_results = gn.search(term)
             articles_scrapped = 0
-            for result in search_results['entries']:
-                if articles_scrapped >= MAX_ARTICLES_TO_SCRAP:
-                    break  # Stop scraping if the maximum number of articles has been reached
+
+            while articles_scrapped < MAX_ARTICLES_TO_SCRAP:
                 try:
-                    url = result['link']
-                    article = Article(url)
+                    url = f"https://news.google.com/search?q={term}&hl={language}&gl={country}"
+                    article = Article(url, config=config)
                     article.download()
                     article.parse()
-                    print(f"Title: {article.title}")
-                    print(f"Published Date: {article.publish_date}")
-                    # print(f"Content:\n{article.text}")
-                    print("\n" + "=" * 50 + "\n")
+
+                    # Extract title, source, URL, and date from the article
+                    title = article.title
+                    source = article.source_url
+                    url = article.url
+                    date = article.publish_date.strftime('%Y-%m-%d') if article.publish_date else "N/A"
+
+                    # Print the details
+                    print(f"Title: {title}")
+                    print(f"Source: {source}")
+                    print(f"URL: {url}")
+                    print(f"Date: {date}\n")
+
                     articles_scrapped += 1
-                    time.sleep(2)  # Add a delay to avoid overloading Google News
+
+                except requests.exceptions.RequestException as e:
+                    print(f"RequestException: {e}")
                 except Exception as e:
-                    # Log the error and continue with the next article
-                    error_message = f"Error while processing URL {url}: {str(e)}"
-                    print(error_message)
-                    logging.error(error_message)
+                    print(f"An error occurred while processing: {e}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Scrap articles from Google News")
-    parser.add_argument("--scrap", type=str, help="Language to scrap (e.g., 'fr' or 'ar')")
+    parser = argparse.ArgumentParser(description="Scrape articles from Google News")
+    parser.add_argument("--scrape", type=str, help="Language to scrape (e.g., 'fr' or 'ar')")
     args = parser.parse_args()
 
-    if args.scrap:
-        scrap_articles(args.scrap)
+    if args.scrape:
+        scrape_articles(args.scrape)
     else:
-        print("Please specify a language to scrap using the --scrap argument.")
+        print("Please specify a language to scrape using the --scrape argument.")
