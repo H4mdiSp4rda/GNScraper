@@ -68,6 +68,10 @@ def scrap_articles(language_code, search_query, insert_method, country):
                         "Language": language_code,
                         "Country": country
                     })
+                except ArticleException as e:
+                    logging.error(f"ArticleException: {e}")
+                except requests.exceptions.HTTPError as e:
+                    logging.error(f"HTTPError ({e.response.status_code} {e.response.reason}): {e}")
                 except Exception as e:
                     logging.error(f"An error occurred while processing '{entry['link']}': {e}")
 
