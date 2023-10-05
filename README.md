@@ -14,10 +14,10 @@ This project merges Business Intelligence (BI) and Deep Learning to scrap and cl
 ### II) Scraping Script
 #### Data Scraping Optimization
 - Error logging (Done) ✔
-- Custom headers (In Progress) 🔧
-- User-agent spoofing (In Progress) 🔧
-- Request throttling (In Progress) 🔧
-- Tor proxy integration (In Progress) 🔧
+- Custom headers (Done) ✔
+- User-agent spoofing (Done) ✔
+- Request throttling (Done) ✔
+- Tor proxy integration (Abandoned due to client request) ✘
 
 #### Data Storage and Management in MongoDB
 - Data Insertion (Done) ✔
@@ -41,8 +41,8 @@ This project merges Business Intelligence (BI) and Deep Learning to scrap and cl
 # Script Usage:
 To manage data in MongoDB using the provided script, you can use the following command-line arguments:
 
-- `--scrap`: Use this argument to initiate data scraping. Specify the desired language for scraping by providing one of the supported language codes (e.g., "EN" for English, "FR" for French, "ES" for Spanish). For example:
-  `python script.py --scrap EN`
+- `--scrap`: Use this argument to initiate data scraping. Specify the desired language for scraping by providing one of the supported language codes (e.g., "en" for English, "fr" for French, "es" for Spanish). You must also specify the insertion method as "auto" or "manual" to decide whether to store the scraped data in the database automatically or prompt for confirmation. Example usage:
+  `python script.py --scrap EN auto`
 - `--query`: Use this argument to query the MongoDB collection and retrieve stored data.
 - `--purge`: Clear (purge) the MongoDB collection and remove all data by using this argument.
 
