@@ -5,11 +5,18 @@ from pygooglenews import GoogleNews
 import pymongo
 from tqdm import tqdm
 import logging
+from urllib3.exceptions import NewConnectionError
 from newspaper.article import ArticleException
 import requests.exceptions
+import random
+import time
+from fake_useragent import UserAgent  # You need to install the 'fake-useragent' package
 
 # Constants
-NUM_ARTICLES_TO_SCRAP = 10
+NUM_ARTICLES_TO_SCRAP = 50
+max_retries = 3
+retry_delay = 5
+user_agent = UserAgent()
 MONGODB_URL = "mongodb://172.17.0.2:27017/"
 DB_NAME = "gns_raw"
 COLLECTION_NAME = "articles"
@@ -45,7 +52,7 @@ def purge_db():
         print(f"An error occurred while purging the database: {e}")
 
 # Define the scrap_articles function
-def scrap_articles(language_code, search_query, insert_method, country):
+def scrap_articles(language_code, search_query, insert_method, country, debug_mode=False):
     try:
         language_info = LANGUAGE_CONFIG.get(language_code)
         if language_info:
@@ -54,26 +61,51 @@ def scrap_articles(language_code, search_query, insert_method, country):
             search_results = gn.search(search_query)
             data = []
 
-            for entry in tqdm(search_results['entries'][:NUM_ARTICLES_TO_SCRAP], desc=f"Scraping {country}", mininterval=1.0):
-                try:
-                    article = Article(entry['link'])
-                    article.download()
-                    article.parse()
-                    data.append({
-                        "Title": article.title,
-                        "Source": entry.get('source', ''),
-                        "Published Time": entry['published'],
-                        "Article URL": entry['link'],
-                        "Content": article.text,
-                        "Language": language_code,
-                        "Country": country
-                    })
-                except ArticleException as e:
-                    logging.error(f"ArticleException: {e}")
-                except requests.exceptions.HTTPError as e:
-                    logging.error(f"HTTPError ({e.response.status_code} {e.response.reason}): {e}")
-                except Exception as e:
-                    logging.error(f"An error occurred while processing '{entry['link']}': {e}")
+            # Extract the country code from the country variable
+            country_code = country.split()[0]
+
+            for entry in tqdm(search_results['entries'][:NUM_ARTICLES_TO_SCRAP], desc=f"Scraping {country_code} ({search_query.split()[0]})", mininterval=1.0):
+                if debug_mode:
+                    # Print the country, language, and search term being scraped
+                    print(f"Scraping: Country - {country}, Language - {language_code}, Search Term - {search_query.split()[0]}")
+
+                for retry_count in range(max_retries):
+                    try:
+                        headers = {
+                            'User-Agent': user_agent.random,
+                            'Referer': 'https://www.google.com/',
+                        }
+
+                        article = Article(entry['link'], headers=headers)
+                        article.download()
+                        article.parse()
+                        data.append({
+                            "Title": article.title,
+                            "Source": entry.get('source', ''),
+                            "Published Time": entry['published'],
+                            "Article URL": entry['link'],
+                            "Content": article.text,
+                            "Language": language_code,
+                            "Country": country
+                        })
+                        break  # Successful request, exit the retry loop
+                    except ArticleException as e:
+                        logging.error(f"ArticleException: {e}")
+                        break  # No need to retry if it's an ArticleException
+                    except requests.exceptions.HTTPError as e:
+                        logging.error(f"HTTPError ({e.response.status_code} {e.response.reason}): {e}")
+                    except NewConnectionError as e:
+                        logging.error(f"NewConnectionError: {e}")
+                        if retry_count < max_retries - 1:
+                            logging.info(f"Retrying the request in {retry_delay} seconds...")
+                            time.sleep(retry_delay)
+                        else:
+                            logging.error("Max retries reached. Skipping the article.")
+                            break  # Max retries reached, exit the retry loop
+                    except Exception as e:
+                        logging.error(f"An error occurred while processing '{entry['link']}': {e}")
+
+                time.sleep(random.uniform(1, 3))
 
             if insert_method == "auto":
                 insert_data_into_mongodb(data, country)
@@ -104,7 +136,7 @@ def insert_data_into_mongodb(data, country):
                 else:
                     ignored_count += 1
 
-            print(f"Scraped {len(data)} articles in {country}.")
+            print(f"Scraped {len(data)} articles for {country}.")
             print(f"Inserted {inserted_count} unique documents into MongoDB.")
             print(f"Ignored {ignored_count} duplicate documents.")
         else:
