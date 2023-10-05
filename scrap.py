@@ -10,10 +10,10 @@ from newspaper.article import ArticleException
 import requests.exceptions
 import random
 import time
-from fake_useragent import UserAgent  # You need to install the 'fake-useragent' package
+from fake_useragent import UserAgent 
 
 # Constants
-NUM_ARTICLES_TO_SCRAP = 50
+NUM_ARTICLES_TO_SCRAP = 5
 max_retries = 3
 retry_delay = 5
 user_agent = UserAgent()
@@ -52,7 +52,7 @@ def purge_db():
         print(f"An error occurred while purging the database: {e}")
 
 # Define the scrap_articles function
-def scrap_articles(language_code, search_query, insert_method, country, debug_mode=True):
+def scrap_articles(language_code, search_query, insert_method, country, debug_mode=False):
     try:
         language_info = LANGUAGE_CONFIG.get(language_code)
         if language_info:
