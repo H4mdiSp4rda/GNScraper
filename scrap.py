@@ -52,7 +52,7 @@ def purge_db():
         print(f"An error occurred while purging the database: {e}")
 
 # Define the scrap_articles function
-def scrap_articles(language_code, search_query, insert_method, country, debug_mode=False):
+def scrap_articles(language_code, search_query, insert_method, country, debug_mode=True):
     try:
         language_info = LANGUAGE_CONFIG.get(language_code)
         if language_info:
@@ -185,7 +185,7 @@ def main():
     parser.add_argument("--purge", action="store_true", help="Clear all documents from the MongoDB collection.")
     parser.add_argument("--scrap", nargs=2, metavar=('LANGUAGE', 'INSERT_METHOD'), 
                         help="Scrape news articles for a specific language and specify the insertion method. "
-                             "Example: --scrap fr manual or --scrap fr auto.")
+                             "Example: --scrap FR auto or --scrap AR auto.")
     parser.add_argument("--query", action="store_true", help="Query and display documents in the MongoDB collection.")
     # Add the --help option as a default action
     if len(sys.argv) == 1:
@@ -213,6 +213,7 @@ def main():
 
     if args.scrap:
         language, insert_method = args.scrap
+        language = language.lower()  # Convert the language to lowercase for the scrap_articles function
         if insert_method not in ["auto", "manual"]:
             print("Error: The insert_method must be 'auto' or 'manual'.")
             sys.exit(1)
@@ -226,7 +227,7 @@ def main():
             for country in countries:
                 for search_term in language_config["search_terms"]:
                     search_query = f"{search_term} {country}"
-                    scraped_data = scrap_articles(language_config['language'], search_query, insert_method, country)
+                    scraped_data = scrap_articles(language, search_query, insert_method, country)
 
                     if scraped_data:
                         print(f"Scraped {len(scraped_data)} articles in {language} for search term '{search_term}' and country '{country}'.")
