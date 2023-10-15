@@ -1,19 +1,20 @@
 import argparse
 import sys
-from newspaper import Article
+from newspaper import Article, Config
 from pygooglenews import GoogleNews
+from bs4 import BeautifulSoup
+import requests
 import pymongo
 from tqdm import tqdm
 import logging
 from urllib3.exceptions import NewConnectionError
 from newspaper.article import ArticleException
-import requests.exceptions
 import random
 import time
-from fake_useragent import UserAgent 
+from fake_useragent import UserAgent
 
 # Constants
-NUM_ARTICLES_TO_SCRAP = 5
+NUM_ARTICLES_TO_SCRAP = 80
 max_retries = 3
 retry_delay = 5
 user_agent = UserAgent()
@@ -51,6 +52,29 @@ def purge_db():
     except Exception as e:
         print(f"An error occurred while purging the database: {e}")
 
+def extract_link(url):
+    user_agent = UserAgent().random
+    headers = {'User-Agent': user_agent}
+
+    response = requests.get(url, headers=headers)
+
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, 'html.parser')
+        try:
+            link = soup.find('a', jsname='tljFtd')['href']
+            #print(link)
+            return link
+        except TypeError:
+            logging.basicConfig(filename='scraping_errors.log', level=logging.ERROR)
+            logging.error(f"Error extracting link from {url}")
+            return None
+    else:
+        print(f"Response returned status code {response.status_code}")
+        sleep_time = random.randint(1, 6)
+        print(f"Sleeping for {sleep_time} seconds...")
+        time.sleep(sleep_time)
+        return extract_link(url)
+
 # Define the scrap_articles function
 def scrap_articles(language_code, search_query, insert_method, country, debug_mode=False):
     try:
@@ -69,33 +93,42 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
                     # Print the country, language, and search term being scraped
                     print(f"Scraping: Country - {country}, Language - {language_code}, Search Term - {search_query.split()[0]}")
 
+                article_link = None  # Initialize article_link to None
+
                 for retry_count in range(max_retries):
                     try:
                         headers = {
-                            'User-Agent': user_agent.random,
+                            'User-Agent': user_agent.random,  # Set the User-Agent header
                             'Referer': 'https://www.google.com/',
+                            # Add other headers if needed
                         }
+                        config = Config()
+                        config.headers = headers
+                        config.request_timeout = 6
 
-                        article = Article(entry['link'], headers=headers)
+                        # Extract the article link using the extract_link function
+                        article_link = extract_link(entry['link'])
+                        # Download the article using NewsPlease
+                        article = Article(article_link, config=config)
                         article.download()
                         article.parse()
-                        data.append({
-                            "Title": article.title,
-                            "Source": entry.get('source', ''),
-                            "Published Time": entry['published'],
-                            "Article URL": entry['link'],
-                            "Content": article.text,
-                            "Language": language_code,
-                            "Country": country
-                        })
+
+                        # Check if the article is valid
+                        if article is not None:
+                            data.append({
+                                "Title": article.title,
+                                "Source": entry.get('source', ''),
+                                "Published Time": entry['published'],
+                                "Article URL": article_link,
+                                "Content": article.text,
+                                "Language": language_code,
+                                "Country": country
+                            })
                         break  # Successful request, exit the retry loop
-                    except ArticleException as e:
-                        logging.error(f"ArticleException: {e}")
-                        break  # No need to retry if it's an ArticleException
                     except requests.exceptions.HTTPError as e:
                         logging.error(f"HTTPError ({e.response.status_code} {e.response.reason}): {e}")
-                    except NewConnectionError as e:
-                        logging.error(f"NewConnectionError: {e}")
+                    except ConnectionError as e:
+                        logging.error(f"ConnectionError: {e}")
                         if retry_count < max_retries - 1:
                             logging.info(f"Retrying the request in {retry_delay} seconds...")
                             time.sleep(retry_delay)
@@ -103,7 +136,7 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
                             logging.error("Max retries reached. Skipping the article.")
                             break  # Max retries reached, exit the retry loop
                     except Exception as e:
-                        logging.error(f"An error occurred while processing '{entry['link']}': {e}")
+                        logging.error(f"An error occurred while processing '{article_link}': {e}")
 
                 time.sleep(random.uniform(1, 3))
 
@@ -166,8 +199,8 @@ def query_mongodb():
             print("Article URL:", document.get("Article URL"))
             print("Language:", document.get("Language"))  # Print the Language field
             print("Country:", document.get("Country"))
-            # print("Content:")
-            # print(document.get("Content")) #uncomment if  u wanna check article text scraped
+            print("Content:")
+            print(document.get("Content")) #uncomment if  u wanna check article text scraped
             print("\n" + "=" * 50 + "\n") ##uncomment if  u wanna check article text scraped
 
         if count == 0:
@@ -183,7 +216,7 @@ def main():
 
     # Add arguments
     parser.add_argument("--purge", action="store_true", help="Clear all documents from the MongoDB collection.")
-    parser.add_argument("--scrap", nargs=2, metavar=('LANGUAGE', 'INSERT_METHOD'), 
+    parser.add_argument("--scrap", nargs=2, metavar=('LANGUAGE', 'INSERT_METHOD'),
                         help="Scrape news articles for a specific language and specify the insertion method. "
                              "Example: --scrap FR auto or --scrap AR auto.")
     parser.add_argument("--query", action="store_true", help="Query and display documents in the MongoDB collection.")
@@ -197,7 +230,7 @@ def main():
 
     # Specify the log file name
     log_filename = 'scraping_errors.log'
-    
+
     logging.basicConfig(filename=log_filename, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
     logging.info('=== Script Execution Start (Scraping) ===')  # Log script start
 

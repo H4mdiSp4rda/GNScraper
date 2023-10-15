@@ -11,8 +11,8 @@ def scrape_article(url, query):
 
     # Define your custom headers for Newspaper3k
     HEADERS = {
-        'User-Agent': current_user_agent,
-        'Referer': 'https://www.google.com/',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
     }
 
     # Create a configuration object for Newspaper3k and set the custom headers
@@ -57,8 +57,8 @@ def scrape_article(url, query):
     return results
 
 # Example usage:
-url = "https://www.blast-info.fr/articles/2023/bassines-15-projets-interdits-et-un-nouveau-scandale-wXpZJL_LRGeVT0gn6knc_w"
-query = "Bassines : 15 projets interdits et un nouveau scandale"
+url = "https://www.ouest-france.fr/sport/football/equipe-italie/video-pirlo-sur-le-scandale-des-paris-dommage-de-gacher-sa-carriere-et-son-talent-pour-ces-choses-la-052ab362-1656-3a1d-887c-3e71e3543483"
+query = "Pirlo sur le scandale des paris : Dommage de gâcher sa carrière et son talent pour ces choses-là"
 result = scrape_article(url, query)
 
 # Print the results
