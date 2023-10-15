@@ -2,12 +2,14 @@ import argparse
 import sys
 from newspaper import Article, Config
 from pygooglenews import GoogleNews
+from bs4 import BeautifulSoup
+
 import pymongo
 from tqdm import tqdm
 import logging
 from urllib3.exceptions import NewConnectionError
 from newspaper.article import ArticleException
-import requests.exceptions
+import requests
 import random
 import time
 from fake_useragent import UserAgent 
@@ -51,16 +53,40 @@ def purge_db():
     except Exception as e:
         print(f"An error occurred while purging the database: {e}")
 
-# Modify the scrap_articles function to include collection as a parameter
-def scrap_articles(language_code, search_query, insert_method, country, debug_mode=False):
-    collection = connect_to_mongodb()
+# Define the scrap_articles function
+def extract_article_link(search_result):
+    try:
+        response = requests.get(search_result)
+        print("Requested URL:", search_result)
 
+        if response.status_code == 200:
+            soup = BeautifulSoup(response.text, 'html')
+
+            # Find the first 'a' element with data-n-au attribute
+            link_element = soup.find('a')
+
+            if link_element:
+                article_url = link_element['href']
+                print("Article URL:", article_url)
+                return article_url
+            else:
+                print("Link not found on the page.")
+        else:
+            print("Failed to retrieve the webpage. Status code:", response.status_code)
+    except Exception as e:
+        print(f"An error occurred while extracting the article link: {e}")
+
+    return None
+
+
+def scrap_articles(language_code, search_query, insert_method, country, debug_mode=False):
     try:
         language_info = LANGUAGE_CONFIG.get(language_code)
         if language_info:
             gn = GoogleNews(lang=language_info['language'], country=country)
 
             search_results = gn.search(search_query)
+            #print(search_results)
             data = []
 
             # Extract the country code from the country variable
@@ -71,39 +97,43 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
                     # Print the country, language, and search term being scraped
                     print(f"Scraping: Country - {country}, Language - {language_code}, Search Term - {search_query.split()[0]}")
 
+                article_url = extract_article_link(entry)
+                if article_url is None:
+                    continue  # Skip this article if the link extraction fails
+
                 for retry_count in range(max_retries):
                     try:
-                        # HEADERS = {
-                        #     'User-Agent': user_agent.random,
-                        #     'Referer': 'https://www.google.com/',
-                        # }
+                        current_user_agent = user_agent.random
+                        HEADERS = {
+                            'User-Agent': current_user_agent,
+                            'Referer': 'https://www.google.com/',
+                        }
+                        newspaper_config = Config()
+                        newspaper_config.headers = HEADERS
+                        newspaper_config.request_timeout = 10
 
-                        # Extract the article URL
-                        article_url = entry['link']
+                        article = Article(article_url, config=newspaper_config)
+                        article.download()
+                        article.parse()
+                        print("User Agent:", current_user_agent)
+                        #print(article_url)
 
-                        # Check if the URL has already been scraped
-                        existing_article = collection.find_one({"Article URL": article_url})
-                        if not existing_article:
-                            # Scrape all fields including "Title," "Source," "Published Time," "Language," and "Country"
-                            article_data = scrape_article_data(article_url, user_agent, entry, language_code, country)
-
-                            if article_data:
-                                data.append(article_data)
+                        data.append({
+                            "Title": article.title,
+                            "Source": entry.get('source', ''),
+                            "Published Time": entry['published'],
+                            "Article URL": article_url,
+                            "Content": article.text,
+                            "Language": language_code,
+                            "Country": country
+                        })
 
                         break  # Successful request, exit the retry loop
                     except ArticleException as e:
                         logging.error(f"ArticleException: {e}")
                         break  # No need to retry if it's an ArticleException
                     except requests.exceptions.HTTPError as e:
-                        if e.response.status_code == 403:
-                            # Handle 403 error by using a different User-Agent
-                            logging.error(f"HTTPError ({e.response.status_code} {e.response.reason}): {e}")
-                            article_data = scrape_article_data(article_url, user_agent, entry, language_code, country)
-
-                            if article_data:
-                                data.append(article_data)
-                        else:
-                            logging.error(f"HTTPError ({e.response.status_code} {e.response.reason}): {e}")
+                        logging.error(f"HTTPError ({e.response.status_code} {e.response.reason}): {e}")
                     except NewConnectionError as e:
                         logging.error(f"NewConnectionError: {e}")
                         if retry_count < max_retries - 1:
@@ -118,50 +148,20 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
                 time.sleep(random.uniform(1, 3))
 
             if insert_method == "auto":
-                insert_data_into_mongodb(data, country, collection)
+                insert_data_into_mongodb(data, country)
             else:
                 insert_option = input("Do you want to store the scraped data in the database? (yes/no): ").strip().lower()
                 if insert_option == "yes":
-                    insert_data_into_mongodb(data, country, collection)
+                    insert_data_into_mongodb(data, country)
 
     except Exception as e:
         logging.error(f"An error occurred during scraping for {country}: {e}")
 
-# Modify the scrape_article_data function to include language_code and country as parameters
-def scrape_article_data(article_url, user_agent, entry, language_code, country):
-    try:
-        HEADERS = {
-            'User-Agent': user_agent.random,
-            'Referer': 'https://www.google.com/',
-        }
-
-        newspaper_config = Config()
-        newspaper_config.request_timeout = 5
-
-        article = Article(article_url, config=newspaper_config)
-        article.download()
-        article.parse()
-
-        # Create a dictionary with all the fields
-        article_data = {
-            "Title": article.title,
-            "Source": entry.get('source', ''),
-            "Published Time": entry['published'],
-            "Article URL": article_url,
-            "Content": article.text,
-            "Language": language_code,
-            "Country": country,
-        }
-
-        return article_data
-    except Exception as e:
-        logging.error(f"An error occurred while scraping article '{article_url}': {e}")
-        return None
-
 
 # Define the insert_data_into_mongodb function
-def insert_data_into_mongodb(data, country, collection):
+def insert_data_into_mongodb(data, country):
     try:
+        collection = connect_to_mongodb()
         inserted_count = 0
         ignored_count = 0
 
@@ -184,6 +184,7 @@ def insert_data_into_mongodb(data, country, collection):
 
     except Exception as e:
         print(f"An error occurred while inserting data into MongoDB for {country}: {e}")
+
 
 # Define the query_mongodb function
 def query_mongodb():
