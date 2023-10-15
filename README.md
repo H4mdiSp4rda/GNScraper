@@ -13,11 +13,13 @@ This project merges Business Intelligence (BI) and Deep Learning to scrap and cl
 
 ### II) Scraping Script
 #### Data Scraping Optimization
-- Error logging (Done) ✔
+- Error logging (Work in progress) 🔨
 - Custom headers (Done) ✔
 - User-agent spoofing (Done) ✔
 - Request throttling (Done) ✔
 - Tor proxy integration (Abandoned due to client request) ✘
+- Multi-threading (To Do) ✘
+- Automation with Airflow (To Do) ✘
 
 #### Data Storage and Management in MongoDB
 - Data Insertion (Done) ✔
