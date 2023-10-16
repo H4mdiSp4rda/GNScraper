@@ -14,7 +14,7 @@ import time
 from fake_useragent import UserAgent
 
 # Constants
-NUM_ARTICLES_TO_SCRAP = 80
+NUM_ARTICLES_TO_SCRAP = 5
 max_retries = 3
 retry_delay = 5
 user_agent = UserAgent()
@@ -25,7 +25,7 @@ COLLECTION_NAME = "articles"
 # Define the LANGUAGE_CONFIG dictionary
 LANGUAGE_CONFIG = {
     'fr': {
-        "search_terms": ["scandale", "fraude"],
+        "search_terms": ["scandale", "fraude"], # add international banks search terms
         "countries": ["FR", "SN"],
         "language": "fr",
     },

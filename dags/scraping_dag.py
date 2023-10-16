@@ -14,7 +14,7 @@ default_args = {
 dag = DAG(
     'news_scraping_dag',
     default_args=default_args,
-    schedule_interval=None,  # Set this to None to disable automatic scheduling
+    schedule_interval="@daily",  # Set this to None to disable automatic scheduling
     catchup=False,
 )
 
