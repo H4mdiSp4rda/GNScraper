@@ -1,5 +1,7 @@
+import os
 import argparse
 import sys
+from mongo_ops import connect_to_mongodb, purge_db, insert_data_into_mongodb, query_mongodb
 from newspaper import Article, Config
 from pygooglenews import GoogleNews
 from bs4 import BeautifulSoup
@@ -18,9 +20,7 @@ NUM_ARTICLES_TO_SCRAP = 5
 max_retries = 3
 retry_delay = 5
 user_agent = UserAgent()
-MONGODB_URL = "mongodb://172.17.0.2:27017/"
-DB_NAME = "gns_raw"
-COLLECTION_NAME = "articles"
+
 
 # Define the LANGUAGE_CONFIG dictionary
 LANGUAGE_CONFIG = {
@@ -36,21 +36,6 @@ LANGUAGE_CONFIG = {
     },
 }
 
-# Create a MongoDB client and select the database and collection
-def connect_to_mongodb():
-    client = pymongo.MongoClient(MONGODB_URL)
-    db = client[DB_NAME]
-    collection = db[COLLECTION_NAME]
-    return collection
-
-# Define the purge_db function
-def purge_db():
-    try:
-        collection = connect_to_mongodb()
-        result = collection.delete_many({})
-        print(f"Purged {result.deleted_count} documents from the collection.")
-    except Exception as e:
-        print(f"An error occurred while purging the database: {e}")
 
 def extract_link(url):
     user_agent = UserAgent().random
@@ -228,8 +213,13 @@ def main():
     args = parser.parse_args()
     scraped_data = None  # Initialize scraped_data
 
-    # Specify the log file name
-    log_filename = 'scraping_errors.log'
+    log_filename = './logs/scrap logs/scraping_errors.log'  # Save log file in a 'logs' directory in the current working directory
+
+    # Check if the directory exists
+    if not os.path.exists('logs'):
+        # If the directory doesn't exist, create it
+        os.makedirs('logs')
+
 
     logging.basicConfig(filename=log_filename, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
     logging.info('=== Script Execution Start (Scraping) ===')  # Log script start

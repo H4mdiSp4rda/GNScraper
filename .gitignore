@@ -1,0 +1,6 @@
+__pycache__/
+logs/airflow logs/
+data/mongodb/*
+!data/mongodb/collection-0--8721820593327479582.wt
+data/postgres/
+

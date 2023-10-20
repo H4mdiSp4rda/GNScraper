@@ -26,10 +26,10 @@ RUN pip install --upgrade feedparser
 
 
 # Copy your scraping script and other project files into the container
-COPY ./scrap.py ./
+COPY . ./
 
 # Expose any necessary ports
 # EXPOSE <port>
 
 # Define the command to run when the container starts
-CMD ["python", "scrap.py"]
+CMD ["python", "./src/scrap.py"]
