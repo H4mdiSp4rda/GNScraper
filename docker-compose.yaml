@@ -103,7 +103,8 @@ services:
       - 27017:27017
 
     networks:
-      - gns-network
+      gns-network:
+        ipv4_address: 172.22.0.8
 
     environment:
       MONGO_INITDB_DATABASE: gns_mongodb

@@ -3,7 +3,7 @@ import pymongo
 # Define variables for MongoDB username, password, host, and port
 MONGODB_USERNAME = "admin"
 MONGODB_PASSWORD = "admin"
-MONGODB_HOST = "172.22.0.2"
+MONGODB_HOST = "172.22.0.8"
 MONGODB_PORT = "27017"
 DB_NAME = "gns_mongodb"
 COLLECTION_NAME = "articles"

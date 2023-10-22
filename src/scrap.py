@@ -1,7 +1,7 @@
 import os
 import argparse
 import sys
-from mongo_ops import connect_to_mongodb, purge_db, insert_data_into_mongodb, query_mongodb
+from mongo_ops import purge_db, insert_data_into_mongodb, query_mongodb
 from newspaper import Article, Config
 from pygooglenews import GoogleNews
 from bs4 import BeautifulSoup
@@ -135,67 +135,7 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
     except Exception as e:
         logging.error(f"An error occurred during scraping for {country}: {e}")
 
-
-# Define the insert_data_into_mongodb function
-def insert_data_into_mongodb(data, country):
-    try:
-        collection = connect_to_mongodb()
-        inserted_count = 0
-        ignored_count = 0
-
-        if data:
-            for article_data in data:
-                article_url = article_data["Article URL"]
-
-                existing_article = collection.find_one({"Article URL": article_url})
-                if not existing_article:
-                    collection.insert_one(article_data)
-                    inserted_count += 1
-                else:
-                    ignored_count += 1
-
-            print(f"Scraped {len(data)} articles for {country}.")
-            print(f"Inserted {inserted_count} unique documents into MongoDB.")
-            print(f"Ignored {ignored_count} duplicate documents.")
-        else:
-            print(f"No articles scraped for {country}.")
-
-    except Exception as e:
-        print(f"An error occurred while inserting data into MongoDB for {country}: {e}")
-
-
-# Define the query_mongodb function
-def query_mongodb():
-    try:
-        collection = connect_to_mongodb()
-        cursor = collection.find()
-
-        count = 0  # Initialize a count variable
-
-        for _ in cursor:
-            count += 1  # Increment the count for each document
-
-        cursor.rewind()  # Rewind the cursor to the beginning for printing
-
-        for document in cursor:
-            print("Title:", document.get("Title"))
-            print("Source:", document.get("Source"))
-            print("Published Time:", document.get("Published Time"))
-            print("Article URL:", document.get("Article URL"))
-            print("Language:", document.get("Language"))  # Print the Language field
-            print("Country:", document.get("Country"))
-            print("Content:")
-            print(document.get("Content")) #uncomment if  u wanna check article text scraped
-            print("\n" + "=" * 50 + "\n") ##uncomment if  u wanna check article text scraped
-
-        if count == 0:
-            print("No articles found in the MongoDB collection.")
-        else:
-            print(f"Number of articles found in the MongoDB collection: {count}")
-
-    except Exception as e:
-        print(f"An error occurred while querying the database: {e}")
-
+# Define the main function
 def main():
     parser = argparse.ArgumentParser(description="Scrape news articles, manage data, and store it in MongoDB.")
 
