@@ -89,6 +89,12 @@ x-airflow-common:
 networks:
   gns-network:
     name: gns-network
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.238.0/24
+          gateway: 172.16.238.1
+
 
 services:
   # scrap:
@@ -104,7 +110,7 @@ services:
 
     networks:
       gns-network:
-        ipv4_address: 172.22.0.8
+        ipv4_address: 172.16.238.10
 
     environment:
       MONGO_INITDB_DATABASE: gns_mongodb

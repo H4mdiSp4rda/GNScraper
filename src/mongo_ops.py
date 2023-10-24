@@ -3,7 +3,7 @@ import pymongo
 # Define variables for MongoDB username, password, host, and port
 MONGODB_USERNAME = "admin"
 MONGODB_PASSWORD = "admin"
-MONGODB_HOST = "172.22.0.8"
+MONGODB_HOST = "172.16.238.10"
 MONGODB_PORT = "27017"
 DB_NAME = "gns_mongodb"
 COLLECTION_NAME = "articles"
@@ -66,13 +66,16 @@ def query_mongodb():
 
         for document in cursor:
             print("Title:", document.get("Title"))
+            print("Translated Title:", document.get("Translated Title"))
             print("Source:", document.get("Source"))
             print("Published Time:", document.get("Published Time"))
             print("Article URL:", document.get("Article URL"))
             print("Language:", document.get("Language"))  # Print the Language field
             print("Country:", document.get("Country"))
-            print("Content:")
-            print(document.get("Content"))
+            print("Original Content:")
+            print(document.get("Content") + "\n")
+            print("Translated Content:")
+            print(document.get("Translated Content"))
             print("\n" + "=" * 50 + "\n")
 
         if count == 0:
