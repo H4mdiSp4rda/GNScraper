@@ -14,37 +14,43 @@ from newspaper.article import ArticleException
 import random
 import time
 from fake_useragent import UserAgent
-import translators as ts
-
+from transformers import MBartForConditionalGeneration, MBart50TokenizerFast
 
 # Constants
-NUM_ARTICLES_TO_SCRAP = 100
+NUM_ARTICLES_TO_SCRAP = 3
 max_retries = 3
 retry_delay = 5
 user_agent = UserAgent()
 
+# Initialize the mBART model and tokenizer
+model_name = "facebook/mbart-large-50-many-to-many-mmt"  # You can choose a different mBART model
+translator = MBartForConditionalGeneration.from_pretrained(model_name)
+tokenizer = MBart50TokenizerFast.from_pretrained(model_name)
+
+def translate_text(text):
+    # Initialize an empty list to store translated segments
+    translated_segments = []
+
+    # Split the text into smaller segments
+    text_segments = text.split("\n")  # Split by newline or other appropriate criteria
+
+    for segment in text_segments:
+        input_ids = tokenizer(segment, return_tensors="pt").input_ids
+        target_lang_code = "en_XX"  # English
+        translated_ids = translator.generate(input_ids, decoder_start_token_id=tokenizer.lang_code_to_id[target_lang_code])
+        translated_text = tokenizer.decode(translated_ids[0], skip_special_tokens=True)
+
+        translated_segments.append(translated_text)
+
+    # Join the translated segments to reconstruct the full translated content
+    translated_content = " ".join(translated_segments)
+
+    return translated_content
 
 # Define the LANGUAGE_CONFIG dictionary
 LANGUAGE_CONFIG = {
     'fr': {
-        "search_terms": [
-            "scandale financier OR scandale d'entreprise OR scandale bancaire",
-            "fraude financière OR fraude bancaire OR fraude d'entreprise",
-            "procès financier OR procès bancaire OR procès d'entreprise",
-            "tribunal financier OR tribunal bancaire OR tribunal d'entreprise",
-            "allégation financière OR allégation bancaire OR allégation d'entreprise",
-            "accusation financière OR accusation bancaire OR accusation d'entreprise",
-            "amende financière OR amende bancaire OR amende d'entreprise",
-            "corruption financière OR corruption bancaire OR corruption d'entreprise",
-            "cyberattaque financière OR piratage bancaire OR violation de données d'entreprise",
-            "mauvaise conduite financière OR mauvaise conduite bancaire OR mauvaise conduite d'entreprise",
-            "violation de sanctions financières OR violation de sanctions bancaires OR violation de sanctions d'entreprise",
-            "Panama Papers",
-            "Pandora Papers",
-            "Paradise Papers",
-            "Luanda Leaks",
-            "blanchiment d'argent"
-        ],
+        "search_terms": ["scandale", "fraude"], # add international banks search terms
         "countries": ["FR", "SN"],
         "language": "fr",
     },
@@ -55,14 +61,6 @@ LANGUAGE_CONFIG = {
     },
 }
 
-
-def translate_to_english(original_text):
-    try:
-        translated_text = ts.translate_text(original_text, translator='google',from_language='auto', to_language='en')
-        return translated_text
-    except Exception as e:
-        logging.error(f"Translation error: {e}")
-        return original_text
 
 def extract_link(url):
     user_agent = UserAgent().random
@@ -125,21 +123,25 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
                         article.download()
                         article.parse()
 
-                        translated_title = translate_to_english(article.title)
-                        translated_content = translate_to_english(article.text)
-
+                        # Check if the article is valid
                         if article is not None:
+                            # Translate the entire content and title to English
+                            translated_content = translate_text(article.text)
+                            translated_title = translate_text(article.title)
+                            print(translated_content)
+                            print(translated_title)
                             data.append({
                                 "Title": article.title,
+                                "Original Content": article.text,
                                 "Translated Title": translated_title,
+                                "Translated Content": translated_content,
                                 "Source": entry.get('source', ''),
                                 "Published Time": entry['published'],
                                 "Article URL": article_link,
-                                "Content": article.text,
-                                "Translated Content": translated_content,
                                 "Language": language_code,
                                 "Country": country
                             })
+
                         break  # Successful request, exit the retry loop
                     except requests.exceptions.HTTPError as e:
                         logging.error(f"HTTPError ({e.response.status_code} {e.response.reason}): {e}")
