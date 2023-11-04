@@ -1,6 +1,7 @@
 /__pycache__/
 logs/airflow logs/
 data/mongodb/*
-!data/mongodb/collection-0--8721820593327479582.wt
+#!data/mongodb/collection-0--8721820593327479582.wt
 data/postgres/
-src/__pycache__/
+src/__pycache__/*
+src/__pycache__/mongo_ops.cpython-311.pyc

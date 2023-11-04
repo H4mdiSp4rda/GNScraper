@@ -1,7 +1,7 @@
 import os
 import argparse
 import sys
-from mongo_ops import purge_db, insert_data_into_mongodb, query_mongodb
+from mongo_ops import purge_db, insert_data_into_mongodb, query_mongodb, is_duplicate, connect_to_mongodb
 from newspaper import Article, Config
 from pygooglenews import GoogleNews
 from bs4 import BeautifulSoup
@@ -18,7 +18,7 @@ import translators as ts
 
 
 # Constants
-NUM_ARTICLES_TO_SCRAP = 100
+NUM_ARTICLES_TO_SCRAP = 3
 max_retries = 3
 retry_delay = 5
 user_agent = UserAgent()
@@ -105,7 +105,15 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
                     # Print the country, language, and search term being scraped
                     print(f"Scraping: Country - {country}, Language - {language_code}, Search Term - {search_query.split()[0]}")
 
-                article_link = None  # Initialize article_link to None
+                article_link = extract_link(entry['link'])
+                published_time = entry['published']
+                #print(article_link)
+                        # Use connect_to_mongodb to create the collection
+                collection = connect_to_mongodb()
+                # Check if the article is a duplicate
+                if is_duplicate(collection, article_link, published_time):
+                    print(f"Skipping duplicate article: {article_link}")
+                    continue  # Move to the next article
 
                 for retry_count in range(max_retries):
                     try:
@@ -119,11 +127,11 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
                         config.request_timeout = 6
 
                         # Extract the article link using the extract_link function
-                        article_link = extract_link(entry['link'])
                         # Download the article using NewsPlease
                         article = Article(article_link, config=config)
                         article.download()
                         article.parse()
+                        #print(article_link)
 
                         translated_title = translate_to_english(article.title)
                         translated_content = translate_to_english(article.text)
@@ -153,8 +161,8 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
                             break  # Max retries reached, exit the retry loop
                     except Exception as e:
                         logging.error(f"An error occurred while processing '{article_link}': {e}")
-
-                time.sleep(random.uniform(1, 3))
+                        print(f"An error occurred while processing '{article_link}': {e}") #delete me
+                time.sleep(random.uniform(1, 6))
 
             if insert_method == "auto":
                 insert_data_into_mongodb(data, country)

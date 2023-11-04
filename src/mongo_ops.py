@@ -11,6 +11,13 @@ COLLECTION_NAME = "articles"
 # Construct the MongoDB URI with host, port, username, and password
 MONGODB_URL = f"mongodb://{MONGODB_USERNAME}:{MONGODB_PASSWORD}@{MONGODB_HOST}:{MONGODB_PORT}/"
 
+def is_duplicate(collection, article_link, published_time):
+    existing_article = collection.find_one({
+        "Article URL": article_link,
+        "Published Time": published_time
+    })
+    return existing_article is not None
+
 
 def connect_to_mongodb():
     client = pymongo.MongoClient(MONGODB_URL)
@@ -70,7 +77,7 @@ def query_mongodb():
             print("Source:", document.get("Source"))
             print("Published Time:", document.get("Published Time"))
             print("Article URL:", document.get("Article URL"))
-            print("Language:", document.get("Language"))  # Print the Language field
+            print("Language:", document.get("Language"))  
             print("Country:", document.get("Country"))
             print("Original Content:")
             print(document.get("Content") + "\n")
