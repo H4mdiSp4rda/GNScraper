@@ -1,3 +1,6 @@
+from gevent import monkey
+monkey.patch_all(thread=False, select=False)
+
 import pymongo
 
 # Define variables for MongoDB username, password, host, and port
