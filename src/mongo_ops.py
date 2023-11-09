@@ -4,15 +4,26 @@ monkey.patch_all(thread=False, select=False)
 import pymongo
 
 # Define variables for MongoDB username, password, host, and port
-MONGODB_USERNAME = "admin"
-MONGODB_PASSWORD = "admin"
-MONGODB_HOST = "172.16.238.10"
-MONGODB_PORT = "27017"
+# MONGODB_USERNAME = "admin"
+# MONGODB_PASSWORD = "admin"
+# MONGODB_HOST = "172.16.238.10"
+# MONGODB_PORT = "27017"
+# DB_NAME = "gns_mongodb"
+# COLLECTION_NAME = "articles"
+# Construct the MongoDB URI with host, port, username, and password
+#MONGODB_URL = f"mongodb://{MONGODB_USERNAME}:{MONGODB_PASSWORD}@{MONGODB_HOST}:{MONGODB_PORT}/"
+
+
+# Update the MongoDB Atlas URI
+MONGODB_USERNAME = "Sp4rda"
+MONGODB_PASSWORD = "CuIHqKlU8dFzZ4zt"
+MONGODB_CLUSTER = "gns-db"
 DB_NAME = "gns_mongodb"
 COLLECTION_NAME = "articles"
+MONGODB_URL = f"mongodb+srv://{MONGODB_USERNAME}:{MONGODB_PASSWORD}@{MONGODB_CLUSTER}.g93kgy3.mongodb.net/{DB_NAME}?retryWrites=true&w=majority"
 
-# Construct the MongoDB URI with host, port, username, and password
-MONGODB_URL = f"mongodb://{MONGODB_USERNAME}:{MONGODB_PASSWORD}@{MONGODB_HOST}:{MONGODB_PORT}/"
+
+
 
 def is_duplicate(collection, article_link, published_time):
     existing_article = collection.find_one({
