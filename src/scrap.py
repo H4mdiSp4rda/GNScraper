@@ -93,7 +93,7 @@ LANGUAGE_CONFIG = {
             "filtraciones de Luanda",
             "lavado de dinero"
         ],
-        "countries": ["MX", "CO"],
+        "countries": ["MX", "CO", "PE", "AR"],
         "language": "es",
     },
     'pt': {
@@ -115,7 +115,7 @@ LANGUAGE_CONFIG = {
             "vazamentos de Luanda",
             "lavagem de dinheiro"
         ],
-        "countries": ["BR", "PT"],
+        "countries": ["BR"],
         "language": "pt",
     },
     'ru': {
