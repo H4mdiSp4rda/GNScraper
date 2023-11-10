@@ -64,7 +64,7 @@ val_text, test_text, val_labels, test_labels = train_test_split(temp_text, temp_
 bert = AutoModel.from_pretrained('bert-base-uncased')
 tokenizer = BertTokenizerFast.from_pretrained('bert-base-uncased')
 
-### Prepare Input Data"""
+### Prepare Input Data
 # Plot histogram of the number of words in train data 'title'
 seq_len = [len(title.split()) for title in train_text]
 
@@ -131,13 +131,13 @@ val_sampler = SequentialSampler(val_data)                     # sampler for samp
 val_dataloader = DataLoader(val_data, sampler = val_sampler, batch_size=batch_size)
                                                               # dataLoader for validation set
 
-"""### Freeze Layers"""
+## Freeze Layers
 
 # Freezing the parameters and defining trainable BERT structure
 for param in bert.parameters():
     param.requires_grad = False    # false here means gradient need not be computed
 
-"""### Define Model Architecture"""
+## Define Model Architecture
 
 class BERT_Arch(nn.Module):
     def __init__(self, bert):
@@ -169,7 +169,7 @@ cross_entropy  = nn.NLLLoss()
 # Number of training epochs
 epochs = 2
 
-"""### Define Train & Evaluate Function"""
+## Define Train & Evaluate Function
 
 # Defining training and evaluation functions
 def train():
@@ -214,7 +214,7 @@ def evaluate():
   avg_loss = total_loss / len(val_dataloader)         # compute the validation loss of the epoch
   return avg_loss
 
-"""### Model training"""
+### Model training
 
 # Train and predict
 best_valid_loss = float('inf')
@@ -234,7 +234,7 @@ for epoch in range(epochs):
     print(f'\nTraining Loss: {train_loss:.3f}')
     print(f'Validation Loss: {valid_loss:.3f}')
 
-"""### Model performance"""
+### Model performance
 
 # load weights of best model
 path = 'c1_fakenews_weights.pt'
@@ -247,11 +247,11 @@ with torch.no_grad():
 preds = np.argmax(preds, axis = 1)
 print(classification_report(test_y, preds))
 
-"""## Fake News Predictions"""
+## Fake News Predictions
 
-# # load weights of best model
-# path = 'c1_fakenews_weights.pt'
-# model.load_state_dict(torch.load(path))
+# load weights of best model
+path = 'c1_fakenews_weights.pt'
+model.load_state_dict(torch.load(path))
 
 # testing on unseen data
 unseen_news_text = ["Donald Trump Sends Out Embarrassing New Year’s Eve Message; This is Disturbing",     # Fake
