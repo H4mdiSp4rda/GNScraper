@@ -5,6 +5,7 @@ import os
 import argparse
 import sys
 from mongo_ops import purge_db, insert_data_into_mongodb, query_mongodb, is_duplicate, connect_to_mongodb
+from bert_classify import classify_and_update_mongodb
 from newspaper import Article, Config
 from pygooglenews import GoogleNews
 from bs4 import BeautifulSoup
@@ -281,6 +282,8 @@ def main():
                         help="Scrape news articles for a specific language and specify the insertion method. "
                              "Example: --scrap FR auto or --scrap AR auto.")
     parser.add_argument("--query", action="store_true", help="Query and display documents in the MongoDB collection.")
+    parser.add_argument("--classify", action="store_true", help="Classify news articles as real or fake.")
+
     # Add the --help option as a default action
     if len(sys.argv) == 1:
         parser.print_help(sys.stderr)
@@ -295,7 +298,6 @@ def main():
     if not os.path.exists('logs'):
         # If the directory doesn't exist, create it
         os.makedirs('logs')
-
 
     logging.basicConfig(filename=log_filename, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
     logging.info('=== Script Execution Start (Scraping) ===')  # Log script start
@@ -330,6 +332,10 @@ def main():
 
                     if scraped_data:
                         print(f"Scraped {len(scraped_data)} articles in {language} for search term '{search_term}' and country '{country}'.")
+
+    if args.classify:
+        # Call the classify function here
+        classify_and_update_mongodb()
 
     logging.info('=== Script Execution End (Scraping) ===')  # Log script end
 
