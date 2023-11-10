@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import pandas as pd
 import pycaret
@@ -12,19 +13,10 @@ import torch.nn as nn
 # specify GPU
 device = torch.device("cuda")
 
-# Mount Google Drive - applicable, if working on Google Drive
-from google.colab import drive
-drive.mount('/content/drive')
-
 # Commented out IPython magic to ensure Python compatibility.
-# Set Working Directory - if working on Google Drive
-# %cd /content/drive/MyDrive/1_LiveProjects/Project11_FakeNewsDetection
 
-# # Set Working Directory - if working on Local Machine
-# import os
-# os.chdir('/Users//replace_me')
-
-"""## Load Dataset"""
+# Set Working Directory - if working on Local Machine
+os.chdir('C:\Users\Hamdi\Projects\GNScraper\data')
 
 # Load Dataset
 true_data = pd.read_csv('a1_True.csv')
@@ -64,17 +56,15 @@ val_text, test_text, val_labels, test_labels = train_test_split(temp_text, temp_
                                                                 test_size=0.5,
                                                                 stratify=temp_labels)
 
-"""## BERT Fine-tuning
 
-### Load pretrained BERT Model
-"""
 
+#BERT Fine-tuning:
+#Load pretrained BERT Model
 # Load BERT model and tokenizer via HuggingFace Transformers
 bert = AutoModel.from_pretrained('bert-base-uncased')
 tokenizer = BertTokenizerFast.from_pretrained('bert-base-uncased')
 
-"""### Prepare Input Data"""
-
+### Prepare Input Data"""
 # Plot histogram of the number of words in train data 'title'
 seq_len = [len(title.split()) for title in train_text]
 
