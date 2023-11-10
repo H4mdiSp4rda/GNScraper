@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.11.5-slim
+FROM python:3.10.13-slim
 
 
 # Set environment variables (you can customize these)
