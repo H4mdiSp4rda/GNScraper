@@ -9,3 +9,7 @@ data/bert/c2_new_model_weights.pt
 data/bert/a1_True.csv
 data/bert/a2_Fake.csv
 .vscode/settings.json
+data/bert/WELFake_Dataset.csv
+data/bert/sample.csv
+data/bert/translated_titles.csv
+logs/trans logs/translation_log.txt
