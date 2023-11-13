@@ -8,7 +8,6 @@ from transformers import AutoModel, BertTokenizerFast
 import torch
 import torch.nn as nn
 from sklearn.metrics import classification_report
-from pymongo import MongoClient
 from mongo_ops import connect_to_mongodb
 
 
