@@ -1,18 +1,12 @@
 from gevent import monkey
 monkey.patch_all(thread=False, select=False)
 
-import os
-import argparse
-import sys
-from mongo_ops import purge_db, insert_data_into_mongodb, query_mongodb, is_duplicate, connect_to_mongodb
-from bert_classify import classify_and_update_mongodb
+from mongo_ops import insert_data_into_mongodb, is_duplicate, connect_to_mongo_atlas
 from newspaper import Article, Config
 from pygooglenews import GoogleNews
 from bs4 import BeautifulSoup
 import requests
-import pymongo
 from tqdm import tqdm
-import logging
 from urllib3.exceptions import NewConnectionError
 from newspaper.article import ArticleException
 import random
@@ -21,7 +15,26 @@ from fake_useragent import UserAgent
 import translators as ts
 import grequests
 
+#import warnings
+#warnings.filterwarnings("ignore")
+from utils import setup_logging
 
+
+# Create different loggers for different functions
+translate_logger = setup_logging("TranslateLogger", "logs/scrap.log")
+extract_link_logger = setup_logging("ExtractLinkLogger", "logs/scrap.log")
+scrap_articles_logger = setup_logging("ScrapArticlesLogger", "logs/scrap.log")
+
+
+
+# Constants
+NUM_ARTICLES_TO_SCRAP = 2
+max_retries = 3
+retry_delay = 5
+user_agent = UserAgent()
+
+
+# Define the LANGUAGE_CONFIG dictionary
 # Constants
 NUM_ARTICLES_TO_SCRAP = 3
 max_retries = 3
@@ -150,7 +163,7 @@ def translate_to_english(original_text):
         return translated_text
     except Exception as e:
         error_message = f"Translation error: {e.__class__.__name__} - {str(e)}"
-        logging.error(error_message)
+        translate_logger.error(error_message)
         return original_text
 
 def extract_link(url):
@@ -171,18 +184,19 @@ def extract_link(url):
                 link = soup.find('a', jsname='tljFtd')['href']
                 return link
             except TypeError:
-                logging.error(f"Error extracting link from {url}")  # Log the error
+                extract_link_logger.error(f"Error extracting link from {url}")  # Log the error
                 return None
         else:
-            logging.error(f"Response returned status code {responses[0].status_code}")  # Log the error
+            extract_link_logger.error(f"Response returned status code {responses[0].status_code}")  # Log the error
             sleep_time = random.randint(1, 6)
-            logging.info(f"Sleeping for {sleep_time} seconds...")  # Log info
+            extract_link_logger.info(f"Sleeping for {sleep_time} seconds...")  # Log info
             time.sleep(sleep_time)
             return extract_link(url)
 
     except Exception as e:
-        logging.error(f"An error occurred while processing '{url}': {e}")  # Log the error
+        extract_link_logger.error(f"An error occurred while processing '{url}': {e}")  # Log the error
         return None
+
 
 # Define the scrap_articles function
 def scrap_articles(language_code, search_query, insert_method, country, debug_mode=False):
@@ -206,11 +220,11 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
                 published_time = entry['published']
 
                 # Use connect_to_mongodb to create the collection
-                collection = connect_to_mongodb()
+                collection = connect_to_mongo_atlas()
 
                 # Check if the article is a duplicate
                 if is_duplicate(collection, article_link, published_time):
-                    logging.info(f"Skipping duplicate article: {article_link}")
+                    scrap_articles_logger.info(f"Skipping duplicate article: {article_link}")
                     continue  # Move to the next article
 
                 for retry_count in range(max_retries):
@@ -224,16 +238,14 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
                         config.headers = headers
                         config.request_timeout = 6
 
-                        # Extract the article link using the extract_link function
-                        # Download the article using NewsPlease
                         article = Article(article_link, config=config)
                         article.download()
                         article.parse()
+                        article.nlp()
 
                         if article.is_parsed:
                             translated_title = translate_to_english(article.title)
-                            translated_content = translate_to_english(article.text)
-
+                            translated_summary = translate_to_english(article.summary)
                             data.append({
                                 "Title": article.title,
                                 "Translated Title": translated_title,
@@ -241,25 +253,26 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
                                 "Published Time": entry['published'],
                                 "Article URL": article_link,
                                 "Content": article.text,
-                                "Translated Content": translated_content,
+                                "Article Summary": article.summary,
+                                "Translated Summary": translated_summary,
                                 "Language": language_code,
                                 "Country": country
                             })
                             break  # Successful request, exit the retry loop
                         else:
-                            logging.warning(f"Failed to parse the article '{article_link}'.")
+                            scrap_articles_logger.warning(f"Failed to parse the article '{article_link}'.")
                     except requests.exceptions.HTTPError as e:
-                        logging.error(f"HTTPError ({e.response.status_code} {e.response.reason}): {e}")
+                        scrap_articles_logger.error(f"HTTPError ({e.response.status_code} {e.response.reason}): {e}")
                     except ConnectionError as e:
-                        logging.error(f"ConnectionError: {e}")
+                        scrap_articles_logger.error(f"ConnectionError: {e}")
                         if retry_count < max_retries - 1:
-                            logging.info(f"Retrying the request in {retry_delay} seconds...")
+                            scrap_articles_logger.info(f"Retrying the request in {retry_delay} seconds...")
                             time.sleep(retry_delay)
                         else:
-                            logging.error("Max retries reached. Skipping the article.")
+                            scrap_articles_logger.error("Max retries reached. Skipping the article.")
                             break  # Max retries reached, exit the retry loop
                     except Exception as e:
-                        logging.error(f"An error occurred while processing '{article_link}': {e}")
+                        scrap_articles_logger.error(f"An error occurred while processing '{article_link}': {e}")
                 time.sleep(random.uniform(1, 6))
 
             if insert_method == "auto":
@@ -270,74 +283,4 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
                     insert_data_into_mongodb(data, country)
 
     except Exception as e:
-        logging.error(f"An error occurred during scraping for {country}: {e}", exc_info=True)
-
-# Define the main function
-def main():
-    parser = argparse.ArgumentParser(description="Scrape news articles, manage data, and store it in MongoDB.")
-
-    # Add arguments
-    parser.add_argument("--purge", action="store_true", help="Clear all documents from the MongoDB collection.")
-    parser.add_argument("--scrap", nargs=2, metavar=('LANGUAGE', 'INSERT_METHOD'),
-                        help="Scrape news articles for a specific language and specify the insertion method. "
-                             "Example: --scrap FR auto or --scrap AR auto.")
-    parser.add_argument("--query", action="store_true", help="Query and display documents in the MongoDB collection.")
-    parser.add_argument("--classify", action="store_true", help="Classify news articles as real or fake.")
-
-    # Add the --help option as a default action
-    if len(sys.argv) == 1:
-        parser.print_help(sys.stderr)
-        sys.exit(1)
-
-    args = parser.parse_args()
-    scraped_data = None  # Initialize scraped_data
-
-    log_filename = './logs/scrap logs/scraping_errors.log'  # Save log file in a 'logs' directory in the current working directory
-
-    # Check if the directory exists
-    if not os.path.exists('logs'):
-        # If the directory doesn't exist, create it
-        os.makedirs('logs')
-
-    logging.basicConfig(filename=log_filename, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-    logging.info('=== Script Execution Start (Scraping) ===')  # Log script start
-
-    if args.purge:
-        purge_db()
-        # Exit after purging without adding any messages
-        sys.exit(0)
-
-    if args.query:
-        query_mongodb()
-        # Exit after querying without adding any messages
-        sys.exit(0)
-
-    if args.scrap:
-        language, insert_method = args.scrap
-        language = language.lower()  # Convert the language to lowercase for the scrap_articles function
-        if insert_method not in ["auto", "manual"]:
-            print("Error: The insert_method must be 'auto' or 'manual'.")
-            sys.exit(1)
-
-        language_config = LANGUAGE_CONFIG.get(language)
-
-        if language_config:
-            countries = language_config["countries"]
-            gn = GoogleNews(lang=language_config['language'], country=countries[0])
-
-            for country in countries:
-                for search_term in language_config["search_terms"]:
-                    search_query = f"{search_term} {country}"
-                    scraped_data = scrap_articles(language, search_query, insert_method, country)
-
-                    if scraped_data:
-                        print(f"Scraped {len(scraped_data)} articles in {language} for search term '{search_term}' and country '{country}'.")
-
-    if args.classify:
-        # Call the classify function here
-        classify_and_update_mongodb()
-
-    logging.info('=== Script Execution End (Scraping) ===')  # Log script end
-
-if __name__ == "__main__":
-    main()
+        scrap_articles_logger.error(f"An error occurred during scraping for {country}: {e}", exc_info=True)

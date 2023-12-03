@@ -116,7 +116,6 @@ services:
       MONGO_INITDB_DATABASE: gns_mongodb
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: admin
-
     volumes:
       - ./data/mongodb:/data/db
       

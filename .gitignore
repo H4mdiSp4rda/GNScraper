@@ -17,3 +17,6 @@ data/bert/Fine-Tuning_Dataset.csv
 data/bert/translated_titles_continued.csv
 logs/trans logs/translation_from_X_to_ENG_log.txt
 src/temp/test_mongo.py
+data/bert/c3_new_model_weights.pt
+mongodb-database-tools-ubuntu2204-x86_64-100.9.3.deb
+data/bert/c3_new_model_weights.pt-20231203T183113Z-001.zip

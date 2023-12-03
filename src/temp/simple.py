@@ -36,7 +36,7 @@ LANGUAGE_CONFIG = {
 }
 
 # Create a MongoDB client and select the database and collection
-def connect_to_mongodb():
+def connect_to_mongo_atlas():
     client = pymongo.MongoClient(MONGODB_URL)
     db = client[DB_NAME]
     collection = db[COLLECTION_NAME]
@@ -45,7 +45,7 @@ def connect_to_mongodb():
 # Define the purge_db function
 def purge_db():
     try:
-        collection = connect_to_mongodb()
+        collection = connect_to_mongo_atlas()
         result = collection.delete_many({})
         print(f"Purged {result.deleted_count} documents from the collection.")
     except Exception as e:
@@ -53,7 +53,7 @@ def purge_db():
 
 # Modify the scrap_articles function to include collection as a parameter
 def scrap_articles(language_code, search_query, insert_method, country, debug_mode=False):
-    collection = connect_to_mongodb()
+    collection = connect_to_mongo_atlas()
 
     try:
         language_info = LANGUAGE_CONFIG.get(language_code)
@@ -188,7 +188,7 @@ def insert_data_into_mongodb(data, country, collection):
 # Define the query_mongodb function
 def query_mongodb():
     try:
-        collection = connect_to_mongodb()
+        collection = connect_to_mongo_atlas()
         cursor = collection.find()
 
         count = 0  # Initialize a count variable

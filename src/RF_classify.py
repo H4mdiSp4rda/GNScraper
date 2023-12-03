@@ -1,3 +1,4 @@
+import imp
 from gevent import monkey
 monkey.patch_all(thread=False, select=False)
 
@@ -7,8 +8,13 @@ import pandas as pd
 from transformers import AutoModel, BertTokenizerFast
 import torch
 import torch.nn as nn
-from sklearn.metrics import classification_report
-from mongo_ops import connect_to_mongodb
+from mongo_ops import connect_to_mongo_atlas
+from utils import setup_logging
+from datetime import datetime
+
+# Create a logger for classify_RF function
+classify_RF_logger = setup_logging("ClassifyRFLogger", "logs/classify_RF.log")
+
 
 
 # Load your BERT model and tokenizer
@@ -62,24 +68,34 @@ def classify_texts(texts):
     return labels
 
 
-def classify_and_update_mongodb():
+
+def classify_RF():
+    classify_RF_logger.info(f'=== Script execution START (R/F Classification) at: {datetime.now()} ===')
     try:
         # Connect to your MongoDB database
-        collection = connect_to_mongodb()
+        collection = connect_to_mongo_atlas()
 
         # Retrieve the articles with translated titles
         articles = collection.find({}, {"_id": 1, "Translated Title": 1})
 
+        # Use your own classification function, replace `classify_texts` with the actual function
         for article in articles:
             text = article["Translated Title"]
-            labels = classify_texts([text])  # Use your classification function here
+            labels = classify_texts([text])
 
             Label = "Fake news" if labels[0] == 1 else "Real news"
 
             # Update the collection with the label
-            collection.update_one({"_id": article["_id"]}, {"$set": {"label": label}})
-        
-        print("Classification and MongoDB update complete.")
+            collection.update_one({"_id": article["_id"]}, {"$set": {"Label": Label}})
+
+            # Log successful classification for each article
+            classify_RF_logger.info(f"R/F analysis completed for document Article ID: {article['_id']} - Classification: {Label}")
+
+        classify_RF_logger.info("Classification and MongoDB update complete.")
 
     except Exception as e:
+        # Log the error if an exception occurs
+        classify_RF_logger.error(f"An error occurred during classification and update: {e}")
         print(f"An error occurred during classification and update: {e}")
+
+    classify_RF_logger.info(f'=== Script execution END (R/F Classification) at: {datetime.now()} ===')
