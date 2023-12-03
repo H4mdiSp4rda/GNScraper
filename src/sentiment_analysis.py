@@ -77,9 +77,9 @@ def classify_SA():
 
         if sentiment_label is not None:
             sentiment_labels_added += 1
+    print(f"ESG Classification complete. {sentiment_labels_added} labels added to the collection.")
 
-    classify_SA_logger.info(f'=== Script execution END (R/F Classification) at: {datetime.now()} ===')
-    print(f"Sentiment Analysis complete. {sentiment_labels_added} labels added to the collection.")
+    classify_SA_logger.info(f'=== Script execution END (R/F Classification) at: {datetime.now()} with {sentiment_labels_added} labels added to the collection. ===')
     return sentiment_labels_added
 
 
@@ -128,11 +128,10 @@ def classify_ESG():
             esg_labels_added += 1
 
         print(f"ESG Classification complete. {esg_labels_added} labels added to the collection.")
+        classify_ESG_logger.info(f'=== Script execution END (ESG3 Classification) at: {datetime.now()} with {esg_labels_added} labels added to the collection ===')
 
     except Exception as e:
         classify_ESG_logger.error(f"Error during ESG classification: {str(e)}")
-    classify_ESG_logger.info(f'=== Script execution END (ESG3 Classification) at: {datetime.now()} ===')
-    print(f"ESG Analysis complete. {esg_labels_added} labels added to the collection.")
     return esg_labels_added
 
 
@@ -180,11 +179,10 @@ def classify_FLS():
             fls_labels_added += 1
 
         print(f"FinBERT-FLS Classification complete. {fls_labels_added} labels added to the collection.")
+        classify_FLS_logger.info(f'=== Script execution END (FLS Classification) at: {datetime.now()} with {fls_labels_added} labels added to the collection ===')
 
     except Exception as e:
         classify_FLS_logger.error(f"Error during FinBERT-FLS classification: {str(e)}")
-    classify_FLS_logger.info(f'=== Script execution END (FLS Classification) at: {datetime.now()} ===')
-    print(f"FLS Analysis complete. {fls_labels_added} labels added to the collection.")
     return fls_labels_added
 
 
@@ -244,9 +242,8 @@ def classify_ESG9():
             esg_labels_added += 1
 
         print(f"ESG Classification complete. {esg_labels_added} labels added to the collection.")
+        classify_ESG9_logger.info(f'=== Script execution END (ESG9 Classification) at: {datetime.now()} with {esg_labels_added} labels added to the collection ===')
 
     except Exception as e:
         classify_ESG9_logger.error(f"Error during FinBERT-ESG classification: {str(e)}")
-    classify_ESG9_logger.info(f'=== Script execution END (ESG9 Classification) at: {datetime.now()} ===')
-    print(f"ESG9 Analysis complete. {esg_labels_added} labels added to the collection.")
     return esg_labels_added

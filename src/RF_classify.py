@@ -43,7 +43,7 @@ class BERT_Arch(nn.Module):
 
 # Load the BERT model and weights
 model = BERT_Arch(bert)
-model.load_state_dict(torch.load('./data/bert/c2_new_model_weights.pt'))
+model.load_state_dict(torch.load('./data/bert/c3_new_model_weights.pt'))
 model.eval()
 
 # Function to classify a list of texts
