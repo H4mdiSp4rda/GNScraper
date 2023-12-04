@@ -53,7 +53,7 @@ def classify_texts(texts):
     tokens = tokenizer.batch_encode_plus(
         texts,
         max_length=MAX_LENGTH,
-        pad_to_max_length=True,
+        padding='max_length',
         truncation=True
     )
 
