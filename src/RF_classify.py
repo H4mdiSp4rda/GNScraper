@@ -11,6 +11,7 @@ import torch.nn as nn
 from mongo_ops import connect_to_mongo_atlas
 from utils import setup_logging
 from datetime import datetime
+from tqdm import tqdm
 
 # Create a logger for classify_RF function
 classify_RF_logger = setup_logging("ClassifyRFLogger", "logs/classify_RF.log")
@@ -76,10 +77,13 @@ def classify_RF():
         collection = connect_to_mongo_atlas()
 
         # Retrieve the articles with translated titles
-        articles = collection.find({}, {"_id": 1, "Translated Title": 1})
+        articles_cursor = collection.find({}, {"_id": 1, "Translated Title": 1})
+
+        # Get the total number of articles for the progress bar
+        total_articles = collection.count_documents({})
 
         # Use your own classification function, replace `classify_texts` with the actual function
-        for article in articles:
+        for article in tqdm(articles_cursor, total=total_articles, desc="Classifying"):
             text = article["Translated Title"]
             labels = classify_texts([text])
 
