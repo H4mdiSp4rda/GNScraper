@@ -7,8 +7,9 @@ import sys
 from pygooglenews import GoogleNews
 from mongo_ops import purge_db, query_mongodb, backup_atlas
 from RF_classify import classify_RF
-from sentiment_analysis import classify_ESG, classify_SA, classify_FLS, classify_ESG9
-from scrap import scrap_articles, LANGUAGE_CONFIG
+from sentiment_analysis import classify_ESG, classify_SA, classify_FLS, classify_ESG9, classify_NER
+from lang_dict import LANGUAGE_CONFIG
+from scrap import scrap_articles
 from RF_classify import classify_RF
 from utils import setup_logging
 from datetime import datetime
@@ -55,7 +56,7 @@ def main():
 
     if args.classify:
         classification_type = args.classify
-        if classification_type in ["R/F", "ESG", "SA", "FLS", "ESG9"]:  # Add "FLS" to the list of valid classifications
+        if classification_type in ["R/F", "ESG", "SA", "FLS", "ESG9", "NER"]:  # Add "FLS" to the list of valid classifications
             if classification_type == "R/F":
                 classify_RF()
             elif classification_type == "ESG":
@@ -66,6 +67,8 @@ def main():
                 classify_FLS()
             elif classification_type == "ESG9":  # Add this section for ESG classification and adding tags
                 classify_ESG9()
+            elif classification_type == "NER":
+                classify_NER()
 
         else:
             print("Error: The sub-argument for --classify must be 'R/F', 'ESG', 'SA', or 'FLS'.")

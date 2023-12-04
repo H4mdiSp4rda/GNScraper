@@ -2,6 +2,7 @@ from gevent import monkey
 monkey.patch_all(thread=False, select=False)
 
 from mongo_ops import insert_data_into_mongodb, is_duplicate, connect_to_mongo_atlas
+from lang_dict import LANGUAGE_CONFIG
 from newspaper import Article, Config
 from pygooglenews import GoogleNews
 from bs4 import BeautifulSoup
@@ -28,133 +29,16 @@ scrap_articles_logger = setup_logging("ScrapArticlesLogger", "logs/scrap.log")
 
 
 # Constants
-NUM_ARTICLES_TO_SCRAP = 2
+NUM_ARTICLES_TO_SCRAP = 5
 max_retries = 3
 retry_delay = 5
 user_agent = UserAgent()
 
-
 # Define the LANGUAGE_CONFIG dictionary
-# Constants
-NUM_ARTICLES_TO_SCRAP = 3
-max_retries = 3
-retry_delay = 5
-user_agent = UserAgent()
 
 
-# Define the LANGUAGE_CONFIG dictionary
-LANGUAGE_CONFIG = {
-    'fr': {
-        "search_terms": [
-            "scandale financier OR scandale d'entreprise OR scandale bancaire",
-            "fraude financière OR fraude bancaire OR fraude d'entreprise",
-            "procès financier OR procès bancaire OR procès d'entreprise",
-            "tribunal financier OR tribunal bancaire OR tribunal d'entreprise",
-            "allégation financière OR allégation bancaire OR allégation d'entreprise",
-            "accusation financière OR accusation bancaire OR accusation d'entreprise",
-            "amende financière OR amende bancaire OR amende d'entreprise",
-            "corruption financière OR corruption bancaire OR corruption d'entreprise",
-            "cyberattaque financière OR piratage bancaire OR violation de données d'entreprise",
-            "mauvaise conduite financière OR mauvaise conduite bancaire OR mauvaise conduite d'entreprise",
-            "violation de sanctions financières OR violation de sanctions bancaires OR violation de sanctions d'entreprise",
-            "Panama Papers",
-            "Pandora Papers",
-            "Paradise Papers",
-            "Luanda Leaks",
-            "blanchiment d'argent"
-        ],
-        "countries": ["FR", "SN"],
-        "language": "fr",
-    },
-    'ar': {
-        "search_terms": [
-            "فضيحة مالية OR فضيحة شركات OR فضيحة بنوك",
-            "احتيال مالي OR احتيال بنوك OR احتيال شركات",
-            "محكمة مالية OR محكمة بنوك OR محكمة شركات",
-            "محكمة مالية OR محكمة بنوك OR محكمة شركات",
-            "اتهام مالي OR اتهام بنوك OR اتهام شركات",
-            "اتهام مالي OR اتهام بنوك OR اتهام شركات",
-            "غرامة مالية OR غرامة بنوك OR غرامة شركات",
-            "فساد مالي OR فساد بنوك OR فساد شركات",
-            "هجوم مالي إلكتروني OR اختراق بنوك OR انتهاك بيانات شركات",
-            "سوء سلوك مالي OR سوء سلوك بنوك OR سوء سلوك شركات",
-            "انتهاك عقوبات مالية OR انتهاك عقوبات بنوك OR انتهاك عقوبات شركات",
-            "أوراق بنما",
-            "أوراق باندورا",
-            "أوراق الجنة",
-            "تسربات لواندا",
-            "غسيل الأموال"
-        ],
-        "countries": ["EG", "AE"],
-        "language": "ar",
-    },
-    'es': {
-        "search_terms": [
-            "escándalo financiero OR escándalo bancario OR escándalo corporativo",
-            "fraude financiero OR fraude bancario OR fraude corporativo",
-            "juicio financiero OR juicio bancario OR juicio corporativo",
-            "tribunal financiero OR tribunal bancario OR tribunal corporativo",
-            "alegación financiera OR alegación bancaria OR alegación corporativa",
-            "acusación financiera OR acusación bancaria OR acusación corporativa",
-            "multa financiera OR multa bancaria OR multa corporativa",
-            "corrupción financiera OR corrupción bancaria OR corrupción corporativa",
-            "ciberataque financiero OR piratería bancaria OR violación de datos corporativos",
-            "mala conducta financiera OR mala conducta bancaria OR mala conducta corporativa",
-            "violación de sanciones financieras OR violación de sanciones bancarias OR violación de sanciones corporativas",
-            "papeles de Panamá",
-            "papeles de Pandora",
-            "papeles del paraíso",
-            "filtraciones de Luanda",
-            "lavado de dinero"
-        ],
-        "countries": ["MX", "CO", "PE", "AR"],
-        "language": "es",
-    },
-    'pt': {
-        "search_terms": [
-            "escândalo financeiro OR escândalo bancário OR escândalo corporativo",
-            "fraude financeira OR fraude bancária OR fraude corporativa",
-            "julgamento financeiro OR julgamento bancário OR julgamento corporativo",
-            "tribunal financeiro OR tribunal bancário OR tribunal corporativo",
-            "alegação financeira OR alegação bancária OR alegação corporativa",
-            "acusação financeira OR acusação bancária OR acusação corporativa",
-            "multa financeira OR multa bancária OR multa corporativa",
-            "corrupção financeira OR corrupção bancária OR corrupção corporativa",
-            "ciberataque financeiro OR pirataria bancária OR violação de dados corporativos",
-            "má conduta financeira OR má conduta bancária OR má conduta corporativa",
-            "violação de sanções financeiras OR violação de sanções bancárias OR violação de sanções corporativas",
-            "Panama Papers",
-            "Pandora Papers",
-            "Papéis do Paraíso",
-            "vazamentos de Luanda",
-            "lavagem de dinheiro"
-        ],
-        "countries": ["BR"],
-        "language": "pt",
-    },
-    'ru': {
-        "search_terms": [
-            "финансовый скандал OR банковский скандал OR корпоративный скандал",
-            "финансовое мошенничество OR банковское мошенничество OR корпоративное мошенничество",
-            "финансовое судебное разбирательство OR банковское судебное разбирательство OR корпоративное судебное разбирательство",
-            "финансовый суд OR банковский суд OR корпоративный суд",
-            "финансовые обвинения OR банковские обвинения OR корпоративные обвинения",
-            "финансовое обвинение OR банковское обвинение OR корпоративное обвинение",
-            "финансовый штраф OR банковский штраф OR корпоративный штраф",
-            "финансовое коррупция OR банковская коррупция OR корпоративная коррупция",
-            "финансовая кибератака OR банковская кибератака OR нарушение корпоративных данных",
-            "финансовое неправильное поведение OR банковское неправильное поведение OR корпоративное неправильное поведение",
-            "нарушение финансовых санкций OR нарушение банковских санкций OR нарушение корпоративных санкций",
-            "Панамские документы",
-            "Пандора Паперс",
-            "Документы о рае",
-            "Протечки Луанды",
-            "отмывание денег"
-        ],
-        "countries": ["RU", "UA"],
-        "language": "ru",
-    },
-}
+
+
 
 
 def translate_to_english(original_text):

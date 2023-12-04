@@ -20,3 +20,8 @@ src/temp/test_mongo.py
 data/bert/c3_new_model_weights.pt
 mongodb-database-tools-ubuntu2204-x86_64-100.9.3.deb
 data/bert/c3_new_model_weights.pt-20231203T183113Z-001.zip
+dags/hello_ape.py
+NER.py
+dags/__pycache__/
+dags/__pycache__/scrapping_dag.cpython-38.pyc
+src/lang_dict.py

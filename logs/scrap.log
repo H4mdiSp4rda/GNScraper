@@ -23,3 +23,1098 @@
 2023-12-03 20:06:02,300 - ERROR - An error occurred while processing 'https://www.elsoldeleon.com.mx/local/cancelacion-concierto-luis-miguel-incumplimiento-de-fianza-multa-leon-11071041.html': Article `download()` failed with HTTPSConnectionPool(host='www.elsoldeleon.com.mx', port=443): Max retries exceeded with url: /local/cancelacion-concierto-luis-miguel-incumplimiento-de-fianza-multa-leon-11071041.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa405de61a0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.elsoldeleon.com.mx/local/cancelacion-concierto-luis-miguel-incumplimiento-de-fianza-multa-leon-11071041.html
 2023-12-03 20:06:02,305 - ERROR - An error occurred while processing 'https://www.elsoldeleon.com.mx/local/cancelacion-concierto-luis-miguel-incumplimiento-de-fianza-multa-leon-11071041.html': Article `download()` failed with HTTPSConnectionPool(host='www.elsoldeleon.com.mx', port=443): Max retries exceeded with url: /local/cancelacion-concierto-luis-miguel-incumplimiento-de-fianza-multa-leon-11071041.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa405de5990>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.elsoldeleon.com.mx/local/cancelacion-concierto-luis-miguel-incumplimiento-de-fianza-multa-leon-11071041.html
 2023-12-03 20:06:02,310 - ERROR - An error occurred while processing 'https://www.elsoldeleon.com.mx/local/cancelacion-concierto-luis-miguel-incumplimiento-de-fianza-multa-leon-11071041.html': Article `download()` failed with HTTPSConnectionPool(host='www.elsoldeleon.com.mx', port=443): Max retries exceeded with url: /local/cancelacion-concierto-luis-miguel-incumplimiento-de-fianza-multa-leon-11071041.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa405de5ba0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.elsoldeleon.com.mx/local/cancelacion-concierto-luis-miguel-incumplimiento-de-fianza-multa-leon-11071041.html
+2023-12-04 13:16:19,907 - INFO - === Script execution START (Scraping) at: 2023-12-04 13:16:19.907861 ===
+2023-12-04 13:22:47,777 - INFO - === Script execution START (Scraping) at: 2023-12-04 13:22:47.777286 ===
+2023-12-04 13:22:51,596 - INFO - Skipping duplicate article: https://www.20minutes.fr/monde/4065099-20231202-turquie-erdogan-met-garde-contre-scandale-escroquerie-pyramidale-lie-banque
+2023-12-04 21:33:48,023 - INFO - === Script execution START (Scraping) at: 2023-12-04 21:33:48.023324 ===
+2023-12-04 21:35:18,827 - ERROR - An error occurred while processing 'https://www.ouest-france.fr/economie/entreprises/quatorze-entreprises-placees-en-liquidation-judiciaire-par-le-tribunal-de-commerce-de-quimper-ba9c79aa-905e-11ee-b098-8644c47fd929': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.ouest-france.fr/economie/entreprises/quatorze-entreprises-placees-en-liquidation-judiciaire-par-le-tribunal-de-commerce-de-quimper-ba9c79aa-905e-11ee-b098-8644c47fd929 on URL https://www.ouest-france.fr/economie/entreprises/quatorze-entreprises-placees-en-liquidation-judiciaire-par-le-tribunal-de-commerce-de-quimper-ba9c79aa-905e-11ee-b098-8644c47fd929
+2023-12-04 21:35:19,338 - ERROR - An error occurred while processing 'https://www.ouest-france.fr/economie/entreprises/quatorze-entreprises-placees-en-liquidation-judiciaire-par-le-tribunal-de-commerce-de-quimper-ba9c79aa-905e-11ee-b098-8644c47fd929': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.ouest-france.fr/economie/entreprises/quatorze-entreprises-placees-en-liquidation-judiciaire-par-le-tribunal-de-commerce-de-quimper-ba9c79aa-905e-11ee-b098-8644c47fd929 on URL https://www.ouest-france.fr/economie/entreprises/quatorze-entreprises-placees-en-liquidation-judiciaire-par-le-tribunal-de-commerce-de-quimper-ba9c79aa-905e-11ee-b098-8644c47fd929
+2023-12-04 21:35:19,846 - ERROR - An error occurred while processing 'https://www.ouest-france.fr/economie/entreprises/quatorze-entreprises-placees-en-liquidation-judiciaire-par-le-tribunal-de-commerce-de-quimper-ba9c79aa-905e-11ee-b098-8644c47fd929': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.ouest-france.fr/economie/entreprises/quatorze-entreprises-placees-en-liquidation-judiciaire-par-le-tribunal-de-commerce-de-quimper-ba9c79aa-905e-11ee-b098-8644c47fd929 on URL https://www.ouest-france.fr/economie/entreprises/quatorze-entreprises-placees-en-liquidation-judiciaire-par-le-tribunal-de-commerce-de-quimper-ba9c79aa-905e-11ee-b098-8644c47fd929
+2023-12-04 21:35:40,164 - ERROR - An error occurred while processing 'https://www.economie.gouv.fr/dgccrf/allegations-sur-les-produits-cosmetiques-tout-nest-pas-permis': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.economie.gouv.fr/dgccrf/allegations-sur-les-produits-cosmetiques-tout-nest-pas-permis on URL https://www.economie.gouv.fr/dgccrf/allegations-sur-les-produits-cosmetiques-tout-nest-pas-permis
+2023-12-04 21:35:40,437 - ERROR - An error occurred while processing 'https://www.economie.gouv.fr/dgccrf/allegations-sur-les-produits-cosmetiques-tout-nest-pas-permis': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.economie.gouv.fr/dgccrf/allegations-sur-les-produits-cosmetiques-tout-nest-pas-permis on URL https://www.economie.gouv.fr/dgccrf/allegations-sur-les-produits-cosmetiques-tout-nest-pas-permis
+2023-12-04 21:35:40,719 - ERROR - An error occurred while processing 'https://www.economie.gouv.fr/dgccrf/allegations-sur-les-produits-cosmetiques-tout-nest-pas-permis': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.economie.gouv.fr/dgccrf/allegations-sur-les-produits-cosmetiques-tout-nest-pas-permis on URL https://www.economie.gouv.fr/dgccrf/allegations-sur-les-produits-cosmetiques-tout-nest-pas-permis
+2023-12-04 21:36:02,729 - INFO - Skipping duplicate article: https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/doubs/besancon/direct-nicolas-zepeda-juge-pour-l-assassinat-de-narumi-kurosaki-suivez-le-premier-jour-du-proces-en-appel-2881256.html
+2023-12-04 21:36:04,396 - INFO - Skipping duplicate article: https://www.bfmtv.com/crypto/relaxe-au-premier-proces-en-france-de-piratage-de-cryptomonnaies_AD-202312040333.html
+2023-12-04 21:37:01,701 - INFO - === Script execution START (Scraping) at: 2023-12-04 21:37:01.701825 ===
+2023-12-04 21:37:24,634 - INFO - === Script execution START (Scraping) at: 2023-12-04 21:37:24.634239 ===
+2023-12-04 21:37:27,186 - INFO - Skipping duplicate article: https://www.20minutes.fr/monde/4065099-20231202-turquie-erdogan-met-garde-contre-scandale-escroquerie-pyramidale-lie-banque
+2023-12-04 21:37:28,633 - INFO - Skipping duplicate article: https://www.zonebourse.com/cours/action/WELLS-FARGO-COMPANY-14861/actualite/L-ex-PDG-de-Wells-Fargo-poursuit-la-banque-pour-34-millions-de-dollars-de-salaires-et-d-actions-rete-45486974/
+2023-12-04 21:37:30,269 - INFO - Skipping duplicate article: https://www.lefigaro.fr/vox/politique/de-panama-a-cahuzac-une-personnalite-eclaboussee-par-un-scandale-peut-elle-revenir-en-politique-20231128
+2023-12-04 21:37:50,271 - INFO - Skipping duplicate article: https://www.ouest-france.fr/faits-divers/arnaques/arnaque-au-cpf-lentrepreneur-soupconne-davoir-detourne-1-2-million-deuros-roulait-en-ferrari-f226aca0-929e-11ee-8dbe-6f5de331dde4
+2023-12-04 21:37:51,849 - INFO - Skipping duplicate article: https://www.francetvinfo.fr/economie/budget/que-contient-le-budget-de-la-secu-pour-2024-definitivement-adopte-par-le-parlement_6223062.html
+2023-12-04 21:37:53,372 - INFO - Skipping duplicate article: https://www.lavoixdunord.fr/1404582/article/2023-12-04/securite-sociale-les-principales-mesures-du-projet-de-loi-qui-vient-d-etre-vote
+2023-12-04 21:38:01,701 - ERROR - An error occurred while processing 'https://www.economie.gouv.fr/nouveaux-moyens-lutter-contre-fraude-renovation-energetique-2024': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.economie.gouv.fr/nouveaux-moyens-lutter-contre-fraude-renovation-energetique-2024 on URL https://www.economie.gouv.fr/nouveaux-moyens-lutter-contre-fraude-renovation-energetique-2024
+2023-12-04 21:38:01,993 - ERROR - An error occurred while processing 'https://www.economie.gouv.fr/nouveaux-moyens-lutter-contre-fraude-renovation-energetique-2024': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.economie.gouv.fr/nouveaux-moyens-lutter-contre-fraude-renovation-energetique-2024 on URL https://www.economie.gouv.fr/nouveaux-moyens-lutter-contre-fraude-renovation-energetique-2024
+2023-12-04 21:38:02,267 - ERROR - An error occurred while processing 'https://www.economie.gouv.fr/nouveaux-moyens-lutter-contre-fraude-renovation-energetique-2024': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.economie.gouv.fr/nouveaux-moyens-lutter-contre-fraude-renovation-energetique-2024 on URL https://www.economie.gouv.fr/nouveaux-moyens-lutter-contre-fraude-renovation-energetique-2024
+2023-12-04 21:38:09,245 - INFO - Skipping duplicate article: https://www.bfmtv.com/crypto/relaxe-au-premier-proces-en-france-de-piratage-de-cryptomonnaies_AD-202312040333.html
+2023-12-04 21:38:10,811 - INFO - Skipping duplicate article: https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/doubs/besancon/direct-nicolas-zepeda-juge-pour-l-assassinat-de-narumi-kurosaki-suivez-le-premier-jour-du-proces-en-appel-2881256.html
+2023-12-04 21:38:12,331 - INFO - Skipping duplicate article: https://www.estrepublicain.fr/faits-divers-justice/2023/12/04/affaire-narumi-suivez-la-premiere-journee-du-proces-en-appel-de-nicolas-zepeda
+2023-12-04 21:38:26,627 - ERROR - An error occurred while processing 'https://www.ouest-france.fr/economie/entreprises/quatorze-entreprises-placees-en-liquidation-judiciaire-par-le-tribunal-de-commerce-de-quimper-ba9c79aa-905e-11ee-b098-8644c47fd929': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.ouest-france.fr/economie/entreprises/quatorze-entreprises-placees-en-liquidation-judiciaire-par-le-tribunal-de-commerce-de-quimper-ba9c79aa-905e-11ee-b098-8644c47fd929 on URL https://www.ouest-france.fr/economie/entreprises/quatorze-entreprises-placees-en-liquidation-judiciaire-par-le-tribunal-de-commerce-de-quimper-ba9c79aa-905e-11ee-b098-8644c47fd929
+2023-12-04 21:38:27,245 - ERROR - An error occurred while processing 'https://www.ouest-france.fr/economie/entreprises/quatorze-entreprises-placees-en-liquidation-judiciaire-par-le-tribunal-de-commerce-de-quimper-ba9c79aa-905e-11ee-b098-8644c47fd929': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.ouest-france.fr/economie/entreprises/quatorze-entreprises-placees-en-liquidation-judiciaire-par-le-tribunal-de-commerce-de-quimper-ba9c79aa-905e-11ee-b098-8644c47fd929 on URL https://www.ouest-france.fr/economie/entreprises/quatorze-entreprises-placees-en-liquidation-judiciaire-par-le-tribunal-de-commerce-de-quimper-ba9c79aa-905e-11ee-b098-8644c47fd929
+2023-12-04 21:38:27,711 - ERROR - An error occurred while processing 'https://www.ouest-france.fr/economie/entreprises/quatorze-entreprises-placees-en-liquidation-judiciaire-par-le-tribunal-de-commerce-de-quimper-ba9c79aa-905e-11ee-b098-8644c47fd929': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.ouest-france.fr/economie/entreprises/quatorze-entreprises-placees-en-liquidation-judiciaire-par-le-tribunal-de-commerce-de-quimper-ba9c79aa-905e-11ee-b098-8644c47fd929 on URL https://www.ouest-france.fr/economie/entreprises/quatorze-entreprises-placees-en-liquidation-judiciaire-par-le-tribunal-de-commerce-de-quimper-ba9c79aa-905e-11ee-b098-8644c47fd929
+2023-12-04 21:38:30,879 - INFO - Skipping duplicate article: https://www.zonebourse.com/cours/action/PIXIUM-VISION-159506483/actualite/Audience-d-examen-de-l-offre-de-reprise-par-le-Tribunal-de-commerce-prevue-le-18-decembre-202-45491062/
+2023-12-04 21:38:32,433 - INFO - Skipping duplicate article: https://france3-regions.francetvinfo.fr/hauts-de-france/nord-0/roubaix/le-logiciel-de-videosurveillance-briefcam-utilise-par-la-police-de-roubaix-et-juge-legal-continue-de-soulever-des-inquietudes-2883734.html
+2023-12-04 21:38:49,513 - ERROR - An error occurred while processing 'https://www.economie.gouv.fr/dgccrf/allegations-sur-les-produits-cosmetiques-tout-nest-pas-permis': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.economie.gouv.fr/dgccrf/allegations-sur-les-produits-cosmetiques-tout-nest-pas-permis on URL https://www.economie.gouv.fr/dgccrf/allegations-sur-les-produits-cosmetiques-tout-nest-pas-permis
+2023-12-04 21:38:49,787 - ERROR - An error occurred while processing 'https://www.economie.gouv.fr/dgccrf/allegations-sur-les-produits-cosmetiques-tout-nest-pas-permis': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.economie.gouv.fr/dgccrf/allegations-sur-les-produits-cosmetiques-tout-nest-pas-permis on URL https://www.economie.gouv.fr/dgccrf/allegations-sur-les-produits-cosmetiques-tout-nest-pas-permis
+2023-12-04 21:38:50,059 - ERROR - An error occurred while processing 'https://www.economie.gouv.fr/dgccrf/allegations-sur-les-produits-cosmetiques-tout-nest-pas-permis': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.economie.gouv.fr/dgccrf/allegations-sur-les-produits-cosmetiques-tout-nest-pas-permis on URL https://www.economie.gouv.fr/dgccrf/allegations-sur-les-produits-cosmetiques-tout-nest-pas-permis
+2023-12-04 21:38:55,890 - INFO - Skipping duplicate article: https://infos.ademe.fr/article-magazine/on-ne-peut-pas-mettre-nimporte-quoi-sur-une-etiquette/
+2023-12-04 21:38:57,400 - INFO - Skipping duplicate article: https://www.sudouest.fr/economie/cholesterol-a-aytre-le-laboratoire-lescuyer-en-pointe-avec-son-complement-alimentaire-limicol-16812916.php
+2023-12-04 21:39:16,591 - INFO - Skipping duplicate article: https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/doubs/besancon/direct-nicolas-zepeda-juge-pour-l-assassinat-de-narumi-kurosaki-suivez-le-premier-jour-du-proces-en-appel-2881256.html
+2023-12-04 21:39:18,109 - INFO - Skipping duplicate article: https://www.bfmtv.com/crypto/relaxe-au-premier-proces-en-france-de-piratage-de-cryptomonnaies_AD-202312040333.html
+2023-12-04 21:39:19,677 - INFO - Skipping duplicate article: https://www.lejdd.fr/societe/accusation-de-viol-sebastien-cauet-porte-plainte-pour-denonciation-calomnieuse-139952
+2023-12-04 21:39:41,406 - INFO - Skipping duplicate article: https://www.lanouvellerepublique.fr/chateauroux/indre-des-peres-de-famille-et-chefs-d-entreprise-condamnes-pour-consommation-de-cannabis-et-de-cocaine
+2023-12-04 21:39:42,932 - INFO - Skipping duplicate article: https://www.francebleu.fr/infos/faits-divers-justice/grenoble-un-livreur-condamne-a-une-amende-de-1000-euros-avec-sursis-pour-une-fausse-alerte-a-la-bombe-7868720
+2023-12-04 21:39:44,422 - INFO - Skipping duplicate article: https://www.moneyvox.fr/actu/95469/une-filiale-adp-paie-14,6-millions-euros-amende-dans-un-dossier-de-corruption-a-etranger
+2023-12-04 21:39:46,222 - ERROR - An error occurred while processing 'https://www.economie.gouv.fr/dgccrf/delais-de-paiement-interentreprises-224-entreprises-controlees-pour-30-millions-deuros': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.economie.gouv.fr/dgccrf/delais-de-paiement-interentreprises-224-entreprises-controlees-pour-30-millions-deuros on URL https://www.economie.gouv.fr/dgccrf/delais-de-paiement-interentreprises-224-entreprises-controlees-pour-30-millions-deuros
+2023-12-04 21:39:46,516 - ERROR - An error occurred while processing 'https://www.economie.gouv.fr/dgccrf/delais-de-paiement-interentreprises-224-entreprises-controlees-pour-30-millions-deuros': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.economie.gouv.fr/dgccrf/delais-de-paiement-interentreprises-224-entreprises-controlees-pour-30-millions-deuros on URL https://www.economie.gouv.fr/dgccrf/delais-de-paiement-interentreprises-224-entreprises-controlees-pour-30-millions-deuros
+2023-12-04 21:39:46,797 - ERROR - An error occurred while processing 'https://www.economie.gouv.fr/dgccrf/delais-de-paiement-interentreprises-224-entreprises-controlees-pour-30-millions-deuros': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.economie.gouv.fr/dgccrf/delais-de-paiement-interentreprises-224-entreprises-controlees-pour-30-millions-deuros on URL https://www.economie.gouv.fr/dgccrf/delais-de-paiement-interentreprises-224-entreprises-controlees-pour-30-millions-deuros
+2023-12-04 21:40:06,134 - INFO - Skipping duplicate article: https://www.larep.fr/orleans-45000/actualites/un-salarie-du-conseil-regional-centre-val-de-loire-juge-pour-corruption-passive-au-tribunal-d-orleans_14414727/
+2023-12-04 21:42:30,731 - ERROR - An error occurred while processing 'https://infodsi.com/communiques-de-presse/48047/mailinblack-etoffe-sa-cyber-academy-avec-une-vingtaine-de-nouveaux-chapitres-de-formation-a-la-cybersecurite': Article `download()` failed with HTTPSConnectionPool(host='infodsi.com', port=443): Max retries exceeded with url: /communiques-de-presse/48047/mailinblack-etoffe-sa-cyber-academy-avec-une-vingtaine-de-nouveaux-chapitres-de-formation-a-la-cybersecurite (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f014f2bb2e0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://infodsi.com/communiques-de-presse/48047/mailinblack-etoffe-sa-cyber-academy-avec-une-vingtaine-de-nouveaux-chapitres-de-formation-a-la-cybersecurite
+2023-12-04 21:42:30,736 - ERROR - An error occurred while processing 'https://infodsi.com/communiques-de-presse/48047/mailinblack-etoffe-sa-cyber-academy-avec-une-vingtaine-de-nouveaux-chapitres-de-formation-a-la-cybersecurite': Article `download()` failed with HTTPSConnectionPool(host='infodsi.com', port=443): Max retries exceeded with url: /communiques-de-presse/48047/mailinblack-etoffe-sa-cyber-academy-avec-une-vingtaine-de-nouveaux-chapitres-de-formation-a-la-cybersecurite (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f014f1cf5e0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://infodsi.com/communiques-de-presse/48047/mailinblack-etoffe-sa-cyber-academy-avec-une-vingtaine-de-nouveaux-chapitres-de-formation-a-la-cybersecurite
+2023-12-04 21:42:30,740 - ERROR - An error occurred while processing 'https://infodsi.com/communiques-de-presse/48047/mailinblack-etoffe-sa-cyber-academy-avec-une-vingtaine-de-nouveaux-chapitres-de-formation-a-la-cybersecurite': Article `download()` failed with HTTPSConnectionPool(host='infodsi.com', port=443): Max retries exceeded with url: /communiques-de-presse/48047/mailinblack-etoffe-sa-cyber-academy-avec-une-vingtaine-de-nouveaux-chapitres-de-formation-a-la-cybersecurite (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f014f1a8700>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://infodsi.com/communiques-de-presse/48047/mailinblack-etoffe-sa-cyber-academy-avec-une-vingtaine-de-nouveaux-chapitres-de-formation-a-la-cybersecurite
+2023-12-04 21:43:56,085 - ERROR - An error occurred while processing 'https://francais.radio.cz/pandora-papersandrej-babis-la-justice-francaise-demande-laide-cote-tcheque-8800309': Article `download()` failed with HTTPSConnectionPool(host='francais.radio.cz', port=443): Max retries exceeded with url: /pandora-papersandrej-babis-la-justice-francaise-demande-laide-cote-tcheque-8800309 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f014f0b2800>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://francais.radio.cz/pandora-papersandrej-babis-la-justice-francaise-demande-laide-cote-tcheque-8800309
+2023-12-04 21:43:56,090 - ERROR - An error occurred while processing 'https://francais.radio.cz/pandora-papersandrej-babis-la-justice-francaise-demande-laide-cote-tcheque-8800309': Article `download()` failed with HTTPSConnectionPool(host='francais.radio.cz', port=443): Max retries exceeded with url: /pandora-papersandrej-babis-la-justice-francaise-demande-laide-cote-tcheque-8800309 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f014f0b3850>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://francais.radio.cz/pandora-papersandrej-babis-la-justice-francaise-demande-laide-cote-tcheque-8800309
+2023-12-04 21:43:56,095 - ERROR - An error occurred while processing 'https://francais.radio.cz/pandora-papersandrej-babis-la-justice-francaise-demande-laide-cote-tcheque-8800309': Article `download()` failed with HTTPSConnectionPool(host='francais.radio.cz', port=443): Max retries exceeded with url: /pandora-papersandrej-babis-la-justice-francaise-demande-laide-cote-tcheque-8800309 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f014f25a860>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://francais.radio.cz/pandora-papersandrej-babis-la-justice-francaise-demande-laide-cote-tcheque-8800309
+2023-12-04 21:43:58,776 - INFO - Skipping duplicate article: https://www.lemonde.fr/les-decodeurs/article/2023/11/22/evasion-fiscale-les-panama-papers-et-autres-leaks-ont-rapporte-450-millions-d-euros-a-la-france_6201744_4355770.html
+2023-12-04 21:44:18,356 - INFO - Skipping duplicate article: https://www.humanite.fr/monde/ukraine/ukraine-volodymyr-zelensky-piege-par-les-pandora-papers
+2023-12-04 21:45:03,952 - ERROR - An error occurred while processing 'https://www.ouest-france.fr/sport/football/football-leaks/football-leaks-six-mois-de-prison-avec-sursis-pour-rui-pinto-le-hacker-a-lorigine-des-revelations-217fd124-8922-11ee-a92a-0b4bc05f91ae': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.ouest-france.fr/sport/football/football-leaks/football-leaks-six-mois-de-prison-avec-sursis-pour-rui-pinto-le-hacker-a-lorigine-des-revelations-217fd124-8922-11ee-a92a-0b4bc05f91ae on URL https://www.ouest-france.fr/sport/football/football-leaks/football-leaks-six-mois-de-prison-avec-sursis-pour-rui-pinto-le-hacker-a-lorigine-des-revelations-217fd124-8922-11ee-a92a-0b4bc05f91ae
+2023-12-04 21:45:04,229 - ERROR - An error occurred while processing 'https://www.ouest-france.fr/sport/football/football-leaks/football-leaks-six-mois-de-prison-avec-sursis-pour-rui-pinto-le-hacker-a-lorigine-des-revelations-217fd124-8922-11ee-a92a-0b4bc05f91ae': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.ouest-france.fr/sport/football/football-leaks/football-leaks-six-mois-de-prison-avec-sursis-pour-rui-pinto-le-hacker-a-lorigine-des-revelations-217fd124-8922-11ee-a92a-0b4bc05f91ae on URL https://www.ouest-france.fr/sport/football/football-leaks/football-leaks-six-mois-de-prison-avec-sursis-pour-rui-pinto-le-hacker-a-lorigine-des-revelations-217fd124-8922-11ee-a92a-0b4bc05f91ae
+2023-12-04 21:45:04,507 - ERROR - An error occurred while processing 'https://www.ouest-france.fr/sport/football/football-leaks/football-leaks-six-mois-de-prison-avec-sursis-pour-rui-pinto-le-hacker-a-lorigine-des-revelations-217fd124-8922-11ee-a92a-0b4bc05f91ae': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.ouest-france.fr/sport/football/football-leaks/football-leaks-six-mois-de-prison-avec-sursis-pour-rui-pinto-le-hacker-a-lorigine-des-revelations-217fd124-8922-11ee-a92a-0b4bc05f91ae on URL https://www.ouest-france.fr/sport/football/football-leaks/football-leaks-six-mois-de-prison-avec-sursis-pour-rui-pinto-le-hacker-a-lorigine-des-revelations-217fd124-8922-11ee-a92a-0b4bc05f91ae
+2023-12-04 21:49:34,556 - INFO - Skipping duplicate article: https://aps.sn/la-cour-de-justice-de-la-cedeao-a-deboute-ousmane-sonko-selon-les-avocats-de-lopposant/
+2023-12-04 21:50:32,366 - ERROR - An error occurred while processing 'https://actusen.sn/information-judiciaire-contre-des-agents-de-lhopital-maguette-lo-de-linguere-le-sames-denonce-une-chasse-aux-sorcieres/': Article `download()` failed with ("Connection broken: InvalidChunkLength(got length b'', 0 bytes read)", InvalidChunkLength(got length b'', 0 bytes read)) on URL https://actusen.sn/information-judiciaire-contre-des-agents-de-lhopital-maguette-lo-de-linguere-le-sames-denonce-une-chasse-aux-sorcieres/
+2023-12-04 21:50:34,790 - ERROR - An error occurred while processing 'https://actusen.sn/information-judiciaire-contre-des-agents-de-lhopital-maguette-lo-de-linguere-le-sames-denonce-une-chasse-aux-sorcieres/': Article `download()` failed with ("Connection broken: InvalidChunkLength(got length b'', 0 bytes read)", InvalidChunkLength(got length b'', 0 bytes read)) on URL https://actusen.sn/information-judiciaire-contre-des-agents-de-lhopital-maguette-lo-de-linguere-le-sames-denonce-une-chasse-aux-sorcieres/
+2023-12-04 21:50:47,139 - INFO - Skipping duplicate article: https://lequotidien.sn/la-honteuse-omerta-sur-le-nouveau-scandale-sonko/
+2023-12-04 21:50:57,526 - INFO - Skipping duplicate article: https://aps.sn/la-cour-de-justice-de-la-cedeao-a-deboute-ousmane-sonko-selon-les-avocats-de-lopposant/
+2023-12-04 21:52:16,229 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/birahim-seck-coordonnateur-du-forum-civil-sur-le-projet-de-loi-de-lofnac-en-gestation-sur-le-principe-nous-magnifions-en-attendant/
+2023-12-04 21:53:31,462 - ERROR - An error occurred while processing 'https://safebrands.fr/saga-safebrands-2eme-episode-mailclub/': Article `download()` failed with HTTPSConnectionPool(host='safebrands.fr', port=443): Read timed out. (read timeout=6) on URL https://safebrands.fr/saga-safebrands-2eme-episode-mailclub/
+2023-12-04 21:53:37,661 - ERROR - An error occurred while processing 'https://safebrands.fr/saga-safebrands-2eme-episode-mailclub/': Article `download()` failed with HTTPSConnectionPool(host='safebrands.fr', port=443): Read timed out. (read timeout=6) on URL https://safebrands.fr/saga-safebrands-2eme-episode-mailclub/
+2023-12-04 21:54:50,547 - INFO - Skipping duplicate article: https://www.numerama.com/sciences/1577564-au-fait-ca-veut-dire-quoi-ecocide.html
+2023-12-04 21:58:06,771 - ERROR - An error occurred while processing 'https://lequotidien.sn/respect-des-accords-le-g7-met-la-pression-sur-letat/': Article `download()` failed with 403 Client Error: Forbidden for url: https://lequotidien.sn/respect-des-accords-le-g7-met-la-pression-sur-letat/ on URL https://lequotidien.sn/respect-des-accords-le-g7-met-la-pression-sur-letat/
+2023-12-04 21:59:12,336 - ERROR - An error occurred while processing 'https://lequotidien.sn/soupcons-de-blanchiment-dargent-une-vieille-affaire-rattrape-aly-ngouille-ndiaye/': Article `download()` failed with 403 Client Error: Forbidden for url: https://lequotidien.sn/soupcons-de-blanchiment-dargent-une-vieille-affaire-rattrape-aly-ngouille-ndiaye/ on URL https://lequotidien.sn/soupcons-de-blanchiment-dargent-une-vieille-affaire-rattrape-aly-ngouille-ndiaye/
+2023-12-04 21:59:13,966 - ERROR - An error occurred while processing 'https://lequotidien.sn/soupcons-de-blanchiment-dargent-une-vieille-affaire-rattrape-aly-ngouille-ndiaye/': Article `download()` failed with 403 Client Error: Forbidden for url: https://lequotidien.sn/soupcons-de-blanchiment-dargent-une-vieille-affaire-rattrape-aly-ngouille-ndiaye/ on URL https://lequotidien.sn/soupcons-de-blanchiment-dargent-une-vieille-affaire-rattrape-aly-ngouille-ndiaye/
+2023-12-04 21:59:15,637 - ERROR - An error occurred while processing 'https://lequotidien.sn/soupcons-de-blanchiment-dargent-une-vieille-affaire-rattrape-aly-ngouille-ndiaye/': Article `download()` failed with 403 Client Error: Forbidden for url: https://lequotidien.sn/soupcons-de-blanchiment-dargent-une-vieille-affaire-rattrape-aly-ngouille-ndiaye/ on URL https://lequotidien.sn/soupcons-de-blanchiment-dargent-une-vieille-affaire-rattrape-aly-ngouille-ndiaye/
+2023-12-04 21:59:39,273 - INFO - Skipping duplicate article: https://www.xalimasn.com/affaire-de-blanchiment-et-fraude-fiscale-global-metal-trade-et-son-directeur-nihad-maharam-zada-au-coeur-dune-enquete-financiere/
+2023-12-04 21:59:40,765 - INFO - === Script Execution End (Scraping) at: 2023-12-04 21:59:40.765366 ===
+2023-12-04 22:05:27,261 - INFO - === Script execution START (Scraping) at: 2023-12-04 22:05:27.261632 ===
+2023-12-04 22:08:09,993 - ERROR - An error occurred while processing 'https://dof.gob.mx/nota_detalle.php?codigo=5708914&fecha=17/11/2023': Article `download()` failed with HTTPSConnectionPool(host='dof.gob.mx', port=443): Max retries exceeded with url: /nota_detalle.php?codigo=5708914&fecha=17/11/2023 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)'))) on URL https://dof.gob.mx/nota_detalle.php?codigo=5708914&fecha=17/11/2023
+2023-12-04 22:08:10,486 - ERROR - An error occurred while processing 'https://dof.gob.mx/nota_detalle.php?codigo=5708914&fecha=17/11/2023': Article `download()` failed with HTTPSConnectionPool(host='dof.gob.mx', port=443): Max retries exceeded with url: /nota_detalle.php?codigo=5708914&fecha=17/11/2023 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)'))) on URL https://dof.gob.mx/nota_detalle.php?codigo=5708914&fecha=17/11/2023
+2023-12-04 22:08:10,988 - ERROR - An error occurred while processing 'https://dof.gob.mx/nota_detalle.php?codigo=5708914&fecha=17/11/2023': Article `download()` failed with HTTPSConnectionPool(host='dof.gob.mx', port=443): Max retries exceeded with url: /nota_detalle.php?codigo=5708914&fecha=17/11/2023 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)'))) on URL https://dof.gob.mx/nota_detalle.php?codigo=5708914&fecha=17/11/2023
+2023-12-04 22:09:04,421 - INFO - Skipping duplicate article: https://www.jornada.com.mx/noticia/2023/11/08/mundo/ivanka-trump-testifica-en-juicio-contra-empresa-familiar-8219
+2023-12-04 22:09:06,361 - INFO - Skipping duplicate article: https://www.eluniversal.com.mx/mundo/ivanka-trump-testifica-en-el-juicio-por-fraude-a-la-organizacion-trump/
+2023-12-04 22:09:27,836 - INFO - Skipping duplicate article: https://www.eleconomista.com.mx/empresas/Cofece-inicia-el-juicio-antimonopolio-contra-Google-Mexico-20231114-0043.html
+2023-12-04 22:10:42,795 - ERROR - An error occurred while processing 'https://ljz.mx/04/12/2023/sheinbaum-da-a-conocer-al-equipo-que-elaborara-su-plan-de-gobierno/': Article `download()` failed with 403 Client Error: Forbidden for url: https://ljz.mx/04/12/2023/sheinbaum-da-a-conocer-al-equipo-que-elaborara-su-plan-de-gobierno/ on URL https://ljz.mx/04/12/2023/sheinbaum-da-a-conocer-al-equipo-que-elaborara-su-plan-de-gobierno/
+2023-12-04 22:10:43,025 - ERROR - An error occurred while processing 'https://ljz.mx/04/12/2023/sheinbaum-da-a-conocer-al-equipo-que-elaborara-su-plan-de-gobierno/': Article `download()` failed with 403 Client Error: Forbidden for url: https://ljz.mx/04/12/2023/sheinbaum-da-a-conocer-al-equipo-que-elaborara-su-plan-de-gobierno/ on URL https://ljz.mx/04/12/2023/sheinbaum-da-a-conocer-al-equipo-que-elaborara-su-plan-de-gobierno/
+2023-12-04 22:10:43,261 - ERROR - An error occurred while processing 'https://ljz.mx/04/12/2023/sheinbaum-da-a-conocer-al-equipo-que-elaborara-su-plan-de-gobierno/': Article `download()` failed with 403 Client Error: Forbidden for url: https://ljz.mx/04/12/2023/sheinbaum-da-a-conocer-al-equipo-que-elaborara-su-plan-de-gobierno/ on URL https://ljz.mx/04/12/2023/sheinbaum-da-a-conocer-al-equipo-que-elaborara-su-plan-de-gobierno/
+2023-12-04 22:11:26,274 - ERROR - An error occurred while processing 'https://www.santander.com/es/stories/suplantacion-identidad': Article `download()` failed with HTTPSConnectionPool(host='www.santander.com', port=443): Max retries exceeded with url: /es/stories/suplantacion-identidad (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc19f4eb90>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.santander.com/es/stories/suplantacion-identidad
+2023-12-04 22:11:26,290 - ERROR - An error occurred while processing 'https://www.santander.com/es/stories/suplantacion-identidad': Article `download()` failed with HTTPSConnectionPool(host='www.santander.com', port=443): Max retries exceeded with url: /es/stories/suplantacion-identidad (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc19f4fdc0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.santander.com/es/stories/suplantacion-identidad
+2023-12-04 22:11:26,305 - ERROR - An error occurred while processing 'https://www.santander.com/es/stories/suplantacion-identidad': Article `download()` failed with HTTPSConnectionPool(host='www.santander.com', port=443): Max retries exceeded with url: /es/stories/suplantacion-identidad (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc19f4dab0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.santander.com/es/stories/suplantacion-identidad
+2023-12-04 22:11:42,424 - INFO - Skipping duplicate article: https://www.elfinanciero.com.mx/bloomberg/2023/11/28/quien-es-charles-munger-la-mano-derecha-de-buffett-que-ayudo-a-formar-el-imperio-de-berkshire/
+2023-12-04 22:11:58,340 - ERROR - An error occurred while processing 'https://zbr.com.mx/sin-categoria-es/what-is-the-alaska-airline-controversy-3/793828/': Article `download()` failed with HTTPSConnectionPool(host='zbr.com.mx', port=443): Read timed out. (read timeout=6) on URL https://zbr.com.mx/sin-categoria-es/what-is-the-alaska-airline-controversy-3/793828/
+2023-12-04 22:12:04,517 - ERROR - An error occurred while processing 'https://zbr.com.mx/sin-categoria-es/what-is-the-alaska-airline-controversy-3/793828/': Article `download()` failed with HTTPSConnectionPool(host='zbr.com.mx', port=443): Read timed out. (read timeout=6) on URL https://zbr.com.mx/sin-categoria-es/what-is-the-alaska-airline-controversy-3/793828/
+2023-12-04 22:12:10,704 - ERROR - An error occurred while processing 'https://zbr.com.mx/sin-categoria-es/what-is-the-alaska-airline-controversy-3/793828/': Article `download()` failed with HTTPSConnectionPool(host='zbr.com.mx', port=443): Read timed out. (read timeout=6) on URL https://zbr.com.mx/sin-categoria-es/what-is-the-alaska-airline-controversy-3/793828/
+2023-12-04 22:13:05,616 - ERROR - An error occurred while processing 'https://dof.gob.mx/nota_detalle.php?codigo=5706576&fecha=25/10/2023': Article `download()` failed with HTTPSConnectionPool(host='dof.gob.mx', port=443): Max retries exceeded with url: /nota_detalle.php?codigo=5706576&fecha=25/10/2023 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)'))) on URL https://dof.gob.mx/nota_detalle.php?codigo=5706576&fecha=25/10/2023
+2023-12-04 22:13:06,123 - ERROR - An error occurred while processing 'https://dof.gob.mx/nota_detalle.php?codigo=5706576&fecha=25/10/2023': Article `download()` failed with HTTPSConnectionPool(host='dof.gob.mx', port=443): Max retries exceeded with url: /nota_detalle.php?codigo=5706576&fecha=25/10/2023 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)'))) on URL https://dof.gob.mx/nota_detalle.php?codigo=5706576&fecha=25/10/2023
+2023-12-04 22:13:06,687 - ERROR - An error occurred while processing 'https://dof.gob.mx/nota_detalle.php?codigo=5706576&fecha=25/10/2023': Article `download()` failed with HTTPSConnectionPool(host='dof.gob.mx', port=443): Max retries exceeded with url: /nota_detalle.php?codigo=5706576&fecha=25/10/2023 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)'))) on URL https://dof.gob.mx/nota_detalle.php?codigo=5706576&fecha=25/10/2023
+2023-12-04 22:13:25,676 - ERROR - An error occurred while processing 'https://ljz.mx/04/12/2023/kissinger-paranoico-engreido-que-iba-de-la-crueldad-al-servilismo/': Article `download()` failed with 403 Client Error: Forbidden for url: https://ljz.mx/04/12/2023/kissinger-paranoico-engreido-que-iba-de-la-crueldad-al-servilismo/ on URL https://ljz.mx/04/12/2023/kissinger-paranoico-engreido-que-iba-de-la-crueldad-al-servilismo/
+2023-12-04 22:13:25,942 - ERROR - An error occurred while processing 'https://ljz.mx/04/12/2023/kissinger-paranoico-engreido-que-iba-de-la-crueldad-al-servilismo/': Article `download()` failed with 403 Client Error: Forbidden for url: https://ljz.mx/04/12/2023/kissinger-paranoico-engreido-que-iba-de-la-crueldad-al-servilismo/ on URL https://ljz.mx/04/12/2023/kissinger-paranoico-engreido-que-iba-de-la-crueldad-al-servilismo/
+2023-12-04 22:13:26,182 - ERROR - An error occurred while processing 'https://ljz.mx/04/12/2023/kissinger-paranoico-engreido-que-iba-de-la-crueldad-al-servilismo/': Article `download()` failed with 403 Client Error: Forbidden for url: https://ljz.mx/04/12/2023/kissinger-paranoico-engreido-que-iba-de-la-crueldad-al-servilismo/ on URL https://ljz.mx/04/12/2023/kissinger-paranoico-engreido-que-iba-de-la-crueldad-al-servilismo/
+2023-12-04 22:15:19,054 - ERROR - An error occurred while processing 'https://zbr.com.mx/sin-categoria-es/what-is-the-role-of-hawaii-in-national-politics/876178/': Article `download()` failed with HTTPSConnectionPool(host='zbr.com.mx', port=443): Read timed out. (read timeout=6) on URL https://zbr.com.mx/sin-categoria-es/what-is-the-role-of-hawaii-in-national-politics/876178/
+2023-12-04 22:15:25,226 - ERROR - An error occurred while processing 'https://zbr.com.mx/sin-categoria-es/what-is-the-role-of-hawaii-in-national-politics/876178/': Article `download()` failed with HTTPSConnectionPool(host='zbr.com.mx', port=443): Read timed out. (read timeout=6) on URL https://zbr.com.mx/sin-categoria-es/what-is-the-role-of-hawaii-in-national-politics/876178/
+2023-12-04 22:15:31,392 - ERROR - An error occurred while processing 'https://zbr.com.mx/sin-categoria-es/what-is-the-role-of-hawaii-in-national-politics/876178/': Article `download()` failed with HTTPSConnectionPool(host='zbr.com.mx', port=443): Read timed out. (read timeout=6) on URL https://zbr.com.mx/sin-categoria-es/what-is-the-role-of-hawaii-in-national-politics/876178/
+2023-12-04 22:16:27,458 - ERROR - An error occurred while processing 'https://lademajagua.cu/tag/salud/': Article `download()` failed with HTTPSConnectionPool(host='lademajagua.cu', port=443): Read timed out. (read timeout=6) on URL https://lademajagua.cu/tag/salud/
+2023-12-04 22:16:34,487 - ERROR - An error occurred while processing 'https://lademajagua.cu/tag/salud/': Article `download()` failed with HTTPSConnectionPool(host='lademajagua.cu', port=443): Read timed out. (read timeout=6) on URL https://lademajagua.cu/tag/salud/
+2023-12-04 22:16:41,467 - ERROR - An error occurred while processing 'https://lademajagua.cu/tag/salud/': Article `download()` failed with HTTPSConnectionPool(host='lademajagua.cu', port=443): Read timed out. (read timeout=6) on URL https://lademajagua.cu/tag/salud/
+2023-12-04 22:17:36,756 - ERROR - An error occurred while processing 'https://www.elpais.com.co/economia/velo-corporativo-de-sanitas-que-es-y-por-que-minsalud-pide-levantarlo-2126.html': Article `download()` failed with HTTPSConnectionPool(host='www.elpais.com.co', port=443): Read timed out. (read timeout=6) on URL https://www.elpais.com.co/economia/velo-corporativo-de-sanitas-que-es-y-por-que-minsalud-pide-levantarlo-2126.html
+2023-12-04 22:18:30,948 - ERROR - An error occurred while processing 'https://blogs.portafolio.co/buenas-practicas-de-auditoria-y-control-interno-en-las-organizaciones/?p=4231': Article `download()` failed with HTTPSConnectionPool(host='blogs.portafolio.co', port=443): Max retries exceeded with url: /buenas-practicas-de-auditoria-y-control-interno-en-las-organizaciones/?p=4231 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc08371330>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://blogs.portafolio.co/buenas-practicas-de-auditoria-y-control-interno-en-las-organizaciones/?p=4231
+2023-12-04 22:18:30,954 - ERROR - An error occurred while processing 'https://blogs.portafolio.co/buenas-practicas-de-auditoria-y-control-interno-en-las-organizaciones/?p=4231': Article `download()` failed with HTTPSConnectionPool(host='blogs.portafolio.co', port=443): Max retries exceeded with url: /buenas-practicas-de-auditoria-y-control-interno-en-las-organizaciones/?p=4231 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc19fc9d80>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://blogs.portafolio.co/buenas-practicas-de-auditoria-y-control-interno-en-las-organizaciones/?p=4231
+2023-12-04 22:18:30,958 - ERROR - An error occurred while processing 'https://blogs.portafolio.co/buenas-practicas-de-auditoria-y-control-interno-en-las-organizaciones/?p=4231': Article `download()` failed with HTTPSConnectionPool(host='blogs.portafolio.co', port=443): Max retries exceeded with url: /buenas-practicas-de-auditoria-y-control-interno-en-las-organizaciones/?p=4231 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc08354730>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://blogs.portafolio.co/buenas-practicas-de-auditoria-y-control-interno-en-las-organizaciones/?p=4231
+2023-12-04 22:18:43,943 - ERROR - An error occurred while processing 'https://www.laopinion.com.co/empresas/empresas-de-norte-de-santander-se-fortalecen-contra-fraude-lavado-corrupcion-y-otros': Article `download()` failed with HTTPSConnectionPool(host='www.laopinion.com.co', port=443): Max retries exceeded with url: /empresas/empresas-de-norte-de-santander-se-fortalecen-contra-fraude-lavado-corrupcion-y-otros (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc19f4e470>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.laopinion.com.co/empresas/empresas-de-norte-de-santander-se-fortalecen-contra-fraude-lavado-corrupcion-y-otros
+2023-12-04 22:18:43,948 - ERROR - An error occurred while processing 'https://www.laopinion.com.co/empresas/empresas-de-norte-de-santander-se-fortalecen-contra-fraude-lavado-corrupcion-y-otros': Article `download()` failed with HTTPSConnectionPool(host='www.laopinion.com.co', port=443): Max retries exceeded with url: /empresas/empresas-de-norte-de-santander-se-fortalecen-contra-fraude-lavado-corrupcion-y-otros (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc19fa55a0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.laopinion.com.co/empresas/empresas-de-norte-de-santander-se-fortalecen-contra-fraude-lavado-corrupcion-y-otros
+2023-12-04 22:18:43,953 - ERROR - An error occurred while processing 'https://www.laopinion.com.co/empresas/empresas-de-norte-de-santander-se-fortalecen-contra-fraude-lavado-corrupcion-y-otros': Article `download()` failed with HTTPSConnectionPool(host='www.laopinion.com.co', port=443): Max retries exceeded with url: /empresas/empresas-de-norte-de-santander-se-fortalecen-contra-fraude-lavado-corrupcion-y-otros (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc0836a350>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.laopinion.com.co/empresas/empresas-de-norte-de-santander-se-fortalecen-contra-fraude-lavado-corrupcion-y-otros
+2023-12-04 22:19:05,536 - ERROR - An error occurred while processing 'https://www.eluniversal.com.co/mundo/ivanka-trump-testifica-en-juicio-por-presunto-fraude-de-la-empresa-familiar-XC9411725': Article `download()` failed with HTTPSConnectionPool(host='www.eluniversal.com.co', port=443): Max retries exceeded with url: /mundo/ivanka-trump-testifica-en-juicio-por-presunto-fraude-de-la-empresa-familiar-XC9411725 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc1a9866e0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.eluniversal.com.co/mundo/ivanka-trump-testifica-en-juicio-por-presunto-fraude-de-la-empresa-familiar-XC9411725
+2023-12-04 22:19:05,540 - ERROR - An error occurred while processing 'https://www.eluniversal.com.co/mundo/ivanka-trump-testifica-en-juicio-por-presunto-fraude-de-la-empresa-familiar-XC9411725': Article `download()` failed with HTTPSConnectionPool(host='www.eluniversal.com.co', port=443): Max retries exceeded with url: /mundo/ivanka-trump-testifica-en-juicio-por-presunto-fraude-de-la-empresa-familiar-XC9411725 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc19f4fa90>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.eluniversal.com.co/mundo/ivanka-trump-testifica-en-juicio-por-presunto-fraude-de-la-empresa-familiar-XC9411725
+2023-12-04 22:19:05,545 - ERROR - An error occurred while processing 'https://www.eluniversal.com.co/mundo/ivanka-trump-testifica-en-juicio-por-presunto-fraude-de-la-empresa-familiar-XC9411725': Article `download()` failed with HTTPSConnectionPool(host='www.eluniversal.com.co', port=443): Max retries exceeded with url: /mundo/ivanka-trump-testifica-en-juicio-por-presunto-fraude-de-la-empresa-familiar-XC9411725 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc194f89d0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.eluniversal.com.co/mundo/ivanka-trump-testifica-en-juicio-por-presunto-fraude-de-la-empresa-familiar-XC9411725
+2023-12-04 22:19:48,242 - ERROR - An error occurred while processing 'https://forbes.co/2023/11/29/economia-y-finanzas/que-le-ve-el-fondo-monetario-internacional-a-america-latina/': Article `download()` failed with HTTPSConnectionPool(host='forbes.co', port=443): Max retries exceeded with url: /2023/11/29/economia-y-finanzas/que-le-ve-el-fondo-monetario-internacional-a-america-latina/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc08369e10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')) on URL https://forbes.co/2023/11/29/economia-y-finanzas/que-le-ve-el-fondo-monetario-internacional-a-america-latina/
+2023-12-04 22:19:49,271 - ERROR - An error occurred while processing 'https://forbes.co/2023/11/29/economia-y-finanzas/que-le-ve-el-fondo-monetario-internacional-a-america-latina/': Article `download()` failed with HTTPSConnectionPool(host='forbes.co', port=443): Max retries exceeded with url: /2023/11/29/economia-y-finanzas/que-le-ve-el-fondo-monetario-internacional-a-america-latina/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc083548b0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://forbes.co/2023/11/29/economia-y-finanzas/que-le-ve-el-fondo-monetario-internacional-a-america-latina/
+2023-12-04 22:20:22,132 - INFO - Skipping duplicate article: https://www.greenpeace.org/mexico/noticia/53593/el-tribunal-confirma-el-derecho-de-greenpeace-a-protestar-pacificamente-y-la-protesta-de-activistas-contra-la-mineria-en-aguas-profundas-que-lleva-200-horas-en-el-pacifico-continua/
+2023-12-04 22:21:24,837 - ERROR - An error occurred while processing 'https://www.aa.com.tr/es/mundo/el-primer-ministro-brit%C3%A1nico-consternado-por-las-alegaciones-de-pedofilia-sobre-un-presentador-de-la-bbc/2942562': Article `download()` failed with HTTPSConnectionPool(host='www.aa.com.tr', port=443): Max retries exceeded with url: /es/mundo/el-primer-ministro-brit%C3%A1nico-consternado-por-las-alegaciones-de-pedofilia-sobre-un-presentador-de-la-bbc/2942562 (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)'))) on URL https://www.aa.com.tr/es/mundo/el-primer-ministro-brit%C3%A1nico-consternado-por-las-alegaciones-de-pedofilia-sobre-un-presentador-de-la-bbc/2942562
+2023-12-04 22:21:25,103 - ERROR - An error occurred while processing 'https://www.aa.com.tr/es/mundo/el-primer-ministro-brit%C3%A1nico-consternado-por-las-alegaciones-de-pedofilia-sobre-un-presentador-de-la-bbc/2942562': Article `download()` failed with HTTPSConnectionPool(host='www.aa.com.tr', port=443): Max retries exceeded with url: /es/mundo/el-primer-ministro-brit%C3%A1nico-consternado-por-las-alegaciones-de-pedofilia-sobre-un-presentador-de-la-bbc/2942562 (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)'))) on URL https://www.aa.com.tr/es/mundo/el-primer-ministro-brit%C3%A1nico-consternado-por-las-alegaciones-de-pedofilia-sobre-un-presentador-de-la-bbc/2942562
+2023-12-04 22:21:25,368 - ERROR - An error occurred while processing 'https://www.aa.com.tr/es/mundo/el-primer-ministro-brit%C3%A1nico-consternado-por-las-alegaciones-de-pedofilia-sobre-un-presentador-de-la-bbc/2942562': Article `download()` failed with HTTPSConnectionPool(host='www.aa.com.tr', port=443): Max retries exceeded with url: /es/mundo/el-primer-ministro-brit%C3%A1nico-consternado-por-las-alegaciones-de-pedofilia-sobre-un-presentador-de-la-bbc/2942562 (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)'))) on URL https://www.aa.com.tr/es/mundo/el-primer-ministro-brit%C3%A1nico-consternado-por-las-alegaciones-de-pedofilia-sobre-un-presentador-de-la-bbc/2942562
+2023-12-04 22:21:32,645 - ERROR - An error occurred while processing 'https://www.aa.com.tr/es/mundo/turkiye-califica-de-infundadas-las-alegaciones-de-armenia-de-genocidio-durante-los-sucesos-de-1915/2880556': Article `download()` failed with HTTPSConnectionPool(host='www.aa.com.tr', port=443): Max retries exceeded with url: /es/mundo/turkiye-califica-de-infundadas-las-alegaciones-de-armenia-de-genocidio-durante-los-sucesos-de-1915/2880556 (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)'))) on URL https://www.aa.com.tr/es/mundo/turkiye-califica-de-infundadas-las-alegaciones-de-armenia-de-genocidio-durante-los-sucesos-de-1915/2880556
+2023-12-04 22:21:32,907 - ERROR - An error occurred while processing 'https://www.aa.com.tr/es/mundo/turkiye-califica-de-infundadas-las-alegaciones-de-armenia-de-genocidio-durante-los-sucesos-de-1915/2880556': Article `download()` failed with HTTPSConnectionPool(host='www.aa.com.tr', port=443): Max retries exceeded with url: /es/mundo/turkiye-califica-de-infundadas-las-alegaciones-de-armenia-de-genocidio-durante-los-sucesos-de-1915/2880556 (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)'))) on URL https://www.aa.com.tr/es/mundo/turkiye-califica-de-infundadas-las-alegaciones-de-armenia-de-genocidio-durante-los-sucesos-de-1915/2880556
+2023-12-04 22:21:33,169 - ERROR - An error occurred while processing 'https://www.aa.com.tr/es/mundo/turkiye-califica-de-infundadas-las-alegaciones-de-armenia-de-genocidio-durante-los-sucesos-de-1915/2880556': Article `download()` failed with HTTPSConnectionPool(host='www.aa.com.tr', port=443): Max retries exceeded with url: /es/mundo/turkiye-califica-de-infundadas-las-alegaciones-de-armenia-de-genocidio-durante-los-sucesos-de-1915/2880556 (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)'))) on URL https://www.aa.com.tr/es/mundo/turkiye-califica-de-infundadas-las-alegaciones-de-armenia-de-genocidio-durante-los-sucesos-de-1915/2880556
+2023-12-04 22:22:01,070 - INFO - Skipping duplicate article: https://www.eluniversal.com.co/mundo/ivanka-trump-testifica-en-juicio-por-presunto-fraude-de-la-empresa-familiar-XC9411725
+2023-12-04 22:22:33,898 - ERROR - An error occurred while processing 'https://www.metro.pr/noticias/2023/12/01/organizacion-criminal-lavaba-dinero-con-premios-de-la-loteria/': Article `download()` failed with HTTPSConnectionPool(host='www.metro.pr', port=443): Max retries exceeded with url: /noticias/2023/12/01/organizacion-criminal-lavaba-dinero-con-premios-de-la-loteria/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc194004c0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')) on URL https://www.metro.pr/noticias/2023/12/01/organizacion-criminal-lavaba-dinero-con-premios-de-la-loteria/
+2023-12-04 22:22:35,322 - ERROR - An error occurred while processing 'https://www.metro.pr/noticias/2023/12/01/organizacion-criminal-lavaba-dinero-con-premios-de-la-loteria/': Article `download()` failed with HTTPSConnectionPool(host='www.metro.pr', port=443): Max retries exceeded with url: /noticias/2023/12/01/organizacion-criminal-lavaba-dinero-con-premios-de-la-loteria/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc1947a860>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.metro.pr/noticias/2023/12/01/organizacion-criminal-lavaba-dinero-con-premios-de-la-loteria/
+2023-12-04 22:23:42,368 - ERROR - An error occurred while processing 'https://transparenciacolombia.org.co/9-de-cada-10-empresarios-colombianos-prefieren-no-contratar-con-el-estado-para-evitar-la-corrupcion/': Article `download()` failed with HTTPSConnectionPool(host='transparenciacolombia.org.co', port=443): Max retries exceeded with url: /9-de-cada-10-empresarios-colombianos-prefieren-no-contratar-con-el-estado-para-evitar-la-corrupcion/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc1947a5f0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://transparenciacolombia.org.co/9-de-cada-10-empresarios-colombianos-prefieren-no-contratar-con-el-estado-para-evitar-la-corrupcion/
+2023-12-04 22:23:42,372 - ERROR - An error occurred while processing 'https://transparenciacolombia.org.co/9-de-cada-10-empresarios-colombianos-prefieren-no-contratar-con-el-estado-para-evitar-la-corrupcion/': Article `download()` failed with HTTPSConnectionPool(host='transparenciacolombia.org.co', port=443): Max retries exceeded with url: /9-de-cada-10-empresarios-colombianos-prefieren-no-contratar-con-el-estado-para-evitar-la-corrupcion/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc1949b3a0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://transparenciacolombia.org.co/9-de-cada-10-empresarios-colombianos-prefieren-no-contratar-con-el-estado-para-evitar-la-corrupcion/
+2023-12-04 22:23:42,377 - ERROR - An error occurred while processing 'https://transparenciacolombia.org.co/9-de-cada-10-empresarios-colombianos-prefieren-no-contratar-con-el-estado-para-evitar-la-corrupcion/': Article `download()` failed with HTTPSConnectionPool(host='transparenciacolombia.org.co', port=443): Max retries exceeded with url: /9-de-cada-10-empresarios-colombianos-prefieren-no-contratar-con-el-estado-para-evitar-la-corrupcion/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc1949bb50>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://transparenciacolombia.org.co/9-de-cada-10-empresarios-colombianos-prefieren-no-contratar-con-el-estado-para-evitar-la-corrupcion/
+2023-12-04 22:24:13,366 - ERROR - An error occurred while processing 'https://www.portafolio.co/economia/gobierno/reforma-a-la-salud-crece-preocupacion-por-el-fondo-unico-del-sistema-593290': Article `download()` failed with HTTPSConnectionPool(host='www.portafolio.co', port=443): Max retries exceeded with url: /economia/gobierno/reforma-a-la-salud-crece-preocupacion-por-el-fondo-unico-del-sistema-593290 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc194571f0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')) on URL https://www.portafolio.co/economia/gobierno/reforma-a-la-salud-crece-preocupacion-por-el-fondo-unico-del-sistema-593290
+2023-12-04 22:24:15,175 - ERROR - An error occurred while processing 'https://www.portafolio.co/economia/gobierno/reforma-a-la-salud-crece-preocupacion-por-el-fondo-unico-del-sistema-593290': Article `download()` failed with HTTPSConnectionPool(host='www.portafolio.co', port=443): Max retries exceeded with url: /economia/gobierno/reforma-a-la-salud-crece-preocupacion-por-el-fondo-unico-del-sistema-593290 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc0845ac50>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.portafolio.co/economia/gobierno/reforma-a-la-salud-crece-preocupacion-por-el-fondo-unico-del-sistema-593290
+2023-12-04 22:24:40,547 - ERROR - An error occurred while processing 'https://www.eltiempo.com/tecnosfera/novedades-tecnologia/mensajes-fraudulentos-que-se-envian-desde-supuestos-bancos-para-saquear-las-cuentas-814197': Article `download()` failed with HTTPSConnectionPool(host='www.eltiempo.com', port=443): Max retries exceeded with url: /tecnosfera/novedades-tecnologia/mensajes-fraudulentos-que-se-envian-desde-supuestos-bancos-para-saquear-las-cuentas-814197 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc193049a0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.eltiempo.com/tecnosfera/novedades-tecnologia/mensajes-fraudulentos-que-se-envian-desde-supuestos-bancos-para-saquear-las-cuentas-814197
+2023-12-04 22:24:40,553 - ERROR - An error occurred while processing 'https://www.eltiempo.com/tecnosfera/novedades-tecnologia/mensajes-fraudulentos-que-se-envian-desde-supuestos-bancos-para-saquear-las-cuentas-814197': Article `download()` failed with HTTPSConnectionPool(host='www.eltiempo.com', port=443): Max retries exceeded with url: /tecnosfera/novedades-tecnologia/mensajes-fraudulentos-que-se-envian-desde-supuestos-bancos-para-saquear-las-cuentas-814197 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc19456560>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.eltiempo.com/tecnosfera/novedades-tecnologia/mensajes-fraudulentos-que-se-envian-desde-supuestos-bancos-para-saquear-las-cuentas-814197
+2023-12-04 22:24:40,559 - ERROR - An error occurred while processing 'https://www.eltiempo.com/tecnosfera/novedades-tecnologia/mensajes-fraudulentos-que-se-envian-desde-supuestos-bancos-para-saquear-las-cuentas-814197': Article `download()` failed with HTTPSConnectionPool(host='www.eltiempo.com', port=443): Max retries exceeded with url: /tecnosfera/novedades-tecnologia/mensajes-fraudulentos-que-se-envian-desde-supuestos-bancos-para-saquear-las-cuentas-814197 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc19438040>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.eltiempo.com/tecnosfera/novedades-tecnologia/mensajes-fraudulentos-que-se-envian-desde-supuestos-bancos-para-saquear-las-cuentas-814197
+2023-12-04 22:25:26,085 - INFO - Skipping duplicate article: https://www.euribor.com.es/2023/12/01/toshiba-cuando-una-mala-gestion-acaba-con-150-anos-de-historia/
+2023-12-04 22:26:15,195 - ERROR - An error occurred while processing 'https://www.aa.com.tr/es/mundo/ucrania-acusa-a-ir%C3%A1n-y-rusia-de-violar-las-sanciones-de-la-onu-sobre-env%C3%ADos-de-drones-prohibidos/2714976': Article `download()` failed with HTTPSConnectionPool(host='www.aa.com.tr', port=443): Max retries exceeded with url: /es/mundo/ucrania-acusa-a-ir%C3%A1n-y-rusia-de-violar-las-sanciones-de-la-onu-sobre-env%C3%ADos-de-drones-prohibidos/2714976 (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)'))) on URL https://www.aa.com.tr/es/mundo/ucrania-acusa-a-ir%C3%A1n-y-rusia-de-violar-las-sanciones-de-la-onu-sobre-env%C3%ADos-de-drones-prohibidos/2714976
+2023-12-04 22:26:15,454 - ERROR - An error occurred while processing 'https://www.aa.com.tr/es/mundo/ucrania-acusa-a-ir%C3%A1n-y-rusia-de-violar-las-sanciones-de-la-onu-sobre-env%C3%ADos-de-drones-prohibidos/2714976': Article `download()` failed with HTTPSConnectionPool(host='www.aa.com.tr', port=443): Max retries exceeded with url: /es/mundo/ucrania-acusa-a-ir%C3%A1n-y-rusia-de-violar-las-sanciones-de-la-onu-sobre-env%C3%ADos-de-drones-prohibidos/2714976 (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)'))) on URL https://www.aa.com.tr/es/mundo/ucrania-acusa-a-ir%C3%A1n-y-rusia-de-violar-las-sanciones-de-la-onu-sobre-env%C3%ADos-de-drones-prohibidos/2714976
+2023-12-04 22:26:15,719 - ERROR - An error occurred while processing 'https://www.aa.com.tr/es/mundo/ucrania-acusa-a-ir%C3%A1n-y-rusia-de-violar-las-sanciones-de-la-onu-sobre-env%C3%ADos-de-drones-prohibidos/2714976': Article `download()` failed with HTTPSConnectionPool(host='www.aa.com.tr', port=443): Max retries exceeded with url: /es/mundo/ucrania-acusa-a-ir%C3%A1n-y-rusia-de-violar-las-sanciones-de-la-onu-sobre-env%C3%ADos-de-drones-prohibidos/2714976 (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)'))) on URL https://www.aa.com.tr/es/mundo/ucrania-acusa-a-ir%C3%A1n-y-rusia-de-violar-las-sanciones-de-la-onu-sobre-env%C3%ADos-de-drones-prohibidos/2714976
+2023-12-04 22:26:21,520 - ERROR - An error occurred while processing 'https://www.aa.com.tr/es/mundo/china-le-exige-a-eeuu-que-revoque-las-sanciones-impuestas-a-sus-funcionarios-/2542749': Article `download()` failed with HTTPSConnectionPool(host='www.aa.com.tr', port=443): Max retries exceeded with url: /es/mundo/china-le-exige-a-eeuu-que-revoque-las-sanciones-impuestas-a-sus-funcionarios-/2542749 (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)'))) on URL https://www.aa.com.tr/es/mundo/china-le-exige-a-eeuu-que-revoque-las-sanciones-impuestas-a-sus-funcionarios-/2542749
+2023-12-04 22:26:21,786 - ERROR - An error occurred while processing 'https://www.aa.com.tr/es/mundo/china-le-exige-a-eeuu-que-revoque-las-sanciones-impuestas-a-sus-funcionarios-/2542749': Article `download()` failed with HTTPSConnectionPool(host='www.aa.com.tr', port=443): Max retries exceeded with url: /es/mundo/china-le-exige-a-eeuu-que-revoque-las-sanciones-impuestas-a-sus-funcionarios-/2542749 (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)'))) on URL https://www.aa.com.tr/es/mundo/china-le-exige-a-eeuu-que-revoque-las-sanciones-impuestas-a-sus-funcionarios-/2542749
+2023-12-04 22:26:22,060 - ERROR - An error occurred while processing 'https://www.aa.com.tr/es/mundo/china-le-exige-a-eeuu-que-revoque-las-sanciones-impuestas-a-sus-funcionarios-/2542749': Article `download()` failed with HTTPSConnectionPool(host='www.aa.com.tr', port=443): Max retries exceeded with url: /es/mundo/china-le-exige-a-eeuu-que-revoque-las-sanciones-impuestas-a-sus-funcionarios-/2542749 (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)'))) on URL https://www.aa.com.tr/es/mundo/china-le-exige-a-eeuu-que-revoque-las-sanciones-impuestas-a-sus-funcionarios-/2542749
+2023-12-04 22:26:25,831 - ERROR - An error occurred while processing 'https://www.aa.com.tr/es/mundo/jap%C3%B3n-y-eeuu-acuerdan-reforzar-sus-capacidades-de-disuasi%C3%B3n-y-respuesta-ante-la-amenaza-de-china-y-corea-del-norte/2911806': Article `download()` failed with HTTPSConnectionPool(host='www.aa.com.tr', port=443): Max retries exceeded with url: /es/mundo/jap%C3%B3n-y-eeuu-acuerdan-reforzar-sus-capacidades-de-disuasi%C3%B3n-y-respuesta-ante-la-amenaza-de-china-y-corea-del-norte/2911806 (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)'))) on URL https://www.aa.com.tr/es/mundo/jap%C3%B3n-y-eeuu-acuerdan-reforzar-sus-capacidades-de-disuasi%C3%B3n-y-respuesta-ante-la-amenaza-de-china-y-corea-del-norte/2911806
+2023-12-04 22:26:26,094 - ERROR - An error occurred while processing 'https://www.aa.com.tr/es/mundo/jap%C3%B3n-y-eeuu-acuerdan-reforzar-sus-capacidades-de-disuasi%C3%B3n-y-respuesta-ante-la-amenaza-de-china-y-corea-del-norte/2911806': Article `download()` failed with HTTPSConnectionPool(host='www.aa.com.tr', port=443): Max retries exceeded with url: /es/mundo/jap%C3%B3n-y-eeuu-acuerdan-reforzar-sus-capacidades-de-disuasi%C3%B3n-y-respuesta-ante-la-amenaza-de-china-y-corea-del-norte/2911806 (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)'))) on URL https://www.aa.com.tr/es/mundo/jap%C3%B3n-y-eeuu-acuerdan-reforzar-sus-capacidades-de-disuasi%C3%B3n-y-respuesta-ante-la-amenaza-de-china-y-corea-del-norte/2911806
+2023-12-04 22:26:26,355 - ERROR - An error occurred while processing 'https://www.aa.com.tr/es/mundo/jap%C3%B3n-y-eeuu-acuerdan-reforzar-sus-capacidades-de-disuasi%C3%B3n-y-respuesta-ante-la-amenaza-de-china-y-corea-del-norte/2911806': Article `download()` failed with HTTPSConnectionPool(host='www.aa.com.tr', port=443): Max retries exceeded with url: /es/mundo/jap%C3%B3n-y-eeuu-acuerdan-reforzar-sus-capacidades-de-disuasi%C3%B3n-y-respuesta-ante-la-amenaza-de-china-y-corea-del-norte/2911806 (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)'))) on URL https://www.aa.com.tr/es/mundo/jap%C3%B3n-y-eeuu-acuerdan-reforzar-sus-capacidades-de-disuasi%C3%B3n-y-respuesta-ante-la-amenaza-de-china-y-corea-del-norte/2911806
+2023-12-04 22:26:40,119 - INFO - Skipping duplicate article: https://www.unesco.org/es/articles/23-nuevas-inscripciones-en-la-memoria-del-mundo-de-america-latina-y-el-caribe
+2023-12-04 22:29:14,112 - INFO - Skipping duplicate article: https://www.yucatan.com.mx/espectaculos/2023/12/03/galilea-montijo-es-senalada-por-lavado-de-dinero-con-arturo-beltran-leyva.html
+2023-12-04 22:29:59,302 - ERROR - An error occurred while processing 'https://larepublica.pe/politica/congreso/2023/11/07/javier-gonzalez-olaechea-asumio-la-cancilleria-en-reemplazo-de-ana-gervasi-dina-boluarte-joe-biden-estados-unidos-422604': Article `download()` failed with 403 Client Error: Forbidden for url: https://larepublica.pe/politica/congreso/2023/11/07/javier-gonzalez-olaechea-asumio-la-cancilleria-en-reemplazo-de-ana-gervasi-dina-boluarte-joe-biden-estados-unidos-422604 on URL https://larepublica.pe/politica/congreso/2023/11/07/javier-gonzalez-olaechea-asumio-la-cancilleria-en-reemplazo-de-ana-gervasi-dina-boluarte-joe-biden-estados-unidos-422604
+2023-12-04 22:29:59,524 - ERROR - An error occurred while processing 'https://larepublica.pe/politica/congreso/2023/11/07/javier-gonzalez-olaechea-asumio-la-cancilleria-en-reemplazo-de-ana-gervasi-dina-boluarte-joe-biden-estados-unidos-422604': Article `download()` failed with 403 Client Error: Forbidden for url: https://larepublica.pe/politica/congreso/2023/11/07/javier-gonzalez-olaechea-asumio-la-cancilleria-en-reemplazo-de-ana-gervasi-dina-boluarte-joe-biden-estados-unidos-422604 on URL https://larepublica.pe/politica/congreso/2023/11/07/javier-gonzalez-olaechea-asumio-la-cancilleria-en-reemplazo-de-ana-gervasi-dina-boluarte-joe-biden-estados-unidos-422604
+2023-12-04 22:29:59,832 - ERROR - An error occurred while processing 'https://larepublica.pe/politica/congreso/2023/11/07/javier-gonzalez-olaechea-asumio-la-cancilleria-en-reemplazo-de-ana-gervasi-dina-boluarte-joe-biden-estados-unidos-422604': Article `download()` failed with 403 Client Error: Forbidden for url: https://larepublica.pe/politica/congreso/2023/11/07/javier-gonzalez-olaechea-asumio-la-cancilleria-en-reemplazo-de-ana-gervasi-dina-boluarte-joe-biden-estados-unidos-422604 on URL https://larepublica.pe/politica/congreso/2023/11/07/javier-gonzalez-olaechea-asumio-la-cancilleria-en-reemplazo-de-ana-gervasi-dina-boluarte-joe-biden-estados-unidos-422604
+2023-12-04 22:30:03,546 - ERROR - An error occurred while processing 'https://podcast.larepublica.pe/podcast/sin-guion/04-12-crimen-sin-castigo-los-ultimos-dias-de-la-fiscal-rmp-singuion-5723': Article `download()` failed with 403 Client Error: Forbidden for url: https://podcast.larepublica.pe/podcast/sin-guion/04-12-crimen-sin-castigo-los-ultimos-dias-de-la-fiscal-rmp-singuion-5723 on URL https://podcast.larepublica.pe/podcast/sin-guion/04-12-crimen-sin-castigo-los-ultimos-dias-de-la-fiscal-rmp-singuion-5723
+2023-12-04 22:30:03,767 - ERROR - An error occurred while processing 'https://podcast.larepublica.pe/podcast/sin-guion/04-12-crimen-sin-castigo-los-ultimos-dias-de-la-fiscal-rmp-singuion-5723': Article `download()` failed with 403 Client Error: Forbidden for url: https://podcast.larepublica.pe/podcast/sin-guion/04-12-crimen-sin-castigo-los-ultimos-dias-de-la-fiscal-rmp-singuion-5723 on URL https://podcast.larepublica.pe/podcast/sin-guion/04-12-crimen-sin-castigo-los-ultimos-dias-de-la-fiscal-rmp-singuion-5723
+2023-12-04 22:30:03,988 - ERROR - An error occurred while processing 'https://podcast.larepublica.pe/podcast/sin-guion/04-12-crimen-sin-castigo-los-ultimos-dias-de-la-fiscal-rmp-singuion-5723': Article `download()` failed with 403 Client Error: Forbidden for url: https://podcast.larepublica.pe/podcast/sin-guion/04-12-crimen-sin-castigo-los-ultimos-dias-de-la-fiscal-rmp-singuion-5723 on URL https://podcast.larepublica.pe/podcast/sin-guion/04-12-crimen-sin-castigo-los-ultimos-dias-de-la-fiscal-rmp-singuion-5723
+2023-12-04 22:30:40,338 - ERROR - An error occurred while processing 'https://www.expreso.com.pe/tecnologia/uso-de-ia-aumenta-el-temor-a-fraudes-financieros-kaspersky-pix-noticia/': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.expreso.com.pe/tecnologia/uso-de-ia-aumenta-el-temor-a-fraudes-financieros-kaspersky-pix-noticia/ on URL https://www.expreso.com.pe/tecnologia/uso-de-ia-aumenta-el-temor-a-fraudes-financieros-kaspersky-pix-noticia/
+2023-12-04 22:30:40,564 - ERROR - An error occurred while processing 'https://www.expreso.com.pe/tecnologia/uso-de-ia-aumenta-el-temor-a-fraudes-financieros-kaspersky-pix-noticia/': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.expreso.com.pe/tecnologia/uso-de-ia-aumenta-el-temor-a-fraudes-financieros-kaspersky-pix-noticia/ on URL https://www.expreso.com.pe/tecnologia/uso-de-ia-aumenta-el-temor-a-fraudes-financieros-kaspersky-pix-noticia/
+2023-12-04 22:30:40,800 - ERROR - An error occurred while processing 'https://www.expreso.com.pe/tecnologia/uso-de-ia-aumenta-el-temor-a-fraudes-financieros-kaspersky-pix-noticia/': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.expreso.com.pe/tecnologia/uso-de-ia-aumenta-el-temor-a-fraudes-financieros-kaspersky-pix-noticia/ on URL https://www.expreso.com.pe/tecnologia/uso-de-ia-aumenta-el-temor-a-fraudes-financieros-kaspersky-pix-noticia/
+2023-12-04 22:31:52,799 - ERROR - An error occurred while processing 'https://caretas.pe/nacional/poder-judicial-condena-a-cadena-perpetua-a-delincuente-que-disparo-a-su-victima-para-robarle-su-celular/': Article `download()` failed with HTTPSConnectionPool(host='caretas.pe', port=443): Read timed out. (read timeout=6) on URL https://caretas.pe/nacional/poder-judicial-condena-a-cadena-perpetua-a-delincuente-que-disparo-a-su-victima-para-robarle-su-celular/
+2023-12-04 22:33:50,075 - ERROR - An error occurred while processing 'https://www.expreso.com.pe/judicial/keiko-fujimori-abren-juicio-contra-lideresa-de-fuerza-popular-y-38-seguidores-por-caso-cocteles-poder-judicial-jose-domingo-perez-noticia/': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.expreso.com.pe/judicial/keiko-fujimori-abren-juicio-contra-lideresa-de-fuerza-popular-y-38-seguidores-por-caso-cocteles-poder-judicial-jose-domingo-perez-noticia/ on URL https://www.expreso.com.pe/judicial/keiko-fujimori-abren-juicio-contra-lideresa-de-fuerza-popular-y-38-seguidores-por-caso-cocteles-poder-judicial-jose-domingo-perez-noticia/
+2023-12-04 22:33:50,303 - ERROR - An error occurred while processing 'https://www.expreso.com.pe/judicial/keiko-fujimori-abren-juicio-contra-lideresa-de-fuerza-popular-y-38-seguidores-por-caso-cocteles-poder-judicial-jose-domingo-perez-noticia/': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.expreso.com.pe/judicial/keiko-fujimori-abren-juicio-contra-lideresa-de-fuerza-popular-y-38-seguidores-por-caso-cocteles-poder-judicial-jose-domingo-perez-noticia/ on URL https://www.expreso.com.pe/judicial/keiko-fujimori-abren-juicio-contra-lideresa-de-fuerza-popular-y-38-seguidores-por-caso-cocteles-poder-judicial-jose-domingo-perez-noticia/
+2023-12-04 22:33:50,539 - ERROR - An error occurred while processing 'https://www.expreso.com.pe/judicial/keiko-fujimori-abren-juicio-contra-lideresa-de-fuerza-popular-y-38-seguidores-por-caso-cocteles-poder-judicial-jose-domingo-perez-noticia/': Article `download()` failed with 403 Client Error: Forbidden for url: https://www.expreso.com.pe/judicial/keiko-fujimori-abren-juicio-contra-lideresa-de-fuerza-popular-y-38-seguidores-por-caso-cocteles-poder-judicial-jose-domingo-perez-noticia/ on URL https://www.expreso.com.pe/judicial/keiko-fujimori-abren-juicio-contra-lideresa-de-fuerza-popular-y-38-seguidores-por-caso-cocteles-poder-judicial-jose-domingo-perez-noticia/
+2023-12-04 22:33:54,371 - INFO - Skipping duplicate article: https://www.exitosanoticias.pe/judiciales/keiko-fujimori-pj-ordena-inicio-juicio-excandidata-presidencial-presunto-lavado-activos-n114971
+2023-12-04 22:34:08,569 - INFO - Skipping duplicate article: https://lpderecho.pe/prueba-licita-alcance-copia-espejo-conversacion-telefonica-contenido-ilicito-apelacion-165-2022-ventanilla/
+2023-12-04 22:34:33,781 - INFO - Skipping duplicate article: https://lpderecho.pe/prueba-licita-alcance-copia-espejo-conversacion-telefonica-contenido-ilicito-apelacion-165-2022-ventanilla/
+2023-12-04 22:38:12,127 - ERROR - An error occurred while processing 'https://larepublica.pe/datos-lr/panama/2023/11/26/ifarhu-2023-verifica-el-calendario-oficial-del-pago-de-becas-de-puesto-distinguido-lrtmc-436722': Article `download()` failed with 403 Client Error: Forbidden for url: https://larepublica.pe/datos-lr/panama/2023/11/26/ifarhu-2023-verifica-el-calendario-oficial-del-pago-de-becas-de-puesto-distinguido-lrtmc-436722 on URL https://larepublica.pe/datos-lr/panama/2023/11/26/ifarhu-2023-verifica-el-calendario-oficial-del-pago-de-becas-de-puesto-distinguido-lrtmc-436722
+2023-12-04 22:38:12,330 - ERROR - An error occurred while processing 'https://larepublica.pe/datos-lr/panama/2023/11/26/ifarhu-2023-verifica-el-calendario-oficial-del-pago-de-becas-de-puesto-distinguido-lrtmc-436722': Article `download()` failed with 403 Client Error: Forbidden for url: https://larepublica.pe/datos-lr/panama/2023/11/26/ifarhu-2023-verifica-el-calendario-oficial-del-pago-de-becas-de-puesto-distinguido-lrtmc-436722 on URL https://larepublica.pe/datos-lr/panama/2023/11/26/ifarhu-2023-verifica-el-calendario-oficial-del-pago-de-becas-de-puesto-distinguido-lrtmc-436722
+2023-12-04 22:38:12,534 - ERROR - An error occurred while processing 'https://larepublica.pe/datos-lr/panama/2023/11/26/ifarhu-2023-verifica-el-calendario-oficial-del-pago-de-becas-de-puesto-distinguido-lrtmc-436722': Article `download()` failed with 403 Client Error: Forbidden for url: https://larepublica.pe/datos-lr/panama/2023/11/26/ifarhu-2023-verifica-el-calendario-oficial-del-pago-de-becas-de-puesto-distinguido-lrtmc-436722 on URL https://larepublica.pe/datos-lr/panama/2023/11/26/ifarhu-2023-verifica-el-calendario-oficial-del-pago-de-becas-de-puesto-distinguido-lrtmc-436722
+2023-12-04 22:38:17,753 - ERROR - An error occurred while processing 'https://larepublica.pe/datos-lr/panama/2023/11/30/pension-a-jubilados-y-pensionados-cronograma-de-pago-del-css-en-diciembre-2023-lrtmc-2526000': Article `download()` failed with 403 Client Error: Forbidden for url: https://larepublica.pe/datos-lr/panama/2023/11/30/pension-a-jubilados-y-pensionados-cronograma-de-pago-del-css-en-diciembre-2023-lrtmc-2526000 on URL https://larepublica.pe/datos-lr/panama/2023/11/30/pension-a-jubilados-y-pensionados-cronograma-de-pago-del-css-en-diciembre-2023-lrtmc-2526000
+2023-12-04 22:38:17,959 - ERROR - An error occurred while processing 'https://larepublica.pe/datos-lr/panama/2023/11/30/pension-a-jubilados-y-pensionados-cronograma-de-pago-del-css-en-diciembre-2023-lrtmc-2526000': Article `download()` failed with 403 Client Error: Forbidden for url: https://larepublica.pe/datos-lr/panama/2023/11/30/pension-a-jubilados-y-pensionados-cronograma-de-pago-del-css-en-diciembre-2023-lrtmc-2526000 on URL https://larepublica.pe/datos-lr/panama/2023/11/30/pension-a-jubilados-y-pensionados-cronograma-de-pago-del-css-en-diciembre-2023-lrtmc-2526000
+2023-12-04 22:38:18,170 - ERROR - An error occurred while processing 'https://larepublica.pe/datos-lr/panama/2023/11/30/pension-a-jubilados-y-pensionados-cronograma-de-pago-del-css-en-diciembre-2023-lrtmc-2526000': Article `download()` failed with 403 Client Error: Forbidden for url: https://larepublica.pe/datos-lr/panama/2023/11/30/pension-a-jubilados-y-pensionados-cronograma-de-pago-del-css-en-diciembre-2023-lrtmc-2526000 on URL https://larepublica.pe/datos-lr/panama/2023/11/30/pension-a-jubilados-y-pensionados-cronograma-de-pago-del-css-en-diciembre-2023-lrtmc-2526000
+2023-12-04 22:38:59,255 - ERROR - An error occurred while processing 'http://www.laindustria.pe/nota/23981-rer-o-llorar-duelo-a-la-mexicana': Article `download()` failed with HTTPConnectionPool(host='www.laindustria.pe', port=80): Read timed out. (read timeout=6) on URL http://www.laindustria.pe/nota/23981-rer-o-llorar-duelo-a-la-mexicana
+2023-12-04 22:39:05,265 - ERROR - An error occurred while processing 'http://www.laindustria.pe/nota/23981-rer-o-llorar-duelo-a-la-mexicana': Article `download()` failed with HTTPConnectionPool(host='www.laindustria.pe', port=80): Read timed out. (read timeout=6) on URL http://www.laindustria.pe/nota/23981-rer-o-llorar-duelo-a-la-mexicana
+2023-12-04 22:39:11,285 - ERROR - An error occurred while processing 'http://www.laindustria.pe/nota/23981-rer-o-llorar-duelo-a-la-mexicana': Article `download()` failed with HTTPConnectionPool(host='www.laindustria.pe', port=80): Read timed out. (read timeout=6) on URL http://www.laindustria.pe/nota/23981-rer-o-llorar-duelo-a-la-mexicana
+2023-12-04 22:39:26,374 - ERROR - An error occurred while processing 'https://larepublica.pe/politica/judiciales/2023/07/27/caso-sodalicio-fiscalia-abre-caso-por-lavado-contra-tres-empresarios-del-sodalicio-luis-figari-luis-baertl-jourde-juan-len-alvarez-carlos-neuenschwander-2118312': Article `download()` failed with 403 Client Error: Forbidden for url: https://larepublica.pe/politica/judiciales/2023/07/27/caso-sodalicio-fiscalia-abre-caso-por-lavado-contra-tres-empresarios-del-sodalicio-luis-figari-luis-baertl-jourde-juan-len-alvarez-carlos-neuenschwander-2118312 on URL https://larepublica.pe/politica/judiciales/2023/07/27/caso-sodalicio-fiscalia-abre-caso-por-lavado-contra-tres-empresarios-del-sodalicio-luis-figari-luis-baertl-jourde-juan-len-alvarez-carlos-neuenschwander-2118312
+2023-12-04 22:39:26,579 - ERROR - An error occurred while processing 'https://larepublica.pe/politica/judiciales/2023/07/27/caso-sodalicio-fiscalia-abre-caso-por-lavado-contra-tres-empresarios-del-sodalicio-luis-figari-luis-baertl-jourde-juan-len-alvarez-carlos-neuenschwander-2118312': Article `download()` failed with 403 Client Error: Forbidden for url: https://larepublica.pe/politica/judiciales/2023/07/27/caso-sodalicio-fiscalia-abre-caso-por-lavado-contra-tres-empresarios-del-sodalicio-luis-figari-luis-baertl-jourde-juan-len-alvarez-carlos-neuenschwander-2118312 on URL https://larepublica.pe/politica/judiciales/2023/07/27/caso-sodalicio-fiscalia-abre-caso-por-lavado-contra-tres-empresarios-del-sodalicio-luis-figari-luis-baertl-jourde-juan-len-alvarez-carlos-neuenschwander-2118312
+2023-12-04 22:39:26,783 - ERROR - An error occurred while processing 'https://larepublica.pe/politica/judiciales/2023/07/27/caso-sodalicio-fiscalia-abre-caso-por-lavado-contra-tres-empresarios-del-sodalicio-luis-figari-luis-baertl-jourde-juan-len-alvarez-carlos-neuenschwander-2118312': Article `download()` failed with 403 Client Error: Forbidden for url: https://larepublica.pe/politica/judiciales/2023/07/27/caso-sodalicio-fiscalia-abre-caso-por-lavado-contra-tres-empresarios-del-sodalicio-luis-figari-luis-baertl-jourde-juan-len-alvarez-carlos-neuenschwander-2118312 on URL https://larepublica.pe/politica/judiciales/2023/07/27/caso-sodalicio-fiscalia-abre-caso-por-lavado-contra-tres-empresarios-del-sodalicio-luis-figari-luis-baertl-jourde-juan-len-alvarez-carlos-neuenschwander-2118312
+2023-12-04 22:40:30,186 - ERROR - An error occurred while processing 'https://lademajagua.cu/category/ciencia-y-tecnica/': Article `download()` failed with HTTPSConnectionPool(host='lademajagua.cu', port=443): Read timed out. (read timeout=6) on URL https://lademajagua.cu/category/ciencia-y-tecnica/
+2023-12-04 22:40:37,254 - ERROR - An error occurred while processing 'https://lademajagua.cu/category/ciencia-y-tecnica/': Article `download()` failed with HTTPSConnectionPool(host='lademajagua.cu', port=443): Read timed out. (read timeout=6) on URL https://lademajagua.cu/category/ciencia-y-tecnica/
+2023-12-04 22:40:44,299 - ERROR - An error occurred while processing 'https://lademajagua.cu/category/ciencia-y-tecnica/': Article `download()` failed with HTTPSConnectionPool(host='lademajagua.cu', port=443): Read timed out. (read timeout=6) on URL https://lademajagua.cu/category/ciencia-y-tecnica/
+2023-12-04 22:40:57,016 - ERROR - An error occurred while processing 'https://lademajagua.cu/tag/relaciones-cuba-estados-unidos/': Article `download()` failed with HTTPSConnectionPool(host='lademajagua.cu', port=443): Read timed out. (read timeout=6) on URL https://lademajagua.cu/tag/relaciones-cuba-estados-unidos/
+2023-12-04 22:41:05,387 - ERROR - An error occurred while processing 'https://lademajagua.cu/tag/relaciones-cuba-estados-unidos/': Article `download()` failed with HTTPSConnectionPool(host='lademajagua.cu', port=443): Read timed out. (read timeout=6) on URL https://lademajagua.cu/tag/relaciones-cuba-estados-unidos/
+2023-12-04 22:41:12,733 - ERROR - An error occurred while processing 'https://lademajagua.cu/tag/relaciones-cuba-estados-unidos/': Article `download()` failed with HTTPSConnectionPool(host='lademajagua.cu', port=443): Read timed out. (read timeout=6) on URL https://lademajagua.cu/tag/relaciones-cuba-estados-unidos/
+2023-12-04 22:43:02,695 - INFO - Skipping duplicate article: https://www.roadshow.com.ar/fintechs-as-a-service-cuando-los-desafios-estan-ligados-a-la-innovacion/
+2023-12-04 22:43:45,289 - INFO - Skipping duplicate article: https://www.lanacion.com.ar/seguridad/fernando-falsetti-el-falsificador-analogico-otra-vez-preso-por-estafar-a-una-importante-empresa-nid04122023/
+2023-12-04 22:44:03,347 - INFO - Skipping duplicate article: https://www.lavoz.com.ar/mundo/un-juez-reto-a-trump-durante-el-juicio-por-presunto-fraude-este-no-es-un-mitin-politico/
+2023-12-04 22:44:56,944 - INFO - Skipping duplicate article: https://www.elchubut.com.ar/judiciales/2023-12-1-8-7-0-por-primera-vez-declararon-no-culpable-a-un-imputado-en-un-juicio-por-jurados-en-chubut
+2023-12-04 22:46:05,143 - INFO - Skipping duplicate article: https://www.elchubut.com.ar/judiciales/2023-12-1-8-7-0-por-primera-vez-declararon-no-culpable-a-un-imputado-en-un-juicio-por-jurados-en-chubut
+2023-12-04 22:46:17,587 - ERROR - An error occurred while processing 'https://realpolitik.com.ar/nota/55279/javier-milei-evito-reunirse-con-una-funcionaria-del-fmi-a-quien-plagio-en-uno-de-sus-libros/': Article `download()` failed with 403 Client Error: Forbidden for url: https://realpolitik.com.ar/nota/55279/javier-milei-evito-reunirse-con-una-funcionaria-del-fmi-a-quien-plagio-en-uno-de-sus-libros/ on URL https://realpolitik.com.ar/nota/55279/javier-milei-evito-reunirse-con-una-funcionaria-del-fmi-a-quien-plagio-en-uno-de-sus-libros/
+2023-12-04 22:46:17,816 - ERROR - An error occurred while processing 'https://realpolitik.com.ar/nota/55279/javier-milei-evito-reunirse-con-una-funcionaria-del-fmi-a-quien-plagio-en-uno-de-sus-libros/': Article `download()` failed with 403 Client Error: Forbidden for url: https://realpolitik.com.ar/nota/55279/javier-milei-evito-reunirse-con-una-funcionaria-del-fmi-a-quien-plagio-en-uno-de-sus-libros/ on URL https://realpolitik.com.ar/nota/55279/javier-milei-evito-reunirse-con-una-funcionaria-del-fmi-a-quien-plagio-en-uno-de-sus-libros/
+2023-12-04 22:46:18,048 - ERROR - An error occurred while processing 'https://realpolitik.com.ar/nota/55279/javier-milei-evito-reunirse-con-una-funcionaria-del-fmi-a-quien-plagio-en-uno-de-sus-libros/': Article `download()` failed with 403 Client Error: Forbidden for url: https://realpolitik.com.ar/nota/55279/javier-milei-evito-reunirse-con-una-funcionaria-del-fmi-a-quien-plagio-en-uno-de-sus-libros/ on URL https://realpolitik.com.ar/nota/55279/javier-milei-evito-reunirse-con-una-funcionaria-del-fmi-a-quien-plagio-en-uno-de-sus-libros/
+2023-12-04 22:46:26,666 - ERROR - An error occurred while processing 'https://www.notiar.com.ar/index.php/mas/informacion-general/128504-dudas-sobre-si-el-loco-milei-es-un-traidor-o-un-heroe-por-jaime-correas': Article `download()` failed with HTTPSConnectionPool(host='www.notiar.com.ar', port=443): Max retries exceeded with url: /index.php/mas/informacion-general/128504-dudas-sobre-si-el-loco-milei-es-un-traidor-o-un-heroe-por-jaime-correas (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc0aef7280>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.notiar.com.ar/index.php/mas/informacion-general/128504-dudas-sobre-si-el-loco-milei-es-un-traidor-o-un-heroe-por-jaime-correas
+2023-12-04 22:46:26,671 - ERROR - An error occurred while processing 'https://www.notiar.com.ar/index.php/mas/informacion-general/128504-dudas-sobre-si-el-loco-milei-es-un-traidor-o-un-heroe-por-jaime-correas': Article `download()` failed with HTTPSConnectionPool(host='www.notiar.com.ar', port=443): Max retries exceeded with url: /index.php/mas/informacion-general/128504-dudas-sobre-si-el-loco-milei-es-un-traidor-o-un-heroe-por-jaime-correas (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc0ae2b040>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.notiar.com.ar/index.php/mas/informacion-general/128504-dudas-sobre-si-el-loco-milei-es-un-traidor-o-un-heroe-por-jaime-correas
+2023-12-04 22:46:26,675 - ERROR - An error occurred while processing 'https://www.notiar.com.ar/index.php/mas/informacion-general/128504-dudas-sobre-si-el-loco-milei-es-un-traidor-o-un-heroe-por-jaime-correas': Article `download()` failed with HTTPSConnectionPool(host='www.notiar.com.ar', port=443): Max retries exceeded with url: /index.php/mas/informacion-general/128504-dudas-sobre-si-el-loco-milei-es-un-traidor-o-un-heroe-por-jaime-correas (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc0ae29330>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.notiar.com.ar/index.php/mas/informacion-general/128504-dudas-sobre-si-el-loco-milei-es-un-traidor-o-un-heroe-por-jaime-correas
+2023-12-04 22:46:41,430 - ERROR - An error occurred while processing 'https://www.lacapital.com.ar/suscriptores/maximiliano-pullaro-alista-la-tropa-y-elige-sus-primeros-adversarios-n10105329.html': Article `download()` failed with HTTPSConnectionPool(host='www.lacapital.com.ar', port=443): Max retries exceeded with url: /suscriptores/maximiliano-pullaro-alista-la-tropa-y-elige-sus-primeros-adversarios-n10105329.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc0ae968c0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.lacapital.com.ar/suscriptores/maximiliano-pullaro-alista-la-tropa-y-elige-sus-primeros-adversarios-n10105329.html
+2023-12-04 22:46:41,435 - ERROR - An error occurred while processing 'https://www.lacapital.com.ar/suscriptores/maximiliano-pullaro-alista-la-tropa-y-elige-sus-primeros-adversarios-n10105329.html': Article `download()` failed with HTTPSConnectionPool(host='www.lacapital.com.ar', port=443): Max retries exceeded with url: /suscriptores/maximiliano-pullaro-alista-la-tropa-y-elige-sus-primeros-adversarios-n10105329.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc0ae2ab60>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.lacapital.com.ar/suscriptores/maximiliano-pullaro-alista-la-tropa-y-elige-sus-primeros-adversarios-n10105329.html
+2023-12-04 22:46:41,440 - ERROR - An error occurred while processing 'https://www.lacapital.com.ar/suscriptores/maximiliano-pullaro-alista-la-tropa-y-elige-sus-primeros-adversarios-n10105329.html': Article `download()` failed with HTTPSConnectionPool(host='www.lacapital.com.ar', port=443): Max retries exceeded with url: /suscriptores/maximiliano-pullaro-alista-la-tropa-y-elige-sus-primeros-adversarios-n10105329.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc0ae2b610>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.lacapital.com.ar/suscriptores/maximiliano-pullaro-alista-la-tropa-y-elige-sus-primeros-adversarios-n10105329.html
+2023-12-04 22:47:13,916 - INFO - Skipping duplicate article: https://www.msn.com/es-co/noticias/other/imposici%C3%B3n-de-multa-y-libre-iniciativa-empresarial/ar-AA1kuxcg
+2023-12-04 22:47:48,878 - ERROR - An error occurred while processing 'https://semanariodejunin.com.ar/nota/42589/un-video-escandaloso-que-implica-a-la-justicia-juninense/': Article `download()` failed with HTTPSConnectionPool(host='semanariodejunin.com.ar', port=443): Max retries exceeded with url: /nota/42589/un-video-escandaloso-que-implica-a-la-justicia-juninense/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc0ae2a440>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://semanariodejunin.com.ar/nota/42589/un-video-escandaloso-que-implica-a-la-justicia-juninense/
+2023-12-04 22:47:48,882 - ERROR - An error occurred while processing 'https://semanariodejunin.com.ar/nota/42589/un-video-escandaloso-que-implica-a-la-justicia-juninense/': Article `download()` failed with HTTPSConnectionPool(host='semanariodejunin.com.ar', port=443): Max retries exceeded with url: /nota/42589/un-video-escandaloso-que-implica-a-la-justicia-juninense/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc439931f0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://semanariodejunin.com.ar/nota/42589/un-video-escandaloso-que-implica-a-la-justicia-juninense/
+2023-12-04 22:47:48,887 - ERROR - An error occurred while processing 'https://semanariodejunin.com.ar/nota/42589/un-video-escandaloso-que-implica-a-la-justicia-juninense/': Article `download()` failed with HTTPSConnectionPool(host='semanariodejunin.com.ar', port=443): Max retries exceeded with url: /nota/42589/un-video-escandaloso-que-implica-a-la-justicia-juninense/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc43993010>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://semanariodejunin.com.ar/nota/42589/un-video-escandaloso-que-implica-a-la-justicia-juninense/
+2023-12-04 22:47:55,094 - INFO - Skipping duplicate article: https://www.lanacion.com.ar/conversaciones-de-domingo/jose-claudio-escribano-la-sociedad-expreso-la-voluntad-de-un-borron-y-cuenta-nueva-nid03122023/
+2023-12-04 22:48:01,928 - ERROR - An error occurred while processing 'https://www.analisisdigital.com.ar/nacionales/2023/12/03/maria-eugenia-talerico-confirmo-que-no-formara-parte-del-gobierno-de-milei': Article `download()` failed with HTTPSConnectionPool(host='www.analisisdigital.com.ar', port=443): Max retries exceeded with url: /nacionales/2023/12/03/maria-eugenia-talerico-confirmo-que-no-formara-parte-del-gobierno-de-milei (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc0aef72b0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.analisisdigital.com.ar/nacionales/2023/12/03/maria-eugenia-talerico-confirmo-que-no-formara-parte-del-gobierno-de-milei
+2023-12-04 22:48:01,933 - ERROR - An error occurred while processing 'https://www.analisisdigital.com.ar/nacionales/2023/12/03/maria-eugenia-talerico-confirmo-que-no-formara-parte-del-gobierno-de-milei': Article `download()` failed with HTTPSConnectionPool(host='www.analisisdigital.com.ar', port=443): Max retries exceeded with url: /nacionales/2023/12/03/maria-eugenia-talerico-confirmo-que-no-formara-parte-del-gobierno-de-milei (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc43991030>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.analisisdigital.com.ar/nacionales/2023/12/03/maria-eugenia-talerico-confirmo-que-no-formara-parte-del-gobierno-de-milei
+2023-12-04 22:48:01,938 - ERROR - An error occurred while processing 'https://www.analisisdigital.com.ar/nacionales/2023/12/03/maria-eugenia-talerico-confirmo-que-no-formara-parte-del-gobierno-de-milei': Article `download()` failed with HTTPSConnectionPool(host='www.analisisdigital.com.ar', port=443): Max retries exceeded with url: /nacionales/2023/12/03/maria-eugenia-talerico-confirmo-que-no-formara-parte-del-gobierno-de-milei (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc43992380>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.analisisdigital.com.ar/nacionales/2023/12/03/maria-eugenia-talerico-confirmo-que-no-formara-parte-del-gobierno-de-milei
+2023-12-04 22:49:17,207 - ERROR - An error occurred while processing 'https://www.sol915.com.ar/mysthic-quest-el-actor-f-murray-abraham-es-despedido-de-la-serie-por-conductas-sexuales-inapropiadas/': Article `download()` failed with HTTPSConnectionPool(host='www.sol915.com.ar', port=443): Max retries exceeded with url: /mysthic-quest-el-actor-f-murray-abraham-es-despedido-de-la-serie-por-conductas-sexuales-inapropiadas/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc0ae2b0d0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.sol915.com.ar/mysthic-quest-el-actor-f-murray-abraham-es-despedido-de-la-serie-por-conductas-sexuales-inapropiadas/
+2023-12-04 22:49:17,216 - ERROR - An error occurred while processing 'https://www.sol915.com.ar/mysthic-quest-el-actor-f-murray-abraham-es-despedido-de-la-serie-por-conductas-sexuales-inapropiadas/': Article `download()` failed with HTTPSConnectionPool(host='www.sol915.com.ar', port=443): Max retries exceeded with url: /mysthic-quest-el-actor-f-murray-abraham-es-despedido-de-la-serie-por-conductas-sexuales-inapropiadas/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc439f8eb0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.sol915.com.ar/mysthic-quest-el-actor-f-murray-abraham-es-despedido-de-la-serie-por-conductas-sexuales-inapropiadas/
+2023-12-04 22:49:17,221 - ERROR - An error occurred while processing 'https://www.sol915.com.ar/mysthic-quest-el-actor-f-murray-abraham-es-despedido-de-la-serie-por-conductas-sexuales-inapropiadas/': Article `download()` failed with HTTPSConnectionPool(host='www.sol915.com.ar', port=443): Max retries exceeded with url: /mysthic-quest-el-actor-f-murray-abraham-es-despedido-de-la-serie-por-conductas-sexuales-inapropiadas/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc439926b0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.sol915.com.ar/mysthic-quest-el-actor-f-murray-abraham-es-despedido-de-la-serie-por-conductas-sexuales-inapropiadas/
+2023-12-04 22:49:30,980 - ERROR - An error occurred while processing 'https://www.forbes.com.mx/author/enrique-hernandez/page/322/': Article `download()` failed with HTTPSConnectionPool(host='www.forbes.com.mx', port=443): Max retries exceeded with url: /author/enrique-hernandez/page/322/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc43993850>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.forbes.com.mx/author/enrique-hernandez/page/322/
+2023-12-04 22:49:30,987 - ERROR - An error occurred while processing 'https://www.forbes.com.mx/author/enrique-hernandez/page/322/': Article `download()` failed with HTTPSConnectionPool(host='www.forbes.com.mx', port=443): Max retries exceeded with url: /author/enrique-hernandez/page/322/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc439906d0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.forbes.com.mx/author/enrique-hernandez/page/322/
+2023-12-04 22:49:31,000 - ERROR - An error occurred while processing 'https://www.forbes.com.mx/author/enrique-hernandez/page/322/': Article `download()` failed with HTTPSConnectionPool(host='www.forbes.com.mx', port=443): Max retries exceeded with url: /author/enrique-hernandez/page/322/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7efc43992230>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://www.forbes.com.mx/author/enrique-hernandez/page/322/
+2023-12-04 22:49:51,244 - INFO - Skipping duplicate article: https://www.swissinfo.ch/spa/economia/el-punto-d%C3%A9bil-del-secreto-bancario-suizo-dificulta-la-aplicaci%C3%B3n-de-sanciones/48607994
+2023-12-04 22:50:13,778 - INFO - Skipping duplicate article: https://www.forbesargentina.com/liderazgo/por-jefes-estan-formando-sus-empleados-sean-influencers-corporativos-n32040
+2023-12-04 22:51:13,521 - INFO - Skipping duplicate article: https://www.pagina12.com.ar/613806-fuga-de-divisas-y-beneficiarios-finales
+2023-12-04 22:54:09,378 - INFO - === Script Execution End (Scraping) at: 2023-12-04 22:54:09.378817 ===
+2023-12-04 23:12:27,379 - INFO - === Script execution START (Scraping) at: 2023-12-04 23:12:27.379446 ===
+2023-12-04 23:12:27,380 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,384 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,385 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,387 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,388 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,390 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,391 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,392 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,393 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,395 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,396 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,397 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,398 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,400 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,401 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,402 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,404 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,405 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,406 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,408 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,409 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,410 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,411 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,412 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,413 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,414 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,415 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,416 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,418 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,419 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,420 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,421 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:12:27,422 - INFO - === Script Execution End (Scraping) at: 2023-12-04 23:12:27.422603 ===
+2023-12-04 23:14:03,705 - INFO - === Script execution START (Scraping) at: 2023-12-04 23:14:03.705416 ===
+2023-12-04 23:14:03,706 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,712 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,714 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,717 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,719 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,721 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,723 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,725 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,728 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,730 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,734 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,739 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,741 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,760 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,778 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,785 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,794 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,801 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,812 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,821 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,825 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,834 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,839 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,846 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,852 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,855 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,862 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,869 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,874 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,878 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,882 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,887 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:14:03,892 - INFO - === Script Execution End (Scraping) at: 2023-12-04 23:14:03.892574 ===
+2023-12-04 23:15:27,616 - INFO - === Script execution START (Scraping) at: 2023-12-04 23:15:27.616928 ===
+2023-12-04 23:15:27,617 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,621 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,623 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,625 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,626 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,628 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,630 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,631 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,633 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,634 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,636 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,637 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,639 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,640 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,642 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,644 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,645 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,647 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,648 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,650 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,652 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,653 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,654 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,656 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,657 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,658 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,659 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,661 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,662 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,664 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,665 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,667 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:15:27,668 - INFO - === Script Execution End (Scraping) at: 2023-12-04 23:15:27.668539 ===
+2023-12-04 23:16:19,548 - INFO - === Script execution START (Scraping) at: 2023-12-04 23:16:19.548568 ===
+2023-12-04 23:16:19,549 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,553 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,555 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,556 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,557 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,559 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,560 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,562 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,564 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,565 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,567 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,568 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,570 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,571 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,573 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,574 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,576 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,577 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,578 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,580 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,582 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,583 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,584 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,586 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,587 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,589 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,591 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,592 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,594 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,595 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,597 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,599 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:16:19,601 - INFO - === Script Execution End (Scraping) at: 2023-12-04 23:16:19.601293 ===
+2023-12-04 23:17:22,323 - INFO - === Script execution START (Scraping) at: 2023-12-04 23:17:22.323786 ===
+2023-12-04 23:17:22,324 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,328 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,331 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,333 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,335 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,337 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,339 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,341 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,342 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,344 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,345 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,349 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,351 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,352 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,354 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,356 - ERROR - An error occurred during scraping for EG: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,358 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,359 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,361 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,364 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,366 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,368 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,370 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,371 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,373 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,375 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,377 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,378 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,381 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,384 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,386 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,388 - ERROR - An error occurred during scraping for AE: name 'LANGUAGE_CONFIG' is not defined
+Traceback (most recent call last):
+  File "/gns_code/src/scrap.py", line 87, in scrap_articles
+    language_info = LANGUAGE_CONFIG.get(language_code)
+NameError: name 'LANGUAGE_CONFIG' is not defined
+2023-12-04 23:17:22,391 - INFO - === Script Execution End (Scraping) at: 2023-12-04 23:17:22.391176 ===
+2023-12-04 23:18:31,482 - INFO - === Script execution START (Scraping) at: 2023-12-04 23:18:31.482288 ===
+2023-12-04 23:18:50,062 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4633148.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4633148.aspx on URL https://gate.ahram.org.eg/News/4633148.aspx
+2023-12-04 23:18:50,294 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4633148.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4633148.aspx on URL https://gate.ahram.org.eg/News/4633148.aspx
+2023-12-04 23:18:50,569 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4633148.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4633148.aspx on URL https://gate.ahram.org.eg/News/4633148.aspx
+2023-12-04 23:18:53,762 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4630205.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4630205.aspx on URL https://gate.ahram.org.eg/News/4630205.aspx
+2023-12-04 23:18:53,985 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4630205.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4630205.aspx on URL https://gate.ahram.org.eg/News/4630205.aspx
+2023-12-04 23:18:54,209 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4630205.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4630205.aspx on URL https://gate.ahram.org.eg/News/4630205.aspx
+2023-12-04 23:19:54,351 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4630891.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4630891.aspx on URL https://gate.ahram.org.eg/News/4630891.aspx
+2023-12-04 23:19:54,582 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4630891.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4630891.aspx on URL https://gate.ahram.org.eg/News/4630891.aspx
+2023-12-04 23:19:54,806 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4630891.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4630891.aspx on URL https://gate.ahram.org.eg/News/4630891.aspx
+2023-12-04 23:20:01,389 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4634050.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4634050.aspx on URL https://gate.ahram.org.eg/News/4634050.aspx
+2023-12-04 23:20:01,612 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4634050.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4634050.aspx on URL https://gate.ahram.org.eg/News/4634050.aspx
+2023-12-04 23:20:01,838 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4634050.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4634050.aspx on URL https://gate.ahram.org.eg/News/4634050.aspx
+2023-12-04 23:20:12,390 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4629846.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4629846.aspx on URL https://gate.ahram.org.eg/News/4629846.aspx
+2023-12-04 23:20:12,641 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4629846.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4629846.aspx on URL https://gate.ahram.org.eg/News/4629846.aspx
+2023-12-04 23:20:12,884 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4629846.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4629846.aspx on URL https://gate.ahram.org.eg/News/4629846.aspx
+2023-12-04 23:20:17,007 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4626773.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4626773.aspx on URL https://gate.ahram.org.eg/News/4626773.aspx
+2023-12-04 23:20:17,231 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4626773.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4626773.aspx on URL https://gate.ahram.org.eg/News/4626773.aspx
+2023-12-04 23:20:17,459 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4626773.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4626773.aspx on URL https://gate.ahram.org.eg/News/4626773.aspx
+2023-12-04 23:20:23,443 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4623061.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4623061.aspx on URL https://gate.ahram.org.eg/News/4623061.aspx
+2023-12-04 23:20:23,672 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4623061.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4623061.aspx on URL https://gate.ahram.org.eg/News/4623061.aspx
+2023-12-04 23:20:23,909 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4623061.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4623061.aspx on URL https://gate.ahram.org.eg/News/4623061.aspx
+2023-12-04 23:20:30,390 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4634050.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4634050.aspx on URL https://gate.ahram.org.eg/News/4634050.aspx
+2023-12-04 23:20:30,630 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4634050.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4634050.aspx on URL https://gate.ahram.org.eg/News/4634050.aspx
+2023-12-04 23:20:30,873 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4634050.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4634050.aspx on URL https://gate.ahram.org.eg/News/4634050.aspx
+2023-12-04 23:20:34,012 - INFO - Skipping duplicate article: https://www.maspero.eg/science-and-technology/2023/11/23/737183/%D9%85%D8%AD%D9%83%D9%85%D8%A9-%D8%B1%D9%88%D8%B3%D9%8A%D8%A9-%D8%AA%D8%BA%D8%B1%D9%85-%D8%B4%D8%B1%D9%83%D8%A9-%D8%AC%D9%88%D8%AC%D9%84-4-%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%B1%D9%88%D8%A8%D9%84-%D9%84%D8%B1%D9%81%D8%B6%D9%87%D8%A7-%D8%AD%D8%B0%D9%81-%D9%85%D9%82%D8%A7%D8%B7%D8%B9-%D9%83%D8%A7%D8%B0%D8%A8%D8%A9
+2023-12-04 23:20:35,773 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4629846.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4629846.aspx on URL https://gate.ahram.org.eg/News/4629846.aspx
+2023-12-04 23:20:36,121 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4629846.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4629846.aspx on URL https://gate.ahram.org.eg/News/4629846.aspx
+2023-12-04 23:20:36,343 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4629846.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4629846.aspx on URL https://gate.ahram.org.eg/News/4629846.aspx
+2023-12-04 23:20:39,493 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4626773.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4626773.aspx on URL https://gate.ahram.org.eg/News/4626773.aspx
+2023-12-04 23:20:39,726 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4626773.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4626773.aspx on URL https://gate.ahram.org.eg/News/4626773.aspx
+2023-12-04 23:20:39,956 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4626773.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4626773.aspx on URL https://gate.ahram.org.eg/News/4626773.aspx
+2023-12-04 23:20:46,432 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4623061.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4623061.aspx on URL https://gate.ahram.org.eg/News/4623061.aspx
+2023-12-04 23:20:46,691 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4623061.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4623061.aspx on URL https://gate.ahram.org.eg/News/4623061.aspx
+2023-12-04 23:20:46,916 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4623061.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4623061.aspx on URL https://gate.ahram.org.eg/News/4623061.aspx
+2023-12-04 23:21:00,567 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4633402.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4633402.aspx on URL https://gate.ahram.org.eg/News/4633402.aspx
+2023-12-04 23:21:00,807 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4633402.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4633402.aspx on URL https://gate.ahram.org.eg/News/4633402.aspx
+2023-12-04 23:21:01,040 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4633402.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4633402.aspx on URL https://gate.ahram.org.eg/News/4633402.aspx
+2023-12-04 23:21:15,502 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4618401.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4618401.aspx on URL https://gate.ahram.org.eg/News/4618401.aspx
+2023-12-04 23:21:15,725 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4618401.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4618401.aspx on URL https://gate.ahram.org.eg/News/4618401.aspx
+2023-12-04 23:21:15,949 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4618401.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4618401.aspx on URL https://gate.ahram.org.eg/News/4618401.aspx
+2023-12-04 23:21:20,665 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/daily/News/204681/25/922210/%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B6-%D9%8A%D9%82%D8%A7%D8%B7%D8%B9-%C2%AB%D8%A5%D9%83%D8%B3%C2%BB.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/daily/News/204681/25/922210/%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B6-%D9%8A%D9%82%D8%A7%D8%B7%D8%B9-%C2%AB%D8%A5%D9%83%D8%B3%C2%BB.aspx on URL https://gate.ahram.org.eg/daily/News/204681/25/922210/%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B6-%D9%8A%D9%82%D8%A7%D8%B7%D8%B9-%C2%AB%D8%A5%D9%83%D8%B3%C2%BB.aspx
+2023-12-04 23:21:20,890 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/daily/News/204681/25/922210/%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B6-%D9%8A%D9%82%D8%A7%D8%B7%D8%B9-%C2%AB%D8%A5%D9%83%D8%B3%C2%BB.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/daily/News/204681/25/922210/%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B6-%D9%8A%D9%82%D8%A7%D8%B7%D8%B9-%C2%AB%D8%A5%D9%83%D8%B3%C2%BB.aspx on URL https://gate.ahram.org.eg/daily/News/204681/25/922210/%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B6-%D9%8A%D9%82%D8%A7%D8%B7%D8%B9-%C2%AB%D8%A5%D9%83%D8%B3%C2%BB.aspx
+2023-12-04 23:21:21,134 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/daily/News/204681/25/922210/%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B6-%D9%8A%D9%82%D8%A7%D8%B7%D8%B9-%C2%AB%D8%A5%D9%83%D8%B3%C2%BB.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/daily/News/204681/25/922210/%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B6-%D9%8A%D9%82%D8%A7%D8%B7%D8%B9-%C2%AB%D8%A5%D9%83%D8%B3%C2%BB.aspx on URL https://gate.ahram.org.eg/daily/News/204681/25/922210/%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B6-%D9%8A%D9%82%D8%A7%D8%B7%D8%B9-%C2%AB%D8%A5%D9%83%D8%B3%C2%BB.aspx
+2023-12-04 23:21:26,440 - INFO - Skipping duplicate article: https://www.goal.com/ar-eg/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/%D8%A7%D9%94%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%A7%D8%AA%D8%AD%D8%A7%D8%AF-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D9%82%D8%B1%D8%A7%D8%B1-%D8%BA%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A7%D8%A8%D8%A9-%D8%AC%D8%A7%D9%8A%D8%A7%D8%B1%D8%AF%D9%88-%D8%B3%D8%A8%D8%A7%D9%87%D8%A7%D9%86-%D8%AA%D9%88%D8%B1%D8%B7-%D9%86%D8%AC%D9%85-%D9%83%D8%B1%D9%8A%D9%85-%D8%A8%D9%86%D8%B2%D9%8A%D9%85%D8%A7/bltf0fb591e634dc108
+2023-12-04 23:21:28,294 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4633402.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4633402.aspx on URL https://gate.ahram.org.eg/News/4633402.aspx
+2023-12-04 23:21:28,530 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4633402.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4633402.aspx on URL https://gate.ahram.org.eg/News/4633402.aspx
+2023-12-04 23:21:28,757 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4633402.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4633402.aspx on URL https://gate.ahram.org.eg/News/4633402.aspx
+2023-12-04 23:21:32,360 - INFO - Skipping duplicate article: https://www.alhurra.com/egypt/2023/11/28/%D8%B5%D8%AD%D9%8A%D9%81%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D9%87%D9%85-%D8%A8%D8%B1%D8%B4%D9%88%D8%A9-%D8%A7%D9%84%D8%B3%D9%8A%D9%86%D8%A7%D8%AA%D9%88%D8%B1-%D9%85%D9%8A%D9%86%D9%8A%D9%86%D8%AF%D9%8A%D8%B2-%D9%84%D8%B9%D8%A8-%D8%AF%D9%88%D8%B1%D8%A7-%D8%A8%D9%86%D9%82%D9%84-%D9%85%D8%B1%D9%88%D8%AD%D9%8A%D8%A7%D8%AA-%D8%B9%D8%B3%D9%83%D8%B1%D9%8A%D8%A9-%D9%84%D9%85%D8%B5%D8%B1
+2023-12-04 23:21:34,165 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4618401.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4618401.aspx on URL https://gate.ahram.org.eg/News/4618401.aspx
+2023-12-04 23:21:34,390 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4618401.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4618401.aspx on URL https://gate.ahram.org.eg/News/4618401.aspx
+2023-12-04 23:21:34,613 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4618401.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4618401.aspx on URL https://gate.ahram.org.eg/News/4618401.aspx
+2023-12-04 23:21:40,203 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/daily/News/204681/25/922210/%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B6-%D9%8A%D9%82%D8%A7%D8%B7%D8%B9-%C2%AB%D8%A5%D9%83%D8%B3%C2%BB.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/daily/News/204681/25/922210/%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B6-%D9%8A%D9%82%D8%A7%D8%B7%D8%B9-%C2%AB%D8%A5%D9%83%D8%B3%C2%BB.aspx on URL https://gate.ahram.org.eg/daily/News/204681/25/922210/%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B6-%D9%8A%D9%82%D8%A7%D8%B7%D8%B9-%C2%AB%D8%A5%D9%83%D8%B3%C2%BB.aspx
+2023-12-04 23:21:40,436 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/daily/News/204681/25/922210/%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B6-%D9%8A%D9%82%D8%A7%D8%B7%D8%B9-%C2%AB%D8%A5%D9%83%D8%B3%C2%BB.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/daily/News/204681/25/922210/%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B6-%D9%8A%D9%82%D8%A7%D8%B7%D8%B9-%C2%AB%D8%A5%D9%83%D8%B3%C2%BB.aspx on URL https://gate.ahram.org.eg/daily/News/204681/25/922210/%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B6-%D9%8A%D9%82%D8%A7%D8%B7%D8%B9-%C2%AB%D8%A5%D9%83%D8%B3%C2%BB.aspx
+2023-12-04 23:21:40,673 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/daily/News/204681/25/922210/%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B6-%D9%8A%D9%82%D8%A7%D8%B7%D8%B9-%C2%AB%D8%A5%D9%83%D8%B3%C2%BB.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/daily/News/204681/25/922210/%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B6-%D9%8A%D9%82%D8%A7%D8%B7%D8%B9-%C2%AB%D8%A5%D9%83%D8%B3%C2%BB.aspx on URL https://gate.ahram.org.eg/daily/News/204681/25/922210/%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B6-%D9%8A%D9%82%D8%A7%D8%B7%D8%B9-%C2%AB%D8%A5%D9%83%D8%B3%C2%BB.aspx
+2023-12-04 23:22:15,501 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4619903.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4619903.aspx on URL https://gate.ahram.org.eg/News/4619903.aspx
+2023-12-04 23:22:15,721 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4619903.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4619903.aspx on URL https://gate.ahram.org.eg/News/4619903.aspx
+2023-12-04 23:22:15,960 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4619903.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4619903.aspx on URL https://gate.ahram.org.eg/News/4619903.aspx
+2023-12-04 23:22:37,505 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4618221.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4618221.aspx on URL https://gate.ahram.org.eg/News/4618221.aspx
+2023-12-04 23:22:37,731 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4618221.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4618221.aspx on URL https://gate.ahram.org.eg/News/4618221.aspx
+2023-12-04 23:22:37,966 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4618221.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4618221.aspx on URL https://gate.ahram.org.eg/News/4618221.aspx
+2023-12-04 23:23:55,046 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4619903.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4619903.aspx on URL https://gate.ahram.org.eg/News/4619903.aspx
+2023-12-04 23:23:55,299 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4619903.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4619903.aspx on URL https://gate.ahram.org.eg/News/4619903.aspx
+2023-12-04 23:23:55,534 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4619903.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4619903.aspx on URL https://gate.ahram.org.eg/News/4619903.aspx
+2023-12-04 23:24:30,350 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4563705.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4563705.aspx on URL https://gate.ahram.org.eg/News/4563705.aspx
+2023-12-04 23:24:30,586 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4563705.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4563705.aspx on URL https://gate.ahram.org.eg/News/4563705.aspx
+2023-12-04 23:24:30,818 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4563705.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4563705.aspx on URL https://gate.ahram.org.eg/News/4563705.aspx
+2023-12-04 23:24:39,189 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4625266.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4625266.aspx on URL https://gate.ahram.org.eg/News/4625266.aspx
+2023-12-04 23:24:39,417 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4625266.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4625266.aspx on URL https://gate.ahram.org.eg/News/4625266.aspx
+2023-12-04 23:24:39,647 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4625266.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4625266.aspx on URL https://gate.ahram.org.eg/News/4625266.aspx
+2023-12-04 23:24:43,856 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4625218.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4625218.aspx on URL https://gate.ahram.org.eg/News/4625218.aspx
+2023-12-04 23:24:44,102 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4625218.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4625218.aspx on URL https://gate.ahram.org.eg/News/4625218.aspx
+2023-12-04 23:24:44,349 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/News/4625218.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/News/4625218.aspx on URL https://gate.ahram.org.eg/News/4625218.aspx
+2023-12-04 23:25:04,813 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/daily/News/204684/11/922464/%D8%A7%D9%84%D8%A7%D8%B9%D9%85%D8%AF%D8%A9/%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B7%D8%B9%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/daily/News/204684/11/922464/%D8%A7%D9%84%D8%A7%D8%B9%D9%85%D8%AF%D8%A9/%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B7%D8%B9%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9.aspx on URL https://gate.ahram.org.eg/daily/News/204684/11/922464/%D8%A7%D9%84%D8%A7%D8%B9%D9%85%D8%AF%D8%A9/%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B7%D8%B9%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9.aspx
+2023-12-04 23:25:05,040 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/daily/News/204684/11/922464/%D8%A7%D9%84%D8%A7%D8%B9%D9%85%D8%AF%D8%A9/%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B7%D8%B9%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/daily/News/204684/11/922464/%D8%A7%D9%84%D8%A7%D8%B9%D9%85%D8%AF%D8%A9/%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B7%D8%B9%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9.aspx on URL https://gate.ahram.org.eg/daily/News/204684/11/922464/%D8%A7%D9%84%D8%A7%D8%B9%D9%85%D8%AF%D8%A9/%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B7%D8%B9%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9.aspx
+2023-12-04 23:25:05,279 - ERROR - An error occurred while processing 'https://gate.ahram.org.eg/daily/News/204684/11/922464/%D8%A7%D9%84%D8%A7%D8%B9%D9%85%D8%AF%D8%A9/%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B7%D8%B9%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9.aspx': Article `download()` failed with 403 Client Error: Forbidden for url: https://gate.ahram.org.eg/daily/News/204684/11/922464/%D8%A7%D9%84%D8%A7%D8%B9%D9%85%D8%AF%D8%A9/%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B7%D8%B9%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9.aspx on URL https://gate.ahram.org.eg/daily/News/204684/11/922464/%D8%A7%D9%84%D8%A7%D8%B9%D9%85%D8%AF%D8%A9/%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B7%D8%B9%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9.aspx

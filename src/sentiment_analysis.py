@@ -1,6 +1,11 @@
-from transformers import BertTokenizer, BertForSequenceClassification, pipeline, AutoTokenizer, AutoModelForSequenceClassification
+from gevent import monkey
+monkey.patch_all(thread=False, select=False)
+
+from transformers import BertTokenizer, BertForSequenceClassification, pipeline, AutoTokenizer, AutoModelForSequenceClassification, AutoModelForTokenClassification
 from mongo_ops import connect_to_mongo_atlas
 import torch
+from flair.data import Sentence
+from flair.models import SequenceTagger
 from tqdm import tqdm
 from utils import setup_logging
 from datetime import datetime
@@ -17,6 +22,7 @@ classify_FLS_logger = setup_logging("ClassifyFLSLogger", "logs/FLS.log")
 # Create a logger for classify_ESG9 function
 classify_ESG9_logger = setup_logging("ClassifyESG9Logger", "logs/ESG9.log")
 
+classify_NER_logger = setup_logging("NERLogger", "logs/NER.log")
 
 
 # Map numeric labels to English language representations
@@ -247,3 +253,54 @@ def classify_ESG9():
     except Exception as e:
         classify_ESG9_logger.error(f"Error during FinBERT-ESG classification: {str(e)}")
     return esg_labels_added
+
+
+def classify_NER():
+    classify_NER_logger.info(f'=== Script execution START (NER Classification) at: {datetime.now()} ===')
+
+    try:
+        # Load Flair NER model
+        tagger = SequenceTagger.load("flair/ner-english-ontonotes-large")
+
+        # Connect to MongoDB
+        collection = connect_to_mongo_atlas()
+        cursor = collection.find()
+
+        ner_entities_added = 0  # Initialize count
+
+        total_documents = collection.count_documents({})  # Use count_documents method on the collection
+
+        # Use tqdm to create a progress bar
+        for document in tqdm(cursor, desc="Processing Articles", total=total_documents):
+            _id = document["_id"]
+            translated_summary = document.get("Translated Summary", "")
+
+            # Make sentence
+            sentence = Sentence(translated_summary)
+
+            # Predict NER tags
+            tagger.predict(sentence)
+
+            # Extract recognized entities
+            entities = [entity.tag for entity in sentence.get_spans('ner')]
+
+            # Filter entities to include only ORG and GPE
+            filtered_entities = [entity for entity in entities if entity in ["ORG", "GPE"]]
+
+            # Update the MongoDB document, overwriting the existing "Entities" field
+            collection.update_one(
+                {"_id": _id},
+                {"$set": {"Entities": filtered_entities}}
+            )
+
+            classify_NER_logger.info(f"NER classification completed for document {_id}. Entities added: {filtered_entities}")
+
+            ner_entities_added += len(filtered_entities)
+
+        print(f"NER Classification complete. {ner_entities_added} entities added to the collection.")
+        classify_NER_logger.info(f'=== Script execution END (NER Classification) at: {datetime.now()} with {ner_entities_added} entities added to the collection ===')
+
+    except Exception as e:
+        classify_NER_logger.error(f"Error during NER classification: {str(e)}")
+
+    return ner_entities_added
