@@ -53,7 +53,7 @@ def analyze_sentiment(text):
         return None, None
 
 def classify_SA():
-    classify_SA_logger.info(f'=== Script execution START (R/F Classification) at: {datetime.now()} ===')
+    classify_SA_logger.info(f'=== Script execution START (Sentiment Analysis) at: {datetime.now()} ===')
     collection = connect_to_mongo_atlas()
     cursor = collection.find()
 
@@ -83,9 +83,9 @@ def classify_SA():
 
         if sentiment_label is not None:
             sentiment_labels_added += 1
-    print(f"ESG Classification complete. {sentiment_labels_added} labels added to the collection.")
+    print(f"SA Classification complete. {sentiment_labels_added} labels added to the collection.")
 
-    classify_SA_logger.info(f'=== Script execution END (R/F Classification) at: {datetime.now()} with {sentiment_labels_added} labels added to the collection. ===')
+    classify_SA_logger.info(f'=== Script execution END (Sentiment Analysis) at: {datetime.now()} with {sentiment_labels_added} labels added to the collection. ===')
     return sentiment_labels_added
 
 
@@ -129,15 +129,15 @@ def classify_ESG():
                 {"$set": {"TAGS": [{"ESG Label": esg_label, "ESG Score": esg_score}]}}
             )
 
-            classify_ESG_logger.info(f"ESG classification completed for document {_id}. Label: {esg_label}, Score: {esg_score}")
+            classify_ESG_logger.info(f"ESG3 classification completed for document {_id}. Label: {esg_label}, Score: {esg_score}")
 
             esg_labels_added += 1
 
-        print(f"ESG Classification complete. {esg_labels_added} labels added to the collection.")
+        print(f"ESG3 Classification complete. {esg_labels_added} labels added to the collection.")
         classify_ESG_logger.info(f'=== Script execution END (ESG3 Classification) at: {datetime.now()} with {esg_labels_added} labels added to the collection ===')
 
     except Exception as e:
-        classify_ESG_logger.error(f"Error during ESG classification: {str(e)}")
+        classify_ESG_logger.error(f"Error during ESG3 classification: {str(e)}")
     return esg_labels_added
 
 
@@ -243,15 +243,15 @@ def classify_ESG9():
                 {"$addToSet": {"TAGS": {"ESG Label": esg_label, "ESG Score": esg_score}}}
             )
 
-            classify_ESG9_logger.info(f"FinBERT-ESG classification completed for document {_id}. Label: {esg_label}, Score: {esg_score}")
+            classify_ESG9_logger.info(f"FinBERT-ESG9 classification completed for document {_id}. Label: {esg_label}, Score: {esg_score}")
 
             esg_labels_added += 1
 
-        print(f"ESG Classification complete. {esg_labels_added} labels added to the collection.")
+        print(f"ESG9 Classification complete. {esg_labels_added} labels added to the collection.")
         classify_ESG9_logger.info(f'=== Script execution END (ESG9 Classification) at: {datetime.now()} with {esg_labels_added} labels added to the collection ===')
 
     except Exception as e:
-        classify_ESG9_logger.error(f"Error during FinBERT-ESG classification: {str(e)}")
+        classify_ESG9_logger.error(f"Error during ESG9 classification: {str(e)}")
     return esg_labels_added
 
 

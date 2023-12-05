@@ -14,7 +14,7 @@ from datetime import datetime
 from tqdm import tqdm
 
 # Create a logger for classify_RF function
-classify_RF_logger = setup_logging("ClassifyRFLogger", "logs/classify_RF.log")
+classify_RF_logger = setup_logging("ClassifyRFLogger", "logs/RF.log")
 
 
 
