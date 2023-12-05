@@ -44,7 +44,7 @@ dag = DAG(
 
 t1 = BashOperator(
     task_id='run_python_script',
-    bash_command='python /src/main.py --scrap FR auto',
+    bash_command='python /gns_code/src/main.py --scrap EN auto',
     dag=dag)
 
 # Set task dependencies if needed

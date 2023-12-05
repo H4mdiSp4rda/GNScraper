@@ -1,0 +1,254 @@
+2023-12-05 14:50:29,483 - INFO - === Script execution START (ESG3 Classification) at: 2023-12-05 14:50:29.483551 ===
+2023-12-05 14:50:38,034 - INFO - ESG classification completed for document 656e45db2f568a5a60d879f7. Label: Social, Score: 0.9550783634185791
+2023-12-05 14:50:38,580 - INFO - ESG classification completed for document 656e45db2f568a5a60d879f8. Label: Not ESG Related, Score: 0.7550871968269348
+2023-12-05 14:50:38,830 - INFO - ESG classification completed for document 656e45db2f568a5a60d879f9. Label: Social, Score: 0.8832447528839111
+2023-12-05 14:50:39,065 - INFO - ESG classification completed for document 656e45f82f568a5a60d879fe. Label: Social, Score: 0.9654279351234436
+2023-12-05 14:50:39,671 - INFO - ESG classification completed for document 656e45f82f568a5a60d879ff. Label: Social, Score: 0.98570317029953
+2023-12-05 14:50:39,901 - INFO - ESG classification completed for document 656e45f92f568a5a60d87a00. Label: Social, Score: 0.9818951487541199
+2023-12-05 14:50:40,400 - INFO - ESG classification completed for document 656e46122f568a5a60d87a05. Label: Social, Score: 0.5890188813209534
+2023-12-05 14:50:40,810 - INFO - ESG classification completed for document 656e46122f568a5a60d87a06. Label: Social, Score: 0.6775068640708923
+2023-12-05 14:50:41,044 - INFO - ESG classification completed for document 656e46132f568a5a60d87a07. Label: Social, Score: 0.480164498090744
+2023-12-05 14:50:41,228 - INFO - ESG classification completed for document 656e46282f568a5a60d87a0c. Label: Not ESG Related, Score: 0.7483522295951843
+2023-12-05 14:50:41,600 - INFO - ESG classification completed for document 656e46282f568a5a60d87a0d. Label: Not ESG Related, Score: 0.6916700005531311
+2023-12-05 14:50:41,841 - INFO - ESG classification completed for document 656e463f2f568a5a60d87a12. Label: Environmental, Score: 0.9085652828216553
+2023-12-05 14:50:42,115 - INFO - ESG classification completed for document 656e463f2f568a5a60d87a13. Label: Environmental, Score: 0.4971483051776886
+2023-12-05 14:50:42,515 - INFO - ESG classification completed for document 656e464f2f568a5a60d87a18. Label: Not ESG Related, Score: 0.771311342716217
+2023-12-05 14:50:42,685 - INFO - ESG classification completed for document 656e46642f568a5a60d87a1d. Label: Not ESG Related, Score: 0.9452056884765625
+2023-12-05 14:50:42,966 - INFO - ESG classification completed for document 656e46642f568a5a60d87a1e. Label: Social, Score: 0.5916422009468079
+2023-12-05 14:50:43,169 - INFO - ESG classification completed for document 656e46652f568a5a60d87a1f. Label: Social, Score: 0.6061621904373169
+2023-12-05 14:50:43,424 - INFO - ESG classification completed for document 656e46abb69f65a7dd0f3d66. Label: Social, Score: 0.9765712022781372
+2023-12-05 14:50:43,772 - INFO - ESG classification completed for document 656e46abb69f65a7dd0f3d67. Label: Social, Score: 0.9380754828453064
+2023-12-05 14:50:44,002 - INFO - ESG classification completed for document 656e46beb69f65a7dd0f3d6e. Label: Not ESG Related, Score: 0.49314722418785095
+2023-12-05 14:50:44,180 - INFO - ESG classification completed for document 656e46ceb69f65a7dd0f3d75. Label: Social, Score: 0.48028334975242615
+2023-12-05 14:50:44,373 - INFO - ESG classification completed for document 656e46cfb69f65a7dd0f3d76. Label: Social, Score: 0.5019628405570984
+2023-12-05 14:50:44,831 - INFO - ESG classification completed for document 656e46e6b69f65a7dd0f3d7d. Label: Social, Score: 0.9736635684967041
+2023-12-05 14:50:45,097 - INFO - ESG classification completed for document 656e46e6b69f65a7dd0f3d7e. Label: Social, Score: 0.6720429062843323
+2023-12-05 14:50:45,372 - INFO - ESG classification completed for document 656e4701b69f65a7dd0f3d85. Label: Environmental, Score: 0.9830896854400635
+2023-12-05 14:50:45,635 - INFO - ESG classification completed for document 656e4701b69f65a7dd0f3d86. Label: Social, Score: 0.631893515586853
+2023-12-05 14:50:45,983 - INFO - ESG classification completed for document 656e471ab69f65a7dd0f3d8d. Label: Not ESG Related, Score: 0.877522349357605
+2023-12-05 14:50:46,241 - INFO - ESG classification completed for document 656e471ab69f65a7dd0f3d8e. Label: Governance, Score: 0.47025182843208313
+2023-12-05 14:50:46,486 - INFO - ESG classification completed for document 656e472cb69f65a7dd0f3d95. Label: Environmental, Score: 0.527977466583252
+2023-12-05 14:50:46,684 - INFO - ESG classification completed for document 656e4748b69f65a7dd0f3d9c. Label: Social, Score: 0.42414456605911255
+2023-12-05 14:50:47,085 - INFO - ESG classification completed for document 656e4748b69f65a7dd0f3d9d. Label: Social, Score: 0.5743611454963684
+2023-12-05 14:50:47,322 - INFO - ESG classification completed for document 656e4749b69f65a7dd0f3d9e. Label: Social, Score: 0.5253693461418152
+2023-12-05 14:50:47,560 - INFO - ESG classification completed for document 656e4749b69f65a7dd0f3d9f. Label: Social, Score: 0.939582884311676
+2023-12-05 14:50:47,775 - INFO - ESG classification completed for document 656e4777b69f65a7dd0f3da6. Label: Social, Score: 0.916957437992096
+2023-12-05 14:50:48,090 - INFO - ESG classification completed for document 656e4777b69f65a7dd0f3da7. Label: Social, Score: 0.9547219276428223
+2023-12-05 14:50:48,308 - INFO - ESG classification completed for document 656e4777b69f65a7dd0f3da8. Label: Social, Score: 0.8541596531867981
+2023-12-05 14:50:48,554 - INFO - ESG classification completed for document 656e4778b69f65a7dd0f3da9. Label: Social, Score: 0.35944119095802307
+2023-12-05 14:50:48,789 - INFO - ESG classification completed for document 656e4778b69f65a7dd0f3daa. Label: Social, Score: 0.8514552712440491
+2023-12-05 14:50:49,252 - INFO - ESG classification completed for document 656e47acb69f65a7dd0f3db1. Label: Social, Score: 0.8932140469551086
+2023-12-05 14:50:49,428 - INFO - ESG classification completed for document 656e47acb69f65a7dd0f3db2. Label: Not ESG Related, Score: 0.7332186102867126
+2023-12-05 14:50:49,716 - INFO - ESG classification completed for document 656e47acb69f65a7dd0f3db3. Label: Governance, Score: 0.8602063655853271
+2023-12-05 14:50:49,977 - INFO - ESG classification completed for document 656e47adb69f65a7dd0f3db4. Label: Environmental, Score: 0.9778109788894653
+2023-12-05 14:50:50,489 - INFO - ESG classification completed for document 656e47adb69f65a7dd0f3db5. Label: Social, Score: 0.8898652195930481
+2023-12-05 14:50:50,813 - INFO - ESG classification completed for document 656e47dfb69f65a7dd0f3dbc. Label: Social, Score: 0.8633807301521301
+2023-12-05 14:50:51,214 - INFO - ESG classification completed for document 656e47dfb69f65a7dd0f3dbd. Label: Governance, Score: 0.6407561898231506
+2023-12-05 14:50:51,504 - INFO - ESG classification completed for document 656e47dfb69f65a7dd0f3dbe. Label: Social, Score: 0.629179060459137
+2023-12-05 14:50:51,847 - INFO - ESG classification completed for document 656e47e0b69f65a7dd0f3dbf. Label: Social, Score: 0.9466701745986938
+2023-12-05 14:50:52,062 - INFO - ESG classification completed for document 656e4811b69f65a7dd0f3dc6. Label: Social, Score: 0.7522582411766052
+2023-12-05 14:50:52,395 - INFO - ESG classification completed for document 656e4811b69f65a7dd0f3dc7. Label: Not ESG Related, Score: 0.5914057493209839
+2023-12-05 14:50:52,590 - INFO - ESG classification completed for document 656e4812b69f65a7dd0f3dc8. Label: Social, Score: 0.9471063613891602
+2023-12-05 14:50:52,790 - INFO - ESG classification completed for document 656e4812b69f65a7dd0f3dc9. Label: Social, Score: 0.925255537033081
+2023-12-05 14:50:52,989 - INFO - ESG classification completed for document 656e4812b69f65a7dd0f3dca. Label: Social, Score: 0.9552358388900757
+2023-12-05 14:50:53,228 - INFO - ESG classification completed for document 656e4833b69f65a7dd0f3dd1. Label: Not ESG Related, Score: 0.5172415375709534
+2023-12-05 14:50:53,644 - INFO - ESG classification completed for document 656e4833b69f65a7dd0f3dd2. Label: Social, Score: 0.9697771072387695
+2023-12-05 14:50:53,936 - INFO - ESG classification completed for document 656e485bb69f65a7dd0f3dd9. Label: Social, Score: 0.6919910311698914
+2023-12-05 14:50:54,144 - INFO - ESG classification completed for document 656e485cb69f65a7dd0f3dda. Label: Social, Score: 0.5778093338012695
+2023-12-05 14:50:54,351 - INFO - ESG classification completed for document 656e485cb69f65a7dd0f3ddb. Label: Social, Score: 0.6213760375976562
+2023-12-05 14:50:54,636 - INFO - ESG classification completed for document 656e485cb69f65a7dd0f3ddc. Label: Social, Score: 0.5906462669372559
+2023-12-05 14:50:54,875 - INFO - ESG classification completed for document 656e485cb69f65a7dd0f3ddd. Label: Social, Score: 0.8843488693237305
+2023-12-05 14:50:55,123 - INFO - ESG classification completed for document 656e4887b69f65a7dd0f3de4. Label: Social, Score: 0.9014961123466492
+2023-12-05 14:50:55,318 - INFO - ESG classification completed for document 656e4887b69f65a7dd0f3de5. Label: Social, Score: 0.6289811730384827
+2023-12-05 14:50:55,802 - INFO - ESG classification completed for document 656e4888b69f65a7dd0f3de6. Label: Social, Score: 0.8018763661384583
+2023-12-05 14:50:56,119 - INFO - ESG classification completed for document 656e4888b69f65a7dd0f3de7. Label: Social, Score: 0.7854244709014893
+2023-12-05 14:50:56,298 - INFO - ESG classification completed for document 656e48b4b69f65a7dd0f3dee. Label: Social, Score: 0.969014585018158
+2023-12-05 14:50:56,538 - INFO - ESG classification completed for document 656e48b4b69f65a7dd0f3def. Label: Social, Score: 0.8427788019180298
+2023-12-05 14:50:56,888 - INFO - ESG classification completed for document 656e48b4b69f65a7dd0f3df0. Label: Social, Score: 0.5389047265052795
+2023-12-05 14:50:57,131 - INFO - ESG classification completed for document 656e48b5b69f65a7dd0f3df1. Label: Governance, Score: 0.5964335799217224
+2023-12-05 14:50:57,473 - INFO - ESG classification completed for document 656e48b5b69f65a7dd0f3df2. Label: Social, Score: 0.920639157295227
+2023-12-05 14:50:57,738 - INFO - ESG classification completed for document 656e48dfb69f65a7dd0f3df9. Label: Social, Score: 0.9273340106010437
+2023-12-05 14:50:58,129 - INFO - ESG classification completed for document 656e48dfb69f65a7dd0f3dfa. Label: Social, Score: 0.7733480334281921
+2023-12-05 14:50:58,496 - INFO - ESG classification completed for document 656e48dfb69f65a7dd0f3dfb. Label: Social, Score: 0.979314386844635
+2023-12-05 14:50:58,733 - INFO - ESG classification completed for document 656e48dfb69f65a7dd0f3dfc. Label: Not ESG Related, Score: 0.707893431186676
+2023-12-05 14:50:59,217 - INFO - ESG classification completed for document 656e48e0b69f65a7dd0f3dfd. Label: Social, Score: 0.7049404978752136
+2023-12-05 14:50:59,466 - INFO - ESG classification completed for document 656e4911b69f65a7dd0f3e04. Label: Social, Score: 0.5802398920059204
+2023-12-05 14:50:59,695 - INFO - ESG classification completed for document 656e4911b69f65a7dd0f3e05. Label: Not ESG Related, Score: 0.6474573612213135
+2023-12-05 14:51:00,314 - INFO - ESG classification completed for document 656e4911b69f65a7dd0f3e06. Label: Social, Score: 0.873964250087738
+2023-12-05 14:51:00,800 - INFO - ESG classification completed for document 656e4912b69f65a7dd0f3e07. Label: Social, Score: 0.7944851517677307
+2023-12-05 14:51:01,113 - INFO - ESG classification completed for document 656e4912b69f65a7dd0f3e08. Label: Social, Score: 0.9337164759635925
+2023-12-05 14:51:01,339 - INFO - ESG classification completed for document 656e4942b69f65a7dd0f3e0f. Label: Social, Score: 0.8471554517745972
+2023-12-05 14:51:01,568 - INFO - ESG classification completed for document 656e4943b69f65a7dd0f3e10. Label: Social, Score: 0.9773162007331848
+2023-12-05 14:51:01,770 - INFO - ESG classification completed for document 656e4943b69f65a7dd0f3e11. Label: Not ESG Related, Score: 0.6800327301025391
+2023-12-05 14:51:02,026 - INFO - ESG classification completed for document 656e4943b69f65a7dd0f3e12. Label: Social, Score: 0.8432890772819519
+2023-12-05 14:51:02,502 - INFO - ESG classification completed for document 656e4943b69f65a7dd0f3e13. Label: Social, Score: 0.4636222720146179
+2023-12-05 14:51:03,035 - INFO - ESG classification completed for document 656e496fb69f65a7dd0f3e1a. Label: Environmental, Score: 0.8953326344490051
+2023-12-05 14:51:03,469 - INFO - ESG classification completed for document 656e496fb69f65a7dd0f3e1b. Label: Social, Score: 0.6754592657089233
+2023-12-05 14:51:03,713 - INFO - ESG classification completed for document 656e496fb69f65a7dd0f3e1c. Label: Governance, Score: 0.48357340693473816
+2023-12-05 14:51:04,031 - INFO - ESG classification completed for document 656e4970b69f65a7dd0f3e1d. Label: Social, Score: 0.9823861122131348
+2023-12-05 14:51:04,725 - INFO - ESG classification completed for document 656e49b3b69f65a7dd0f3e24. Label: Not ESG Related, Score: 0.7489696145057678
+2023-12-05 14:51:05,055 - INFO - ESG classification completed for document 656e49b3b69f65a7dd0f3e25. Label: Social, Score: 0.9359430074691772
+2023-12-05 14:51:05,395 - INFO - ESG classification completed for document 656e49b3b69f65a7dd0f3e26. Label: Not ESG Related, Score: 0.8794814348220825
+2023-12-05 14:51:05,625 - INFO - ESG classification completed for document 656e49b3b69f65a7dd0f3e27. Label: Social, Score: 0.6214606761932373
+2023-12-05 14:51:05,875 - INFO - ESG classification completed for document 656e49b4b69f65a7dd0f3e28. Label: Social, Score: 0.9872884750366211
+2023-12-05 14:51:06,136 - INFO - ESG classification completed for document 656e49d9b69f65a7dd0f3e2f. Label: Environmental, Score: 0.7565171122550964
+2023-12-05 14:51:06,501 - INFO - ESG classification completed for document 656e49d9b69f65a7dd0f3e30. Label: Social, Score: 0.9622440934181213
+2023-12-05 14:51:06,840 - INFO - ESG classification completed for document 656e49d9b69f65a7dd0f3e31. Label: Social, Score: 0.9654755592346191
+2023-12-05 14:51:07,119 - INFO - ESG classification completed for document 656e4a0cb69f65a7dd0f3e38. Label: Environmental, Score: 0.9811570048332214
+2023-12-05 14:51:07,484 - INFO - ESG classification completed for document 656e4a0cb69f65a7dd0f3e39. Label: Not ESG Related, Score: 0.7632610201835632
+2023-12-05 14:51:07,841 - INFO - ESG classification completed for document 656e4a0cb69f65a7dd0f3e3a. Label: Social, Score: 0.9631111025810242
+2023-12-05 14:51:08,052 - INFO - ESG classification completed for document 656e4a0db69f65a7dd0f3e3b. Label: Social, Score: 0.8485644459724426
+2023-12-05 14:51:08,296 - INFO - ESG classification completed for document 656e4a0db69f65a7dd0f3e3c. Label: Social, Score: 0.9062259197235107
+2023-12-05 14:51:08,800 - INFO - ESG classification completed for document 656e4a39b69f65a7dd0f3e43. Label: Social, Score: 0.9132735133171082
+2023-12-05 14:51:39,530 - INFO - ESG classification completed for document 656e4a3ab69f65a7dd0f3e44. Label: Social, Score: 0.9082410335540771
+2023-12-05 14:51:39,751 - INFO - ESG classification completed for document 656e4a3ab69f65a7dd0f3e45. Label: Governance, Score: 0.8737687468528748
+2023-12-05 14:51:40,362 - INFO - ESG classification completed for document 656e4a3ab69f65a7dd0f3e46. Label: Social, Score: 0.9805331230163574
+2023-12-05 14:51:40,701 - INFO - ESG classification completed for document 656e4a73b69f65a7dd0f3e4d. Label: Not ESG Related, Score: 0.6703742146492004
+2023-12-05 14:51:40,916 - INFO - ESG classification completed for document 656e4a73b69f65a7dd0f3e4e. Label: Governance, Score: 0.7876359224319458
+2023-12-05 14:51:41,248 - INFO - ESG classification completed for document 656e4a74b69f65a7dd0f3e4f. Label: Social, Score: 0.8797397613525391
+2023-12-05 14:51:41,488 - INFO - ESG classification completed for document 656e4a74b69f65a7dd0f3e50. Label: Social, Score: 0.923305869102478
+2023-12-05 14:51:41,716 - INFO - ESG classification completed for document 656e4a74b69f65a7dd0f3e51. Label: Social, Score: 0.9831455945968628
+2023-12-05 14:51:41,906 - INFO - ESG classification completed for document 656e4aa6b69f65a7dd0f3e58. Label: Environmental, Score: 0.6640493273735046
+2023-12-05 14:51:42,220 - INFO - ESG classification completed for document 656e4aa6b69f65a7dd0f3e59. Label: Social, Score: 0.6480422019958496
+2023-12-05 14:51:42,448 - INFO - ESG classification completed for document 656e4aa7b69f65a7dd0f3e5a. Label: Social, Score: 0.9448956847190857
+2023-12-05 14:51:42,686 - INFO - ESG classification completed for document 656e4aa7b69f65a7dd0f3e5b. Label: Social, Score: 0.6693788766860962
+2023-12-05 14:51:42,885 - INFO - ESG classification completed for document 656e4aa7b69f65a7dd0f3e5c. Label: Social, Score: 0.9538916349411011
+2023-12-05 14:51:43,256 - INFO - ESG classification completed for document 656e4aceb69f65a7dd0f3e63. Label: Social, Score: 0.9580707550048828
+2023-12-05 14:51:43,481 - INFO - ESG classification completed for document 656e4aceb69f65a7dd0f3e64. Label: Social, Score: 0.849862277507782
+2023-12-05 14:51:43,683 - INFO - ESG classification completed for document 656e4acfb69f65a7dd0f3e65. Label: Social, Score: 0.9544001221656799
+2023-12-05 14:51:43,939 - INFO - ESG classification completed for document 656e4acfb69f65a7dd0f3e66. Label: Social, Score: 0.6654300093650818
+2023-12-05 14:51:44,325 - INFO - ESG classification completed for document 656e4b04b69f65a7dd0f3e6d. Label: Social, Score: 0.6067624688148499
+2023-12-05 14:51:44,469 - INFO - ESG classification completed for document 656e4b04b69f65a7dd0f3e6e. Label: Not ESG Related, Score: 0.9822201728820801
+2023-12-05 14:51:44,748 - INFO - ESG classification completed for document 656e4b04b69f65a7dd0f3e6f. Label: Social, Score: 0.8203341364860535
+2023-12-05 14:51:44,981 - INFO - ESG classification completed for document 656e4b04b69f65a7dd0f3e70. Label: Social, Score: 0.8685696125030518
+2023-12-05 14:51:45,505 - INFO - ESG classification completed for document 656e4b05b69f65a7dd0f3e71. Label: Not ESG Related, Score: 0.5451086759567261
+2023-12-05 14:51:45,720 - INFO - ESG classification completed for document 656e4b35b69f65a7dd0f3e78. Label: Social, Score: 0.9746310114860535
+2023-12-05 14:51:45,945 - INFO - ESG classification completed for document 656e4b35b69f65a7dd0f3e79. Label: Social, Score: 0.9429028630256653
+2023-12-05 14:51:46,160 - INFO - ESG classification completed for document 656e4b35b69f65a7dd0f3e7a. Label: Social, Score: 0.9671118259429932
+2023-12-05 14:51:46,362 - INFO - ESG classification completed for document 656e4b35b69f65a7dd0f3e7b. Label: Social, Score: 0.5745232105255127
+2023-12-05 14:51:46,683 - INFO - ESG classification completed for document 656e4b36b69f65a7dd0f3e7c. Label: Social, Score: 0.9234917163848877
+2023-12-05 14:51:46,926 - INFO - ESG classification completed for document 656e4b65b69f65a7dd0f3e83. Label: Social, Score: 0.9410464763641357
+2023-12-05 14:51:47,180 - INFO - ESG classification completed for document 656e4b66b69f65a7dd0f3e84. Label: Social, Score: 0.9570410251617432
+2023-12-05 14:51:47,377 - INFO - ESG classification completed for document 656e4b66b69f65a7dd0f3e85. Label: Social, Score: 0.6950424909591675
+2023-12-05 14:51:47,841 - INFO - ESG classification completed for document 656e4b67b69f65a7dd0f3e86. Label: Governance, Score: 0.4838840365409851
+2023-12-05 14:51:48,084 - INFO - ESG classification completed for document 656e4b68b69f65a7dd0f3e87. Label: Social, Score: 0.9709302186965942
+2023-12-05 14:51:48,292 - INFO - ESG classification completed for document 656e4b9fb69f65a7dd0f3e8e. Label: Social, Score: 0.982776403427124
+2023-12-05 14:51:48,558 - INFO - ESG classification completed for document 656e4b9fb69f65a7dd0f3e8f. Label: Environmental, Score: 0.5090011954307556
+2023-12-05 14:51:48,924 - INFO - ESG classification completed for document 656e4b9fb69f65a7dd0f3e90. Label: Social, Score: 0.9309285283088684
+2023-12-05 14:51:49,133 - INFO - ESG classification completed for document 656e4ba0b69f65a7dd0f3e91. Label: Social, Score: 0.5206208229064941
+2023-12-05 14:51:49,360 - INFO - ESG classification completed for document 656e4ba0b69f65a7dd0f3e92. Label: Social, Score: 0.6155730485916138
+2023-12-05 14:51:49,568 - INFO - ESG classification completed for document 656e4bccb69f65a7dd0f3e99. Label: Social, Score: 0.8227605819702148
+2023-12-05 14:51:50,100 - INFO - ESG classification completed for document 656e4bccb69f65a7dd0f3e9a. Label: Governance, Score: 0.6556022763252258
+2023-12-05 14:51:50,544 - INFO - ESG classification completed for document 656e4bccb69f65a7dd0f3e9b. Label: Social, Score: 0.8894011974334717
+2023-12-05 14:51:50,828 - INFO - ESG classification completed for document 656e4d52c29059a0c7a00f34. Label: Social, Score: 0.874778151512146
+2023-12-05 14:51:51,080 - INFO - ESG classification completed for document 656e4d53c29059a0c7a00f35. Label: Social, Score: 0.9169198274612427
+2023-12-05 14:51:51,339 - INFO - ESG classification completed for document 656e4d53c29059a0c7a00f36. Label: Social, Score: 0.969241201877594
+2023-12-05 14:51:51,649 - INFO - ESG classification completed for document 656e4d53c29059a0c7a00f37. Label: Governance, Score: 0.6236949563026428
+2023-12-05 14:51:52,095 - INFO - ESG classification completed for document 656e4d53c29059a0c7a00f38. Label: Social, Score: 0.7453923225402832
+2023-12-05 14:51:52,586 - INFO - ESG classification completed for document 656e4d78c29059a0c7a00f3f. Label: Social, Score: 0.953692615032196
+2023-12-05 14:51:52,771 - INFO - ESG classification completed for document 656e4d79c29059a0c7a00f40. Label: Social, Score: 0.9000536203384399
+2023-12-05 14:51:52,968 - INFO - ESG classification completed for document 656e4d79c29059a0c7a00f41. Label: Social, Score: 0.9792203903198242
+2023-12-05 14:51:53,281 - INFO - ESG classification completed for document 656e4d79c29059a0c7a00f42. Label: Social, Score: 0.6022117733955383
+2023-12-05 14:51:53,483 - INFO - ESG classification completed for document 656e4d79c29059a0c7a00f43. Label: Social, Score: 0.9790558218955994
+2023-12-05 14:51:53,748 - INFO - ESG classification completed for document 656e4d9fc29059a0c7a00f4a. Label: Social, Score: 0.828975260257721
+2023-12-05 14:51:54,000 - INFO - ESG classification completed for document 656e4da0c29059a0c7a00f4b. Label: Social, Score: 0.575827419757843
+2023-12-05 14:51:54,420 - INFO - ESG classification completed for document 656e4da0c29059a0c7a00f4c. Label: Governance, Score: 0.6239752173423767
+2023-12-05 14:51:54,600 - INFO - ESG classification completed for document 656e4da0c29059a0c7a00f4d. Label: Governance, Score: 0.9416002035140991
+2023-12-05 14:51:54,831 - INFO - ESG classification completed for document 656e4da0c29059a0c7a00f4e. Label: Social, Score: 0.7909252047538757
+2023-12-05 14:51:55,075 - INFO - ESG classification completed for document 656e4dc2c29059a0c7a00f55. Label: Social, Score: 0.671220600605011
+2023-12-05 14:51:55,426 - INFO - ESG classification completed for document 656e4dc2c29059a0c7a00f56. Label: Social, Score: 0.7232170104980469
+2023-12-05 14:51:55,645 - INFO - ESG classification completed for document 656e4dc3c29059a0c7a00f57. Label: Social, Score: 0.9504411816596985
+2023-12-05 14:51:55,872 - INFO - ESG classification completed for document 656e4dc3c29059a0c7a00f58. Label: Social, Score: 0.8767514824867249
+2023-12-05 14:51:56,013 - INFO - ESG classification completed for document 656e4dc3c29059a0c7a00f59. Label: Not ESG Related, Score: 0.9452056884765625
+2023-12-05 14:51:56,246 - INFO - ESG classification completed for document 656e4df4c29059a0c7a00f60. Label: Not ESG Related, Score: 0.9423171281814575
+2023-12-05 14:51:56,632 - INFO - ESG classification completed for document 656e4df4c29059a0c7a00f61. Label: Social, Score: 0.5125829577445984
+2023-12-05 14:51:56,880 - INFO - ESG classification completed for document 656e4df5c29059a0c7a00f62. Label: Not ESG Related, Score: 0.9451996088027954
+2023-12-05 14:51:57,143 - INFO - ESG classification completed for document 656e4df5c29059a0c7a00f63. Label: Not ESG Related, Score: 0.8309590220451355
+2023-12-05 14:51:57,277 - INFO - ESG classification completed for document 656e4e14c29059a0c7a00f6a. Label: Not ESG Related, Score: 0.9452056884765625
+2023-12-05 14:51:57,756 - INFO - ESG classification completed for document 656e4e14c29059a0c7a00f6b. Label: Not ESG Related, Score: 0.42092785239219666
+2023-12-05 14:51:58,057 - INFO - ESG classification completed for document 656e4e14c29059a0c7a00f6c. Label: Social, Score: 0.6981741189956665
+2023-12-05 14:51:58,382 - INFO - ESG classification completed for document 656e4e3ec29059a0c7a00f73. Label: Not ESG Related, Score: 0.9903697371482849
+2023-12-05 14:51:58,869 - INFO - ESG classification completed for document 656e4e3ec29059a0c7a00f74. Label: Not ESG Related, Score: 0.9319688677787781
+2023-12-05 14:51:59,153 - INFO - ESG classification completed for document 656e4e3ec29059a0c7a00f75. Label: Social, Score: 0.9021172523498535
+2023-12-05 14:51:59,403 - INFO - ESG classification completed for document 656e4e3ec29059a0c7a00f76. Label: Social, Score: 0.6093878149986267
+2023-12-05 14:52:00,107 - INFO - ESG classification completed for document 656e4e6ac29059a0c7a00f7d. Label: Governance, Score: 0.7433480620384216
+2023-12-05 14:52:00,310 - INFO - ESG classification completed for document 656e4e6ac29059a0c7a00f7e. Label: Social, Score: 0.4863004684448242
+2023-12-05 14:52:00,527 - INFO - ESG classification completed for document 656e4e6ac29059a0c7a00f7f. Label: Social, Score: 0.6578325033187866
+2023-12-05 14:52:00,853 - INFO - ESG classification completed for document 656e4e6ac29059a0c7a00f80. Label: Governance, Score: 0.6687706708908081
+2023-12-05 14:52:01,037 - INFO - ESG classification completed for document 656e4e99c29059a0c7a00f87. Label: Social, Score: 0.9583703279495239
+2023-12-05 14:52:01,229 - INFO - ESG classification completed for document 656e4e9ac29059a0c7a00f88. Label: Social, Score: 0.9367281794548035
+2023-12-05 14:52:01,479 - INFO - ESG classification completed for document 656e4e9ac29059a0c7a00f89. Label: Social, Score: 0.8996618390083313
+2023-12-05 14:52:01,733 - INFO - ESG classification completed for document 656e4e9ac29059a0c7a00f8a. Label: Social, Score: 0.8814152479171753
+2023-12-05 14:52:01,964 - INFO - ESG classification completed for document 656e4ecdc29059a0c7a00f91. Label: Social, Score: 0.975825846195221
+2023-12-05 14:52:02,207 - INFO - ESG classification completed for document 656e4ecdc29059a0c7a00f92. Label: Social, Score: 0.6610948443412781
+2023-12-05 14:52:02,551 - INFO - ESG classification completed for document 656e4ecdc29059a0c7a00f93. Label: Social, Score: 0.9825050830841064
+2023-12-05 14:52:03,008 - INFO - ESG classification completed for document 656e4ef7c29059a0c7a00f9a. Label: Not ESG Related, Score: 0.5825179219245911
+2023-12-05 14:52:03,195 - INFO - ESG classification completed for document 656e4ef8c29059a0c7a00f9b. Label: Social, Score: 0.8947231769561768
+2023-12-05 14:52:03,540 - INFO - ESG classification completed for document 656e4ef8c29059a0c7a00f9c. Label: Social, Score: 0.8279222249984741
+2023-12-05 14:52:03,756 - INFO - ESG classification completed for document 656e4ef8c29059a0c7a00f9d. Label: Social, Score: 0.7895784974098206
+2023-12-05 14:52:04,196 - INFO - ESG classification completed for document 656e4f21c29059a0c7a00fa4. Label: Social, Score: 0.9345049262046814
+2023-12-05 14:52:04,492 - INFO - ESG classification completed for document 656e4f22c29059a0c7a00fa5. Label: Social, Score: 0.9585654735565186
+2023-12-05 14:52:04,969 - INFO - ESG classification completed for document 656e4f22c29059a0c7a00fa6. Label: Social, Score: 0.8684496879577637
+2023-12-05 14:52:05,217 - INFO - ESG classification completed for document 656e4f22c29059a0c7a00fa7. Label: Environmental, Score: 0.9867560863494873
+2023-12-05 14:52:05,586 - INFO - ESG classification completed for document 656e4f4ec29059a0c7a00fae. Label: Social, Score: 0.48041677474975586
+2023-12-05 14:52:05,942 - INFO - ESG classification completed for document 656e4f4ec29059a0c7a00faf. Label: Social, Score: 0.5733996629714966
+2023-12-05 14:52:06,306 - INFO - ESG classification completed for document 656e4f4fc29059a0c7a00fb0. Label: Environmental, Score: 0.9646883606910706
+2023-12-05 14:52:06,524 - INFO - ESG classification completed for document 656e4f4fc29059a0c7a00fb1. Label: Social, Score: 0.696648359298706
+2023-12-05 14:52:06,755 - INFO - ESG classification completed for document 656e4f4fc29059a0c7a00fb2. Label: Social, Score: 0.9827647805213928
+2023-12-05 14:52:07,074 - INFO - ESG classification completed for document 656e4f89c29059a0c7a00fb9. Label: Social, Score: 0.8925307393074036
+2023-12-05 14:52:07,475 - INFO - ESG classification completed for document 656e4f89c29059a0c7a00fba. Label: Social, Score: 0.9644677639007568
+2023-12-05 14:52:07,737 - INFO - ESG classification completed for document 656e4f8ac29059a0c7a00fbb. Label: Environmental, Score: 0.9647715091705322
+2023-12-05 14:52:08,002 - INFO - ESG classification completed for document 656e4f8ac29059a0c7a00fbc. Label: Social, Score: 0.9213566780090332
+2023-12-05 14:52:08,212 - INFO - ESG classification completed for document 656e4fcec29059a0c7a00fc3. Label: Social, Score: 0.8580784201622009
+2023-12-05 14:52:08,602 - INFO - ESG classification completed for document 656e4fcec29059a0c7a00fc4. Label: Social, Score: 0.9351876378059387
+2023-12-05 14:52:09,203 - INFO - ESG classification completed for document 656e4fcec29059a0c7a00fc5. Label: Social, Score: 0.9594536423683167
+2023-12-05 14:52:10,034 - INFO - ESG classification completed for document 656e4fcfc29059a0c7a00fc6. Label: Not ESG Related, Score: 0.5002922415733337
+2023-12-05 14:52:10,259 - INFO - ESG classification completed for document 656e4ff6c29059a0c7a00fcd. Label: Social, Score: 0.6980301737785339
+2023-12-05 14:52:10,918 - INFO - ESG classification completed for document 656e4ff6c29059a0c7a00fce. Label: Social, Score: 0.8608665466308594
+2023-12-05 14:52:11,174 - INFO - ESG classification completed for document 656e4ff6c29059a0c7a00fcf. Label: Social, Score: 0.9553476572036743
+2023-12-05 14:52:11,404 - INFO - ESG classification completed for document 656e4ff6c29059a0c7a00fd0. Label: Governance, Score: 0.8385661840438843
+2023-12-05 14:52:11,837 - INFO - ESG classification completed for document 656e4ff7c29059a0c7a00fd1. Label: Social, Score: 0.9093832969665527
+2023-12-05 14:52:12,079 - INFO - ESG classification completed for document 656e502bc29059a0c7a00fd8. Label: Social, Score: 0.9539424180984497
+2023-12-05 14:52:12,354 - INFO - ESG classification completed for document 656e502bc29059a0c7a00fd9. Label: Social, Score: 0.9358652830123901
+2023-12-05 14:52:12,614 - INFO - ESG classification completed for document 656e502bc29059a0c7a00fda. Label: Social, Score: 0.8727561831474304
+2023-12-05 14:52:13,244 - INFO - ESG classification completed for document 656e502bc29059a0c7a00fdb. Label: Social, Score: 0.9211484789848328
+2023-12-05 14:52:14,056 - INFO - ESG classification completed for document 656e502cc29059a0c7a00fdc. Label: Social, Score: 0.49851253628730774
+2023-12-05 14:52:14,283 - INFO - ESG classification completed for document 656e5063c29059a0c7a00fe3. Label: Social, Score: 0.6271846890449524
+2023-12-05 14:52:14,505 - INFO - ESG classification completed for document 656e5063c29059a0c7a00fe4. Label: Not ESG Related, Score: 0.840975284576416
+2023-12-05 14:52:14,808 - INFO - ESG classification completed for document 656e50a2c29059a0c7a00feb. Label: Social, Score: 0.47487321496009827
+2023-12-05 14:52:15,123 - INFO - ESG classification completed for document 656e50a2c29059a0c7a00fec. Label: Social, Score: 0.8971046805381775
+2023-12-05 14:52:15,268 - INFO - ESG classification completed for document 656e50a2c29059a0c7a00fed. Label: Not ESG Related, Score: 0.6801003813743591
+2023-12-05 14:52:15,516 - INFO - ESG classification completed for document 656e50a3c29059a0c7a00fee. Label: Social, Score: 0.845611572265625
+2023-12-05 14:52:15,663 - INFO - ESG classification completed for document 656e50a3c29059a0c7a00fef. Label: Not ESG Related, Score: 0.9452056884765625
+2023-12-05 14:52:15,906 - INFO - ESG classification completed for document 656e50d4c29059a0c7a00ff6. Label: Social, Score: 0.9100925326347351
+2023-12-05 14:52:16,317 - INFO - ESG classification completed for document 656e50d4c29059a0c7a00ff7. Label: Social, Score: 0.5577871799468994
+2023-12-05 14:52:16,575 - INFO - ESG classification completed for document 656e50d4c29059a0c7a00ff8. Label: Environmental, Score: 0.9006571173667908
+2023-12-05 14:52:16,956 - INFO - ESG classification completed for document 656e50d5c29059a0c7a00ff9. Label: Not ESG Related, Score: 0.9299975633621216
+2023-12-05 14:52:17,293 - INFO - ESG classification completed for document 656e5105c29059a0c7a01000. Label: Social, Score: 0.9794492721557617
+2023-12-05 14:52:17,533 - INFO - ESG classification completed for document 656e5105c29059a0c7a01001. Label: Social, Score: 0.9425931572914124
+2023-12-05 14:52:17,866 - INFO - ESG classification completed for document 656e5105c29059a0c7a01002. Label: Social, Score: 0.9485096335411072
+2023-12-05 14:52:18,084 - INFO - ESG classification completed for document 656e5133c29059a0c7a01009. Label: Not ESG Related, Score: 0.4451965093612671
+2023-12-05 14:52:18,492 - INFO - ESG classification completed for document 656e5133c29059a0c7a0100a. Label: Environmental, Score: 0.5289965271949768
+2023-12-05 14:52:18,678 - INFO - ESG classification completed for document 656e5134c29059a0c7a0100b. Label: Social, Score: 0.8717668652534485
+2023-12-05 14:52:19,440 - INFO - ESG classification completed for document 656e5134c29059a0c7a0100c. Label: Social, Score: 0.9698293805122375
+2023-12-05 14:52:19,748 - INFO - ESG classification completed for document 656e5164c29059a0c7a01013. Label: Not ESG Related, Score: 0.9452056884765625
+2023-12-05 14:52:19,969 - INFO - ESG classification completed for document 656e5164c29059a0c7a01014. Label: Governance, Score: 0.6070153713226318
+2023-12-05 14:52:20,243 - INFO - ESG classification completed for document 656e5164c29059a0c7a01015. Label: Social, Score: 0.9334424138069153
+2023-12-05 14:52:20,700 - INFO - ESG classification completed for document 656e5164c29059a0c7a01016. Label: Social, Score: 0.9779852628707886
+2023-12-05 14:52:21,029 - INFO - ESG classification completed for document 656e5165c29059a0c7a01017. Label: Social, Score: 0.7851012945175171
+2023-12-05 14:52:21,526 - INFO - ESG classification completed for document 656e519dc29059a0c7a0101e. Label: Social, Score: 0.908585786819458
+2023-12-05 14:52:21,977 - INFO - ESG classification completed for document 656e519dc29059a0c7a0101f. Label: Social, Score: 0.9729257822036743
+2023-12-05 14:52:22,223 - INFO - ESG classification completed for document 656e519dc29059a0c7a01020. Label: Social, Score: 0.9483265280723572
+2023-12-05 14:52:22,511 - INFO - ESG classification completed for document 656e519ec29059a0c7a01021. Label: Social, Score: 0.659331738948822
+2023-12-05 14:52:22,686 - INFO - ESG classification completed for document 656e51d2c29059a0c7a01028. Label: Not ESG Related, Score: 0.8496326804161072
+2023-12-05 14:52:23,065 - INFO - ESG classification completed for document 656e51d2c29059a0c7a01029. Label: Social, Score: 0.8287886381149292
+2023-12-05 14:52:23,252 - INFO - ESG classification completed for document 656e51d2c29059a0c7a0102a. Label: Social, Score: 0.8355007767677307
+2023-12-05 14:52:23,407 - INFO - ESG classification completed for document 656e51d3c29059a0c7a0102b. Label: Governance, Score: 0.5316370129585266
+2023-12-05 14:52:23,817 - INFO - ESG classification completed for document 656e51f3c29059a0c7a01032. Label: Social, Score: 0.9443239569664001
+2023-12-05 14:52:24,178 - INFO - ESG classification completed for document 656e51f3c29059a0c7a01033. Label: Social, Score: 0.9829720854759216
+2023-12-05 14:52:24,656 - INFO - ESG classification completed for document 656e51f3c29059a0c7a01034. Label: Social, Score: 0.7270082831382751
+2023-12-05 14:52:24,957 - INFO - ESG classification completed for document 656e51f4c29059a0c7a01035. Label: Social, Score: 0.9378593564033508
+2023-12-05 14:52:25,221 - INFO - ESG classification completed for document 656e5214c29059a0c7a0103c. Label: Not ESG Related, Score: 0.38024479150772095
+2023-12-05 14:52:25,458 - INFO - ESG classification completed for document 656e5214c29059a0c7a0103d. Label: Not ESG Related, Score: 0.46730655431747437
+2023-12-05 14:52:25,695 - INFO - ESG classification completed for document 656e5233c29059a0c7a01044. Label: Social, Score: 0.966970682144165
+2023-12-05 14:52:25,781 - ERROR - Error during ESG classification: The size of tensor a (907) must match the size of tensor b (512) at non-singleton dimension 1

@@ -29,7 +29,7 @@ scrap_articles_logger = setup_logging("ScrapArticlesLogger", "logs/scrap.log")
 
 
 # Constants
-NUM_ARTICLES_TO_SCRAP = 5
+NUM_ARTICLES_TO_SCRAP = 10
 max_retries = 3
 retry_delay = 5
 user_agent = UserAgent()
