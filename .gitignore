@@ -1,29 +1,40 @@
-/__pycache__/
-logs/airflow logs/
-data/mongodb/*
-#!data/mongodb/collection-0--8721820593327479582.wt
-data/postgres/
-/src/__pycache__/
-data/bert/c1_fakenews_weights.pt
-data/bert/c2_new_model_weights.pt
-data/bert/a1_True.csv
-data/bert/a2_Fake.csv
-.vscode/settings.json
-data/bert/WELFake_Dataset.csv
-data/bert/sample.csv
-data/bert/translated_titles.csv
-logs/trans logs/translation_log.txt
-data/bert/Fine-Tuning_Dataset.csv
-data/bert/translated_titles_continued.csv
-logs/trans logs/translation_from_X_to_ENG_log.txt
-src/temp/test_mongo.py
-data/bert/c3_new_model_weights.pt
+# Python
+__pycache__/
+*.pyc
+
+# Logs
+logs/
+
+# Data
+data/
+
+# Exclude specific files in data/bert
+!data/bert/c1_fakenews_weights.pt
+!data/bert/c2_new_model_weights.pt
+!data/bert/a1_True.csv
+!data/bert/a2_Fake.csv
+!data/bert/WELFake_Dataset.csv
+!data/bert/sample.csv
+!data/bert/translated_titles.csv
+!data/bert/Fine-Tuning_Dataset.csv
+!data/bert/translated_titles_continued.csv
+!data/bert/c3_new_model_weights.pt
+!data/bert/c3_new_model_weights.pt-20231203T183113Z-001.zip
+
+# VS Code
+.vscode/
+
+# Source
+src/
+
+# Exclude specific files in src
+!src/lang_dict.py
+
+# Dags
+dags/
+
+# MongoDB
 mongodb-database-tools-ubuntu2204-x86_64-100.9.3.deb
-data/bert/c3_new_model_weights.pt-20231203T183113Z-001.zip
-dags/hello_ape.py
+
+# Other files
 NER.py
-dags/__pycache__/
-dags/__pycache__/scrapping_dag.cpython-38.pyc
-src/lang_dict.py
-src/temp/*
-src/__pycache__/
