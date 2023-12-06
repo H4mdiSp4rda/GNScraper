@@ -30,8 +30,8 @@ This project merges BI and Deep Learning to extract insights from financial news
 
 ### III) Data Classification (Fake/Real)
 - Data Preprocessing (Done) ✔
-- Model Fine-Tuning (Done) ✔
 - Model Development (Done) ✔
+- Model Fine-Tuning (Done) ✔
 - Model Evaluation (Done) ✔
 - Integration (Done) ✔
 
