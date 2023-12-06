@@ -4414,3 +4414,1579 @@
 2023-12-06 01:21:30,799 - INFO - ESG3 classification completed for document 656e4a0db69f65a7dd0f3e3b. Label: Social
 2023-12-06 01:21:31,204 - INFO - ESG3 classification completed for document 656e4a0db69f65a7dd0f3e3c. Label: Social
 2023-12-06 01:21:31,560 - INFO - ESG3 classification completed for document 656e4a39b69f65a7dd0f3e43. Label: Social
+2023-12-06 03:48:10,682 - INFO - === Script execution START (ESG3 Classification) at: 2023-12-06 03:48:10.682774 ===
+2023-12-06 03:48:15,496 - INFO - ESG3 classification completed for document 656e45db2f568a5a60d879f7. Label: Social
+2023-12-06 03:48:15,780 - INFO - ESG3 classification completed for document 656e45db2f568a5a60d879f8. Label: Not ESG Related
+2023-12-06 03:48:16,003 - INFO - ESG3 classification completed for document 656e45db2f568a5a60d879f9. Label: Social
+2023-12-06 03:48:16,194 - INFO - ESG3 classification completed for document 656e45f82f568a5a60d879fe. Label: Social
+2023-12-06 03:48:16,371 - INFO - ESG3 classification completed for document 656e45f82f568a5a60d879ff. Label: Social
+2023-12-06 03:48:16,540 - INFO - ESG3 classification completed for document 656e45f92f568a5a60d87a00. Label: Social
+2023-12-06 03:48:16,812 - INFO - ESG3 classification completed for document 656e46122f568a5a60d87a05. Label: Social
+2023-12-06 03:48:17,003 - INFO - ESG3 classification completed for document 656e46122f568a5a60d87a06. Label: Social
+2023-12-06 03:48:17,166 - INFO - ESG3 classification completed for document 656e46132f568a5a60d87a07. Label: Social
+2023-12-06 03:48:17,733 - INFO - ESG3 classification completed for document 656e46282f568a5a60d87a0c. Label: Not ESG Related
+2023-12-06 03:48:18,750 - INFO - ESG3 classification completed for document 656e46282f568a5a60d87a0d. Label: Not ESG Related
+2023-12-06 03:48:19,589 - INFO - ESG3 classification completed for document 656e463f2f568a5a60d87a12. Label: Environmental
+2023-12-06 03:48:20,137 - INFO - ESG3 classification completed for document 656e463f2f568a5a60d87a13. Label: Social
+2023-12-06 03:48:20,557 - INFO - ESG3 classification completed for document 656e464f2f568a5a60d87a18. Label: Not ESG Related
+2023-12-06 03:48:20,996 - INFO - ESG3 classification completed for document 656e46642f568a5a60d87a1d. Label: Not ESG Related
+2023-12-06 03:48:21,358 - INFO - ESG3 classification completed for document 656e46642f568a5a60d87a1e. Label: Social
+2023-12-06 03:48:21,825 - INFO - ESG3 classification completed for document 656e46652f568a5a60d87a1f. Label: Social
+2023-12-06 03:48:22,243 - INFO - ESG3 classification completed for document 656e46abb69f65a7dd0f3d66. Label: Social
+2023-12-06 03:48:22,508 - INFO - ESG3 classification completed for document 656e46abb69f65a7dd0f3d67. Label: Social
+2023-12-06 03:48:23,157 - INFO - ESG3 classification completed for document 656e46beb69f65a7dd0f3d6e. Label: Not ESG Related
+2023-12-06 03:48:23,537 - INFO - ESG3 classification completed for document 656e46ceb69f65a7dd0f3d75. Label: Social
+2023-12-06 03:48:23,858 - INFO - ESG3 classification completed for document 656e46cfb69f65a7dd0f3d76. Label: Social
+2023-12-06 03:48:24,235 - INFO - ESG3 classification completed for document 656e46e6b69f65a7dd0f3d7d. Label: Social
+2023-12-06 03:48:24,803 - INFO - ESG3 classification completed for document 656e46e6b69f65a7dd0f3d7e. Label: Social
+2023-12-06 03:48:25,345 - INFO - ESG3 classification completed for document 656e4701b69f65a7dd0f3d85. Label: Environmental
+2023-12-06 03:48:25,584 - INFO - ESG3 classification completed for document 656e4701b69f65a7dd0f3d86. Label: Social
+2023-12-06 03:48:25,787 - INFO - ESG3 classification completed for document 656e471ab69f65a7dd0f3d8d. Label: Not ESG Related
+2023-12-06 03:48:26,199 - INFO - ESG3 classification completed for document 656e471ab69f65a7dd0f3d8e. Label: Social
+2023-12-06 03:48:26,655 - INFO - ESG3 classification completed for document 656e472cb69f65a7dd0f3d95. Label: Environmental
+2023-12-06 03:48:27,130 - INFO - ESG3 classification completed for document 656e4748b69f65a7dd0f3d9c. Label: Governance
+2023-12-06 03:48:27,615 - INFO - ESG3 classification completed for document 656e4748b69f65a7dd0f3d9d. Label: Social
+2023-12-06 03:48:27,846 - INFO - ESG3 classification completed for document 656e4749b69f65a7dd0f3d9e. Label: Social
+2023-12-06 03:48:28,113 - INFO - ESG3 classification completed for document 656e4749b69f65a7dd0f3d9f. Label: Social
+2023-12-06 03:48:28,453 - INFO - ESG3 classification completed for document 656e4777b69f65a7dd0f3da6. Label: Social
+2023-12-06 03:48:28,703 - INFO - ESG3 classification completed for document 656e4777b69f65a7dd0f3da7. Label: Social
+2023-12-06 03:48:28,917 - INFO - ESG3 classification completed for document 656e4777b69f65a7dd0f3da8. Label: Social
+2023-12-06 03:48:29,100 - INFO - ESG3 classification completed for document 656e4778b69f65a7dd0f3da9. Label: Social
+2023-12-06 03:48:29,277 - INFO - ESG3 classification completed for document 656e4778b69f65a7dd0f3daa. Label: Social
+2023-12-06 03:48:29,478 - INFO - ESG3 classification completed for document 656e47acb69f65a7dd0f3db1. Label: Social
+2023-12-06 03:48:29,685 - INFO - ESG3 classification completed for document 656e47acb69f65a7dd0f3db2. Label: Not ESG Related
+2023-12-06 03:48:29,876 - INFO - ESG3 classification completed for document 656e47acb69f65a7dd0f3db3. Label: Governance
+2023-12-06 03:48:30,058 - INFO - ESG3 classification completed for document 656e47adb69f65a7dd0f3db4. Label: Environmental
+2023-12-06 03:48:30,281 - INFO - ESG3 classification completed for document 656e47adb69f65a7dd0f3db5. Label: Social
+2023-12-06 03:48:30,874 - INFO - ESG3 classification completed for document 656e47dfb69f65a7dd0f3dbc. Label: Social
+2023-12-06 03:48:31,644 - INFO - ESG3 classification completed for document 656e47dfb69f65a7dd0f3dbd. Label: Governance
+2023-12-06 03:48:31,994 - INFO - ESG3 classification completed for document 656e47dfb69f65a7dd0f3dbe. Label: Social
+2023-12-06 03:48:32,231 - INFO - ESG3 classification completed for document 656e47e0b69f65a7dd0f3dbf. Label: Social
+2023-12-06 03:48:32,453 - INFO - ESG3 classification completed for document 656e4811b69f65a7dd0f3dc6. Label: Social
+2023-12-06 03:48:32,761 - INFO - ESG3 classification completed for document 656e4811b69f65a7dd0f3dc7. Label: Not ESG Related
+2023-12-06 03:48:32,966 - INFO - ESG3 classification completed for document 656e4812b69f65a7dd0f3dc8. Label: Social
+2023-12-06 03:48:33,199 - INFO - ESG3 classification completed for document 656e4812b69f65a7dd0f3dc9. Label: Social
+2023-12-06 03:48:33,609 - INFO - ESG3 classification completed for document 656e4812b69f65a7dd0f3dca. Label: Social
+2023-12-06 03:48:33,960 - INFO - ESG3 classification completed for document 656e4833b69f65a7dd0f3dd1. Label: Not ESG Related
+2023-12-06 03:48:34,211 - INFO - ESG3 classification completed for document 656e4833b69f65a7dd0f3dd2. Label: Social
+2023-12-06 03:48:34,589 - INFO - ESG3 classification completed for document 656e485bb69f65a7dd0f3dd9. Label: Social
+2023-12-06 03:48:34,836 - INFO - ESG3 classification completed for document 656e485cb69f65a7dd0f3dda. Label: Social
+2023-12-06 03:48:35,029 - INFO - ESG3 classification completed for document 656e485cb69f65a7dd0f3ddb. Label: Social
+2023-12-06 03:48:35,251 - INFO - ESG3 classification completed for document 656e485cb69f65a7dd0f3ddc. Label: Social
+2023-12-06 03:48:35,451 - INFO - ESG3 classification completed for document 656e485cb69f65a7dd0f3ddd. Label: Social
+2023-12-06 03:48:35,694 - INFO - ESG3 classification completed for document 656e4887b69f65a7dd0f3de4. Label: Social
+2023-12-06 03:48:35,904 - INFO - ESG3 classification completed for document 656e4887b69f65a7dd0f3de5. Label: Social
+2023-12-06 03:48:36,107 - INFO - ESG3 classification completed for document 656e4888b69f65a7dd0f3de6. Label: Social
+2023-12-06 03:48:36,395 - INFO - ESG3 classification completed for document 656e4888b69f65a7dd0f3de7. Label: Social
+2023-12-06 03:48:36,586 - INFO - ESG3 classification completed for document 656e48b4b69f65a7dd0f3dee. Label: Social
+2023-12-06 03:48:36,837 - INFO - ESG3 classification completed for document 656e48b4b69f65a7dd0f3def. Label: Social
+2023-12-06 03:48:37,011 - INFO - ESG3 classification completed for document 656e48b4b69f65a7dd0f3df0. Label: Social
+2023-12-06 03:48:37,742 - INFO - ESG3 classification completed for document 656e48b5b69f65a7dd0f3df1. Label: Governance
+2023-12-06 03:48:38,554 - INFO - ESG3 classification completed for document 656e48b5b69f65a7dd0f3df2. Label: Social
+2023-12-06 03:48:38,984 - INFO - ESG3 classification completed for document 656e48dfb69f65a7dd0f3df9. Label: Social
+2023-12-06 03:48:39,356 - INFO - ESG3 classification completed for document 656e48dfb69f65a7dd0f3dfa. Label: Social
+2023-12-06 03:48:39,849 - INFO - ESG3 classification completed for document 656e48dfb69f65a7dd0f3dfb. Label: Social
+2023-12-06 03:48:40,420 - INFO - ESG3 classification completed for document 656e48dfb69f65a7dd0f3dfc. Label: Not ESG Related
+2023-12-06 03:48:40,971 - INFO - ESG3 classification completed for document 656e48e0b69f65a7dd0f3dfd. Label: Social
+2023-12-06 03:48:41,169 - INFO - ESG3 classification completed for document 656e4911b69f65a7dd0f3e04. Label: Social
+2023-12-06 03:48:41,332 - INFO - ESG3 classification completed for document 656e4911b69f65a7dd0f3e05. Label: Not ESG Related
+2023-12-06 03:48:41,533 - INFO - ESG3 classification completed for document 656e4911b69f65a7dd0f3e06. Label: Social
+2023-12-06 03:48:41,750 - INFO - ESG3 classification completed for document 656e4912b69f65a7dd0f3e07. Label: Social
+2023-12-06 03:48:41,994 - INFO - ESG3 classification completed for document 656e4912b69f65a7dd0f3e08. Label: Social
+2023-12-06 03:48:42,254 - INFO - ESG3 classification completed for document 656e4942b69f65a7dd0f3e0f. Label: Social
+2023-12-06 03:48:42,422 - INFO - ESG3 classification completed for document 656e4943b69f65a7dd0f3e10. Label: Social
+2023-12-06 03:48:42,886 - INFO - ESG3 classification completed for document 656e4943b69f65a7dd0f3e11. Label: Not ESG Related
+2023-12-06 03:48:43,073 - INFO - ESG3 classification completed for document 656e4943b69f65a7dd0f3e12. Label: Social
+2023-12-06 03:48:43,310 - INFO - ESG3 classification completed for document 656e4943b69f65a7dd0f3e13. Label: Social
+2023-12-06 03:48:43,596 - INFO - ESG3 classification completed for document 656e496fb69f65a7dd0f3e1a. Label: Environmental
+2023-12-06 03:48:44,335 - INFO - ESG3 classification completed for document 656e496fb69f65a7dd0f3e1b. Label: Social
+2023-12-06 03:48:44,571 - INFO - ESG3 classification completed for document 656e496fb69f65a7dd0f3e1c. Label: Governance
+2023-12-06 03:48:44,799 - INFO - ESG3 classification completed for document 656e4970b69f65a7dd0f3e1d. Label: Social
+2023-12-06 03:48:44,980 - INFO - ESG3 classification completed for document 656e49b3b69f65a7dd0f3e24. Label: Not ESG Related
+2023-12-06 03:48:45,170 - INFO - ESG3 classification completed for document 656e49b3b69f65a7dd0f3e25. Label: Social
+2023-12-06 03:48:45,389 - INFO - ESG3 classification completed for document 656e49b3b69f65a7dd0f3e26. Label: Not ESG Related
+2023-12-06 03:48:45,567 - INFO - ESG3 classification completed for document 656e49b3b69f65a7dd0f3e27. Label: Environmental
+2023-12-06 03:48:45,754 - INFO - ESG3 classification completed for document 656e49b4b69f65a7dd0f3e28. Label: Social
+2023-12-06 03:48:45,956 - INFO - ESG3 classification completed for document 656e49d9b69f65a7dd0f3e2f. Label: Environmental
+2023-12-06 03:48:46,207 - INFO - ESG3 classification completed for document 656e49d9b69f65a7dd0f3e30. Label: Social
+2023-12-06 03:48:46,475 - INFO - ESG3 classification completed for document 656e49d9b69f65a7dd0f3e31. Label: Social
+2023-12-06 03:48:46,664 - INFO - ESG3 classification completed for document 656e4a0cb69f65a7dd0f3e38. Label: Environmental
+2023-12-06 03:48:46,850 - INFO - ESG3 classification completed for document 656e4a0cb69f65a7dd0f3e39. Label: Not ESG Related
+2023-12-06 03:48:47,052 - INFO - ESG3 classification completed for document 656e4a0cb69f65a7dd0f3e3a. Label: Social
+2023-12-06 03:48:47,255 - INFO - ESG3 classification completed for document 656e4a0db69f65a7dd0f3e3b. Label: Social
+2023-12-06 03:48:47,427 - INFO - ESG3 classification completed for document 656e4a0db69f65a7dd0f3e3c. Label: Social
+2023-12-06 03:48:47,717 - INFO - ESG3 classification completed for document 656e4a39b69f65a7dd0f3e43. Label: Social
+2023-12-06 03:49:04,995 - INFO - ESG3 classification completed for document 656e4a3ab69f65a7dd0f3e44. Label: Social
+2023-12-06 03:49:05,291 - INFO - ESG3 classification completed for document 656e4a3ab69f65a7dd0f3e45. Label: Governance
+2023-12-06 03:49:05,559 - INFO - ESG3 classification completed for document 656e4a3ab69f65a7dd0f3e46. Label: Social
+2023-12-06 03:49:05,751 - INFO - ESG3 classification completed for document 656e4a73b69f65a7dd0f3e4d. Label: Not ESG Related
+2023-12-06 03:49:05,966 - INFO - ESG3 classification completed for document 656e4a73b69f65a7dd0f3e4e. Label: Governance
+2023-12-06 03:49:06,295 - INFO - ESG3 classification completed for document 656e4a74b69f65a7dd0f3e4f. Label: Social
+2023-12-06 03:49:06,530 - INFO - ESG3 classification completed for document 656e4a74b69f65a7dd0f3e50. Label: Social
+2023-12-06 03:49:06,706 - INFO - ESG3 classification completed for document 656e4a74b69f65a7dd0f3e51. Label: Social
+2023-12-06 03:49:06,931 - INFO - ESG3 classification completed for document 656e4aa6b69f65a7dd0f3e58. Label: Environmental
+2023-12-06 03:49:07,128 - INFO - ESG3 classification completed for document 656e4aa6b69f65a7dd0f3e59. Label: Social
+2023-12-06 03:49:07,371 - INFO - ESG3 classification completed for document 656e4aa7b69f65a7dd0f3e5a. Label: Social
+2023-12-06 03:49:07,603 - INFO - ESG3 classification completed for document 656e4aa7b69f65a7dd0f3e5b. Label: Social
+2023-12-06 03:49:07,839 - INFO - ESG3 classification completed for document 656e4aa7b69f65a7dd0f3e5c. Label: Social
+2023-12-06 03:49:08,113 - INFO - ESG3 classification completed for document 656e4aceb69f65a7dd0f3e63. Label: Social
+2023-12-06 03:49:08,337 - INFO - ESG3 classification completed for document 656e4aceb69f65a7dd0f3e64. Label: Social
+2023-12-06 03:49:08,551 - INFO - ESG3 classification completed for document 656e4acfb69f65a7dd0f3e65. Label: Social
+2023-12-06 03:49:08,786 - INFO - ESG3 classification completed for document 656e4acfb69f65a7dd0f3e66. Label: Social
+2023-12-06 03:49:09,077 - INFO - ESG3 classification completed for document 656e4b04b69f65a7dd0f3e6d. Label: Social
+2023-12-06 03:49:09,245 - INFO - ESG3 classification completed for document 656e4b04b69f65a7dd0f3e6e. Label: Not ESG Related
+2023-12-06 03:49:09,718 - INFO - ESG3 classification completed for document 656e4b04b69f65a7dd0f3e6f. Label: Social
+2023-12-06 03:49:10,218 - INFO - ESG3 classification completed for document 656e4b04b69f65a7dd0f3e70. Label: Social
+2023-12-06 03:49:10,484 - INFO - ESG3 classification completed for document 656e4b05b69f65a7dd0f3e71. Label: Not ESG Related
+2023-12-06 03:49:10,974 - INFO - ESG3 classification completed for document 656e4b35b69f65a7dd0f3e78. Label: Social
+2023-12-06 03:49:11,931 - INFO - ESG3 classification completed for document 656e4b35b69f65a7dd0f3e79. Label: Social
+2023-12-06 03:49:12,288 - INFO - ESG3 classification completed for document 656e4b35b69f65a7dd0f3e7a. Label: Social
+2023-12-06 03:49:12,531 - INFO - ESG3 classification completed for document 656e4b35b69f65a7dd0f3e7b. Label: Social
+2023-12-06 03:49:12,986 - INFO - ESG3 classification completed for document 656e4b36b69f65a7dd0f3e7c. Label: Social
+2023-12-06 03:49:13,219 - INFO - ESG3 classification completed for document 656e4b65b69f65a7dd0f3e83. Label: Social
+2023-12-06 03:49:13,844 - INFO - ESG3 classification completed for document 656e4b66b69f65a7dd0f3e84. Label: Social
+2023-12-06 03:49:14,057 - INFO - ESG3 classification completed for document 656e4b66b69f65a7dd0f3e85. Label: Social
+2023-12-06 03:49:14,240 - INFO - ESG3 classification completed for document 656e4b67b69f65a7dd0f3e86. Label: Governance
+2023-12-06 03:49:14,677 - INFO - ESG3 classification completed for document 656e4b68b69f65a7dd0f3e87. Label: Social
+2023-12-06 03:49:15,125 - INFO - ESG3 classification completed for document 656e4b9fb69f65a7dd0f3e8e. Label: Social
+2023-12-06 03:49:15,832 - INFO - ESG3 classification completed for document 656e4b9fb69f65a7dd0f3e8f. Label: Social
+2023-12-06 03:49:16,313 - INFO - ESG3 classification completed for document 656e4b9fb69f65a7dd0f3e90. Label: Social
+2023-12-06 03:49:16,512 - INFO - ESG3 classification completed for document 656e4ba0b69f65a7dd0f3e91. Label: Social
+2023-12-06 03:49:16,818 - INFO - ESG3 classification completed for document 656e4ba0b69f65a7dd0f3e92. Label: Social
+2023-12-06 03:49:17,082 - INFO - ESG3 classification completed for document 656e4bccb69f65a7dd0f3e99. Label: Social
+2023-12-06 03:49:17,296 - INFO - ESG3 classification completed for document 656e4bccb69f65a7dd0f3e9a. Label: Governance
+2023-12-06 03:49:17,551 - INFO - ESG3 classification completed for document 656e4bccb69f65a7dd0f3e9b. Label: Social
+2023-12-06 03:49:17,833 - INFO - ESG3 classification completed for document 656e4d52c29059a0c7a00f34. Label: Social
+2023-12-06 03:49:18,047 - INFO - ESG3 classification completed for document 656e4d53c29059a0c7a00f35. Label: Social
+2023-12-06 03:49:18,302 - INFO - ESG3 classification completed for document 656e4d53c29059a0c7a00f36. Label: Social
+2023-12-06 03:49:18,591 - INFO - ESG3 classification completed for document 656e4d53c29059a0c7a00f37. Label: Governance
+2023-12-06 03:49:18,859 - INFO - ESG3 classification completed for document 656e4d53c29059a0c7a00f38. Label: Social
+2023-12-06 03:49:19,193 - INFO - ESG3 classification completed for document 656e4d78c29059a0c7a00f3f. Label: Social
+2023-12-06 03:49:19,432 - INFO - ESG3 classification completed for document 656e4d79c29059a0c7a00f40. Label: Social
+2023-12-06 03:49:19,679 - INFO - ESG3 classification completed for document 656e4d79c29059a0c7a00f41. Label: Social
+2023-12-06 03:49:19,940 - INFO - ESG3 classification completed for document 656e4d79c29059a0c7a00f42. Label: Social
+2023-12-06 03:49:20,183 - INFO - ESG3 classification completed for document 656e4d79c29059a0c7a00f43. Label: Social
+2023-12-06 03:49:20,416 - INFO - ESG3 classification completed for document 656e4d9fc29059a0c7a00f4a. Label: Social
+2023-12-06 03:49:20,681 - INFO - ESG3 classification completed for document 656e4da0c29059a0c7a00f4b. Label: Social
+2023-12-06 03:49:20,948 - INFO - ESG3 classification completed for document 656e4da0c29059a0c7a00f4c. Label: Governance
+2023-12-06 03:49:21,199 - INFO - ESG3 classification completed for document 656e4da0c29059a0c7a00f4d. Label: Governance
+2023-12-06 03:49:21,430 - INFO - ESG3 classification completed for document 656e4da0c29059a0c7a00f4e. Label: Social
+2023-12-06 03:49:21,791 - INFO - ESG3 classification completed for document 656e4dc2c29059a0c7a00f55. Label: Social
+2023-12-06 03:49:22,145 - INFO - ESG3 classification completed for document 656e4dc2c29059a0c7a00f56. Label: Social
+2023-12-06 03:49:22,459 - INFO - ESG3 classification completed for document 656e4dc3c29059a0c7a00f57. Label: Social
+2023-12-06 03:49:22,963 - INFO - ESG3 classification completed for document 656e4dc3c29059a0c7a00f58. Label: Social
+2023-12-06 03:49:23,125 - INFO - ESG3 classification completed for document 656e4dc3c29059a0c7a00f59. Label: Not ESG Related
+2023-12-06 03:49:24,119 - INFO - ESG3 classification completed for document 656e4df4c29059a0c7a00f60. Label: Not ESG Related
+2023-12-06 03:49:25,610 - INFO - ESG3 classification completed for document 656e4df4c29059a0c7a00f61. Label: Social
+2023-12-06 03:49:27,264 - INFO - ESG3 classification completed for document 656e4df5c29059a0c7a00f62. Label: Not ESG Related
+2023-12-06 03:49:28,305 - INFO - ESG3 classification completed for document 656e4df5c29059a0c7a00f63. Label: Not ESG Related
+2023-12-06 03:49:28,565 - INFO - ESG3 classification completed for document 656e4e14c29059a0c7a00f6a. Label: Not ESG Related
+2023-12-06 03:49:29,054 - INFO - ESG3 classification completed for document 656e4e14c29059a0c7a00f6b. Label: Governance
+2023-12-06 03:49:29,299 - INFO - ESG3 classification completed for document 656e4e14c29059a0c7a00f6c. Label: Social
+2023-12-06 03:49:29,606 - INFO - ESG3 classification completed for document 656e4e3ec29059a0c7a00f73. Label: Not ESG Related
+2023-12-06 03:49:29,944 - INFO - ESG3 classification completed for document 656e4e3ec29059a0c7a00f74. Label: Not ESG Related
+2023-12-06 03:49:30,221 - INFO - ESG3 classification completed for document 656e4e3ec29059a0c7a00f75. Label: Social
+2023-12-06 03:49:30,513 - INFO - ESG3 classification completed for document 656e4e3ec29059a0c7a00f76. Label: Social
+2023-12-06 03:49:30,827 - INFO - ESG3 classification completed for document 656e4e6ac29059a0c7a00f7d. Label: Governance
+2023-12-06 03:49:31,038 - INFO - ESG3 classification completed for document 656e4e6ac29059a0c7a00f7e. Label: Social
+2023-12-06 03:49:31,416 - INFO - ESG3 classification completed for document 656e4e6ac29059a0c7a00f7f. Label: Social
+2023-12-06 03:49:31,674 - INFO - ESG3 classification completed for document 656e4e6ac29059a0c7a00f80. Label: Governance
+2023-12-06 03:49:31,898 - INFO - ESG3 classification completed for document 656e4e99c29059a0c7a00f87. Label: Social
+2023-12-06 03:49:32,125 - INFO - ESG3 classification completed for document 656e4e9ac29059a0c7a00f88. Label: Social
+2023-12-06 03:49:32,359 - INFO - ESG3 classification completed for document 656e4e9ac29059a0c7a00f89. Label: Social
+2023-12-06 03:49:32,616 - INFO - ESG3 classification completed for document 656e4e9ac29059a0c7a00f8a. Label: Social
+2023-12-06 03:49:32,914 - INFO - ESG3 classification completed for document 656e4ecdc29059a0c7a00f91. Label: Social
+2023-12-06 03:49:33,113 - INFO - ESG3 classification completed for document 656e4ecdc29059a0c7a00f92. Label: Social
+2023-12-06 03:49:33,341 - INFO - ESG3 classification completed for document 656e4ecdc29059a0c7a00f93. Label: Social
+2023-12-06 03:49:33,528 - INFO - ESG3 classification completed for document 656e4ef7c29059a0c7a00f9a. Label: Not ESG Related
+2023-12-06 03:49:33,787 - INFO - ESG3 classification completed for document 656e4ef8c29059a0c7a00f9b. Label: Social
+2023-12-06 03:49:34,355 - INFO - ESG3 classification completed for document 656e4ef8c29059a0c7a00f9c. Label: Social
+2023-12-06 03:49:34,803 - INFO - ESG3 classification completed for document 656e4ef8c29059a0c7a00f9d. Label: Social
+2023-12-06 03:49:35,089 - INFO - ESG3 classification completed for document 656e4f21c29059a0c7a00fa4. Label: Social
+2023-12-06 03:49:35,331 - INFO - ESG3 classification completed for document 656e4f22c29059a0c7a00fa5. Label: Social
+2023-12-06 03:49:35,628 - INFO - ESG3 classification completed for document 656e4f22c29059a0c7a00fa6. Label: Social
+2023-12-06 03:49:35,908 - INFO - ESG3 classification completed for document 656e4f22c29059a0c7a00fa7. Label: Environmental
+2023-12-06 03:49:36,154 - INFO - ESG3 classification completed for document 656e4f4ec29059a0c7a00fae. Label: Social
+2023-12-06 03:49:36,366 - INFO - ESG3 classification completed for document 656e4f4ec29059a0c7a00faf. Label: Social
+2023-12-06 03:49:36,602 - INFO - ESG3 classification completed for document 656e4f4fc29059a0c7a00fb0. Label: Environmental
+2023-12-06 03:49:36,828 - INFO - ESG3 classification completed for document 656e4f4fc29059a0c7a00fb1. Label: Social
+2023-12-06 03:49:37,061 - INFO - ESG3 classification completed for document 656e4f4fc29059a0c7a00fb2. Label: Social
+2023-12-06 03:49:37,373 - INFO - ESG3 classification completed for document 656e4f89c29059a0c7a00fb9. Label: Social
+2023-12-06 03:49:37,604 - INFO - ESG3 classification completed for document 656e4f89c29059a0c7a00fba. Label: Social
+2023-12-06 03:49:37,882 - INFO - ESG3 classification completed for document 656e4f8ac29059a0c7a00fbb. Label: Environmental
+2023-12-06 03:49:38,092 - INFO - ESG3 classification completed for document 656e4f8ac29059a0c7a00fbc. Label: Social
+2023-12-06 03:49:38,339 - INFO - ESG3 classification completed for document 656e4fcec29059a0c7a00fc3. Label: Social
+2023-12-06 03:49:38,664 - INFO - ESG3 classification completed for document 656e4fcec29059a0c7a00fc4. Label: Social
+2023-12-06 03:49:38,912 - INFO - ESG3 classification completed for document 656e4fcec29059a0c7a00fc5. Label: Social
+2023-12-06 03:49:39,181 - INFO - ESG3 classification completed for document 656e4fcfc29059a0c7a00fc6. Label: Social
+2023-12-06 03:49:39,386 - INFO - ESG3 classification completed for document 656e4ff6c29059a0c7a00fcd. Label: Social
+2023-12-06 03:49:39,647 - INFO - ESG3 classification completed for document 656e4ff6c29059a0c7a00fce. Label: Social
+2023-12-06 03:49:39,979 - INFO - ESG3 classification completed for document 656e4ff6c29059a0c7a00fcf. Label: Social
+2023-12-06 03:49:40,219 - INFO - ESG3 classification completed for document 656e4ff6c29059a0c7a00fd0. Label: Governance
+2023-12-06 03:49:40,395 - INFO - ESG3 classification completed for document 656e4ff7c29059a0c7a00fd1. Label: Social
+2023-12-06 03:49:40,622 - INFO - ESG3 classification completed for document 656e502bc29059a0c7a00fd8. Label: Social
+2023-12-06 03:49:40,909 - INFO - ESG3 classification completed for document 656e502bc29059a0c7a00fd9. Label: Social
+2023-12-06 03:49:41,136 - INFO - ESG3 classification completed for document 656e502bc29059a0c7a00fda. Label: Social
+2023-12-06 03:49:41,383 - INFO - ESG3 classification completed for document 656e502bc29059a0c7a00fdb. Label: Social
+2023-12-06 03:49:41,603 - INFO - ESG3 classification completed for document 656e502cc29059a0c7a00fdc. Label: Social
+2023-12-06 03:49:41,831 - INFO - ESG3 classification completed for document 656e5063c29059a0c7a00fe3. Label: Social
+2023-12-06 03:49:42,095 - INFO - ESG3 classification completed for document 656e5063c29059a0c7a00fe4. Label: Not ESG Related
+2023-12-06 03:49:42,389 - INFO - ESG3 classification completed for document 656e50a2c29059a0c7a00feb. Label: Social
+2023-12-06 03:49:42,631 - INFO - ESG3 classification completed for document 656e50a2c29059a0c7a00fec. Label: Social
+2023-12-06 03:49:42,810 - INFO - ESG3 classification completed for document 656e50a2c29059a0c7a00fed. Label: Not ESG Related
+2023-12-06 03:49:43,002 - INFO - ESG3 classification completed for document 656e50a3c29059a0c7a00fee. Label: Social
+2023-12-06 03:49:43,330 - INFO - ESG3 classification completed for document 656e50a3c29059a0c7a00fef. Label: Not ESG Related
+2023-12-06 03:49:43,817 - INFO - ESG3 classification completed for document 656e50d4c29059a0c7a00ff6. Label: Social
+2023-12-06 03:49:44,092 - INFO - ESG3 classification completed for document 656e50d4c29059a0c7a00ff7. Label: Social
+2023-12-06 03:49:44,328 - INFO - ESG3 classification completed for document 656e50d4c29059a0c7a00ff8. Label: Environmental
+2023-12-06 03:49:44,643 - INFO - ESG3 classification completed for document 656e50d5c29059a0c7a00ff9. Label: Not ESG Related
+2023-12-06 03:49:44,900 - INFO - ESG3 classification completed for document 656e5105c29059a0c7a01000. Label: Social
+2023-12-06 03:49:45,080 - INFO - ESG3 classification completed for document 656e5105c29059a0c7a01001. Label: Social
+2023-12-06 03:49:45,283 - INFO - ESG3 classification completed for document 656e5105c29059a0c7a01002. Label: Social
+2023-12-06 03:49:45,505 - INFO - ESG3 classification completed for document 656e5133c29059a0c7a01009. Label: Social
+2023-12-06 03:49:45,740 - INFO - ESG3 classification completed for document 656e5133c29059a0c7a0100a. Label: Environmental
+2023-12-06 03:49:45,956 - INFO - ESG3 classification completed for document 656e5134c29059a0c7a0100b. Label: Social
+2023-12-06 03:49:46,328 - INFO - ESG3 classification completed for document 656e5134c29059a0c7a0100c. Label: Social
+2023-12-06 03:49:46,494 - INFO - ESG3 classification completed for document 656e5164c29059a0c7a01013. Label: Not ESG Related
+2023-12-06 03:49:46,772 - INFO - ESG3 classification completed for document 656e5164c29059a0c7a01014. Label: Governance
+2023-12-06 03:49:47,064 - INFO - ESG3 classification completed for document 656e5164c29059a0c7a01015. Label: Social
+2023-12-06 03:49:47,288 - INFO - ESG3 classification completed for document 656e5164c29059a0c7a01016. Label: Social
+2023-12-06 03:49:47,583 - INFO - ESG3 classification completed for document 656e5165c29059a0c7a01017. Label: Social
+2023-12-06 03:49:47,855 - INFO - ESG3 classification completed for document 656e519dc29059a0c7a0101e. Label: Social
+2023-12-06 03:49:48,119 - INFO - ESG3 classification completed for document 656e519dc29059a0c7a0101f. Label: Social
+2023-12-06 03:49:48,378 - INFO - ESG3 classification completed for document 656e519dc29059a0c7a01020. Label: Social
+2023-12-06 03:49:48,659 - INFO - ESG3 classification completed for document 656e519ec29059a0c7a01021. Label: Social
+2023-12-06 03:49:48,869 - INFO - ESG3 classification completed for document 656e51d2c29059a0c7a01028. Label: Not ESG Related
+2023-12-06 03:49:49,035 - INFO - ESG3 classification completed for document 656e51d2c29059a0c7a01029. Label: Social
+2023-12-06 03:49:49,216 - INFO - ESG3 classification completed for document 656e51d2c29059a0c7a0102a. Label: Social
+2023-12-06 03:49:49,407 - INFO - ESG3 classification completed for document 656e51d3c29059a0c7a0102b. Label: Governance
+2023-12-06 03:49:49,696 - INFO - ESG3 classification completed for document 656e51f3c29059a0c7a01032. Label: Social
+2023-12-06 03:49:49,844 - INFO - ESG3 classification completed for document 656e51f3c29059a0c7a01033. Label: Social
+2023-12-06 03:49:50,079 - INFO - ESG3 classification completed for document 656e51f3c29059a0c7a01034. Label: Social
+2023-12-06 03:49:50,386 - INFO - ESG3 classification completed for document 656e51f4c29059a0c7a01035. Label: Social
+2023-12-06 03:49:50,624 - INFO - ESG3 classification completed for document 656e5214c29059a0c7a0103c. Label: Governance
+2023-12-06 03:49:50,877 - INFO - ESG3 classification completed for document 656e5214c29059a0c7a0103d. Label: Not ESG Related
+2023-12-06 03:49:51,104 - INFO - ESG3 classification completed for document 656e5233c29059a0c7a01044. Label: Social
+2023-12-06 03:49:51,620 - INFO - ESG3 classification completed for document 656e5234c29059a0c7a01045. Label: Not ESG Related
+2023-12-06 03:49:51,878 - INFO - ESG3 classification completed for document 656e5234c29059a0c7a01046. Label: Social
+2023-12-06 03:49:52,120 - INFO - ESG3 classification completed for document 656e5234c29059a0c7a01047. Label: Social
+2023-12-06 03:49:52,449 - INFO - ESG3 classification completed for document 656e525bc29059a0c7a0104e. Label: Social
+2023-12-06 03:49:52,752 - INFO - ESG3 classification completed for document 656e525bc29059a0c7a0104f. Label: Environmental
+2023-12-06 03:49:53,221 - INFO - ESG3 classification completed for document 656e525bc29059a0c7a01050. Label: Social
+2023-12-06 03:49:53,448 - INFO - ESG3 classification completed for document 656e525bc29059a0c7a01051. Label: Not ESG Related
+2023-12-06 03:49:53,715 - INFO - ESG3 classification completed for document 656e525bc29059a0c7a01052. Label: Social
+2023-12-06 03:49:54,042 - INFO - ESG3 classification completed for document 656e5283c29059a0c7a01059. Label: Social
+2023-12-06 03:49:54,297 - INFO - ESG3 classification completed for document 656e5283c29059a0c7a0105a. Label: Social
+2023-12-06 03:49:54,634 - INFO - ESG3 classification completed for document 656e5283c29059a0c7a0105b. Label: Social
+2023-12-06 03:49:54,907 - INFO - ESG3 classification completed for document 656e5283c29059a0c7a0105c. Label: Social
+2023-12-06 03:49:55,177 - INFO - ESG3 classification completed for document 656e5284c29059a0c7a0105d. Label: Social
+2023-12-06 03:49:55,405 - INFO - ESG3 classification completed for document 656e52adc29059a0c7a01064. Label: Social
+2023-12-06 03:49:55,583 - INFO - ESG3 classification completed for document 656e52adc29059a0c7a01065. Label: Social
+2023-12-06 03:49:55,854 - INFO - ESG3 classification completed for document 656e52adc29059a0c7a01066. Label: Social
+2023-12-06 03:49:56,083 - INFO - ESG3 classification completed for document 656e52aec29059a0c7a01067. Label: Social
+2023-12-06 03:49:56,278 - INFO - ESG3 classification completed for document 656e52aec29059a0c7a01068. Label: Social
+2023-12-06 03:49:56,571 - INFO - ESG3 classification completed for document 656e52d3c29059a0c7a0106f. Label: Social
+2023-12-06 03:49:56,874 - INFO - ESG3 classification completed for document 656e52d3c29059a0c7a01070. Label: Not ESG Related
+2023-12-06 03:49:57,101 - INFO - ESG3 classification completed for document 656e52d3c29059a0c7a01071. Label: Social
+2023-12-06 03:49:57,370 - INFO - ESG3 classification completed for document 656e52d4c29059a0c7a01072. Label: Governance
+2023-12-06 03:49:57,600 - INFO - ESG3 classification completed for document 656e52f8c29059a0c7a01079. Label: Social
+2023-12-06 03:49:57,823 - INFO - ESG3 classification completed for document 656e52f9c29059a0c7a0107a. Label: Social
+2023-12-06 03:49:58,033 - INFO - ESG3 classification completed for document 656e52f9c29059a0c7a0107b. Label: Social
+2023-12-06 03:49:58,322 - INFO - ESG3 classification completed for document 656e532ac29059a0c7a01082. Label: Social
+2023-12-06 03:49:58,604 - INFO - ESG3 classification completed for document 656e532ac29059a0c7a01083. Label: Governance
+2023-12-06 03:49:58,859 - INFO - ESG3 classification completed for document 656e532ac29059a0c7a01084. Label: Social
+2023-12-06 03:49:59,027 - INFO - ESG3 classification completed for document 656e532ac29059a0c7a01085. Label: Not ESG Related
+2023-12-06 03:49:59,284 - INFO - ESG3 classification completed for document 656e535fc29059a0c7a0108c. Label: Governance
+2023-12-06 03:49:59,552 - INFO - ESG3 classification completed for document 656e5360c29059a0c7a0108d. Label: Not ESG Related
+2023-12-06 03:49:59,813 - INFO - ESG3 classification completed for document 656e5360c29059a0c7a0108e. Label: Social
+2023-12-06 03:50:00,062 - INFO - ESG3 classification completed for document 656e5360c29059a0c7a0108f. Label: Not ESG Related
+2023-12-06 03:50:00,321 - INFO - ESG3 classification completed for document 656e5360c29059a0c7a01090. Label: Social
+2023-12-06 03:50:00,490 - INFO - ESG3 classification completed for document 656e5395c29059a0c7a01097. Label: Not ESG Related
+2023-12-06 03:50:00,688 - INFO - ESG3 classification completed for document 656e5395c29059a0c7a01098. Label: Not ESG Related
+2023-12-06 03:50:00,920 - INFO - ESG3 classification completed for document 656e5395c29059a0c7a01099. Label: Not ESG Related
+2023-12-06 03:50:01,176 - INFO - ESG3 classification completed for document 656e5395c29059a0c7a0109a. Label: Governance
+2023-12-06 03:50:01,408 - INFO - ESG3 classification completed for document 656e5396c29059a0c7a0109b. Label: Not ESG Related
+2023-12-06 03:50:01,675 - INFO - ESG3 classification completed for document 656e53c2c29059a0c7a010a2. Label: Social
+2023-12-06 03:50:01,903 - INFO - ESG3 classification completed for document 656e53c2c29059a0c7a010a3. Label: Not ESG Related
+2023-12-06 03:50:02,107 - INFO - ESG3 classification completed for document 656e53c2c29059a0c7a010a4. Label: Governance
+2023-12-06 03:50:02,349 - INFO - ESG3 classification completed for document 656e53c3c29059a0c7a010a5. Label: Social
+2023-12-06 03:50:02,538 - INFO - ESG3 classification completed for document 656e53c3c29059a0c7a010a6. Label: Social
+2023-12-06 03:50:02,877 - INFO - ESG3 classification completed for document 656e53e1c29059a0c7a010ad. Label: Social
+2023-12-06 03:50:03,176 - INFO - ESG3 classification completed for document 656e53e1c29059a0c7a010ae. Label: Not ESG Related
+2023-12-06 03:50:03,417 - INFO - ESG3 classification completed for document 656e5400c29059a0c7a010b5. Label: Not ESG Related
+2023-12-06 03:50:03,612 - INFO - ESG3 classification completed for document 656e5400c29059a0c7a010b6. Label: Not ESG Related
+2023-12-06 03:50:03,884 - INFO - ESG3 classification completed for document 656e5401c29059a0c7a010b7. Label: Not ESG Related
+2023-12-06 03:50:04,139 - INFO - ESG3 classification completed for document 656e5401c29059a0c7a010b8. Label: Not ESG Related
+2023-12-06 03:50:04,294 - INFO - ESG3 classification completed for document 656e542ec29059a0c7a010bf. Label: Not ESG Related
+2023-12-06 03:50:04,683 - INFO - ESG3 classification completed for document 656e542ec29059a0c7a010c0. Label: Social
+2023-12-06 03:50:04,983 - INFO - ESG3 classification completed for document 656e542fc29059a0c7a010c1. Label: Social
+2023-12-06 03:50:05,207 - INFO - ESG3 classification completed for document 656e542fc29059a0c7a010c2. Label: Social
+2023-12-06 03:50:05,471 - INFO - ESG3 classification completed for document 656e542fc29059a0c7a010c3. Label: Governance
+2023-12-06 03:50:06,150 - INFO - ESG3 classification completed for document 656e545bc29059a0c7a010ca. Label: Social
+2023-12-06 03:50:06,498 - INFO - ESG3 classification completed for document 656e545bc29059a0c7a010cb. Label: Social
+2023-12-06 03:50:06,751 - INFO - ESG3 classification completed for document 656e545bc29059a0c7a010cc. Label: Social
+2023-12-06 03:50:08,249 - INFO - ESG3 classification completed for document 656e545cc29059a0c7a010cd. Label: Social
+2023-12-06 03:50:09,672 - INFO - ESG3 classification completed for document 656e545cc29059a0c7a010ce. Label: Not ESG Related
+2023-12-06 03:50:10,315 - INFO - ESG3 classification completed for document 656e5491c29059a0c7a010d5. Label: Social
+2023-12-06 03:50:10,976 - INFO - ESG3 classification completed for document 656e5491c29059a0c7a010d6. Label: Governance
+2023-12-06 03:50:11,800 - INFO - ESG3 classification completed for document 656e5491c29059a0c7a010d7. Label: Governance
+2023-12-06 03:50:12,754 - INFO - ESG3 classification completed for document 656e5492c29059a0c7a010d8. Label: Social
+2023-12-06 03:50:13,313 - INFO - ESG3 classification completed for document 656e5492c29059a0c7a010d9. Label: Social
+2023-12-06 03:50:13,962 - INFO - ESG3 classification completed for document 656e54c4c29059a0c7a010e0. Label: Social
+2023-12-06 03:50:14,319 - INFO - ESG3 classification completed for document 656e54c5c29059a0c7a010e1. Label: Social
+2023-12-06 03:50:14,700 - INFO - ESG3 classification completed for document 656e54c6c29059a0c7a010e2. Label: Social
+2023-12-06 03:50:15,344 - INFO - ESG3 classification completed for document 656e54c7c29059a0c7a010e3. Label: Social
+2023-12-06 03:50:16,015 - INFO - ESG3 classification completed for document 656e54c8c29059a0c7a010e4. Label: Social
+2023-12-06 03:50:17,242 - INFO - ESG3 classification completed for document 656e54edc29059a0c7a010eb. Label: Environmental
+2023-12-06 03:50:17,906 - INFO - ESG3 classification completed for document 656e54edc29059a0c7a010ec. Label: Social
+2023-12-06 03:50:18,149 - INFO - ESG3 classification completed for document 656e54eec29059a0c7a010ed. Label: Social
+2023-12-06 03:50:18,406 - INFO - ESG3 classification completed for document 656e5521c29059a0c7a010f4. Label: Social
+2023-12-06 03:50:18,673 - INFO - ESG3 classification completed for document 656e5521c29059a0c7a010f5. Label: Social
+2023-12-06 03:50:18,971 - INFO - ESG3 classification completed for document 656e5521c29059a0c7a010f6. Label: Social
+2023-12-06 03:50:19,238 - INFO - ESG3 classification completed for document 656e554ac29059a0c7a010fd. Label: Social
+2023-12-06 03:50:19,500 - INFO - ESG3 classification completed for document 656e554ac29059a0c7a010fe. Label: Social
+2023-12-06 03:50:19,698 - INFO - ESG3 classification completed for document 656e554ac29059a0c7a010ff. Label: Social
+2023-12-06 03:50:19,964 - INFO - ESG3 classification completed for document 656e554bc29059a0c7a01100. Label: Environmental
+2023-12-06 03:50:20,211 - INFO - ESG3 classification completed for document 656e554bc29059a0c7a01101. Label: Not ESG Related
+2023-12-06 03:50:20,447 - INFO - ESG3 classification completed for document 656e558dc29059a0c7a01106. Label: Social
+2023-12-06 03:50:20,731 - INFO - ESG3 classification completed for document 656e55b6c29059a0c7a0110d. Label: Social
+2023-12-06 03:50:20,987 - INFO - ESG3 classification completed for document 656e55b6c29059a0c7a0110e. Label: Social
+2023-12-06 03:50:21,342 - INFO - ESG3 classification completed for document 656e55b6c29059a0c7a0110f. Label: Social
+2023-12-06 03:50:21,614 - INFO - ESG3 classification completed for document 656e55b7c29059a0c7a01110. Label: Governance
+2023-12-06 03:50:21,790 - INFO - ESG3 classification completed for document 656e55b7c29059a0c7a01111. Label: Not ESG Related
+2023-12-06 03:50:22,036 - INFO - ESG3 classification completed for document 656e55e9c29059a0c7a01118. Label: Social
+2023-12-06 03:50:22,231 - INFO - ESG3 classification completed for document 656e55e9c29059a0c7a01119. Label: Social
+2023-12-06 03:50:22,397 - INFO - ESG3 classification completed for document 656e55e9c29059a0c7a0111a. Label: Social
+2023-12-06 03:50:22,652 - INFO - ESG3 classification completed for document 656e55eac29059a0c7a0111b. Label: Environmental
+2023-12-06 03:50:22,837 - INFO - ESG3 classification completed for document 656e55eac29059a0c7a0111c. Label: Not ESG Related
+2023-12-06 03:50:22,980 - INFO - ESG3 classification completed for document 656e5610c29059a0c7a01123. Label: Not ESG Related
+2023-12-06 03:50:24,050 - INFO - ESG3 classification completed for document 656e5610c29059a0c7a01124. Label: Social
+2023-12-06 03:50:24,643 - INFO - ESG3 classification completed for document 656e5610c29059a0c7a01125. Label: Governance
+2023-12-06 03:50:24,955 - INFO - ESG3 classification completed for document 656e5610c29059a0c7a01126. Label: Social
+2023-12-06 03:50:25,319 - INFO - ESG3 classification completed for document 656e5634c29059a0c7a0112d. Label: Social
+2023-12-06 03:50:25,561 - INFO - ESG3 classification completed for document 656e5634c29059a0c7a0112e. Label: Not ESG Related
+2023-12-06 03:50:25,845 - INFO - ESG3 classification completed for document 656e5634c29059a0c7a0112f. Label: Governance
+2023-12-06 03:50:26,193 - INFO - ESG3 classification completed for document 656e5669c29059a0c7a01136. Label: Social
+2023-12-06 03:50:26,439 - INFO - ESG3 classification completed for document 656e566ac29059a0c7a01137. Label: Social
+2023-12-06 03:50:26,737 - INFO - ESG3 classification completed for document 656e566ac29059a0c7a01138. Label: Social
+2023-12-06 03:50:26,989 - INFO - ESG3 classification completed for document 656e566ac29059a0c7a01139. Label: Social
+2023-12-06 03:50:27,267 - INFO - ESG3 classification completed for document 656e56a8c29059a0c7a01140. Label: Not ESG Related
+2023-12-06 03:50:27,465 - INFO - ESG3 classification completed for document 656e56a8c29059a0c7a01141. Label: Not ESG Related
+2023-12-06 03:50:27,763 - INFO - ESG3 classification completed for document 656e56a8c29059a0c7a01142. Label: Not ESG Related
+2023-12-06 03:50:28,068 - INFO - ESG3 classification completed for document 656e56a9c29059a0c7a01143. Label: Social
+2023-12-06 03:50:28,249 - INFO - ESG3 classification completed for document 656e56a9c29059a0c7a01144. Label: Not ESG Related
+2023-12-06 03:50:28,566 - INFO - ESG3 classification completed for document 656e56d7c29059a0c7a0114b. Label: Not ESG Related
+2023-12-06 03:50:28,828 - INFO - ESG3 classification completed for document 656e56f9c29059a0c7a01152. Label: Social
+2023-12-06 03:50:29,029 - INFO - ESG3 classification completed for document 656e56f9c29059a0c7a01153. Label: Social
+2023-12-06 03:50:29,291 - INFO - ESG3 classification completed for document 656e56f9c29059a0c7a01154. Label: Social
+2023-12-06 03:50:29,516 - INFO - ESG3 classification completed for document 656e56fac29059a0c7a01155. Label: Governance
+2023-12-06 03:50:29,714 - INFO - ESG3 classification completed for document 656e5726c29059a0c7a0115c. Label: Social
+2023-12-06 03:50:29,980 - INFO - ESG3 classification completed for document 656e5726c29059a0c7a0115d. Label: Social
+2023-12-06 03:50:30,234 - INFO - ESG3 classification completed for document 656e574dc29059a0c7a01163. Label: Social
+2023-12-06 03:50:30,480 - INFO - ESG3 classification completed for document 656e574dc29059a0c7a01164. Label: Social
+2023-12-06 03:50:30,757 - INFO - ESG3 classification completed for document 656e574dc29059a0c7a01165. Label: Not ESG Related
+2023-12-06 03:50:30,900 - INFO - ESG3 classification completed for document 656e574ec29059a0c7a01166. Label: Social
+2023-12-06 03:50:31,169 - INFO - ESG3 classification completed for document 656e578bc29059a0c7a0116d. Label: Not ESG Related
+2023-12-06 03:50:31,351 - INFO - ESG3 classification completed for document 656e578cc29059a0c7a0116e. Label: Social
+2023-12-06 03:50:31,670 - INFO - ESG3 classification completed for document 656e578cc29059a0c7a0116f. Label: Social
+2023-12-06 03:50:31,850 - INFO - ESG3 classification completed for document 656e57b1c29059a0c7a01176. Label: Social
+2023-12-06 03:50:32,103 - INFO - ESG3 classification completed for document 656e57b1c29059a0c7a01177. Label: Social
+2023-12-06 03:50:32,362 - INFO - ESG3 classification completed for document 656e57b1c29059a0c7a01178. Label: Social
+2023-12-06 03:50:32,714 - INFO - ESG3 classification completed for document 656e57ddc29059a0c7a0117f. Label: Social
+2023-12-06 03:50:32,987 - INFO - ESG3 classification completed for document 656e57ddc29059a0c7a01180. Label: Environmental
+2023-12-06 03:50:33,293 - INFO - ESG3 classification completed for document 656e57ddc29059a0c7a01181. Label: Social
+2023-12-06 03:50:33,552 - INFO - ESG3 classification completed for document 656e57ddc29059a0c7a01182. Label: Environmental
+2023-12-06 03:50:34,170 - INFO - ESG3 classification completed for document 656e57dec29059a0c7a01183. Label: Social
+2023-12-06 03:50:34,499 - INFO - ESG3 classification completed for document 656e5803c29059a0c7a0118a. Label: Social
+2023-12-06 03:50:34,742 - INFO - ESG3 classification completed for document 656e5803c29059a0c7a0118b. Label: Social
+2023-12-06 03:50:35,032 - INFO - ESG3 classification completed for document 656e5803c29059a0c7a0118c. Label: Not ESG Related
+2023-12-06 03:50:35,270 - INFO - ESG3 classification completed for document 656e5804c29059a0c7a0118d. Label: Environmental
+2023-12-06 03:50:35,608 - INFO - ESG3 classification completed for document 656e5837c29059a0c7a01194. Label: Social
+2023-12-06 03:50:35,871 - INFO - ESG3 classification completed for document 656e5837c29059a0c7a01195. Label: Social
+2023-12-06 03:50:36,122 - INFO - ESG3 classification completed for document 656e5837c29059a0c7a01196. Label: Social
+2023-12-06 03:50:36,333 - INFO - ESG3 classification completed for document 656e5837c29059a0c7a01197. Label: Social
+2023-12-06 03:50:36,567 - INFO - ESG3 classification completed for document 656e5838c29059a0c7a01198. Label: Social
+2023-12-06 03:50:36,813 - INFO - ESG3 classification completed for document 656e5864c29059a0c7a0119f. Label: Environmental
+2023-12-06 03:50:37,486 - INFO - ESG3 classification completed for document 656e5864c29059a0c7a011a0. Label: Social
+2023-12-06 03:50:37,688 - INFO - ESG3 classification completed for document 656e5865c29059a0c7a011a1. Label: Environmental
+2023-12-06 03:50:37,957 - INFO - ESG3 classification completed for document 656e5865c29059a0c7a011a2. Label: Social
+2023-12-06 03:50:38,243 - INFO - ESG3 classification completed for document 656e5865c29059a0c7a011a3. Label: Social
+2023-12-06 03:50:38,599 - INFO - ESG3 classification completed for document 656e5890c29059a0c7a011aa. Label: Governance
+2023-12-06 03:50:38,819 - INFO - ESG3 classification completed for document 656e5890c29059a0c7a011ab. Label: Environmental
+2023-12-06 03:50:39,104 - INFO - ESG3 classification completed for document 656e5890c29059a0c7a011ac. Label: Not ESG Related
+2023-12-06 03:50:39,398 - INFO - ESG3 classification completed for document 656e5890c29059a0c7a011ad. Label: Social
+2023-12-06 03:50:39,689 - INFO - ESG3 classification completed for document 656e5891c29059a0c7a011ae. Label: Social
+2023-12-06 03:50:40,373 - INFO - ESG3 classification completed for document 656e5e7484f5159b98214762. Label: Social
+2023-12-06 03:50:40,704 - INFO - ESG3 classification completed for document 656e5e7584f5159b98214763. Label: Environmental
+2023-12-06 03:50:40,960 - INFO - ESG3 classification completed for document 656e5e7584f5159b98214764. Label: Social
+2023-12-06 03:50:41,283 - INFO - ESG3 classification completed for document 656e5e9d84f5159b9821476b. Label: Social
+2023-12-06 03:50:41,727 - INFO - ESG3 classification completed for document 656e5e9d84f5159b9821476c. Label: Not ESG Related
+2023-12-06 03:50:42,087 - INFO - ESG3 classification completed for document 656e5e9d84f5159b9821476d. Label: Not ESG Related
+2023-12-06 03:50:42,417 - INFO - ESG3 classification completed for document 656e5e9e84f5159b9821476e. Label: Social
+2023-12-06 03:50:42,561 - INFO - ESG3 classification completed for document 656e5ebb84f5159b98214775. Label: Not ESG Related
+2023-12-06 03:50:43,503 - INFO - ESG3 classification completed for document 656e5ef384f5159b98214782. Label: Social
+2023-12-06 03:50:43,776 - INFO - ESG3 classification completed for document 656e5ef384f5159b98214783. Label: Social
+2023-12-06 03:50:44,066 - INFO - ESG3 classification completed for document 656e5f3284f5159b98214790. Label: Not ESG Related
+2023-12-06 03:50:44,708 - INFO - ESG3 classification completed for document 656e5f3384f5159b98214791. Label: Not ESG Related
+2023-12-06 03:50:44,967 - INFO - ESG3 classification completed for document 656e5f3384f5159b98214792. Label: Not ESG Related
+2023-12-06 03:50:45,098 - INFO - ESG3 classification completed for document 656e5f3384f5159b98214793. Label: Not ESG Related
+2023-12-06 03:50:45,328 - INFO - ESG3 classification completed for document 656e5f5984f5159b9821479a. Label: Social
+2023-12-06 03:50:45,469 - INFO - ESG3 classification completed for document 656e5f5984f5159b9821479b. Label: Not ESG Related
+2023-12-06 03:50:45,638 - INFO - ESG3 classification completed for document 656e5f5a84f5159b9821479c. Label: Not ESG Related
+2023-12-06 03:50:45,852 - INFO - ESG3 classification completed for document 656e5f5a84f5159b9821479d. Label: Not ESG Related
+2023-12-06 03:50:46,186 - INFO - ESG3 classification completed for document 656e5f8384f5159b982147a4. Label: Social
+2023-12-06 03:50:46,585 - INFO - ESG3 classification completed for document 656e5f8384f5159b982147a5. Label: Social
+2023-12-06 03:50:46,863 - INFO - ESG3 classification completed for document 656e5f8484f5159b982147a6. Label: Social
+2023-12-06 03:50:47,355 - INFO - ESG3 classification completed for document 656e5f8484f5159b982147a7. Label: Social
+2023-12-06 03:50:47,685 - INFO - ESG3 classification completed for document 656e5f8684f5159b982147a8. Label: Social
+2023-12-06 03:50:48,010 - INFO - ESG3 classification completed for document 656e5fb384f5159b982147af. Label: Social
+2023-12-06 03:50:48,194 - INFO - ESG3 classification completed for document 656e5fb384f5159b982147b0. Label: Not ESG Related
+2023-12-06 03:50:48,483 - INFO - ESG3 classification completed for document 656e5fb484f5159b982147b1. Label: Not ESG Related
+2023-12-06 03:50:48,662 - INFO - ESG3 classification completed for document 656e5fd484f5159b982147b8. Label: Not ESG Related
+2023-12-06 03:50:48,833 - INFO - ESG3 classification completed for document 656e5fd584f5159b982147b9. Label: Not ESG Related
+2023-12-06 03:50:49,133 - INFO - ESG3 classification completed for document 656e5ff984f5159b982147c0. Label: Social
+2023-12-06 03:50:49,496 - INFO - ESG3 classification completed for document 656e5ff984f5159b982147c1. Label: Social
+2023-12-06 03:50:49,818 - INFO - ESG3 classification completed for document 656e5ffa84f5159b982147c2. Label: Social
+2023-12-06 03:50:50,152 - INFO - ESG3 classification completed for document 656e5ffa84f5159b982147c3. Label: Social
+2023-12-06 03:50:50,626 - INFO - ESG3 classification completed for document 656e5ffa84f5159b982147c4. Label: Social
+2023-12-06 03:50:50,791 - INFO - ESG3 classification completed for document 656e603084f5159b982147cb. Label: Not ESG Related
+2023-12-06 03:50:51,061 - INFO - ESG3 classification completed for document 656e603084f5159b982147cc. Label: Social
+2023-12-06 03:50:51,585 - INFO - ESG3 classification completed for document 656e603084f5159b982147cd. Label: Social
+2023-12-06 03:50:51,927 - INFO - ESG3 classification completed for document 656e606684f5159b982147d4. Label: Social
+2023-12-06 03:50:52,100 - INFO - ESG3 classification completed for document 656e606784f5159b982147d5. Label: Not ESG Related
+2023-12-06 03:50:52,256 - INFO - ESG3 classification completed for document 656e606784f5159b982147d6. Label: Not ESG Related
+2023-12-06 03:50:52,422 - INFO - ESG3 classification completed for document 656e606784f5159b982147d7. Label: Not ESG Related
+2023-12-06 03:50:52,640 - INFO - ESG3 classification completed for document 656e609b84f5159b982147df. Label: Not ESG Related
+2023-12-06 03:50:52,905 - INFO - ESG3 classification completed for document 656e609c84f5159b982147e0. Label: Not ESG Related
+2023-12-06 03:50:53,212 - INFO - ESG3 classification completed for document 656e609c84f5159b982147e1. Label: Social
+2023-12-06 03:50:53,463 - INFO - ESG3 classification completed for document 656e609c84f5159b982147e2. Label: Social
+2023-12-06 03:50:54,079 - INFO - ESG3 classification completed for document 656e60d184f5159b982147e9. Label: Environmental
+2023-12-06 03:50:54,401 - INFO - ESG3 classification completed for document 656e60d184f5159b982147ea. Label: Environmental
+2023-12-06 03:50:54,815 - INFO - ESG3 classification completed for document 656e60d184f5159b982147eb. Label: Social
+2023-12-06 03:50:55,028 - INFO - ESG3 classification completed for document 656e60d284f5159b982147ec. Label: Social
+2023-12-06 03:50:55,314 - INFO - ESG3 classification completed for document 656e60d284f5159b982147ed. Label: Social
+2023-12-06 03:50:55,565 - INFO - ESG3 classification completed for document 656e60fd84f5159b982147f4. Label: Social
+2023-12-06 03:50:55,918 - INFO - ESG3 classification completed for document 656e60fd84f5159b982147f5. Label: Social
+2023-12-06 03:50:56,123 - INFO - ESG3 classification completed for document 656e60fe84f5159b982147f6. Label: Social
+2023-12-06 03:50:56,405 - INFO - ESG3 classification completed for document 656e60fe84f5159b982147f7. Label: Social
+2023-12-06 03:50:56,687 - INFO - ESG3 classification completed for document 656e60fe84f5159b982147f8. Label: Social
+2023-12-06 03:50:57,070 - INFO - ESG3 classification completed for document 656e613584f5159b982147ff. Label: Social
+2023-12-06 03:50:57,511 - INFO - ESG3 classification completed for document 656e613584f5159b98214800. Label: Environmental
+2023-12-06 03:50:57,740 - INFO - ESG3 classification completed for document 656e613584f5159b98214801. Label: Not ESG Related
+2023-12-06 03:50:58,063 - INFO - ESG3 classification completed for document 656e613684f5159b98214802. Label: Social
+2023-12-06 03:50:58,354 - INFO - ESG3 classification completed for document 656e613684f5159b98214803. Label: Not ESG Related
+2023-12-06 03:50:58,552 - INFO - ESG3 classification completed for document 656e616f84f5159b98214810. Label: Not ESG Related
+2023-12-06 03:50:58,892 - INFO - ESG3 classification completed for document 656e616f84f5159b98214811. Label: Social
+2023-12-06 03:50:59,317 - INFO - ESG3 classification completed for document 656e617084f5159b98214812. Label: Social
+2023-12-06 03:50:59,643 - INFO - ESG3 classification completed for document 656e617084f5159b98214813. Label: Environmental
+2023-12-06 03:51:00,014 - INFO - ESG3 classification completed for document 656e617084f5159b98214814. Label: Social
+2023-12-06 03:51:00,233 - INFO - ESG3 classification completed for document 656e61a284f5159b98214821. Label: Not ESG Related
+2023-12-06 03:51:00,585 - INFO - ESG3 classification completed for document 656e61a384f5159b98214822. Label: Social
+2023-12-06 03:51:00,842 - INFO - ESG3 classification completed for document 656e61a384f5159b98214823. Label: Environmental
+2023-12-06 03:51:01,105 - INFO - ESG3 classification completed for document 656e61a384f5159b98214824. Label: Not ESG Related
+2023-12-06 03:51:01,309 - INFO - ESG3 classification completed for document 656e61d484f5159b9821482b. Label: Social
+2023-12-06 03:51:01,796 - INFO - ESG3 classification completed for document 656e61d484f5159b9821482c. Label: Social
+2023-12-06 03:51:02,114 - INFO - ESG3 classification completed for document 656e61d484f5159b9821482d. Label: Social
+2023-12-06 03:51:02,392 - INFO - ESG3 classification completed for document 656e61d584f5159b9821482e. Label: Social
+2023-12-06 03:51:02,894 - INFO - ESG3 classification completed for document 656e61d584f5159b9821482f. Label: Social
+2023-12-06 03:51:03,152 - INFO - ESG3 classification completed for document 656e61ff84f5159b98214836. Label: Environmental
+2023-12-06 03:51:03,407 - INFO - ESG3 classification completed for document 656e61ff84f5159b98214837. Label: Social
+2023-12-06 03:51:04,149 - INFO - ESG3 classification completed for document 656e622984f5159b9821483e. Label: Governance
+2023-12-06 03:51:04,345 - INFO - ESG3 classification completed for document 656e622984f5159b9821483f. Label: Not ESG Related
+2023-12-06 03:51:04,697 - INFO - ESG3 classification completed for document 656e622984f5159b98214840. Label: Governance
+2023-12-06 03:51:04,999 - INFO - ESG3 classification completed for document 656e622984f5159b98214841. Label: Not ESG Related
+2023-12-06 03:51:05,242 - INFO - ESG3 classification completed for document 656e625284f5159b98214848. Label: Social
+2023-12-06 03:51:05,660 - INFO - ESG3 classification completed for document 656e625384f5159b98214849. Label: Social
+2023-12-06 03:51:05,931 - INFO - ESG3 classification completed for document 656e625384f5159b9821484a. Label: Not ESG Related
+2023-12-06 03:51:06,058 - INFO - ESG3 classification completed for document 656e625384f5159b9821484b. Label: Not ESG Related
+2023-12-06 03:51:06,189 - INFO - ESG3 classification completed for document 656e625484f5159b9821484c. Label: Not ESG Related
+2023-12-06 03:51:06,437 - INFO - ESG3 classification completed for document 656e628084f5159b98214853. Label: Social
+2023-12-06 03:51:06,695 - INFO - ESG3 classification completed for document 656e628084f5159b98214854. Label: Social
+2023-12-06 03:51:06,817 - INFO - ESG3 classification completed for document 656e628084f5159b98214855. Label: Not ESG Related
+2023-12-06 03:51:07,082 - INFO - ESG3 classification completed for document 656e628084f5159b98214856. Label: Social
+2023-12-06 03:51:07,432 - INFO - ESG3 classification completed for document 656e628184f5159b98214857. Label: Environmental
+2023-12-06 03:51:07,681 - INFO - ESG3 classification completed for document 656e62ae84f5159b9821485e. Label: Social
+2023-12-06 03:51:08,051 - INFO - ESG3 classification completed for document 656e62ae84f5159b9821485f. Label: Social
+2023-12-06 03:51:08,335 - INFO - ESG3 classification completed for document 656e62ae84f5159b98214860. Label: Social
+2023-12-06 03:51:08,671 - INFO - ESG3 classification completed for document 656e62af84f5159b98214861. Label: Social
+2023-12-06 03:51:09,156 - INFO - ESG3 classification completed for document 656e62d484f5159b98214868. Label: Social
+2023-12-06 03:51:09,727 - INFO - ESG3 classification completed for document 656e62d484f5159b98214869. Label: Social
+2023-12-06 03:51:09,942 - INFO - ESG3 classification completed for document 656e62d584f5159b9821486a. Label: Environmental
+2023-12-06 03:51:10,105 - INFO - ESG3 classification completed for document 656e62d584f5159b9821486b. Label: Not ESG Related
+2023-12-06 03:51:10,334 - INFO - ESG3 classification completed for document 656e62dc84f5159b9821486e. Label: Social
+2023-12-06 03:51:10,638 - INFO - ESG3 classification completed for document 656e630d84f5159b98214875. Label: Social
+2023-12-06 03:51:10,885 - INFO - ESG3 classification completed for document 656e630d84f5159b98214876. Label: Not ESG Related
+2023-12-06 03:51:11,141 - INFO - ESG3 classification completed for document 656e630d84f5159b98214877. Label: Social
+2023-12-06 03:51:11,406 - INFO - ESG3 classification completed for document 656e630d84f5159b98214878. Label: Governance
+2023-12-06 03:51:11,722 - INFO - ESG3 classification completed for document 656e630e84f5159b98214879. Label: Social
+2023-12-06 03:51:12,132 - INFO - ESG3 classification completed for document 656eda319e6ba559ce081375. Label: Not ESG Related
+2023-12-06 03:51:12,431 - INFO - ESG3 classification completed for document 656eda319e6ba559ce081376. Label: Not ESG Related
+2023-12-06 03:51:12,882 - INFO - ESG3 classification completed for document 656eda329e6ba559ce081377. Label: Social
+2023-12-06 03:51:13,487 - INFO - ESG3 classification completed for document 656eda329e6ba559ce081378. Label: Not ESG Related
+2023-12-06 03:51:14,123 - INFO - ESG3 classification completed for document 656eda329e6ba559ce081379. Label: Not ESG Related
+2023-12-06 03:51:14,755 - INFO - ESG3 classification completed for document 656eda329e6ba559ce08137a. Label: Not ESG Related
+2023-12-06 03:51:15,096 - INFO - ESG3 classification completed for document 656eda339e6ba559ce08137b. Label: Social
+2023-12-06 03:51:15,368 - INFO - ESG3 classification completed for document 656eda339e6ba559ce08137c. Label: Environmental
+2023-12-06 03:51:15,831 - INFO - ESG3 classification completed for document 656eda879e6ba559ce081388. Label: Not ESG Related
+2023-12-06 03:51:16,715 - INFO - ESG3 classification completed for document 656eda889e6ba559ce081389. Label: Not ESG Related
+2023-12-06 03:51:17,766 - INFO - ESG3 classification completed for document 656eda889e6ba559ce08138a. Label: Not ESG Related
+2023-12-06 03:51:18,232 - INFO - ESG3 classification completed for document 656eda889e6ba559ce08138b. Label: Social
+2023-12-06 03:51:18,531 - INFO - ESG3 classification completed for document 656eda889e6ba559ce08138c. Label: Environmental
+2023-12-06 03:51:18,726 - INFO - ESG3 classification completed for document 656eda889e6ba559ce08138d. Label: Not ESG Related
+2023-12-06 03:51:19,326 - INFO - ESG3 classification completed for document 656eda899e6ba559ce08138e. Label: Environmental
+2023-12-06 03:51:20,471 - INFO - ESG3 classification completed for document 656eda899e6ba559ce08138f. Label: Environmental
+2023-12-06 03:51:21,983 - INFO - ESG3 classification completed for document 656eda899e6ba559ce081390. Label: Social
+2023-12-06 03:51:23,073 - INFO - ESG3 classification completed for document 656edacc9e6ba559ce08139c. Label: Not ESG Related
+2023-12-06 03:51:23,930 - INFO - ESG3 classification completed for document 656edacc9e6ba559ce08139d. Label: Not ESG Related
+2023-12-06 03:51:24,171 - INFO - ESG3 classification completed for document 656edacd9e6ba559ce08139e. Label: Not ESG Related
+2023-12-06 03:51:24,341 - INFO - ESG3 classification completed for document 656edacd9e6ba559ce08139f. Label: Not ESG Related
+2023-12-06 03:51:24,732 - INFO - ESG3 classification completed for document 656edacd9e6ba559ce0813a0. Label: Not ESG Related
+2023-12-06 03:51:24,902 - INFO - ESG3 classification completed for document 656edace9e6ba559ce0813a1. Label: Not ESG Related
+2023-12-06 03:51:25,149 - INFO - ESG3 classification completed for document 656edace9e6ba559ce0813a2. Label: Not ESG Related
+2023-12-06 03:51:25,268 - INFO - ESG3 classification completed for document 656edace9e6ba559ce0813a3. Label: Not ESG Related
+2023-12-06 03:51:25,393 - INFO - ESG3 classification completed for document 656edace9e6ba559ce0813a4. Label: Not ESG Related
+2023-12-06 03:51:25,559 - INFO - ESG3 classification completed for document 656edace9e6ba559ce0813a5. Label: Environmental
+2023-12-06 03:51:25,839 - INFO - ESG3 classification completed for document 656edb229e6ba559ce0813b1. Label: Environmental
+2023-12-06 03:51:26,066 - INFO - ESG3 classification completed for document 656edb229e6ba559ce0813b2. Label: Environmental
+2023-12-06 03:51:26,287 - INFO - ESG3 classification completed for document 656edb239e6ba559ce0813b3. Label: Not ESG Related
+2023-12-06 03:51:26,453 - INFO - ESG3 classification completed for document 656edb239e6ba559ce0813b4. Label: Environmental
+2023-12-06 03:51:26,643 - INFO - ESG3 classification completed for document 656edb239e6ba559ce0813b5. Label: Environmental
+2023-12-06 03:51:26,884 - INFO - ESG3 classification completed for document 656edb239e6ba559ce0813b6. Label: Not ESG Related
+2023-12-06 03:51:27,115 - INFO - ESG3 classification completed for document 656edb249e6ba559ce0813b7. Label: Environmental
+2023-12-06 03:51:27,313 - INFO - ESG3 classification completed for document 656edb249e6ba559ce0813b8. Label: Not ESG Related
+2023-12-06 03:51:27,518 - INFO - ESG3 classification completed for document 656edb249e6ba559ce0813b9. Label: Social
+2023-12-06 03:51:27,911 - INFO - ESG3 classification completed for document 656edb7f9e6ba559ce0813c5. Label: Not ESG Related
+2023-12-06 03:51:28,127 - INFO - ESG3 classification completed for document 656edb7f9e6ba559ce0813c6. Label: Not ESG Related
+2023-12-06 03:51:28,349 - INFO - ESG3 classification completed for document 656edb809e6ba559ce0813c7. Label: Not ESG Related
+2023-12-06 03:51:28,531 - INFO - ESG3 classification completed for document 656edb809e6ba559ce0813c8. Label: Not ESG Related
+2023-12-06 03:51:28,863 - INFO - ESG3 classification completed for document 656edb809e6ba559ce0813c9. Label: Not ESG Related
+2023-12-06 03:51:29,067 - INFO - ESG3 classification completed for document 656edb809e6ba559ce0813ca. Label: Governance
+2023-12-06 03:51:29,218 - INFO - ESG3 classification completed for document 656edb809e6ba559ce0813cb. Label: Social
+2023-12-06 03:51:29,406 - INFO - ESG3 classification completed for document 656edb819e6ba559ce0813cc. Label: Environmental
+2023-12-06 03:51:29,610 - INFO - ESG3 classification completed for document 656edb819e6ba559ce0813cd. Label: Not ESG Related
+2023-12-06 03:51:29,799 - INFO - ESG3 classification completed for document 656edbd29e6ba559ce0813d9. Label: Social
+2023-12-06 03:51:30,075 - INFO - ESG3 classification completed for document 656edbd29e6ba559ce0813da. Label: Social
+2023-12-06 03:51:30,302 - INFO - ESG3 classification completed for document 656edbd29e6ba559ce0813db. Label: Social
+2023-12-06 03:51:30,530 - INFO - ESG3 classification completed for document 656edbd39e6ba559ce0813dc. Label: Governance
+2023-12-06 03:51:30,765 - INFO - ESG3 classification completed for document 656edbd39e6ba559ce0813dd. Label: Social
+2023-12-06 03:51:30,948 - INFO - ESG3 classification completed for document 656edbd39e6ba559ce0813de. Label: Social
+2023-12-06 03:51:31,154 - INFO - ESG3 classification completed for document 656edbd39e6ba559ce0813df. Label: Social
+2023-12-06 03:51:31,351 - INFO - ESG3 classification completed for document 656edbd49e6ba559ce0813e0. Label: Social
+2023-12-06 03:51:31,516 - INFO - ESG3 classification completed for document 656edbd49e6ba559ce0813e1. Label: Social
+2023-12-06 03:51:31,742 - INFO - ESG3 classification completed for document 656edbd49e6ba559ce0813e2. Label: Social
+2023-12-06 03:51:31,922 - INFO - ESG3 classification completed for document 656edc269e6ba559ce0813ee. Label: Social
+2023-12-06 03:51:32,171 - INFO - ESG3 classification completed for document 656edc269e6ba559ce0813ef. Label: Social
+2023-12-06 03:51:32,431 - INFO - ESG3 classification completed for document 656edc269e6ba559ce0813f0. Label: Not ESG Related
+2023-12-06 03:51:32,597 - INFO - ESG3 classification completed for document 656edc269e6ba559ce0813f1. Label: Not ESG Related
+2023-12-06 03:51:32,949 - INFO - ESG3 classification completed for document 656edc279e6ba559ce0813f2. Label: Social
+2023-12-06 03:51:33,191 - INFO - ESG3 classification completed for document 656edc279e6ba559ce0813f3. Label: Not ESG Related
+2023-12-06 03:51:33,445 - INFO - ESG3 classification completed for document 656edc279e6ba559ce0813f4. Label: Not ESG Related
+2023-12-06 03:51:34,139 - INFO - ESG3 classification completed for document 656edc279e6ba559ce0813f5. Label: Social
+2023-12-06 03:51:34,426 - INFO - ESG3 classification completed for document 656edc849e6ba559ce081401. Label: Social
+2023-12-06 03:51:34,770 - INFO - ESG3 classification completed for document 656edc859e6ba559ce081402. Label: Not ESG Related
+2023-12-06 03:51:34,958 - INFO - ESG3 classification completed for document 656edc859e6ba559ce081403. Label: Social
+2023-12-06 03:51:35,157 - INFO - ESG3 classification completed for document 656edc859e6ba559ce081404. Label: Social
+2023-12-06 03:51:35,327 - INFO - ESG3 classification completed for document 656edc859e6ba559ce081405. Label: Not ESG Related
+2023-12-06 03:51:35,522 - INFO - ESG3 classification completed for document 656edc859e6ba559ce081406. Label: Not ESG Related
+2023-12-06 03:51:35,826 - INFO - ESG3 classification completed for document 656edcdb9e6ba559ce081412. Label: Social
+2023-12-06 03:51:36,020 - INFO - ESG3 classification completed for document 656edcdc9e6ba559ce081413. Label: Not ESG Related
+2023-12-06 03:51:36,306 - INFO - ESG3 classification completed for document 656edcdc9e6ba559ce081414. Label: Not ESG Related
+2023-12-06 03:51:36,495 - INFO - ESG3 classification completed for document 656edcdc9e6ba559ce081415. Label: Not ESG Related
+2023-12-06 03:51:36,749 - INFO - ESG3 classification completed for document 656edcdd9e6ba559ce081416. Label: Not ESG Related
+2023-12-06 03:51:36,976 - INFO - ESG3 classification completed for document 656edcdd9e6ba559ce081417. Label: Not ESG Related
+2023-12-06 03:51:37,186 - INFO - ESG3 classification completed for document 656edcdd9e6ba559ce081418. Label: Environmental
+2023-12-06 03:51:37,424 - INFO - ESG3 classification completed for document 656edcdd9e6ba559ce081419. Label: Not ESG Related
+2023-12-06 03:51:37,654 - INFO - ESG3 classification completed for document 656edcde9e6ba559ce08141a. Label: Not ESG Related
+2023-12-06 03:51:37,884 - INFO - ESG3 classification completed for document 656edcde9e6ba559ce08141b. Label: Not ESG Related
+2023-12-06 03:51:38,125 - INFO - ESG3 classification completed for document 656edd2c9e6ba559ce081427. Label: Social
+2023-12-06 03:51:38,391 - INFO - ESG3 classification completed for document 656edd2d9e6ba559ce081428. Label: Not ESG Related
+2023-12-06 03:51:38,660 - INFO - ESG3 classification completed for document 656edd2d9e6ba559ce081429. Label: Social
+2023-12-06 03:51:38,857 - INFO - ESG3 classification completed for document 656edd2d9e6ba559ce08142a. Label: Social
+2023-12-06 03:51:39,096 - INFO - ESG3 classification completed for document 656edd2e9e6ba559ce08142b. Label: Environmental
+2023-12-06 03:51:39,239 - INFO - ESG3 classification completed for document 656edd2e9e6ba559ce08142c. Label: Social
+2023-12-06 03:51:39,447 - INFO - ESG3 classification completed for document 656edd2e9e6ba559ce08142d. Label: Social
+2023-12-06 03:51:39,691 - INFO - ESG3 classification completed for document 656edd2e9e6ba559ce08142e. Label: Social
+2023-12-06 03:51:39,902 - INFO - ESG3 classification completed for document 656edd2f9e6ba559ce08142f. Label: Social
+2023-12-06 03:51:40,068 - INFO - ESG3 classification completed for document 656edd749e6ba559ce08143b. Label: Not ESG Related
+2023-12-06 03:51:40,261 - INFO - ESG3 classification completed for document 656edd759e6ba559ce08143c. Label: Not ESG Related
+2023-12-06 03:51:40,446 - INFO - ESG3 classification completed for document 656edd759e6ba559ce08143d. Label: Environmental
+2023-12-06 03:51:40,617 - INFO - ESG3 classification completed for document 656edd759e6ba559ce08143e. Label: Not ESG Related
+2023-12-06 03:51:40,762 - INFO - ESG3 classification completed for document 656edd769e6ba559ce08143f. Label: Social
+2023-12-06 03:51:40,963 - INFO - ESG3 classification completed for document 656edd769e6ba559ce081440. Label: Not ESG Related
+2023-12-06 03:51:41,206 - INFO - ESG3 classification completed for document 656edd769e6ba559ce081441. Label: Social
+2023-12-06 03:51:41,406 - INFO - ESG3 classification completed for document 656edd779e6ba559ce081442. Label: Not ESG Related
+2023-12-06 03:51:41,592 - INFO - ESG3 classification completed for document 656edd779e6ba559ce081443. Label: Not ESG Related
+2023-12-06 03:51:41,896 - INFO - ESG3 classification completed for document 656eddbc9e6ba559ce08144f. Label: Environmental
+2023-12-06 03:51:42,092 - INFO - ESG3 classification completed for document 656eddbc9e6ba559ce081450. Label: Environmental
+2023-12-06 03:51:42,342 - INFO - ESG3 classification completed for document 656eddbc9e6ba559ce081451. Label: Social
+2023-12-06 03:51:42,573 - INFO - ESG3 classification completed for document 656eddbc9e6ba559ce081452. Label: Not ESG Related
+2023-12-06 03:51:42,967 - INFO - ESG3 classification completed for document 656eddbd9e6ba559ce081453. Label: Environmental
+2023-12-06 03:51:43,171 - INFO - ESG3 classification completed for document 656eddbd9e6ba559ce081454. Label: Social
+2023-12-06 03:51:43,428 - INFO - ESG3 classification completed for document 656eddbd9e6ba559ce081455. Label: Environmental
+2023-12-06 03:51:43,679 - INFO - ESG3 classification completed for document 656eddbd9e6ba559ce081456. Label: Not ESG Related
+2023-12-06 03:51:44,314 - INFO - ESG3 classification completed for document 656ede119e6ba559ce081462. Label: Social
+2023-12-06 03:51:44,687 - INFO - ESG3 classification completed for document 656ede119e6ba559ce081463. Label: Not ESG Related
+2023-12-06 03:51:44,916 - INFO - ESG3 classification completed for document 656ede129e6ba559ce081464. Label: Not ESG Related
+2023-12-06 03:51:45,273 - INFO - ESG3 classification completed for document 656ede129e6ba559ce081465. Label: Not ESG Related
+2023-12-06 03:51:45,526 - INFO - ESG3 classification completed for document 656ede129e6ba559ce081466. Label: Environmental
+2023-12-06 03:51:45,724 - INFO - ESG3 classification completed for document 656ede129e6ba559ce081467. Label: Not ESG Related
+2023-12-06 03:51:45,936 - INFO - ESG3 classification completed for document 656ede139e6ba559ce081468. Label: Social
+2023-12-06 03:51:46,124 - INFO - ESG3 classification completed for document 656ede139e6ba559ce081469. Label: Environmental
+2023-12-06 03:51:46,320 - INFO - ESG3 classification completed for document 656ede139e6ba559ce08146a. Label: Social
+2023-12-06 03:51:46,504 - INFO - ESG3 classification completed for document 656ede609e6ba559ce081476. Label: Social
+2023-12-06 03:51:46,666 - INFO - ESG3 classification completed for document 656ede619e6ba559ce081477. Label: Not ESG Related
+2023-12-06 03:51:46,911 - INFO - ESG3 classification completed for document 656ede619e6ba559ce081478. Label: Not ESG Related
+2023-12-06 03:51:47,132 - INFO - ESG3 classification completed for document 656ede619e6ba559ce081479. Label: Not ESG Related
+2023-12-06 03:51:47,321 - INFO - ESG3 classification completed for document 656ede619e6ba559ce08147a. Label: Social
+2023-12-06 03:51:47,598 - INFO - ESG3 classification completed for document 656ede629e6ba559ce08147b. Label: Environmental
+2023-12-06 03:51:47,958 - INFO - ESG3 classification completed for document 656ede629e6ba559ce08147c. Label: Not ESG Related
+2023-12-06 03:51:48,196 - INFO - ESG3 classification completed for document 656edea79e6ba559ce081488. Label: Not ESG Related
+2023-12-06 03:51:48,407 - INFO - ESG3 classification completed for document 656edea89e6ba559ce081489. Label: Social
+2023-12-06 03:51:48,686 - INFO - ESG3 classification completed for document 656edea89e6ba559ce08148a. Label: Not ESG Related
+2023-12-06 03:51:48,875 - INFO - ESG3 classification completed for document 656edea89e6ba559ce08148b. Label: Social
+2023-12-06 03:51:49,066 - INFO - ESG3 classification completed for document 656edea89e6ba559ce08148c. Label: Social
+2023-12-06 03:51:49,286 - INFO - ESG3 classification completed for document 656edee89e6ba559ce081498. Label: Not ESG Related
+2023-12-06 03:51:49,482 - INFO - ESG3 classification completed for document 656edee89e6ba559ce081499. Label: Not ESG Related
+2023-12-06 03:51:49,710 - INFO - ESG3 classification completed for document 656edee89e6ba559ce08149a. Label: Not ESG Related
+2023-12-06 03:51:49,962 - INFO - ESG3 classification completed for document 656edee89e6ba559ce08149b. Label: Not ESG Related
+2023-12-06 03:51:50,140 - INFO - ESG3 classification completed for document 656edee99e6ba559ce08149c. Label: Not ESG Related
+2023-12-06 03:51:50,278 - INFO - ESG3 classification completed for document 656edee99e6ba559ce08149d. Label: Social
+2023-12-06 03:51:50,536 - INFO - ESG3 classification completed for document 656edee99e6ba559ce08149e. Label: Not ESG Related
+2023-12-06 03:51:50,732 - INFO - ESG3 classification completed for document 656edee99e6ba559ce08149f. Label: Not ESG Related
+2023-12-06 03:51:50,911 - INFO - ESG3 classification completed for document 656edeea9e6ba559ce0814a0. Label: Not ESG Related
+2023-12-06 03:51:51,133 - INFO - ESG3 classification completed for document 656edf309e6ba559ce0814ac. Label: Not ESG Related
+2023-12-06 03:51:51,312 - INFO - ESG3 classification completed for document 656edf319e6ba559ce0814ad. Label: Not ESG Related
+2023-12-06 03:51:51,544 - INFO - ESG3 classification completed for document 656edf319e6ba559ce0814ae. Label: Not ESG Related
+2023-12-06 03:51:51,794 - INFO - ESG3 classification completed for document 656edf329e6ba559ce0814af. Label: Social
+2023-12-06 03:51:52,021 - INFO - ESG3 classification completed for document 656edf329e6ba559ce0814b0. Label: Social
+2023-12-06 03:51:52,239 - INFO - ESG3 classification completed for document 656edf329e6ba559ce0814b1. Label: Not ESG Related
+2023-12-06 03:51:52,566 - INFO - ESG3 classification completed for document 656edf329e6ba559ce0814b2. Label: Not ESG Related
+2023-12-06 03:51:52,954 - INFO - ESG3 classification completed for document 656edf339e6ba559ce0814b3. Label: Social
+2023-12-06 03:51:53,157 - INFO - ESG3 classification completed for document 656edf339e6ba559ce0814b4. Label: Social
+2023-12-06 03:51:53,407 - INFO - ESG3 classification completed for document 656edf7c9e6ba559ce0814c0. Label: Not ESG Related
+2023-12-06 03:51:53,653 - INFO - ESG3 classification completed for document 656edf7c9e6ba559ce0814c1. Label: Not ESG Related
+2023-12-06 03:51:54,388 - INFO - ESG3 classification completed for document 656edf7d9e6ba559ce0814c2. Label: Social
+2023-12-06 03:51:54,722 - INFO - ESG3 classification completed for document 656edf7d9e6ba559ce0814c3. Label: Not ESG Related
+2023-12-06 03:51:54,970 - INFO - ESG3 classification completed for document 656edf7d9e6ba559ce0814c4. Label: Social
+2023-12-06 03:51:55,172 - INFO - ESG3 classification completed for document 656edf7d9e6ba559ce0814c5. Label: Social
+2023-12-06 03:51:55,423 - INFO - ESG3 classification completed for document 656edf7e9e6ba559ce0814c6. Label: Not ESG Related
+2023-12-06 03:51:55,582 - INFO - ESG3 classification completed for document 656edf7e9e6ba559ce0814c7. Label: Not ESG Related
+2023-12-06 03:51:55,814 - INFO - ESG3 classification completed for document 656edf7e9e6ba559ce0814c8. Label: Not ESG Related
+2023-12-06 03:51:56,077 - INFO - ESG3 classification completed for document 656edf7e9e6ba559ce0814c9. Label: Social
+2023-12-06 03:51:56,266 - INFO - ESG3 classification completed for document 656edfc29e6ba559ce0814d5. Label: Not ESG Related
+2023-12-06 03:51:56,535 - INFO - ESG3 classification completed for document 656edfc29e6ba559ce0814d6. Label: Not ESG Related
+2023-12-06 03:51:56,831 - INFO - ESG3 classification completed for document 656edfc39e6ba559ce0814d7. Label: Social
+2023-12-06 03:51:57,129 - INFO - ESG3 classification completed for document 656edfc39e6ba559ce0814d8. Label: Not ESG Related
+2023-12-06 03:51:57,369 - INFO - ESG3 classification completed for document 656edfc39e6ba559ce0814d9. Label: Not ESG Related
+2023-12-06 03:51:57,610 - INFO - ESG3 classification completed for document 656edfc39e6ba559ce0814da. Label: Social
+2023-12-06 03:51:57,909 - INFO - ESG3 classification completed for document 656edfc49e6ba559ce0814db. Label: Not ESG Related
+2023-12-06 03:51:58,169 - INFO - ESG3 classification completed for document 656edfc49e6ba559ce0814dc. Label: Not ESG Related
+2023-12-06 03:51:58,380 - INFO - ESG3 classification completed for document 656edfc49e6ba559ce0814dd. Label: Social
+2023-12-06 03:51:58,574 - INFO - ESG3 classification completed for document 656edfc49e6ba559ce0814de. Label: Not ESG Related
+2023-12-06 03:51:58,749 - INFO - ESG3 classification completed for document 656ee0099e6ba559ce0814ea. Label: Not ESG Related
+2023-12-06 03:51:58,985 - INFO - ESG3 classification completed for document 656ee0099e6ba559ce0814eb. Label: Not ESG Related
+2023-12-06 03:51:59,460 - INFO - ESG3 classification completed for document 656ee00a9e6ba559ce0814ec. Label: Social
+2023-12-06 03:51:59,674 - INFO - ESG3 classification completed for document 656ee00a9e6ba559ce0814ed. Label: Social
+2023-12-06 03:51:59,927 - INFO - ESG3 classification completed for document 656ee00a9e6ba559ce0814ee. Label: Social
+2023-12-06 03:52:00,169 - INFO - ESG3 classification completed for document 656ee00b9e6ba559ce0814ef. Label: Social
+2023-12-06 03:52:00,424 - INFO - ESG3 classification completed for document 656ee00b9e6ba559ce0814f0. Label: Environmental
+2023-12-06 03:52:00,653 - INFO - ESG3 classification completed for document 656ee00b9e6ba559ce0814f1. Label: Not ESG Related
+2023-12-06 03:52:00,925 - INFO - ESG3 classification completed for document 656ee0719e6ba559ce0814fd. Label: Social
+2023-12-06 03:52:01,178 - INFO - ESG3 classification completed for document 656ee0729e6ba559ce0814fe. Label: Not ESG Related
+2023-12-06 03:52:01,376 - INFO - ESG3 classification completed for document 656ee0729e6ba559ce0814ff. Label: Not ESG Related
+2023-12-06 03:52:01,627 - INFO - ESG3 classification completed for document 656ee0729e6ba559ce081500. Label: Social
+2023-12-06 03:52:01,895 - INFO - ESG3 classification completed for document 656ee0739e6ba559ce081501. Label: Not ESG Related
+2023-12-06 03:52:02,081 - INFO - ESG3 classification completed for document 656ee0739e6ba559ce081502. Label: Not ESG Related
+2023-12-06 03:52:02,347 - INFO - ESG3 classification completed for document 656ee0739e6ba559ce081503. Label: Social
+2023-12-06 03:52:02,518 - INFO - ESG3 classification completed for document 656ee0739e6ba559ce081504. Label: Social
+2023-12-06 03:52:02,745 - INFO - ESG3 classification completed for document 656ee0749e6ba559ce081505. Label: Not ESG Related
+2023-12-06 03:52:02,980 - INFO - ESG3 classification completed for document 656ee0749e6ba559ce081506. Label: Not ESG Related
+2023-12-06 03:52:03,243 - INFO - ESG3 classification completed for document 656ee0cd9e6ba559ce081512. Label: Not ESG Related
+2023-12-06 03:52:03,654 - INFO - ESG3 classification completed for document 656ee0ce9e6ba559ce081513. Label: Social
+2023-12-06 03:52:04,091 - INFO - ESG3 classification completed for document 656ee0ce9e6ba559ce081514. Label: Social
+2023-12-06 03:52:04,230 - INFO - ESG3 classification completed for document 656ee0ce9e6ba559ce081515. Label: Social
+2023-12-06 03:52:04,429 - INFO - ESG3 classification completed for document 656ee0ce9e6ba559ce081516. Label: Not ESG Related
+2023-12-06 03:52:04,784 - INFO - ESG3 classification completed for document 656ee0ce9e6ba559ce081517. Label: Social
+2023-12-06 03:52:04,965 - INFO - ESG3 classification completed for document 656ee0cf9e6ba559ce081518. Label: Social
+2023-12-06 03:52:05,186 - INFO - ESG3 classification completed for document 656ee0cf9e6ba559ce081519. Label: Social
+2023-12-06 03:52:05,386 - INFO - ESG3 classification completed for document 656ee0d09e6ba559ce08151a. Label: Social
+2023-12-06 03:52:05,568 - INFO - ESG3 classification completed for document 656ee0d09e6ba559ce08151b. Label: Not ESG Related
+2023-12-06 03:52:05,745 - INFO - ESG3 classification completed for document 656ee1299e6ba559ce081527. Label: Environmental
+2023-12-06 03:52:05,972 - INFO - ESG3 classification completed for document 656ee1299e6ba559ce081528. Label: Not ESG Related
+2023-12-06 03:52:06,196 - INFO - ESG3 classification completed for document 656ee1299e6ba559ce081529. Label: Not ESG Related
+2023-12-06 03:52:06,407 - INFO - ESG3 classification completed for document 656ee1299e6ba559ce08152a. Label: Not ESG Related
+2023-12-06 03:52:06,663 - INFO - ESG3 classification completed for document 656ee1299e6ba559ce08152b. Label: Not ESG Related
+2023-12-06 03:52:06,818 - INFO - ESG3 classification completed for document 656ee12a9e6ba559ce08152c. Label: Environmental
+2023-12-06 03:52:07,010 - INFO - ESG3 classification completed for document 656ee12a9e6ba559ce08152d. Label: Environmental
+2023-12-06 03:52:07,211 - INFO - ESG3 classification completed for document 656ee12a9e6ba559ce08152e. Label: Not ESG Related
+2023-12-06 03:52:07,456 - INFO - ESG3 classification completed for document 656ee1899e6ba559ce08153a. Label: Not ESG Related
+2023-12-06 03:52:07,701 - INFO - ESG3 classification completed for document 656ee1899e6ba559ce08153b. Label: Not ESG Related
+2023-12-06 03:52:07,908 - INFO - ESG3 classification completed for document 656ee18a9e6ba559ce08153c. Label: Not ESG Related
+2023-12-06 03:52:08,225 - INFO - ESG3 classification completed for document 656ee18a9e6ba559ce08153d. Label: Not ESG Related
+2023-12-06 03:52:08,485 - INFO - ESG3 classification completed for document 656ee18a9e6ba559ce08153e. Label: Not ESG Related
+2023-12-06 03:52:08,781 - INFO - ESG3 classification completed for document 656ee18a9e6ba559ce08153f. Label: Governance
+2023-12-06 03:52:09,105 - INFO - ESG3 classification completed for document 656ee18b9e6ba559ce081540. Label: Governance
+2023-12-06 03:52:09,313 - INFO - ESG3 classification completed for document 656ee18b9e6ba559ce081541. Label: Not ESG Related
+2023-12-06 03:52:09,490 - INFO - ESG3 classification completed for document 656ee18b9e6ba559ce081542. Label: Not ESG Related
+2023-12-06 03:52:09,715 - INFO - ESG3 classification completed for document 656ee18b9e6ba559ce081543. Label: Not ESG Related
+2023-12-06 03:52:09,878 - INFO - ESG3 classification completed for document 656ee1d59e6ba559ce08154f. Label: Not ESG Related
+2023-12-06 03:52:10,048 - INFO - ESG3 classification completed for document 656ee1d59e6ba559ce081550. Label: Not ESG Related
+2023-12-06 03:52:10,252 - INFO - ESG3 classification completed for document 656ee1d59e6ba559ce081551. Label: Social
+2023-12-06 03:52:10,381 - INFO - ESG3 classification completed for document 656ee1d59e6ba559ce081552. Label: Not ESG Related
+2023-12-06 03:52:10,550 - INFO - ESG3 classification completed for document 656ee1d59e6ba559ce081553. Label: Not ESG Related
+2023-12-06 03:52:10,766 - INFO - ESG3 classification completed for document 656ee1d69e6ba559ce081554. Label: Not ESG Related
+2023-12-06 03:52:11,027 - INFO - ESG3 classification completed for document 656ee1d69e6ba559ce081555. Label: Not ESG Related
+2023-12-06 03:52:11,220 - INFO - ESG3 classification completed for document 656ee2379e6ba559ce081561. Label: Environmental
+2023-12-06 03:52:11,419 - INFO - ESG3 classification completed for document 656ee2379e6ba559ce081562. Label: Not ESG Related
+2023-12-06 03:52:11,549 - INFO - ESG3 classification completed for document 656ee2379e6ba559ce081563. Label: Not ESG Related
+2023-12-06 03:52:11,770 - INFO - ESG3 classification completed for document 656ee2389e6ba559ce081564. Label: Environmental
+2023-12-06 03:52:12,001 - INFO - ESG3 classification completed for document 656ee2389e6ba559ce081565. Label: Social
+2023-12-06 03:52:12,175 - INFO - ESG3 classification completed for document 656ee2389e6ba559ce081566. Label: Social
+2023-12-06 03:52:12,409 - INFO - ESG3 classification completed for document 656ee2389e6ba559ce081567. Label: Social
+2023-12-06 03:52:12,643 - INFO - ESG3 classification completed for document 656ee2849e6ba559ce081573. Label: Social
+2023-12-06 03:52:12,982 - INFO - ESG3 classification completed for document 656ee2849e6ba559ce081574. Label: Social
+2023-12-06 03:52:13,364 - INFO - ESG3 classification completed for document 656ee2849e6ba559ce081575. Label: Not ESG Related
+2023-12-06 03:52:13,604 - INFO - ESG3 classification completed for document 656ee2859e6ba559ce081576. Label: Social
+2023-12-06 03:52:14,103 - INFO - ESG3 classification completed for document 656ee2859e6ba559ce081577. Label: Environmental
+2023-12-06 03:52:14,515 - INFO - ESG3 classification completed for document 656ee2859e6ba559ce081578. Label: Not ESG Related
+2023-12-06 03:52:15,178 - INFO - ESG3 classification completed for document 656ee2859e6ba559ce081579. Label: Environmental
+2023-12-06 03:52:15,518 - INFO - ESG3 classification completed for document 656ee2869e6ba559ce08157a. Label: Social
+2023-12-06 03:52:15,693 - INFO - ESG3 classification completed for document 656ee2c59e6ba559ce081586. Label: Not ESG Related
+2023-12-06 03:52:15,992 - INFO - ESG3 classification completed for document 656ee2c59e6ba559ce081587. Label: Not ESG Related
+2023-12-06 03:52:16,270 - INFO - ESG3 classification completed for document 656ee2c59e6ba559ce081588. Label: Not ESG Related
+2023-12-06 03:52:16,496 - INFO - ESG3 classification completed for document 656ee2c69e6ba559ce081589. Label: Not ESG Related
+2023-12-06 03:52:16,697 - INFO - ESG3 classification completed for document 656ee2c69e6ba559ce08158a. Label: Not ESG Related
+2023-12-06 03:52:16,929 - INFO - ESG3 classification completed for document 656ee2c69e6ba559ce08158b. Label: Environmental
+2023-12-06 03:52:17,162 - INFO - ESG3 classification completed for document 656ee2c69e6ba559ce08158c. Label: Not ESG Related
+2023-12-06 03:52:17,527 - INFO - ESG3 classification completed for document 656ee2c79e6ba559ce08158d. Label: Social
+2023-12-06 03:52:17,751 - INFO - ESG3 classification completed for document 656ee2c79e6ba559ce08158e. Label: Not ESG Related
+2023-12-06 03:52:18,012 - INFO - ESG3 classification completed for document 656ee3099e6ba559ce08159a. Label: Not ESG Related
+2023-12-06 03:52:18,540 - INFO - ESG3 classification completed for document 656ee30a9e6ba559ce08159b. Label: Social
+2023-12-06 03:52:18,834 - INFO - ESG3 classification completed for document 656ee3469e6ba559ce0815a7. Label: Not ESG Related
+2023-12-06 03:52:19,466 - INFO - ESG3 classification completed for document 656ee3479e6ba559ce0815a8. Label: Social
+2023-12-06 03:52:19,626 - INFO - ESG3 classification completed for document 656ee3479e6ba559ce0815a9. Label: Not ESG Related
+2023-12-06 03:52:19,808 - INFO - ESG3 classification completed for document 656ee3479e6ba559ce0815aa. Label: Not ESG Related
+2023-12-06 03:52:20,097 - INFO - ESG3 classification completed for document 656ee3479e6ba559ce0815ab. Label: Social
+2023-12-06 03:52:20,566 - INFO - ESG3 classification completed for document 656ee3479e6ba559ce0815ac. Label: Environmental
+2023-12-06 03:52:20,880 - INFO - ESG3 classification completed for document 656ee3489e6ba559ce0815ad. Label: Social
+2023-12-06 03:52:21,292 - INFO - ESG3 classification completed for document 656ee3489e6ba559ce0815ae. Label: Not ESG Related
+2023-12-06 03:52:21,553 - INFO - ESG3 classification completed for document 656ee3489e6ba559ce0815af. Label: Not ESG Related
+2023-12-06 03:52:21,970 - INFO - ESG3 classification completed for document 656ee3489e6ba559ce0815b0. Label: Not ESG Related
+2023-12-06 03:52:22,290 - INFO - ESG3 classification completed for document 656ee3879e6ba559ce0815bc. Label: Not ESG Related
+2023-12-06 03:52:22,571 - INFO - ESG3 classification completed for document 656ee3879e6ba559ce0815bd. Label: Social
+2023-12-06 03:52:22,904 - INFO - ESG3 classification completed for document 656ee3879e6ba559ce0815be. Label: Not ESG Related
+2023-12-06 03:52:23,164 - INFO - ESG3 classification completed for document 656ee3889e6ba559ce0815bf. Label: Not ESG Related
+2023-12-06 03:52:23,374 - INFO - ESG3 classification completed for document 656ee3889e6ba559ce0815c0. Label: Not ESG Related
+2023-12-06 03:52:23,591 - INFO - ESG3 classification completed for document 656ee3889e6ba559ce0815c1. Label: Not ESG Related
+2023-12-06 03:52:24,114 - INFO - ESG3 classification completed for document 656ee3889e6ba559ce0815c2. Label: Not ESG Related
+2023-12-06 03:52:24,349 - INFO - ESG3 classification completed for document 656ee3899e6ba559ce0815c3. Label: Social
+2023-12-06 03:52:24,699 - INFO - ESG3 classification completed for document 656ee3899e6ba559ce0815c4. Label: Not ESG Related
+2023-12-06 03:52:24,887 - INFO - ESG3 classification completed for document 656ee3d19e6ba559ce0815d0. Label: Social
+2023-12-06 03:52:25,085 - INFO - ESG3 classification completed for document 656ee3d19e6ba559ce0815d1. Label: Social
+2023-12-06 03:52:25,345 - INFO - ESG3 classification completed for document 656ee3d19e6ba559ce0815d2. Label: Environmental
+2023-12-06 03:52:25,563 - INFO - ESG3 classification completed for document 656ee3d19e6ba559ce0815d3. Label: Social
+2023-12-06 03:52:25,734 - INFO - ESG3 classification completed for document 656ee3d29e6ba559ce0815d4. Label: Not ESG Related
+2023-12-06 03:52:25,919 - INFO - ESG3 classification completed for document 656ee3d29e6ba559ce0815d5. Label: Social
+2023-12-06 03:52:26,184 - INFO - ESG3 classification completed for document 656ee3d29e6ba559ce0815d6. Label: Social
+2023-12-06 03:52:26,410 - INFO - ESG3 classification completed for document 656ee3d29e6ba559ce0815d7. Label: Social
+2023-12-06 03:52:26,646 - INFO - ESG3 classification completed for document 656ee3d39e6ba559ce0815d8. Label: Not ESG Related
+2023-12-06 03:52:26,830 - INFO - ESG3 classification completed for document 656ee3d39e6ba559ce0815d9. Label: Social
+2023-12-06 03:52:27,016 - INFO - ESG3 classification completed for document 656ee4289e6ba559ce0815e5. Label: Social
+2023-12-06 03:52:27,213 - INFO - ESG3 classification completed for document 656ee4289e6ba559ce0815e6. Label: Social
+2023-12-06 03:52:27,419 - INFO - ESG3 classification completed for document 656ee4289e6ba559ce0815e7. Label: Governance
+2023-12-06 03:52:27,614 - INFO - ESG3 classification completed for document 656ee4299e6ba559ce0815e8. Label: Social
+2023-12-06 03:52:27,820 - INFO - ESG3 classification completed for document 656ee4299e6ba559ce0815e9. Label: Social
+2023-12-06 03:52:27,966 - INFO - ESG3 classification completed for document 656ee4299e6ba559ce0815ea. Label: Social
+2023-12-06 03:52:28,150 - INFO - ESG3 classification completed for document 656ee4299e6ba559ce0815eb. Label: Social
+2023-12-06 03:52:28,363 - INFO - ESG3 classification completed for document 656ee42a9e6ba559ce0815ec. Label: Not ESG Related
+2023-12-06 03:52:28,545 - INFO - ESG3 classification completed for document 656ee4729e6ba559ce0815f8. Label: Not ESG Related
+2023-12-06 03:52:28,821 - INFO - ESG3 classification completed for document 656ee4729e6ba559ce0815f9. Label: Social
+2023-12-06 03:52:29,029 - INFO - ESG3 classification completed for document 656ee4729e6ba559ce0815fa. Label: Social
+2023-12-06 03:52:29,246 - INFO - ESG3 classification completed for document 656ee4739e6ba559ce0815fb. Label: Not ESG Related
+2023-12-06 03:52:29,470 - INFO - ESG3 classification completed for document 656ee4739e6ba559ce0815fc. Label: Not ESG Related
+2023-12-06 03:52:29,636 - INFO - ESG3 classification completed for document 656ee4739e6ba559ce0815fd. Label: Not ESG Related
+2023-12-06 03:52:29,828 - INFO - ESG3 classification completed for document 656ee4739e6ba559ce0815fe. Label: Not ESG Related
+2023-12-06 03:52:30,033 - INFO - ESG3 classification completed for document 656ee4749e6ba559ce0815ff. Label: Not ESG Related
+2023-12-06 03:52:30,247 - INFO - ESG3 classification completed for document 656ee4749e6ba559ce081600. Label: Not ESG Related
+2023-12-06 03:52:30,492 - INFO - ESG3 classification completed for document 656ee4749e6ba559ce081601. Label: Not ESG Related
+2023-12-06 03:52:30,733 - INFO - ESG3 classification completed for document 656ee4bb9e6ba559ce08160d. Label: Not ESG Related
+2023-12-06 03:52:30,898 - INFO - ESG3 classification completed for document 656ee4bb9e6ba559ce08160e. Label: Social
+2023-12-06 03:52:31,140 - INFO - ESG3 classification completed for document 656ee4bc9e6ba559ce08160f. Label: Not ESG Related
+2023-12-06 03:52:31,269 - INFO - ESG3 classification completed for document 656ee4bc9e6ba559ce081610. Label: Social
+2023-12-06 03:52:31,452 - INFO - ESG3 classification completed for document 656ee4bc9e6ba559ce081611. Label: Social
+2023-12-06 03:52:31,637 - INFO - ESG3 classification completed for document 656ee4bc9e6ba559ce081612. Label: Not ESG Related
+2023-12-06 03:52:31,799 - INFO - ESG3 classification completed for document 656ee4bd9e6ba559ce081613. Label: Not ESG Related
+2023-12-06 03:52:32,009 - INFO - ESG3 classification completed for document 656ee4bd9e6ba559ce081614. Label: Social
+2023-12-06 03:52:32,227 - INFO - ESG3 classification completed for document 656ee4bd9e6ba559ce081615. Label: Social
+2023-12-06 03:52:32,433 - INFO - ESG3 classification completed for document 656ee50e9e6ba559ce081621. Label: Environmental
+2023-12-06 03:52:32,641 - INFO - ESG3 classification completed for document 656ee50e9e6ba559ce081622. Label: Environmental
+2023-12-06 03:52:33,254 - INFO - ESG3 classification completed for document 656ee50e9e6ba559ce081623. Label: Environmental
+2023-12-06 03:52:33,523 - INFO - ESG3 classification completed for document 656ee50e9e6ba559ce081624. Label: Not ESG Related
+2023-12-06 03:52:33,711 - INFO - ESG3 classification completed for document 656ee50f9e6ba559ce081625. Label: Environmental
+2023-12-06 03:52:33,936 - INFO - ESG3 classification completed for document 656ee50f9e6ba559ce081626. Label: Environmental
+2023-12-06 03:52:34,105 - INFO - ESG3 classification completed for document 656ee50f9e6ba559ce081627. Label: Not ESG Related
+2023-12-06 03:52:34,358 - INFO - ESG3 classification completed for document 656ee50f9e6ba559ce081628. Label: Environmental
+2023-12-06 03:52:34,777 - INFO - ESG3 classification completed for document 656ee50f9e6ba559ce081629. Label: Environmental
+2023-12-06 03:52:34,966 - INFO - ESG3 classification completed for document 656ee5109e6ba559ce08162a. Label: Environmental
+2023-12-06 03:52:35,183 - INFO - ESG3 classification completed for document 656ee54d9e6ba559ce081636. Label: Not ESG Related
+2023-12-06 03:52:35,345 - INFO - ESG3 classification completed for document 656ee54d9e6ba559ce081637. Label: Not ESG Related
+2023-12-06 03:52:35,562 - INFO - ESG3 classification completed for document 656ee54d9e6ba559ce081638. Label: Not ESG Related
+2023-12-06 03:52:35,829 - INFO - ESG3 classification completed for document 656ee54e9e6ba559ce081639. Label: Not ESG Related
+2023-12-06 03:52:36,019 - INFO - ESG3 classification completed for document 656ee54e9e6ba559ce08163a. Label: Social
+2023-12-06 03:52:36,289 - INFO - ESG3 classification completed for document 656ee54e9e6ba559ce08163b. Label: Social
+2023-12-06 03:52:36,725 - INFO - ESG3 classification completed for document 656ee54e9e6ba559ce08163c. Label: Not ESG Related
+2023-12-06 03:52:36,901 - INFO - ESG3 classification completed for document 656ee54f9e6ba559ce08163d. Label: Not ESG Related
+2023-12-06 03:52:37,029 - INFO - ESG3 classification completed for document 656ee54f9e6ba559ce08163e. Label: Not ESG Related
+2023-12-06 03:52:37,236 - INFO - ESG3 classification completed for document 656ee54f9e6ba559ce08163f. Label: Environmental
+2023-12-06 03:52:37,428 - INFO - ESG3 classification completed for document 656ee5949e6ba559ce08164b. Label: Not ESG Related
+2023-12-06 03:52:37,603 - INFO - ESG3 classification completed for document 656ee5959e6ba559ce08164c. Label: Environmental
+2023-12-06 03:52:37,796 - INFO - ESG3 classification completed for document 656ee5959e6ba559ce08164d. Label: Not ESG Related
+2023-12-06 03:52:38,007 - INFO - ESG3 classification completed for document 656ee5959e6ba559ce08164e. Label: Not ESG Related
+2023-12-06 03:52:38,182 - INFO - ESG3 classification completed for document 656ee5959e6ba559ce08164f. Label: Not ESG Related
+2023-12-06 03:52:38,340 - INFO - ESG3 classification completed for document 656ee5979e6ba559ce081650. Label: Not ESG Related
+2023-12-06 03:52:38,679 - INFO - ESG3 classification completed for document 656ee5979e6ba559ce081651. Label: Not ESG Related
+2023-12-06 03:52:38,925 - INFO - ESG3 classification completed for document 656ee5989e6ba559ce081652. Label: Not ESG Related
+2023-12-06 03:52:39,188 - INFO - ESG3 classification completed for document 656ee5989e6ba559ce081653. Label: Not ESG Related
+2023-12-06 03:52:39,421 - INFO - ESG3 classification completed for document 656ee5989e6ba559ce081654. Label: Not ESG Related
+2023-12-06 03:52:39,683 - INFO - ESG3 classification completed for document 656ee5da9e6ba559ce081660. Label: Social
+2023-12-06 03:52:39,874 - INFO - ESG3 classification completed for document 656ee5db9e6ba559ce081661. Label: Social
+2023-12-06 03:52:40,217 - INFO - ESG3 classification completed for document 656ee5db9e6ba559ce081662. Label: Social
+2023-12-06 03:52:40,459 - INFO - ESG3 classification completed for document 656ee5db9e6ba559ce081663. Label: Social
+2023-12-06 03:52:40,703 - INFO - ESG3 classification completed for document 656ee5dc9e6ba559ce081664. Label: Social
+2023-12-06 03:52:40,975 - INFO - ESG3 classification completed for document 656ee5dc9e6ba559ce081665. Label: Social
+2023-12-06 03:52:41,314 - INFO - ESG3 classification completed for document 656ee6279e6ba559ce081671. Label: Social
+2023-12-06 03:52:41,541 - INFO - ESG3 classification completed for document 656ee6279e6ba559ce081672. Label: Social
+2023-12-06 03:52:41,786 - INFO - ESG3 classification completed for document 656ee6279e6ba559ce081673. Label: Social
+2023-12-06 03:52:41,951 - INFO - ESG3 classification completed for document 656ee6279e6ba559ce081674. Label: Social
+2023-12-06 03:52:42,133 - INFO - ESG3 classification completed for document 656ee6279e6ba559ce081675. Label: Social
+2023-12-06 03:52:42,364 - INFO - ESG3 classification completed for document 656ee6289e6ba559ce081676. Label: Social
+2023-12-06 03:52:42,559 - INFO - ESG3 classification completed for document 656ee6289e6ba559ce081677. Label: Environmental
+2023-12-06 03:52:42,740 - INFO - ESG3 classification completed for document 656ee6739e6ba559ce081683. Label: Environmental
+2023-12-06 03:52:43,077 - INFO - ESG3 classification completed for document 656ee6739e6ba559ce081684. Label: Environmental
+2023-12-06 03:52:43,258 - INFO - ESG3 classification completed for document 656ee6739e6ba559ce081685. Label: Not ESG Related
+2023-12-06 03:52:43,512 - INFO - ESG3 classification completed for document 656ee6739e6ba559ce081686. Label: Environmental
+2023-12-06 03:52:43,710 - INFO - ESG3 classification completed for document 656ee6749e6ba559ce081687. Label: Governance
+2023-12-06 03:52:44,051 - INFO - ESG3 classification completed for document 656ee6749e6ba559ce081688. Label: Environmental
+2023-12-06 03:52:44,451 - INFO - ESG3 classification completed for document 656ee6749e6ba559ce081689. Label: Social
+2023-12-06 03:52:44,870 - INFO - ESG3 classification completed for document 656ee6749e6ba559ce08168a. Label: Not ESG Related
+2023-12-06 03:52:45,136 - INFO - ESG3 classification completed for document 656ee6749e6ba559ce08168b. Label: Environmental
+2023-12-06 03:52:45,344 - INFO - ESG3 classification completed for document 656ee6b49e6ba559ce081697. Label: Environmental
+2023-12-06 03:52:45,602 - INFO - ESG3 classification completed for document 656ee6b49e6ba559ce081698. Label: Environmental
+2023-12-06 03:52:45,854 - INFO - ESG3 classification completed for document 656ee6b59e6ba559ce081699. Label: Environmental
+2023-12-06 03:52:46,188 - INFO - ESG3 classification completed for document 656ee6b59e6ba559ce08169a. Label: Social
+2023-12-06 03:52:46,431 - INFO - ESG3 classification completed for document 656ee6b59e6ba559ce08169b. Label: Social
+2023-12-06 03:52:46,665 - INFO - ESG3 classification completed for document 656ee6b59e6ba559ce08169c. Label: Environmental
+2023-12-06 03:52:46,865 - INFO - ESG3 classification completed for document 656ee6b59e6ba559ce08169d. Label: Social
+2023-12-06 03:52:47,053 - INFO - ESG3 classification completed for document 656ee6b69e6ba559ce08169e. Label: Environmental
+2023-12-06 03:52:47,293 - INFO - ESG3 classification completed for document 656ee6b69e6ba559ce08169f. Label: Environmental
+2023-12-06 03:52:47,532 - INFO - ESG3 classification completed for document 656ee6b69e6ba559ce0816a0. Label: Environmental
+2023-12-06 03:52:47,821 - INFO - ESG3 classification completed for document 656ee7009e6ba559ce0816ac. Label: Social
+2023-12-06 03:52:48,014 - INFO - ESG3 classification completed for document 656ee7009e6ba559ce0816ad. Label: Social
+2023-12-06 03:52:48,295 - INFO - ESG3 classification completed for document 656ee7019e6ba559ce0816ae. Label: Social
+2023-12-06 03:52:48,469 - INFO - ESG3 classification completed for document 656ee7019e6ba559ce0816af. Label: Social
+2023-12-06 03:52:48,667 - INFO - ESG3 classification completed for document 656ee7019e6ba559ce0816b0. Label: Not ESG Related
+2023-12-06 03:52:48,906 - INFO - ESG3 classification completed for document 656ee7019e6ba559ce0816b1. Label: Social
+2023-12-06 03:52:49,187 - INFO - ESG3 classification completed for document 656ee7019e6ba559ce0816b2. Label: Social
+2023-12-06 03:52:49,357 - INFO - ESG3 classification completed for document 656ee7029e6ba559ce0816b3. Label: Not ESG Related
+2023-12-06 03:52:49,607 - INFO - ESG3 classification completed for document 656ee7029e6ba559ce0816b4. Label: Social
+2023-12-06 03:52:49,800 - INFO - ESG3 classification completed for document 656ee7619e6ba559ce0816c0. Label: Environmental
+2023-12-06 03:52:50,152 - INFO - ESG3 classification completed for document 656ee7619e6ba559ce0816c1. Label: Not ESG Related
+2023-12-06 03:52:50,324 - INFO - ESG3 classification completed for document 656ee7619e6ba559ce0816c2. Label: Not ESG Related
+2023-12-06 03:52:50,523 - INFO - ESG3 classification completed for document 656ee7619e6ba559ce0816c3. Label: Not ESG Related
+2023-12-06 03:52:50,762 - INFO - ESG3 classification completed for document 656ee7629e6ba559ce0816c4. Label: Not ESG Related
+2023-12-06 03:52:51,042 - INFO - ESG3 classification completed for document 656ee7629e6ba559ce0816c5. Label: Environmental
+2023-12-06 03:52:51,279 - INFO - ESG3 classification completed for document 656ee7629e6ba559ce0816c6. Label: Social
+2023-12-06 03:52:51,537 - INFO - ESG3 classification completed for document 656ee7629e6ba559ce0816c7. Label: Social
+2023-12-06 03:52:51,773 - INFO - ESG3 classification completed for document 656ee7639e6ba559ce0816c8. Label: Not ESG Related
+2023-12-06 03:52:52,013 - INFO - ESG3 classification completed for document 656ee7ae9e6ba559ce0816d4. Label: Social
+2023-12-06 03:52:52,261 - INFO - ESG3 classification completed for document 656ee7ae9e6ba559ce0816d5. Label: Social
+2023-12-06 03:52:52,443 - INFO - ESG3 classification completed for document 656ee7af9e6ba559ce0816d6. Label: Social
+2023-12-06 03:52:52,678 - INFO - ESG3 classification completed for document 656ee7af9e6ba559ce0816d7. Label: Social
+2023-12-06 03:52:53,080 - INFO - ESG3 classification completed for document 656ee7af9e6ba559ce0816d8. Label: Not ESG Related
+2023-12-06 03:52:53,268 - INFO - ESG3 classification completed for document 656ee7af9e6ba559ce0816d9. Label: Not ESG Related
+2023-12-06 03:52:53,460 - INFO - ESG3 classification completed for document 656ee7b09e6ba559ce0816da. Label: Not ESG Related
+2023-12-06 03:52:53,647 - INFO - ESG3 classification completed for document 656ee7b09e6ba559ce0816db. Label: Social
+2023-12-06 03:52:54,168 - INFO - ESG3 classification completed for document 656ee7b09e6ba559ce0816dc. Label: Not ESG Related
+2023-12-06 03:52:54,427 - INFO - ESG3 classification completed for document 656ee7b09e6ba559ce0816dd. Label: Not ESG Related
+2023-12-06 03:52:54,804 - INFO - ESG3 classification completed for document 656ee7f39e6ba559ce0816e9. Label: Not ESG Related
+2023-12-06 03:52:54,965 - INFO - ESG3 classification completed for document 656ee7f39e6ba559ce0816ea. Label: Not ESG Related
+2023-12-06 03:52:55,206 - INFO - ESG3 classification completed for document 656ee7f39e6ba559ce0816eb. Label: Not ESG Related
+2023-12-06 03:52:55,430 - INFO - ESG3 classification completed for document 656ee7f49e6ba559ce0816ec. Label: Social
+2023-12-06 03:52:55,592 - INFO - ESG3 classification completed for document 656ee7f49e6ba559ce0816ed. Label: Not ESG Related
+2023-12-06 03:52:55,723 - INFO - ESG3 classification completed for document 656ee7f49e6ba559ce0816ee. Label: Social
+2023-12-06 03:52:55,910 - INFO - ESG3 classification completed for document 656ee7f59e6ba559ce0816ef. Label: Social
+2023-12-06 03:52:56,130 - INFO - ESG3 classification completed for document 656ee7f59e6ba559ce0816f0. Label: Not ESG Related
+2023-12-06 03:52:56,352 - INFO - ESG3 classification completed for document 656ee7f59e6ba559ce0816f1. Label: Social
+2023-12-06 03:52:56,647 - INFO - ESG3 classification completed for document 656ee7f59e6ba559ce0816f2. Label: Environmental
+2023-12-06 03:52:56,881 - INFO - ESG3 classification completed for document 656ee80e9e6ba559ce0816f7. Label: Not ESG Related
+2023-12-06 03:52:57,111 - INFO - ESG3 classification completed for document 656ee80e9e6ba559ce0816f8. Label: Not ESG Related
+2023-12-06 03:52:57,393 - INFO - ESG3 classification completed for document 656ee8529e6ba559ce081704. Label: Not ESG Related
+2023-12-06 03:52:57,639 - INFO - ESG3 classification completed for document 656ee8529e6ba559ce081705. Label: Not ESG Related
+2023-12-06 03:52:57,926 - INFO - ESG3 classification completed for document 656ee8529e6ba559ce081706. Label: Not ESG Related
+2023-12-06 03:52:58,092 - INFO - ESG3 classification completed for document 656ee8539e6ba559ce081707. Label: Not ESG Related
+2023-12-06 03:52:58,285 - INFO - ESG3 classification completed for document 656ee8539e6ba559ce081708. Label: Not ESG Related
+2023-12-06 03:52:58,473 - INFO - ESG3 classification completed for document 656ee8539e6ba559ce081709. Label: Social
+2023-12-06 03:52:58,727 - INFO - ESG3 classification completed for document 656ee8539e6ba559ce08170a. Label: Social
+2023-12-06 03:52:58,947 - INFO - ESG3 classification completed for document 656ee8539e6ba559ce08170b. Label: Social
+2023-12-06 03:52:59,202 - INFO - ESG3 classification completed for document 656ee8549e6ba559ce08170c. Label: Social
+2023-12-06 03:52:59,541 - INFO - ESG3 classification completed for document 656ee8549e6ba559ce08170d. Label: Environmental
+2023-12-06 03:52:59,782 - INFO - ESG3 classification completed for document 656ee89a9e6ba559ce081719. Label: Environmental
+2023-12-06 03:53:00,013 - INFO - ESG3 classification completed for document 656ee89a9e6ba559ce08171a. Label: Environmental
+2023-12-06 03:53:00,300 - INFO - ESG3 classification completed for document 656ee89b9e6ba559ce08171b. Label: Environmental
+2023-12-06 03:53:00,547 - INFO - ESG3 classification completed for document 656ee89b9e6ba559ce08171c. Label: Environmental
+2023-12-06 03:53:00,816 - INFO - ESG3 classification completed for document 656ee89b9e6ba559ce08171d. Label: Not ESG Related
+2023-12-06 03:53:01,065 - INFO - ESG3 classification completed for document 656ee89b9e6ba559ce08171e. Label: Not ESG Related
+2023-12-06 03:53:01,228 - INFO - ESG3 classification completed for document 656ee89c9e6ba559ce08171f. Label: Social
+2023-12-06 03:53:01,469 - INFO - ESG3 classification completed for document 656ee89c9e6ba559ce081720. Label: Not ESG Related
+2023-12-06 03:53:01,617 - INFO - ESG3 classification completed for document 656ee89c9e6ba559ce081721. Label: Social
+2023-12-06 03:53:01,885 - INFO - ESG3 classification completed for document 656ee89c9e6ba559ce081722. Label: Environmental
+2023-12-06 03:53:02,030 - INFO - ESG3 classification completed for document 656ee8df9e6ba559ce08172e. Label: Social
+2023-12-06 03:53:02,244 - INFO - ESG3 classification completed for document 656ee8df9e6ba559ce08172f. Label: Not ESG Related
+2023-12-06 03:53:02,530 - INFO - ESG3 classification completed for document 656ee8df9e6ba559ce081730. Label: Environmental
+2023-12-06 03:53:02,712 - INFO - ESG3 classification completed for document 656ee8df9e6ba559ce081731. Label: Not ESG Related
+2023-12-06 03:53:03,073 - INFO - ESG3 classification completed for document 656ee8e09e6ba559ce081732. Label: Social
+2023-12-06 03:53:03,265 - INFO - ESG3 classification completed for document 656ee8e09e6ba559ce081733. Label: Social
+2023-12-06 03:53:03,436 - INFO - ESG3 classification completed for document 656ee8e09e6ba559ce081734. Label: Social
+2023-12-06 03:53:03,896 - INFO - ESG3 classification completed for document 656ee8e09e6ba559ce081735. Label: Social
+2023-12-06 03:53:04,332 - INFO - ESG3 classification completed for document 656ee8e19e6ba559ce081736. Label: Social
+2023-12-06 03:53:04,535 - INFO - ESG3 classification completed for document 656ee9219e6ba559ce081742. Label: Not ESG Related
+2023-12-06 03:53:04,874 - INFO - ESG3 classification completed for document 656ee9229e6ba559ce081743. Label: Not ESG Related
+2023-12-06 03:53:05,154 - INFO - ESG3 classification completed for document 656ee9229e6ba559ce081744. Label: Not ESG Related
+2023-12-06 03:53:05,319 - INFO - ESG3 classification completed for document 656ee9229e6ba559ce081745. Label: Not ESG Related
+2023-12-06 03:53:05,534 - INFO - ESG3 classification completed for document 656ee9229e6ba559ce081746. Label: Environmental
+2023-12-06 03:53:05,800 - INFO - ESG3 classification completed for document 656ee9229e6ba559ce081747. Label: Environmental
+2023-12-06 03:53:05,961 - INFO - ESG3 classification completed for document 656ee9239e6ba559ce081748. Label: Social
+2023-12-06 03:53:06,179 - INFO - ESG3 classification completed for document 656ee9239e6ba559ce081749. Label: Not ESG Related
+2023-12-06 03:53:06,389 - INFO - ESG3 classification completed for document 656ee9239e6ba559ce08174a. Label: Environmental
+2023-12-06 03:53:06,602 - INFO - ESG3 classification completed for document 656ee9239e6ba559ce08174b. Label: Environmental
+2023-12-06 03:53:06,778 - INFO - ESG3 classification completed for document 656ee9669e6ba559ce081757. Label: Social
+2023-12-06 03:53:07,032 - INFO - ESG3 classification completed for document 656ee9669e6ba559ce081758. Label: Social
+2023-12-06 03:53:07,352 - INFO - ESG3 classification completed for document 656ee9669e6ba559ce081759. Label: Social
+2023-12-06 03:53:07,625 - INFO - ESG3 classification completed for document 656ee9669e6ba559ce08175a. Label: Social
+2023-12-06 03:53:07,864 - INFO - ESG3 classification completed for document 656ee9669e6ba559ce08175b. Label: Social
+2023-12-06 03:53:08,052 - INFO - ESG3 classification completed for document 656ee9679e6ba559ce08175c. Label: Social
+2023-12-06 03:53:08,314 - INFO - ESG3 classification completed for document 656ee9679e6ba559ce08175d. Label: Social
+2023-12-06 03:53:08,567 - INFO - ESG3 classification completed for document 656ee9679e6ba559ce08175e. Label: Social
+2023-12-06 03:53:08,770 - INFO - ESG3 classification completed for document 656ee9679e6ba559ce08175f. Label: Social
+2023-12-06 03:53:08,960 - INFO - ESG3 classification completed for document 656ee9af9e6ba559ce08176b. Label: Not ESG Related
+2023-12-06 03:53:09,468 - INFO - ESG3 classification completed for document 656ee9b09e6ba559ce08176c. Label: Not ESG Related
+2023-12-06 03:53:09,681 - INFO - ESG3 classification completed for document 656ee9b09e6ba559ce08176d. Label: Social
+2023-12-06 03:53:10,229 - INFO - ESG3 classification completed for document 656ee9b09e6ba559ce08176e. Label: Not ESG Related
+2023-12-06 03:53:10,443 - INFO - ESG3 classification completed for document 656ee9b09e6ba559ce08176f. Label: Not ESG Related
+2023-12-06 03:53:10,672 - INFO - ESG3 classification completed for document 656ee9b09e6ba559ce081770. Label: Not ESG Related
+2023-12-06 03:53:10,891 - INFO - ESG3 classification completed for document 656ee9b19e6ba559ce081771. Label: Social
+2023-12-06 03:53:11,059 - INFO - ESG3 classification completed for document 656ee9b19e6ba559ce081772. Label: Not ESG Related
+2023-12-06 03:53:11,315 - INFO - ESG3 classification completed for document 656ee9b19e6ba559ce081773. Label: Not ESG Related
+2023-12-06 03:53:11,540 - INFO - ESG3 classification completed for document 656ee9b19e6ba559ce081774. Label: Not ESG Related
+2023-12-06 03:53:11,780 - INFO - ESG3 classification completed for document 656ee9f29e6ba559ce081780. Label: Social
+2023-12-06 03:53:12,051 - INFO - ESG3 classification completed for document 656ee9f29e6ba559ce081781. Label: Social
+2023-12-06 03:53:12,273 - INFO - ESG3 classification completed for document 656ee9f29e6ba559ce081782. Label: Environmental
+2023-12-06 03:53:12,527 - INFO - ESG3 classification completed for document 656ee9f39e6ba559ce081783. Label: Social
+2023-12-06 03:53:12,765 - INFO - ESG3 classification completed for document 656ee9f39e6ba559ce081784. Label: Environmental
+2023-12-06 03:53:13,160 - INFO - ESG3 classification completed for document 656ee9f39e6ba559ce081785. Label: Social
+2023-12-06 03:53:13,332 - INFO - ESG3 classification completed for document 656ee9f39e6ba559ce081786. Label: Social
+2023-12-06 03:53:13,563 - INFO - ESG3 classification completed for document 656ee9f49e6ba559ce081787. Label: Social
+2023-12-06 03:53:13,808 - INFO - ESG3 classification completed for document 656ee9f49e6ba559ce081788. Label: Social
+2023-12-06 03:53:14,396 - INFO - ESG3 classification completed for document 656ee9f49e6ba559ce081789. Label: Social
+2023-12-06 03:53:14,941 - INFO - ESG3 classification completed for document 656eea439e6ba559ce081795. Label: Social
+2023-12-06 03:53:15,349 - INFO - ESG3 classification completed for document 656eea449e6ba559ce081796. Label: Social
+2023-12-06 03:53:15,609 - INFO - ESG3 classification completed for document 656eea449e6ba559ce081797. Label: Not ESG Related
+2023-12-06 03:53:15,846 - INFO - ESG3 classification completed for document 656eea449e6ba559ce081798. Label: Not ESG Related
+2023-12-06 03:53:16,514 - INFO - ESG3 classification completed for document 656eea449e6ba559ce081799. Label: Not ESG Related
+2023-12-06 03:53:16,725 - INFO - ESG3 classification completed for document 656eea459e6ba559ce08179a. Label: Not ESG Related
+2023-12-06 03:53:16,973 - INFO - ESG3 classification completed for document 656eea959e6ba559ce0817a6. Label: Social
+2023-12-06 03:53:17,228 - INFO - ESG3 classification completed for document 656eea959e6ba559ce0817a7. Label: Environmental
+2023-12-06 03:53:17,448 - INFO - ESG3 classification completed for document 656eea969e6ba559ce0817a8. Label: Not ESG Related
+2023-12-06 03:53:17,713 - INFO - ESG3 classification completed for document 656eea969e6ba559ce0817a9. Label: Not ESG Related
+2023-12-06 03:53:17,909 - INFO - ESG3 classification completed for document 656eea969e6ba559ce0817aa. Label: Environmental
+2023-12-06 03:53:18,168 - INFO - ESG3 classification completed for document 656eea969e6ba559ce0817ab. Label: Not ESG Related
+2023-12-06 03:53:18,429 - INFO - ESG3 classification completed for document 656eea969e6ba559ce0817ac. Label: Environmental
+2023-12-06 03:53:18,665 - INFO - ESG3 classification completed for document 656eea979e6ba559ce0817ad. Label: Not ESG Related
+2023-12-06 03:53:18,894 - INFO - ESG3 classification completed for document 656eea979e6ba559ce0817ae. Label: Social
+2023-12-06 03:53:19,093 - INFO - ESG3 classification completed for document 656eea979e6ba559ce0817af. Label: Not ESG Related
+2023-12-06 03:53:19,285 - INFO - ESG3 classification completed for document 656eeade9e6ba559ce0817bb. Label: Not ESG Related
+2023-12-06 03:53:19,542 - INFO - ESG3 classification completed for document 656eeade9e6ba559ce0817bc. Label: Social
+2023-12-06 03:53:20,340 - INFO - ESG3 classification completed for document 656eeadf9e6ba559ce0817bd. Label: Environmental
+2023-12-06 03:53:20,925 - INFO - ESG3 classification completed for document 656eeadf9e6ba559ce0817be. Label: Not ESG Related
+2023-12-06 03:53:21,420 - INFO - ESG3 classification completed for document 656eeadf9e6ba559ce0817bf. Label: Social
+2023-12-06 03:53:21,626 - INFO - ESG3 classification completed for document 656eeadf9e6ba559ce0817c0. Label: Environmental
+2023-12-06 03:53:21,843 - INFO - ESG3 classification completed for document 656eeadf9e6ba559ce0817c1. Label: Social
+2023-12-06 03:53:22,085 - INFO - ESG3 classification completed for document 656eeae09e6ba559ce0817c2. Label: Social
+2023-12-06 03:53:22,299 - INFO - ESG3 classification completed for document 656eeae09e6ba559ce0817c3. Label: Social
+2023-12-06 03:53:22,520 - INFO - ESG3 classification completed for document 656eeae09e6ba559ce0817c4. Label: Social
+2023-12-06 03:53:22,757 - INFO - ESG3 classification completed for document 656eeb379e6ba559ce0817d0. Label: Not ESG Related
+2023-12-06 03:53:23,240 - INFO - ESG3 classification completed for document 656eeb389e6ba559ce0817d1. Label: Not ESG Related
+2023-12-06 03:53:23,801 - INFO - ESG3 classification completed for document 656eeb389e6ba559ce0817d2. Label: Social
+2023-12-06 03:53:24,144 - INFO - ESG3 classification completed for document 656eeb389e6ba559ce0817d3. Label: Social
+2023-12-06 03:53:24,379 - INFO - ESG3 classification completed for document 656eeb389e6ba559ce0817d4. Label: Social
+2023-12-06 03:53:24,722 - INFO - ESG3 classification completed for document 656eeb399e6ba559ce0817d5. Label: Social
+2023-12-06 03:53:24,912 - INFO - ESG3 classification completed for document 656eeb399e6ba559ce0817d6. Label: Not ESG Related
+2023-12-06 03:53:25,229 - INFO - ESG3 classification completed for document 656eeb399e6ba559ce0817d7. Label: Environmental
+2023-12-06 03:53:25,348 - INFO - ESG3 classification completed for document 656eeb399e6ba559ce0817d8. Label: Not ESG Related
+2023-12-06 03:53:25,580 - INFO - ESG3 classification completed for document 656eeb809e6ba559ce0817e4. Label: Social
+2023-12-06 03:53:26,071 - INFO - ESG3 classification completed for document 656eeb819e6ba559ce0817e5. Label: Social
+2023-12-06 03:53:26,432 - INFO - ESG3 classification completed for document 656eeb819e6ba559ce0817e6. Label: Not ESG Related
+2023-12-06 03:53:27,004 - INFO - ESG3 classification completed for document 656eeb819e6ba559ce0817e7. Label: Environmental
+2023-12-06 03:53:27,469 - INFO - ESG3 classification completed for document 656eeb819e6ba559ce0817e8. Label: Not ESG Related
+2023-12-06 03:53:27,870 - INFO - ESG3 classification completed for document 656eeb819e6ba559ce0817e9. Label: Not ESG Related
+2023-12-06 03:53:28,098 - INFO - ESG3 classification completed for document 656eeb829e6ba559ce0817ea. Label: Not ESG Related
+2023-12-06 03:53:28,605 - INFO - ESG3 classification completed for document 656eeb829e6ba559ce0817eb. Label: Not ESG Related
+2023-12-06 03:53:28,916 - INFO - ESG3 classification completed for document 656eeb829e6ba559ce0817ec. Label: Social
+2023-12-06 03:53:29,068 - INFO - ESG3 classification completed for document 656eeb829e6ba559ce0817ed. Label: Not ESG Related
+2023-12-06 03:53:29,390 - INFO - ESG3 classification completed for document 656eebce9e6ba559ce0817f9. Label: Not ESG Related
+2023-12-06 03:53:30,070 - INFO - ESG3 classification completed for document 656eebcf9e6ba559ce0817fa. Label: Not ESG Related
+2023-12-06 03:53:30,319 - INFO - ESG3 classification completed for document 656eebcf9e6ba559ce0817fb. Label: Social
+2023-12-06 03:53:30,554 - INFO - ESG3 classification completed for document 656eebcf9e6ba559ce0817fc. Label: Social
+2023-12-06 03:53:30,891 - INFO - ESG3 classification completed for document 656eebcf9e6ba559ce0817fd. Label: Social
+2023-12-06 03:53:31,158 - INFO - ESG3 classification completed for document 656eebcf9e6ba559ce0817fe. Label: Social
+2023-12-06 03:53:31,359 - INFO - ESG3 classification completed for document 656eebd09e6ba559ce0817ff. Label: Not ESG Related
+2023-12-06 03:53:31,589 - INFO - ESG3 classification completed for document 656eebd09e6ba559ce081800. Label: Not ESG Related
+2023-12-06 03:53:31,836 - INFO - ESG3 classification completed for document 656eebd09e6ba559ce081801. Label: Not ESG Related
+2023-12-06 03:53:32,162 - INFO - ESG3 classification completed for document 656eec1f9e6ba559ce08180d. Label: Social
+2023-12-06 03:53:32,402 - INFO - ESG3 classification completed for document 656eec209e6ba559ce08180e. Label: Social
+2023-12-06 03:53:32,668 - INFO - ESG3 classification completed for document 656eec209e6ba559ce08180f. Label: Not ESG Related
+2023-12-06 03:53:33,003 - INFO - ESG3 classification completed for document 656eec209e6ba559ce081810. Label: Social
+2023-12-06 03:53:33,224 - INFO - ESG3 classification completed for document 656eec209e6ba559ce081811. Label: Not ESG Related
+2023-12-06 03:53:33,903 - INFO - ESG3 classification completed for document 656eec219e6ba559ce081812. Label: Social
+2023-12-06 03:53:34,455 - INFO - ESG3 classification completed for document 656eec219e6ba559ce081813. Label: Social
+2023-12-06 03:53:34,929 - INFO - ESG3 classification completed for document 656eec219e6ba559ce081814. Label: Social
+2023-12-06 03:53:35,199 - INFO - ESG3 classification completed for document 656eec219e6ba559ce081815. Label: Not ESG Related
+2023-12-06 03:53:35,388 - INFO - ESG3 classification completed for document 656eec229e6ba559ce081816. Label: Social
+2023-12-06 03:53:35,605 - INFO - ESG3 classification completed for document 656eec6f9e6ba559ce081822. Label: Not ESG Related
+2023-12-06 03:53:35,850 - INFO - ESG3 classification completed for document 656eec6f9e6ba559ce081823. Label: Not ESG Related
+2023-12-06 03:53:36,026 - INFO - ESG3 classification completed for document 656eec6f9e6ba559ce081824. Label: Not ESG Related
+2023-12-06 03:53:36,192 - INFO - ESG3 classification completed for document 656eec6f9e6ba559ce081825. Label: Not ESG Related
+2023-12-06 03:53:36,379 - INFO - ESG3 classification completed for document 656eec6f9e6ba559ce081826. Label: Not ESG Related
+2023-12-06 03:53:37,214 - INFO - ESG3 classification completed for document 656eec6f9e6ba559ce081827. Label: Environmental
+2023-12-06 03:53:37,623 - INFO - ESG3 classification completed for document 656eec709e6ba559ce081828. Label: Not ESG Related
+2023-12-06 03:53:37,844 - INFO - ESG3 classification completed for document 656eec709e6ba559ce081829. Label: Social
+2023-12-06 03:53:38,034 - INFO - ESG3 classification completed for document 656eec709e6ba559ce08182a. Label: Social
+2023-12-06 03:53:38,240 - INFO - ESG3 classification completed for document 656eec719e6ba559ce08182b. Label: Social
+2023-12-06 03:53:38,521 - INFO - ESG3 classification completed for document 656eecb79e6ba559ce081837. Label: Not ESG Related
+2023-12-06 03:53:38,724 - INFO - ESG3 classification completed for document 656eecb79e6ba559ce081838. Label: Environmental
+2023-12-06 03:53:38,917 - INFO - ESG3 classification completed for document 656eecb79e6ba559ce081839. Label: Not ESG Related
+2023-12-06 03:53:39,531 - INFO - ESG3 classification completed for document 656eecb79e6ba559ce08183a. Label: Not ESG Related
+2023-12-06 03:53:39,969 - INFO - ESG3 classification completed for document 656eecb89e6ba559ce08183b. Label: Not ESG Related
+2023-12-06 03:53:40,320 - INFO - ESG3 classification completed for document 656eecb89e6ba559ce08183c. Label: Not ESG Related
+2023-12-06 03:53:40,513 - INFO - ESG3 classification completed for document 656eecb89e6ba559ce08183d. Label: Social
+2023-12-06 03:53:40,785 - INFO - ESG3 classification completed for document 656eecb99e6ba559ce08183e. Label: Environmental
+2023-12-06 03:53:40,986 - INFO - ESG3 classification completed for document 656eecb99e6ba559ce08183f. Label: Environmental
+2023-12-06 03:53:41,260 - INFO - ESG3 classification completed for document 656eecfe9e6ba559ce08184b. Label: Not ESG Related
+2023-12-06 03:53:41,541 - INFO - ESG3 classification completed for document 656eecff9e6ba559ce08184c. Label: Social
+2023-12-06 03:53:41,812 - INFO - ESG3 classification completed for document 656eecff9e6ba559ce08184d. Label: Not ESG Related
+2023-12-06 03:53:42,096 - INFO - ESG3 classification completed for document 656eecff9e6ba559ce08184e. Label: Not ESG Related
+2023-12-06 03:53:42,278 - INFO - ESG3 classification completed for document 656eecff9e6ba559ce08184f. Label: Environmental
+2023-12-06 03:53:42,470 - INFO - ESG3 classification completed for document 656eed009e6ba559ce081850. Label: Not ESG Related
+2023-12-06 03:53:42,763 - INFO - ESG3 classification completed for document 656eed009e6ba559ce081851. Label: Social
+2023-12-06 03:53:43,115 - INFO - ESG3 classification completed for document 656eed009e6ba559ce081852. Label: Social
+2023-12-06 03:53:43,395 - INFO - ESG3 classification completed for document 656eed019e6ba559ce081853. Label: Social
+2023-12-06 03:53:44,081 - INFO - ESG3 classification completed for document 656eed019e6ba559ce081854. Label: Not ESG Related
+2023-12-06 03:53:44,367 - INFO - ESG3 classification completed for document 656eed5a9e6ba559ce081860. Label: Environmental
+2023-12-06 03:53:44,581 - INFO - ESG3 classification completed for document 656eed5b9e6ba559ce081861. Label: Not ESG Related
+2023-12-06 03:53:44,905 - INFO - ESG3 classification completed for document 656eed5b9e6ba559ce081862. Label: Environmental
+2023-12-06 03:53:45,198 - INFO - ESG3 classification completed for document 656eed5b9e6ba559ce081863. Label: Not ESG Related
+2023-12-06 03:53:45,523 - INFO - ESG3 classification completed for document 656eed5b9e6ba559ce081864. Label: Not ESG Related
+2023-12-06 03:53:45,842 - INFO - ESG3 classification completed for document 656eed5c9e6ba559ce081865. Label: Environmental
+2023-12-06 03:53:46,166 - INFO - ESG3 classification completed for document 656eed5c9e6ba559ce081866. Label: Environmental
+2023-12-06 03:53:46,469 - INFO - ESG3 classification completed for document 656eed5c9e6ba559ce081867. Label: Not ESG Related
+2023-12-06 03:53:46,822 - INFO - ESG3 classification completed for document 656eed5c9e6ba559ce081868. Label: Not ESG Related
+2023-12-06 03:53:47,172 - INFO - ESG3 classification completed for document 656eed5d9e6ba559ce081869. Label: Not ESG Related
+2023-12-06 03:53:47,404 - INFO - ESG3 classification completed for document 656eeda99e6ba559ce081875. Label: Not ESG Related
+2023-12-06 03:53:47,660 - INFO - ESG3 classification completed for document 656eeda99e6ba559ce081876. Label: Not ESG Related
+2023-12-06 03:53:47,812 - INFO - ESG3 classification completed for document 656eeda99e6ba559ce081877. Label: Social
+2023-12-06 03:53:48,112 - INFO - ESG3 classification completed for document 656eedaa9e6ba559ce081878. Label: Not ESG Related
+2023-12-06 03:53:48,331 - INFO - ESG3 classification completed for document 656eedaa9e6ba559ce081879. Label: Social
+2023-12-06 03:53:48,605 - INFO - ESG3 classification completed for document 656eedaa9e6ba559ce08187a. Label: Social
+2023-12-06 03:53:48,896 - INFO - ESG3 classification completed for document 656eedaa9e6ba559ce08187b. Label: Not ESG Related
+2023-12-06 03:53:49,087 - INFO - ESG3 classification completed for document 656eedab9e6ba559ce08187c. Label: Not ESG Related
+2023-12-06 03:53:49,447 - INFO - ESG3 classification completed for document 656eedab9e6ba559ce08187d. Label: Not ESG Related
+2023-12-06 03:53:49,727 - INFO - ESG3 classification completed for document 656eedab9e6ba559ce08187e. Label: Social
+2023-12-06 03:53:49,902 - INFO - ESG3 classification completed for document 656eedf29e6ba559ce08188a. Label: Not ESG Related
+2023-12-06 03:53:50,136 - INFO - ESG3 classification completed for document 656eedf29e6ba559ce08188b. Label: Governance
+2023-12-06 03:53:50,376 - INFO - ESG3 classification completed for document 656eedf39e6ba559ce08188c. Label: Social
+2023-12-06 03:53:50,536 - INFO - ESG3 classification completed for document 656eedf39e6ba559ce08188d. Label: Not ESG Related
+2023-12-06 03:53:50,699 - INFO - ESG3 classification completed for document 656eedf39e6ba559ce08188e. Label: Social
+2023-12-06 03:53:51,035 - INFO - ESG3 classification completed for document 656eedf39e6ba559ce08188f. Label: Not ESG Related
+2023-12-06 03:53:51,235 - INFO - ESG3 classification completed for document 656eedf39e6ba559ce081890. Label: Social
+2023-12-06 03:53:51,468 - INFO - ESG3 classification completed for document 656eedf39e6ba559ce081891. Label: Social
+2023-12-06 03:53:51,691 - INFO - ESG3 classification completed for document 656eedf49e6ba559ce081892. Label: Social
+2023-12-06 03:53:51,875 - INFO - ESG3 classification completed for document 656eedf49e6ba559ce081893. Label: Not ESG Related
+2023-12-06 03:53:52,164 - INFO - ESG3 classification completed for document 656eee399e6ba559ce08189f. Label: Social
+2023-12-06 03:53:52,526 - INFO - ESG3 classification completed for document 656eee3a9e6ba559ce0818a0. Label: Not ESG Related
+2023-12-06 03:53:52,893 - INFO - ESG3 classification completed for document 656eee3a9e6ba559ce0818a1. Label: Not ESG Related
+2023-12-06 03:53:53,211 - INFO - ESG3 classification completed for document 656eee3a9e6ba559ce0818a2. Label: Not ESG Related
+2023-12-06 03:53:53,479 - INFO - ESG3 classification completed for document 656eee3a9e6ba559ce0818a3. Label: Not ESG Related
+2023-12-06 03:53:53,779 - INFO - ESG3 classification completed for document 656eee3b9e6ba559ce0818a4. Label: Not ESG Related
+2023-12-06 03:53:54,578 - INFO - ESG3 classification completed for document 656eee3b9e6ba559ce0818a5. Label: Not ESG Related
+2023-12-06 03:53:54,862 - INFO - ESG3 classification completed for document 656eee3b9e6ba559ce0818a6. Label: Not ESG Related
+2023-12-06 03:53:55,132 - INFO - ESG3 classification completed for document 656eee3b9e6ba559ce0818a7. Label: Not ESG Related
+2023-12-06 03:53:55,317 - INFO - ESG3 classification completed for document 656eee3c9e6ba559ce0818a8. Label: Not ESG Related
+2023-12-06 03:53:55,541 - INFO - ESG3 classification completed for document 656eee909e6ba559ce0818b4. Label: Not ESG Related
+2023-12-06 03:53:55,784 - INFO - ESG3 classification completed for document 656eee909e6ba559ce0818b5. Label: Not ESG Related
+2023-12-06 03:53:56,134 - INFO - ESG3 classification completed for document 656eee909e6ba559ce0818b6. Label: Not ESG Related
+2023-12-06 03:53:56,545 - INFO - ESG3 classification completed for document 656eee919e6ba559ce0818b7. Label: Not ESG Related
+2023-12-06 03:53:56,797 - INFO - ESG3 classification completed for document 656eee919e6ba559ce0818b8. Label: Social
+2023-12-06 03:53:57,039 - INFO - ESG3 classification completed for document 656eee919e6ba559ce0818b9. Label: Social
+2023-12-06 03:53:57,348 - INFO - ESG3 classification completed for document 656eee919e6ba559ce0818ba. Label: Social
+2023-12-06 03:53:57,636 - INFO - ESG3 classification completed for document 656eee929e6ba559ce0818bb. Label: Not ESG Related
+2023-12-06 03:53:57,789 - INFO - ESG3 classification completed for document 656eee929e6ba559ce0818bc. Label: Social
+2023-12-06 03:53:58,063 - INFO - ESG3 classification completed for document 656eeed79e6ba559ce0818c8. Label: Environmental
+2023-12-06 03:53:58,263 - INFO - ESG3 classification completed for document 656eeed79e6ba559ce0818c9. Label: Not ESG Related
+2023-12-06 03:53:58,479 - INFO - ESG3 classification completed for document 656eeed79e6ba559ce0818ca. Label: Not ESG Related
+2023-12-06 03:53:58,778 - INFO - ESG3 classification completed for document 656eeed79e6ba559ce0818cb. Label: Not ESG Related
+2023-12-06 03:53:59,098 - INFO - ESG3 classification completed for document 656eeed89e6ba559ce0818cc. Label: Social
+2023-12-06 03:53:59,308 - INFO - ESG3 classification completed for document 656eeed89e6ba559ce0818cd. Label: Environmental
+2023-12-06 03:53:59,519 - INFO - ESG3 classification completed for document 656eeed89e6ba559ce0818ce. Label: Not ESG Related
+2023-12-06 03:53:59,829 - INFO - ESG3 classification completed for document 656eeed99e6ba559ce0818cf. Label: Not ESG Related
+2023-12-06 03:54:00,128 - INFO - ESG3 classification completed for document 656eeed99e6ba559ce0818d0. Label: Not ESG Related
+2023-12-06 03:54:00,319 - INFO - ESG3 classification completed for document 656eeed99e6ba559ce0818d1. Label: Not ESG Related
+2023-12-06 03:54:00,583 - INFO - ESG3 classification completed for document 656eef339e6ba559ce0818dd. Label: Social
+2023-12-06 03:54:00,907 - INFO - ESG3 classification completed for document 656eef339e6ba559ce0818de. Label: Social
+2023-12-06 03:54:01,257 - INFO - ESG3 classification completed for document 656eef339e6ba559ce0818df. Label: Not ESG Related
+2023-12-06 03:54:01,545 - INFO - ESG3 classification completed for document 656eef339e6ba559ce0818e0. Label: Social
+2023-12-06 03:54:01,886 - INFO - ESG3 classification completed for document 656eef349e6ba559ce0818e1. Label: Not ESG Related
+2023-12-06 03:54:02,135 - INFO - ESG3 classification completed for document 656eef349e6ba559ce0818e2. Label: Social
+2023-12-06 03:54:02,405 - INFO - ESG3 classification completed for document 656eef349e6ba559ce0818e3. Label: Environmental
+2023-12-06 03:54:02,650 - INFO - ESG3 classification completed for document 656eef819e6ba559ce0818ef. Label: Social
+2023-12-06 03:54:03,076 - INFO - ESG3 classification completed for document 656eef819e6ba559ce0818f0. Label: Social
+2023-12-06 03:54:03,284 - INFO - ESG3 classification completed for document 656eef819e6ba559ce0818f1. Label: Not ESG Related
+2023-12-06 03:54:03,647 - INFO - ESG3 classification completed for document 656eef819e6ba559ce0818f2. Label: Environmental
+2023-12-06 03:54:04,360 - INFO - ESG3 classification completed for document 656eef829e6ba559ce0818f3. Label: Not ESG Related
+2023-12-06 03:54:04,808 - INFO - ESG3 classification completed for document 656eef829e6ba559ce0818f4. Label: Social
+2023-12-06 03:54:05,031 - INFO - ESG3 classification completed for document 656eef829e6ba559ce0818f5. Label: Environmental
+2023-12-06 03:54:05,214 - INFO - ESG3 classification completed for document 656eef829e6ba559ce0818f6. Label: Social
+2023-12-06 03:54:05,401 - INFO - ESG3 classification completed for document 656eef839e6ba559ce0818f7. Label: Not ESG Related
+2023-12-06 03:54:05,553 - INFO - ESG3 classification completed for document 656eef839e6ba559ce0818f8. Label: Social
+2023-12-06 03:54:05,770 - INFO - ESG3 classification completed for document 656eefcf9e6ba559ce081904. Label: Social
+2023-12-06 03:54:06,043 - INFO - ESG3 classification completed for document 656eefcf9e6ba559ce081905. Label: Not ESG Related
+2023-12-06 03:54:06,354 - INFO - ESG3 classification completed for document 656eefcf9e6ba559ce081906. Label: Social
+2023-12-06 03:54:06,594 - INFO - ESG3 classification completed for document 656eefcf9e6ba559ce081907. Label: Not ESG Related
+2023-12-06 03:54:06,846 - INFO - ESG3 classification completed for document 656eefd09e6ba559ce081908. Label: Social
+2023-12-06 03:54:07,045 - INFO - ESG3 classification completed for document 656eefd09e6ba559ce081909. Label: Not ESG Related
+2023-12-06 03:54:07,273 - INFO - ESG3 classification completed for document 656eefd09e6ba559ce08190a. Label: Not ESG Related
+2023-12-06 03:54:07,514 - INFO - ESG3 classification completed for document 656eefd09e6ba559ce08190b. Label: Not ESG Related
+2023-12-06 03:54:07,754 - INFO - ESG3 classification completed for document 656eefd19e6ba559ce08190c. Label: Social
+2023-12-06 03:54:07,939 - INFO - ESG3 classification completed for document 656ef00e9e6ba559ce081918. Label: Not ESG Related
+2023-12-06 03:54:08,152 - INFO - ESG3 classification completed for document 656ef00f9e6ba559ce081919. Label: Social
+2023-12-06 03:54:08,333 - INFO - ESG3 classification completed for document 656ef00f9e6ba559ce08191a. Label: Not ESG Related
+2023-12-06 03:54:08,509 - INFO - ESG3 classification completed for document 656ef00f9e6ba559ce08191b. Label: Not ESG Related
+2023-12-06 03:54:08,669 - INFO - ESG3 classification completed for document 656ef00f9e6ba559ce08191c. Label: Not ESG Related
+2023-12-06 03:54:08,851 - INFO - ESG3 classification completed for document 656ef00f9e6ba559ce08191d. Label: Not ESG Related
+2023-12-06 03:54:09,092 - INFO - ESG3 classification completed for document 656ef0109e6ba559ce08191e. Label: Not ESG Related
+2023-12-06 03:54:09,311 - INFO - ESG3 classification completed for document 656ef0109e6ba559ce08191f. Label: Not ESG Related
+2023-12-06 03:54:09,515 - INFO - ESG3 classification completed for document 656ef0109e6ba559ce081920. Label: Social
+2023-12-06 03:54:09,758 - INFO - ESG3 classification completed for document 656ef04d9e6ba559ce08192c. Label: Not ESG Related
+2023-12-06 03:54:10,201 - INFO - ESG3 classification completed for document 656ef04d9e6ba559ce08192d. Label: Not ESG Related
+2023-12-06 03:54:10,471 - INFO - ESG3 classification completed for document 656ef04d9e6ba559ce08192e. Label: Not ESG Related
+2023-12-06 03:54:10,737 - INFO - ESG3 classification completed for document 656ef04d9e6ba559ce08192f. Label: Social
+2023-12-06 03:54:10,966 - INFO - ESG3 classification completed for document 656ef04d9e6ba559ce081930. Label: Not ESG Related
+2023-12-06 03:54:11,182 - INFO - ESG3 classification completed for document 656ef04e9e6ba559ce081931. Label: Social
+2023-12-06 03:54:11,437 - INFO - ESG3 classification completed for document 656ef04e9e6ba559ce081932. Label: Not ESG Related
+2023-12-06 03:54:11,734 - INFO - ESG3 classification completed for document 656ef04e9e6ba559ce081933. Label: Not ESG Related
+2023-12-06 03:54:11,975 - INFO - ESG3 classification completed for document 656ef04e9e6ba559ce081934. Label: Not ESG Related
+2023-12-06 03:54:12,237 - INFO - ESG3 classification completed for document 656ef04e9e6ba559ce081935. Label: Environmental
+2023-12-06 03:54:12,494 - INFO - ESG3 classification completed for document 656ef0a39e6ba559ce081941. Label: Environmental
+2023-12-06 03:54:12,969 - INFO - ESG3 classification completed for document 656ef0a49e6ba559ce081942. Label: Social
+2023-12-06 03:54:13,356 - INFO - ESG3 classification completed for document 656ef0a49e6ba559ce081943. Label: Social
+2023-12-06 03:54:13,725 - INFO - ESG3 classification completed for document 656ef0a49e6ba559ce081944. Label: Social
+2023-12-06 03:54:14,448 - INFO - ESG3 classification completed for document 656ef0a49e6ba559ce081945. Label: Not ESG Related
+2023-12-06 03:54:14,879 - INFO - ESG3 classification completed for document 656ef0a59e6ba559ce081946. Label: Not ESG Related
+2023-12-06 03:54:15,084 - INFO - ESG3 classification completed for document 656ef0a59e6ba559ce081947. Label: Not ESG Related
+2023-12-06 03:54:15,367 - INFO - ESG3 classification completed for document 656ef0a59e6ba559ce081948. Label: Social
+2023-12-06 03:54:15,610 - INFO - ESG3 classification completed for document 656ef0a59e6ba559ce081949. Label: Not ESG Related
+2023-12-06 03:54:15,942 - INFO - ESG3 classification completed for document 656ef0ee9e6ba559ce081955. Label: Social
+2023-12-06 03:54:16,198 - INFO - ESG3 classification completed for document 656ef0ee9e6ba559ce081956. Label: Not ESG Related
+2023-12-06 03:54:16,353 - INFO - ESG3 classification completed for document 656ef0ef9e6ba559ce081957. Label: Not ESG Related
+2023-12-06 03:54:16,544 - INFO - ESG3 classification completed for document 656ef0ef9e6ba559ce081958. Label: Social
+2023-12-06 03:54:17,168 - INFO - ESG3 classification completed for document 656ef0ef9e6ba559ce081959. Label: Social
+2023-12-06 03:54:17,368 - INFO - ESG3 classification completed for document 656ef0ef9e6ba559ce08195a. Label: Social
+2023-12-06 03:54:17,550 - INFO - ESG3 classification completed for document 656ef0ef9e6ba559ce08195b. Label: Not ESG Related
+2023-12-06 03:54:18,243 - INFO - ESG3 classification completed for document 656ef1329e6ba559ce081967. Label: Not ESG Related
+2023-12-06 03:54:18,513 - INFO - ESG3 classification completed for document 656ef1339e6ba559ce081968. Label: Not ESG Related
+2023-12-06 03:54:18,719 - INFO - ESG3 classification completed for document 656ef1339e6ba559ce081969. Label: Social
+2023-12-06 03:54:19,005 - INFO - ESG3 classification completed for document 656ef1339e6ba559ce08196a. Label: Social
+2023-12-06 03:54:19,293 - INFO - ESG3 classification completed for document 656ef1349e6ba559ce08196b. Label: Social
+2023-12-06 03:54:19,879 - INFO - ESG3 classification completed for document 656ef1349e6ba559ce08196c. Label: Not ESG Related
+2023-12-06 03:54:20,079 - INFO - ESG3 classification completed for document 656ef1349e6ba559ce08196d. Label: Social
+2023-12-06 03:54:20,341 - INFO - ESG3 classification completed for document 656ef1349e6ba559ce08196e. Label: Not ESG Related
+2023-12-06 03:54:20,581 - INFO - ESG3 classification completed for document 656ef1349e6ba559ce08196f. Label: Not ESG Related
+2023-12-06 03:54:21,128 - INFO - ESG3 classification completed for document 656ef17e9e6ba559ce08197b. Label: Environmental
+2023-12-06 03:54:21,509 - INFO - ESG3 classification completed for document 656ef17e9e6ba559ce08197c. Label: Not ESG Related
+2023-12-06 03:54:22,099 - INFO - ESG3 classification completed for document 656ef17e9e6ba559ce08197d. Label: Environmental
+2023-12-06 03:54:22,429 - INFO - ESG3 classification completed for document 656ef17e9e6ba559ce08197e. Label: Environmental
+2023-12-06 03:54:22,648 - INFO - ESG3 classification completed for document 656ef17f9e6ba559ce08197f. Label: Not ESG Related
+2023-12-06 03:54:22,852 - INFO - ESG3 classification completed for document 656ef17f9e6ba559ce081980. Label: Environmental
+2023-12-06 03:54:23,142 - INFO - ESG3 classification completed for document 656ef17f9e6ba559ce081981. Label: Social
+2023-12-06 03:54:23,793 - INFO - ESG3 classification completed for document 656ef17f9e6ba559ce081982. Label: Social
+2023-12-06 03:54:24,019 - INFO - ESG3 classification completed for document 656ef1809e6ba559ce081983. Label: Social
+2023-12-06 03:54:24,250 - INFO - ESG3 classification completed for document 656ef1809e6ba559ce081984. Label: Social
+2023-12-06 03:54:24,545 - INFO - ESG3 classification completed for document 656ef1c49e6ba559ce081990. Label: Not ESG Related
+2023-12-06 03:54:24,880 - INFO - ESG3 classification completed for document 656ef1c49e6ba559ce081991. Label: Governance
+2023-12-06 03:54:25,149 - INFO - ESG3 classification completed for document 656ef1c59e6ba559ce081992. Label: Environmental
+2023-12-06 03:54:25,407 - INFO - ESG3 classification completed for document 656ef1c59e6ba559ce081993. Label: Environmental
+2023-12-06 03:54:25,596 - INFO - ESG3 classification completed for document 656ef1c59e6ba559ce081994. Label: Not ESG Related
+2023-12-06 03:54:25,837 - INFO - ESG3 classification completed for document 656ef1c69e6ba559ce081995. Label: Social
+2023-12-06 03:54:26,109 - INFO - ESG3 classification completed for document 656ef1c69e6ba559ce081996. Label: Social
+2023-12-06 03:54:26,275 - INFO - ESG3 classification completed for document 656ef1c69e6ba559ce081997. Label: Not ESG Related
+2023-12-06 03:54:26,530 - INFO - ESG3 classification completed for document 656ef1c69e6ba559ce081998. Label: Not ESG Related
+2023-12-06 03:54:26,781 - INFO - ESG3 classification completed for document 656ef20f9e6ba559ce0819a4. Label: Social
+2023-12-06 03:54:27,034 - INFO - ESG3 classification completed for document 656ef20f9e6ba559ce0819a5. Label: Social
+2023-12-06 03:54:27,198 - INFO - ESG3 classification completed for document 656ef20f9e6ba559ce0819a6. Label: Not ESG Related
+2023-12-06 03:54:27,518 - INFO - ESG3 classification completed for document 656ef20f9e6ba559ce0819a7. Label: Not ESG Related
+2023-12-06 03:54:27,809 - INFO - ESG3 classification completed for document 656ef2109e6ba559ce0819a8. Label: Not ESG Related
+2023-12-06 03:54:28,028 - INFO - ESG3 classification completed for document 656ef2109e6ba559ce0819a9. Label: Not ESG Related
+2023-12-06 03:54:28,257 - INFO - ESG3 classification completed for document 656ef2109e6ba559ce0819aa. Label: Social
+2023-12-06 03:54:28,447 - INFO - ESG3 classification completed for document 656ef2119e6ba559ce0819ab. Label: Social
+2023-12-06 03:54:28,787 - INFO - ESG3 classification completed for document 656ef2119e6ba559ce0819ac. Label: Social
+2023-12-06 03:54:29,178 - INFO - ESG3 classification completed for document 656ef2119e6ba559ce0819ad. Label: Not ESG Related
+2023-12-06 03:54:29,501 - INFO - ESG3 classification completed for document 656ef2549e6ba559ce0819b9. Label: Not ESG Related
+2023-12-06 03:54:29,764 - INFO - ESG3 classification completed for document 656ef2549e6ba559ce0819ba. Label: Not ESG Related
+2023-12-06 03:54:29,891 - INFO - ESG3 classification completed for document 656ef2549e6ba559ce0819bb. Label: Not ESG Related
+2023-12-06 03:54:30,170 - INFO - ESG3 classification completed for document 656ef2549e6ba559ce0819bc. Label: Social
+2023-12-06 03:54:30,500 - INFO - ESG3 classification completed for document 656ef2549e6ba559ce0819bd. Label: Not ESG Related
+2023-12-06 03:54:30,955 - INFO - ESG3 classification completed for document 656ef2559e6ba559ce0819be. Label: Not ESG Related
+2023-12-06 03:54:31,345 - INFO - ESG3 classification completed for document 656ef2559e6ba559ce0819bf. Label: Environmental
+2023-12-06 03:54:31,686 - INFO - ESG3 classification completed for document 656ef2559e6ba559ce0819c0. Label: Not ESG Related
+2023-12-06 03:54:31,924 - INFO - ESG3 classification completed for document 656ef2559e6ba559ce0819c1. Label: Social
+2023-12-06 03:54:32,212 - INFO - ESG3 classification completed for document 656ef2559e6ba559ce0819c2. Label: Not ESG Related
+2023-12-06 03:54:32,552 - INFO - ESG3 classification completed for document 656ef2a39e6ba559ce0819ce. Label: Not ESG Related
+2023-12-06 03:54:33,455 - INFO - ESG3 classification completed for document 656ef2a49e6ba559ce0819cf. Label: Not ESG Related
+2023-12-06 03:54:34,949 - INFO - ESG3 classification completed for document 656ef2a49e6ba559ce0819d0. Label: Not ESG Related
+2023-12-06 03:54:35,452 - INFO - ESG3 classification completed for document 656ef2a49e6ba559ce0819d1. Label: Not ESG Related
+2023-12-06 03:54:36,473 - INFO - ESG3 classification completed for document 656ef2a49e6ba559ce0819d2. Label: Not ESG Related
+2023-12-06 03:54:36,781 - INFO - ESG3 classification completed for document 656ef2a59e6ba559ce0819d3. Label: Not ESG Related
+2023-12-06 03:54:37,444 - INFO - ESG3 classification completed for document 656ef2a59e6ba559ce0819d4. Label: Not ESG Related
+2023-12-06 03:54:38,462 - INFO - ESG3 classification completed for document 656ef2a59e6ba559ce0819d5. Label: Not ESG Related
+2023-12-06 03:54:38,920 - INFO - ESG3 classification completed for document 656ef2a59e6ba559ce0819d6. Label: Social
+2023-12-06 03:54:39,131 - INFO - ESG3 classification completed for document 656ef2e99e6ba559ce0819e2. Label: Social
+2023-12-06 03:54:39,290 - INFO - ESG3 classification completed for document 656ef2e99e6ba559ce0819e3. Label: Not ESG Related
+2023-12-06 03:54:39,492 - INFO - ESG3 classification completed for document 656ef2e99e6ba559ce0819e4. Label: Social
+2023-12-06 03:54:39,715 - INFO - ESG3 classification completed for document 656ef2ea9e6ba559ce0819e5. Label: Not ESG Related
+2023-12-06 03:54:39,918 - INFO - ESG3 classification completed for document 656ef2ea9e6ba559ce0819e6. Label: Not ESG Related
+2023-12-06 03:54:40,100 - INFO - ESG3 classification completed for document 656ef2ea9e6ba559ce0819e7. Label: Not ESG Related
+2023-12-06 03:54:40,284 - INFO - ESG3 classification completed for document 656ef2ea9e6ba559ce0819e8. Label: Not ESG Related
+2023-12-06 03:54:40,450 - INFO - ESG3 classification completed for document 656ef2ea9e6ba559ce0819e9. Label: Not ESG Related
+2023-12-06 03:54:40,611 - INFO - ESG3 classification completed for document 656ef2eb9e6ba559ce0819ea. Label: Not ESG Related
+2023-12-06 03:54:40,846 - INFO - ESG3 classification completed for document 656ef2eb9e6ba559ce0819eb. Label: Not ESG Related
+2023-12-06 03:54:41,059 - INFO - ESG3 classification completed for document 656ef3319e6ba559ce0819f7. Label: Social
+2023-12-06 03:54:41,299 - INFO - ESG3 classification completed for document 656ef3329e6ba559ce0819f8. Label: Not ESG Related
+2023-12-06 03:54:41,465 - INFO - ESG3 classification completed for document 656ef3329e6ba559ce0819f9. Label: Social
+2023-12-06 03:54:41,679 - INFO - ESG3 classification completed for document 656ef3329e6ba559ce0819fa. Label: Social
+2023-12-06 03:54:41,953 - INFO - ESG3 classification completed for document 656ef3329e6ba559ce0819fb. Label: Governance
+2023-12-06 03:54:42,211 - INFO - ESG3 classification completed for document 656ef3329e6ba559ce0819fc. Label: Social
+2023-12-06 03:54:42,346 - INFO - ESG3 classification completed for document 656ef3339e6ba559ce0819fd. Label: Social
+2023-12-06 03:54:42,544 - INFO - ESG3 classification completed for document 656ef3339e6ba559ce0819fe. Label: Social
+2023-12-06 03:54:42,813 - INFO - ESG3 classification completed for document 656ef3839e6ba559ce081a0a. Label: Not ESG Related
+2023-12-06 03:54:43,181 - INFO - ESG3 classification completed for document 656ef3839e6ba559ce081a0b. Label: Not ESG Related
+2023-12-06 03:54:43,408 - INFO - ESG3 classification completed for document 656ef3839e6ba559ce081a0c. Label: Social
+2023-12-06 03:54:44,344 - INFO - ESG3 classification completed for document 656ef3839e6ba559ce081a0d. Label: Not ESG Related
+2023-12-06 03:54:44,532 - INFO - ESG3 classification completed for document 656ef3849e6ba559ce081a0e. Label: Not ESG Related
+2023-12-06 03:54:44,880 - INFO - ESG3 classification completed for document 656ef3849e6ba559ce081a0f. Label: Not ESG Related
+2023-12-06 03:54:45,176 - INFO - ESG3 classification completed for document 656ef3849e6ba559ce081a10. Label: Environmental
+2023-12-06 03:54:45,379 - INFO - ESG3 classification completed for document 656ef3849e6ba559ce081a11. Label: Social
+2023-12-06 03:54:45,637 - INFO - ESG3 classification completed for document 656ef3849e6ba559ce081a12. Label: Not ESG Related
+2023-12-06 03:54:45,935 - INFO - ESG3 classification completed for document 656ef3859e6ba559ce081a13. Label: Not ESG Related
+2023-12-06 03:54:46,099 - INFO - ESG3 classification completed for document 656ef3de9e6ba559ce081a1f. Label: Not ESG Related
+2023-12-06 03:54:46,259 - INFO - ESG3 classification completed for document 656ef3de9e6ba559ce081a20. Label: Environmental
+2023-12-06 03:54:46,452 - INFO - ESG3 classification completed for document 656ef3de9e6ba559ce081a21. Label: Social
+2023-12-06 03:54:46,627 - INFO - ESG3 classification completed for document 656ef3df9e6ba559ce081a22. Label: Not ESG Related
+2023-12-06 03:54:46,797 - INFO - ESG3 classification completed for document 656ef3df9e6ba559ce081a23. Label: Not ESG Related
+2023-12-06 03:54:47,064 - INFO - ESG3 classification completed for document 656ef3df9e6ba559ce081a24. Label: Not ESG Related
+2023-12-06 03:54:47,328 - INFO - ESG3 classification completed for document 656ef3df9e6ba559ce081a25. Label: Environmental
+2023-12-06 03:54:47,570 - INFO - ESG3 classification completed for document 656ef3e09e6ba559ce081a26. Label: Environmental
+2023-12-06 03:54:47,830 - INFO - ESG3 classification completed for document 656ef3e09e6ba559ce081a27. Label: Social
+2023-12-06 03:54:48,098 - INFO - ESG3 classification completed for document 656ef3e09e6ba559ce081a28. Label: Environmental
+2023-12-06 03:54:48,294 - INFO - ESG3 classification completed for document 656ef4209e6ba559ce081a34. Label: Not ESG Related
+2023-12-06 03:54:48,444 - INFO - ESG3 classification completed for document 656ef4209e6ba559ce081a35. Label: Social
+2023-12-06 03:54:48,666 - INFO - ESG3 classification completed for document 656ef4209e6ba559ce081a36. Label: Not ESG Related
+2023-12-06 03:54:48,901 - INFO - ESG3 classification completed for document 656ef4219e6ba559ce081a37. Label: Social
+2023-12-06 03:54:49,070 - INFO - ESG3 classification completed for document 656ef4219e6ba559ce081a38. Label: Not ESG Related
+2023-12-06 03:54:49,335 - INFO - ESG3 classification completed for document 656ef4219e6ba559ce081a39. Label: Not ESG Related
+2023-12-06 03:54:49,487 - INFO - ESG3 classification completed for document 656ef4219e6ba559ce081a3a. Label: Social
+2023-12-06 03:54:49,865 - INFO - ESG3 classification completed for document 656ef4229e6ba559ce081a3b. Label: Not ESG Related
+2023-12-06 03:54:50,109 - INFO - ESG3 classification completed for document 656ef4229e6ba559ce081a3c. Label: Environmental
+2023-12-06 03:54:50,341 - INFO - ESG3 classification completed for document 656ef4749e6ba559ce081a48. Label: Social
+2023-12-06 03:54:50,572 - INFO - ESG3 classification completed for document 656ef4759e6ba559ce081a49. Label: Not ESG Related
+2023-12-06 03:54:50,826 - INFO - ESG3 classification completed for document 656ef4759e6ba559ce081a4a. Label: Not ESG Related
+2023-12-06 03:54:51,070 - INFO - ESG3 classification completed for document 656ef4759e6ba559ce081a4b. Label: Not ESG Related
+2023-12-06 03:54:51,251 - INFO - ESG3 classification completed for document 656ef4759e6ba559ce081a4c. Label: Not ESG Related
+2023-12-06 03:54:51,498 - INFO - ESG3 classification completed for document 656ef4759e6ba559ce081a4d. Label: Social
+2023-12-06 03:54:51,749 - INFO - ESG3 classification completed for document 656ef4769e6ba559ce081a4e. Label: Not ESG Related
+2023-12-06 03:54:51,941 - INFO - ESG3 classification completed for document 656ef4769e6ba559ce081a4f. Label: Not ESG Related
+2023-12-06 03:54:52,188 - INFO - ESG3 classification completed for document 656ef4769e6ba559ce081a50. Label: Environmental
+2023-12-06 03:54:52,455 - INFO - ESG3 classification completed for document 656ef4b39e6ba559ce081a5c. Label: Not ESG Related
+2023-12-06 03:54:52,701 - INFO - ESG3 classification completed for document 656ef4b39e6ba559ce081a5d. Label: Not ESG Related
+2023-12-06 03:54:53,162 - INFO - ESG3 classification completed for document 656ef4b39e6ba559ce081a5e. Label: Not ESG Related
+2023-12-06 03:54:53,377 - INFO - ESG3 classification completed for document 656ef4b49e6ba559ce081a5f. Label: Not ESG Related
+2023-12-06 03:54:53,601 - INFO - ESG3 classification completed for document 656ef4b49e6ba559ce081a60. Label: Not ESG Related
+2023-12-06 03:54:53,849 - INFO - ESG3 classification completed for document 656ef4b49e6ba559ce081a61. Label: Not ESG Related
+2023-12-06 03:54:54,401 - INFO - ESG3 classification completed for document 656ef4b59e6ba559ce081a62. Label: Not ESG Related
+2023-12-06 03:54:54,844 - INFO - ESG3 classification completed for document 656ef4b59e6ba559ce081a63. Label: Not ESG Related
+2023-12-06 03:54:55,403 - INFO - ESG3 classification completed for document 656ef4b59e6ba559ce081a64. Label: Not ESG Related
+2023-12-06 03:54:55,707 - INFO - ESG3 classification completed for document 656ef4fa9e6ba559ce081a70. Label: Not ESG Related
+2023-12-06 03:54:55,910 - INFO - ESG3 classification completed for document 656ef4fb9e6ba559ce081a71. Label: Social
+2023-12-06 03:54:56,044 - INFO - ESG3 classification completed for document 656ef4fb9e6ba559ce081a72. Label: Social
+2023-12-06 03:54:56,224 - INFO - ESG3 classification completed for document 656ef4fb9e6ba559ce081a73. Label: Not ESG Related
+2023-12-06 03:54:56,376 - INFO - ESG3 classification completed for document 656ef4fb9e6ba559ce081a74. Label: Social
+2023-12-06 03:54:56,629 - INFO - ESG3 classification completed for document 656ef4fb9e6ba559ce081a75. Label: Not ESG Related
+2023-12-06 03:54:56,898 - INFO - ESG3 classification completed for document 656ef4fb9e6ba559ce081a76. Label: Not ESG Related
+2023-12-06 03:54:57,111 - INFO - ESG3 classification completed for document 656ef4fc9e6ba559ce081a77. Label: Social
+2023-12-06 03:54:57,334 - INFO - ESG3 classification completed for document 656ef54b9e6ba559ce081a83. Label: Not ESG Related
+2023-12-06 03:54:57,578 - INFO - ESG3 classification completed for document 656ef54b9e6ba559ce081a84. Label: Not ESG Related
+2023-12-06 03:54:57,770 - INFO - ESG3 classification completed for document 656ef54c9e6ba559ce081a85. Label: Not ESG Related
+2023-12-06 03:54:57,924 - INFO - ESG3 classification completed for document 656ef54c9e6ba559ce081a86. Label: Not ESG Related
+2023-12-06 03:54:58,233 - INFO - ESG3 classification completed for document 656ef54c9e6ba559ce081a87. Label: Not ESG Related
+2023-12-06 03:54:58,404 - INFO - ESG3 classification completed for document 656ef54c9e6ba559ce081a88. Label: Environmental
+2023-12-06 03:54:58,574 - INFO - ESG3 classification completed for document 656ef54c9e6ba559ce081a89. Label: Not ESG Related
+2023-12-06 03:54:58,804 - INFO - ESG3 classification completed for document 656ef54d9e6ba559ce081a8a. Label: Not ESG Related
+2023-12-06 03:54:58,993 - INFO - ESG3 classification completed for document 656ef54d9e6ba559ce081a8b. Label: Not ESG Related
+2023-12-06 03:54:59,241 - INFO - ESG3 classification completed for document 656ef5919e6ba559ce081a97. Label: Not ESG Related
+2023-12-06 03:54:59,512 - INFO - ESG3 classification completed for document 656ef5929e6ba559ce081a98. Label: Not ESG Related
+2023-12-06 03:54:59,834 - INFO - ESG3 classification completed for document 656ef5929e6ba559ce081a99. Label: Social
+2023-12-06 03:54:59,988 - INFO - ESG3 classification completed for document 656ef5929e6ba559ce081a9a. Label: Social
+2023-12-06 03:55:00,226 - INFO - ESG3 classification completed for document 656ef5929e6ba559ce081a9b. Label: Not ESG Related
+2023-12-06 03:55:00,451 - INFO - ESG3 classification completed for document 656ef5939e6ba559ce081a9c. Label: Social
+2023-12-06 03:55:00,672 - INFO - ESG3 classification completed for document 656ef5939e6ba559ce081a9d. Label: Social
+2023-12-06 03:55:01,142 - INFO - ESG3 classification completed for document 656ef5939e6ba559ce081a9e. Label: Not ESG Related
+2023-12-06 03:55:01,466 - INFO - ESG3 classification completed for document 656ef5939e6ba559ce081a9f. Label: Not ESG Related
+2023-12-06 03:55:01,691 - INFO - ESG3 classification completed for document 656ef5d39e6ba559ce081aab. Label: Not ESG Related
+2023-12-06 03:55:01,878 - INFO - ESG3 classification completed for document 656ef5d39e6ba559ce081aac. Label: Social
+2023-12-06 03:55:02,123 - INFO - ESG3 classification completed for document 656ef5d39e6ba559ce081aad. Label: Social
+2023-12-06 03:55:02,362 - INFO - ESG3 classification completed for document 656ef5d49e6ba559ce081aae. Label: Not ESG Related
+2023-12-06 03:55:02,587 - INFO - ESG3 classification completed for document 656ef5d49e6ba559ce081aaf. Label: Not ESG Related
+2023-12-06 03:55:02,793 - INFO - ESG3 classification completed for document 656ef5d49e6ba559ce081ab0. Label: Social
+2023-12-06 03:55:03,142 - INFO - ESG3 classification completed for document 656ef5d49e6ba559ce081ab1. Label: Social
+2023-12-06 03:55:03,393 - INFO - ESG3 classification completed for document 656ef5d49e6ba559ce081ab2. Label: Social
+2023-12-06 03:55:03,620 - INFO - ESG3 classification completed for document 656ef5d59e6ba559ce081ab3. Label: Not ESG Related
+2023-12-06 03:55:04,130 - INFO - ESG3 classification completed for document 656ef6169e6ba559ce081abf. Label: Not ESG Related
+2023-12-06 03:55:04,493 - INFO - ESG3 classification completed for document 656ef6169e6ba559ce081ac0. Label: Not ESG Related
+2023-12-06 03:55:04,878 - INFO - ESG3 classification completed for document 656ef6169e6ba559ce081ac1. Label: Not ESG Related
+2023-12-06 03:55:05,350 - INFO - ESG3 classification completed for document 656ef6169e6ba559ce081ac2. Label: Social
+2023-12-06 03:55:05,586 - INFO - ESG3 classification completed for document 656ef6179e6ba559ce081ac3. Label: Not ESG Related
+2023-12-06 03:55:05,884 - INFO - ESG3 classification completed for document 656ef6179e6ba559ce081ac4. Label: Not ESG Related
+2023-12-06 03:55:06,152 - INFO - ESG3 classification completed for document 656ef6179e6ba559ce081ac5. Label: Not ESG Related
+2023-12-06 03:55:06,348 - INFO - ESG3 classification completed for document 656ef6189e6ba559ce081ac6. Label: Not ESG Related
+2023-12-06 03:55:06,762 - INFO - ESG3 classification completed for document 656ef6189e6ba559ce081ac7. Label: Not ESG Related
+2023-12-06 03:55:07,079 - INFO - ESG3 classification completed for document 656ef6199e6ba559ce081ac8. Label: Not ESG Related
+2023-12-06 03:55:07,701 - INFO - ESG3 classification completed for document 656ef68e9e6ba559ce081ad4. Label: Not ESG Related
+2023-12-06 03:55:08,274 - INFO - ESG3 classification completed for document 656ef68e9e6ba559ce081ad5. Label: Not ESG Related
+2023-12-06 03:55:08,517 - INFO - ESG3 classification completed for document 656ef68e9e6ba559ce081ad6. Label: Not ESG Related
+2023-12-06 03:55:08,687 - INFO - ESG3 classification completed for document 656ef68e9e6ba559ce081ad7. Label: Social
+2023-12-06 03:55:09,082 - INFO - ESG3 classification completed for document 656ef68f9e6ba559ce081ad8. Label: Not ESG Related
+2023-12-06 03:55:09,516 - INFO - ESG3 classification completed for document 656ef68f9e6ba559ce081ad9. Label: Environmental
+2023-12-06 03:55:09,736 - INFO - ESG3 classification completed for document 656ef68f9e6ba559ce081ada. Label: Social
+2023-12-06 03:55:09,907 - INFO - ESG3 classification completed for document 656ef68f9e6ba559ce081adb. Label: Environmental
+2023-12-06 03:55:10,355 - INFO - ESG3 classification completed for document 656ef6909e6ba559ce081adc. Label: Not ESG Related
+2023-12-06 03:55:10,615 - INFO - ESG3 classification completed for document 656ef6909e6ba559ce081add. Label: Not ESG Related
+2023-12-06 03:55:10,846 - INFO - ESG3 classification completed for document 656ef6df9e6ba559ce081ae9. Label: Not ESG Related
+2023-12-06 03:55:11,012 - INFO - ESG3 classification completed for document 656ef6df9e6ba559ce081aea. Label: Not ESG Related
+2023-12-06 03:55:11,380 - INFO - ESG3 classification completed for document 656ef6df9e6ba559ce081aeb. Label: Not ESG Related
+2023-12-06 03:55:11,543 - INFO - ESG3 classification completed for document 656ef6df9e6ba559ce081aec. Label: Not ESG Related
+2023-12-06 03:55:11,752 - INFO - ESG3 classification completed for document 656ef6e09e6ba559ce081aed. Label: Not ESG Related
+2023-12-06 03:55:11,911 - INFO - ESG3 classification completed for document 656ef6e09e6ba559ce081aee. Label: Not ESG Related
+2023-12-06 03:55:12,092 - INFO - ESG3 classification completed for document 656ef6e09e6ba559ce081aef. Label: Not ESG Related
+2023-12-06 03:55:12,376 - INFO - ESG3 classification completed for document 656ef6e09e6ba559ce081af0. Label: Social
+2023-12-06 03:55:12,614 - INFO - ESG3 classification completed for document 656ef6e19e6ba559ce081af1. Label: Social
+2023-12-06 03:55:12,786 - INFO - ESG3 classification completed for document 656ef6e19e6ba559ce081af2. Label: Not ESG Related
+2023-12-06 03:55:13,198 - INFO - ESG3 classification completed for document 656ef7209e6ba559ce081afe. Label: Social
+2023-12-06 03:55:13,564 - INFO - ESG3 classification completed for document 656ef7209e6ba559ce081aff. Label: Social
+2023-12-06 03:55:13,830 - INFO - ESG3 classification completed for document 656ef7209e6ba559ce081b00. Label: Not ESG Related
+2023-12-06 03:55:14,106 - INFO - ESG3 classification completed for document 656ef7209e6ba559ce081b01. Label: Not ESG Related
+2023-12-06 03:55:14,367 - INFO - ESG3 classification completed for document 656ef7209e6ba559ce081b02. Label: Social
+2023-12-06 03:55:14,494 - INFO - ESG3 classification completed for document 656ef7219e6ba559ce081b03. Label: Not ESG Related
+2023-12-06 03:55:14,840 - INFO - ESG3 classification completed for document 656ef7219e6ba559ce081b04. Label: Social
+2023-12-06 03:55:15,092 - INFO - ESG3 classification completed for document 656ef7219e6ba559ce081b05. Label: Environmental
+2023-12-06 03:55:15,370 - INFO - ESG3 classification completed for document 656ef7219e6ba559ce081b06. Label: Social
+2023-12-06 03:55:15,628 - INFO - ESG3 classification completed for document 656ef76c9e6ba559ce081b12. Label: Not ESG Related
+2023-12-06 03:55:15,879 - INFO - ESG3 classification completed for document 656ef76c9e6ba559ce081b13. Label: Not ESG Related
+2023-12-06 03:55:16,120 - INFO - ESG3 classification completed for document 656ef76d9e6ba559ce081b14. Label: Not ESG Related
+2023-12-06 03:55:16,389 - INFO - ESG3 classification completed for document 656ef76d9e6ba559ce081b15. Label: Not ESG Related
+2023-12-06 03:55:16,553 - INFO - ESG3 classification completed for document 656ef76d9e6ba559ce081b16. Label: Not ESG Related
+2023-12-06 03:55:16,796 - INFO - ESG3 classification completed for document 656ef76d9e6ba559ce081b17. Label: Not ESG Related
+2023-12-06 03:55:17,049 - INFO - ESG3 classification completed for document 656ef76d9e6ba559ce081b18. Label: Not ESG Related
+2023-12-06 03:55:17,290 - INFO - ESG3 classification completed for document 656ef76e9e6ba559ce081b19. Label: Governance
+2023-12-06 03:55:17,608 - INFO - ESG3 classification completed for document 656ef76e9e6ba559ce081b1a. Label: Not ESG Related
+2023-12-06 03:55:17,834 - INFO - ESG3 classification completed for document 656ef7a79e6ba559ce081b26. Label: Social
+2023-12-06 03:55:18,485 - INFO - ESG3 classification completed for document 656ef7a89e6ba559ce081b27. Label: Not ESG Related
+2023-12-06 03:55:18,719 - INFO - ESG3 classification completed for document 656ef7a89e6ba559ce081b28. Label: Not ESG Related
+2023-12-06 03:55:18,944 - INFO - ESG3 classification completed for document 656ef7a89e6ba559ce081b29. Label: Not ESG Related
+2023-12-06 03:55:19,476 - INFO - ESG3 classification completed for document 656ef7a89e6ba559ce081b2a. Label: Not ESG Related
+2023-12-06 03:55:19,649 - INFO - ESG3 classification completed for document 656ef7a89e6ba559ce081b2b. Label: Social
+2023-12-06 03:55:19,816 - INFO - ESG3 classification completed for document 656ef7a99e6ba559ce081b2c. Label: Not ESG Related
+2023-12-06 03:55:20,029 - INFO - ESG3 classification completed for document 656ef7a99e6ba559ce081b2d. Label: Social
+2023-12-06 03:55:20,222 - INFO - ESG3 classification completed for document 656ef7a99e6ba559ce081b2e. Label: Not ESG Related
+2023-12-06 03:55:20,484 - INFO - ESG3 classification completed for document 656ef7f99e6ba559ce081b3a. Label: Not ESG Related
+2023-12-06 03:55:20,703 - INFO - ESG3 classification completed for document 656ef7f99e6ba559ce081b3b. Label: Social
+2023-12-06 03:55:20,925 - INFO - ESG3 classification completed for document 656ef7f99e6ba559ce081b3c. Label: Not ESG Related
+2023-12-06 03:55:21,303 - INFO - ESG3 classification completed for document 656ef7fa9e6ba559ce081b3d. Label: Social
+2023-12-06 03:55:21,428 - INFO - ESG3 classification completed for document 656ef7fa9e6ba559ce081b3e. Label: Not ESG Related
+2023-12-06 03:55:21,675 - INFO - ESG3 classification completed for document 656ef7fa9e6ba559ce081b3f. Label: Social
+2023-12-06 03:55:22,027 - INFO - ESG3 classification completed for document 656ef7fa9e6ba559ce081b40. Label: Not ESG Related
+2023-12-06 03:55:22,661 - INFO - ESG3 classification completed for document 656ef84d9e6ba559ce081b4c. Label: Governance
+2023-12-06 03:55:22,854 - INFO - ESG3 classification completed for document 656ef84e9e6ba559ce081b4d. Label: Not ESG Related
+2023-12-06 03:55:23,333 - INFO - ESG3 classification completed for document 656ef84e9e6ba559ce081b4e. Label: Not ESG Related
+2023-12-06 03:55:23,815 - INFO - ESG3 classification completed for document 656ef84e9e6ba559ce081b4f. Label: Not ESG Related
+2023-12-06 03:55:24,314 - INFO - ESG3 classification completed for document 656ef84e9e6ba559ce081b50. Label: Not ESG Related
+2023-12-06 03:55:24,508 - INFO - ESG3 classification completed for document 656ef84e9e6ba559ce081b51. Label: Not ESG Related
+2023-12-06 03:55:24,880 - INFO - ESG3 classification completed for document 656ef84f9e6ba559ce081b52. Label: Not ESG Related
+2023-12-06 03:55:25,097 - INFO - ESG3 classification completed for document 656ef84f9e6ba559ce081b53. Label: Not ESG Related
+2023-12-06 03:55:25,289 - INFO - ESG3 classification completed for document 656ef84f9e6ba559ce081b54. Label: Not ESG Related
+2023-12-06 03:55:25,563 - INFO - ESG3 classification completed for document 656ef84f9e6ba559ce081b55. Label: Social
+2023-12-06 03:55:25,732 - INFO - ESG3 classification completed for document 656ef85c9e6ba559ce081b59. Label: Not ESG Related
+2023-12-06 03:55:25,982 - INFO - ESG3 classification completed for document 656ef8c09e6ba559ce081b65. Label: Not ESG Related
+2023-12-06 03:55:26,258 - INFO - ESG3 classification completed for document 656ef8c09e6ba559ce081b66. Label: Not ESG Related
+2023-12-06 03:55:26,471 - INFO - ESG3 classification completed for document 656ef8c19e6ba559ce081b67. Label: Not ESG Related
+2023-12-06 03:55:26,806 - INFO - ESG3 classification completed for document 656ef8c19e6ba559ce081b68. Label: Not ESG Related
+2023-12-06 03:55:27,057 - INFO - ESG3 classification completed for document 656ef8c19e6ba559ce081b69. Label: Not ESG Related
+2023-12-06 03:55:27,259 - INFO - ESG3 classification completed for document 656ef8c19e6ba559ce081b6a. Label: Environmental
+2023-12-06 03:55:27,737 - INFO - ESG3 classification completed for document 656ef8c29e6ba559ce081b6b. Label: Not ESG Related
+2023-12-06 03:55:27,965 - INFO - ESG3 classification completed for document 656ef8c29e6ba559ce081b6c. Label: Social
+2023-12-06 03:55:28,418 - INFO - ESG3 classification completed for document 656ef8c29e6ba559ce081b6d. Label: Not ESG Related
+2023-12-06 03:55:28,670 - INFO - ESG3 classification completed for document 656ef90f9e6ba559ce081b79. Label: Not ESG Related
+2023-12-06 03:55:28,910 - INFO - ESG3 classification completed for document 656ef90f9e6ba559ce081b7a. Label: Not ESG Related
+2023-12-06 03:55:29,176 - INFO - ESG3 classification completed for document 656ef9109e6ba559ce081b7b. Label: Not ESG Related
+2023-12-06 03:55:29,429 - INFO - ESG3 classification completed for document 656ef9109e6ba559ce081b7c. Label: Not ESG Related
+2023-12-06 03:55:29,694 - INFO - ESG3 classification completed for document 656ef9109e6ba559ce081b7d. Label: Not ESG Related
+2023-12-06 03:55:29,911 - INFO - ESG3 classification completed for document 656ef9119e6ba559ce081b7e. Label: Not ESG Related
+2023-12-06 03:55:30,150 - INFO - ESG3 classification completed for document 656ef9119e6ba559ce081b7f. Label: Not ESG Related
+2023-12-06 03:55:30,375 - INFO - ESG3 classification completed for document 656ef9119e6ba559ce081b80. Label: Social
+2023-12-06 03:55:30,618 - INFO - ESG3 classification completed for document 656ef9119e6ba559ce081b81. Label: Not ESG Related
+2023-12-06 03:55:30,873 - INFO - ESG3 classification completed for document 656ef9129e6ba559ce081b82. Label: Not ESG Related
+2023-12-06 03:55:31,111 - INFO - ESG3 classification completed for document 656ef96e9e6ba559ce081b8e. Label: Social
+2023-12-06 03:55:31,298 - INFO - ESG3 classification completed for document 656ef96e9e6ba559ce081b8f. Label: Not ESG Related
+2023-12-06 03:55:31,709 - INFO - ESG3 classification completed for document 656ef96e9e6ba559ce081b90. Label: Social
+2023-12-06 03:55:31,927 - INFO - ESG3 classification completed for document 656ef96e9e6ba559ce081b91. Label: Social
+2023-12-06 03:55:32,100 - INFO - ESG3 classification completed for document 656ef96f9e6ba559ce081b92. Label: Not ESG Related
+2023-12-06 03:55:32,335 - INFO - ESG3 classification completed for document 656ef96f9e6ba559ce081b93. Label: Social
+2023-12-06 03:55:32,563 - INFO - ESG3 classification completed for document 656ef96f9e6ba559ce081b94. Label: Not ESG Related
+2023-12-06 03:55:32,747 - INFO - ESG3 classification completed for document 656ef96f9e6ba559ce081b95. Label: Social
+2023-12-06 03:55:33,106 - INFO - ESG3 classification completed for document 656ef9709e6ba559ce081b96. Label: Social
+2023-12-06 03:55:33,361 - INFO - ESG3 classification completed for document 656ef9709e6ba559ce081b97. Label: Social
+2023-12-06 03:55:33,952 - INFO - ESG3 classification completed for document 656ef9b99e6ba559ce081ba3. Label: Not ESG Related
+2023-12-06 03:55:34,164 - INFO - ESG3 classification completed for document 656ef9ba9e6ba559ce081ba4. Label: Not ESG Related
+2023-12-06 03:55:34,525 - INFO - ESG3 classification completed for document 656ef9ba9e6ba559ce081ba5. Label: Not ESG Related
+2023-12-06 03:55:35,068 - INFO - ESG3 classification completed for document 656ef9bb9e6ba559ce081ba6. Label: Not ESG Related
+2023-12-06 03:55:35,263 - INFO - ESG3 classification completed for document 656ef9bb9e6ba559ce081ba7. Label: Not ESG Related
+2023-12-06 03:55:35,535 - INFO - ESG3 classification completed for document 656ef9bb9e6ba559ce081ba8. Label: Social
+2023-12-06 03:55:35,773 - INFO - ESG3 classification completed for document 656ef9bb9e6ba559ce081ba9. Label: Social
+2023-12-06 03:55:36,092 - INFO - ESG3 classification completed for document 656ef9bc9e6ba559ce081baa. Label: Social
+2023-12-06 03:55:36,215 - INFO - ESG3 classification completed for document 656ef9bc9e6ba559ce081bab. Label: Not ESG Related
+2023-12-06 03:55:36,494 - INFO - ESG3 classification completed for document 656f8fd46423dbf18547042d. Label: Not ESG Related
+2023-12-06 03:55:36,807 - INFO - ESG3 classification completed for document 656f8fd56423dbf18547042e. Label: Governance
+2023-12-06 03:55:37,080 - INFO - ESG3 classification completed for document 656f8fd56423dbf18547042f. Label: Not ESG Related
+2023-12-06 03:55:37,303 - INFO - ESG3 classification completed for document 656f8fd56423dbf185470430. Label: Social
+2023-12-06 03:55:37,637 - INFO - ESG3 classification completed for document 656f8fd56423dbf185470431. Label: Not ESG Related
+2023-12-06 03:55:38,278 - INFO - ESG3 classification completed for document 656f8fd66423dbf185470432. Label: Social
+2023-12-06 03:55:38,674 - INFO - ESG3 classification completed for document 656f8fd66423dbf185470433. Label: Social
+2023-12-06 03:55:39,108 - INFO - ESG3 classification completed for document 656f8fd66423dbf185470434. Label: Social
+2023-12-06 03:55:39,361 - INFO - ESG3 classification completed for document 656f90216423dbf185470440. Label: Social
+2023-12-06 03:55:39,679 - INFO - ESG3 classification completed for document 656f90226423dbf185470441. Label: Governance
+2023-12-06 03:55:39,927 - INFO - ESG3 classification completed for document 656f90226423dbf185470442. Label: Social
+2023-12-06 03:55:40,167 - INFO - ESG3 classification completed for document 656f90226423dbf185470443. Label: Environmental
+2023-12-06 03:55:40,474 - INFO - ESG3 classification completed for document 656f90226423dbf185470444. Label: Social
+2023-12-06 03:55:40,845 - INFO - ESG3 classification completed for document 656f90236423dbf185470445. Label: Social
+2023-12-06 03:55:41,037 - INFO - ESG3 classification completed for document 656f90236423dbf185470446. Label: Social
+2023-12-06 03:55:41,417 - INFO - ESG3 classification completed for document 656f90236423dbf185470447. Label: Not ESG Related
+2023-12-06 03:55:41,652 - INFO - ESG3 classification completed for document 656f90646423dbf185470453. Label: Social
+2023-12-06 03:55:41,892 - INFO - ESG3 classification completed for document 656f90656423dbf185470454. Label: Social
+2023-12-06 03:55:42,127 - INFO - ESG3 classification completed for document 656f90666423dbf185470455. Label: Not ESG Related
+2023-12-06 03:55:42,320 - INFO - ESG3 classification completed for document 656f90666423dbf185470456. Label: Social
+2023-12-06 03:55:42,563 - INFO - ESG3 classification completed for document 656f90666423dbf185470457. Label: Social
+2023-12-06 03:55:42,766 - INFO - ESG3 classification completed for document 656f90666423dbf185470458. Label: Social
+2023-12-06 03:55:43,101 - INFO - ESG3 classification completed for document 656f90666423dbf185470459. Label: Social
+2023-12-06 03:55:43,747 - INFO - ESG3 classification completed for document 656f90ac6423dbf185470465. Label: Social
+2023-12-06 03:55:43,943 - INFO - ESG3 classification completed for document 656f90ac6423dbf185470466. Label: Not ESG Related
+2023-12-06 03:55:44,182 - INFO - ESG3 classification completed for document 656f90ac6423dbf185470467. Label: Social
+2023-12-06 03:55:44,366 - INFO - ESG3 classification completed for document 656f90ad6423dbf185470468. Label: Not ESG Related
+2023-12-06 03:55:44,525 - INFO - ESG3 classification completed for document 656f90ad6423dbf185470469. Label: Not ESG Related
+2023-12-06 03:55:44,910 - INFO - ESG3 classification completed for document 656f90ad6423dbf18547046a. Label: Governance
+2023-12-06 03:55:45,140 - INFO - ESG3 classification completed for document 656f90ad6423dbf18547046b. Label: Social
+2023-12-06 03:55:45,463 - INFO - ESG3 classification completed for document 656f90ae6423dbf18547046c. Label: Not ESG Related
+2023-12-06 03:55:45,697 - INFO - ESG3 classification completed for document 656f90ed6423dbf185470478. Label: Not ESG Related
+2023-12-06 03:55:45,897 - INFO - ESG3 classification completed for document 656f90ed6423dbf185470479. Label: Not ESG Related
+2023-12-06 03:55:46,159 - INFO - ESG3 classification completed for document 656f90ed6423dbf18547047a. Label: Social
+2023-12-06 03:55:46,332 - INFO - ESG3 classification completed for document 656f90ed6423dbf18547047b. Label: Not ESG Related
+2023-12-06 03:55:46,553 - INFO - ESG3 classification completed for document 656f91276423dbf185470487. Label: Environmental
+2023-12-06 03:55:46,808 - INFO - ESG3 classification completed for document 656f91276423dbf185470488. Label: Social
+2023-12-06 03:55:47,044 - INFO - ESG3 classification completed for document 656f91286423dbf185470489. Label: Social
+2023-12-06 03:55:47,267 - INFO - ESG3 classification completed for document 656f91286423dbf18547048a. Label: Social
+2023-12-06 03:55:47,516 - INFO - ESG3 classification completed for document 656f91286423dbf18547048b. Label: Social
+2023-12-06 03:55:47,806 - INFO - ESG3 classification completed for document 656f91286423dbf18547048c. Label: Social
+2023-12-06 03:55:48,032 - INFO - ESG3 classification completed for document 656f91856423dbf185470498. Label: Social
+2023-12-06 03:55:48,207 - INFO - ESG3 classification completed for document 656f91856423dbf185470499. Label: Social
+2023-12-06 03:55:48,370 - INFO - ESG3 classification completed for document 656f91856423dbf18547049a. Label: Social
+2023-12-06 03:55:48,630 - INFO - ESG3 classification completed for document 656f91866423dbf18547049b. Label: Social
+2023-12-06 03:55:48,905 - INFO - ESG3 classification completed for document 656f91866423dbf18547049c. Label: Social
+2023-12-06 03:55:49,117 - INFO - ESG3 classification completed for document 656f91866423dbf18547049d. Label: Social
+2023-12-06 03:55:49,344 - INFO - ESG3 classification completed for document 656f91866423dbf18547049e. Label: Social
+2023-12-06 03:55:49,644 - INFO - ESG3 classification completed for document 656f91866423dbf18547049f. Label: Governance
+2023-12-06 03:55:49,824 - INFO - ESG3 classification completed for document 656f91876423dbf1854704a0. Label: Environmental
+2023-12-06 03:55:50,057 - INFO - ESG3 classification completed for document 656f91876423dbf1854704a1. Label: Environmental
+2023-12-06 03:55:50,312 - INFO - ESG3 classification completed for document 656f91bd6423dbf1854704ad. Label: Social
+2023-12-06 03:55:50,551 - INFO - ESG3 classification completed for document 656f91bd6423dbf1854704ae. Label: Not ESG Related
+2023-12-06 03:55:50,742 - INFO - ESG3 classification completed for document 656f91bd6423dbf1854704af. Label: Social
+2023-12-06 03:55:50,944 - INFO - ESG3 classification completed for document 656f91be6423dbf1854704b0. Label: Governance
+2023-12-06 03:55:51,146 - INFO - ESG3 classification completed for document 656f91be6423dbf1854704b1. Label: Social
+2023-12-06 03:55:51,346 - INFO - ESG3 classification completed for document 656f91ee6423dbf1854704bd. Label: Social
+2023-12-06 03:55:51,587 - INFO - ESG3 classification completed for document 656f91ee6423dbf1854704be. Label: Social
+2023-12-06 03:55:51,807 - INFO - ESG3 classification completed for document 656f91ee6423dbf1854704bf. Label: Environmental
+2023-12-06 03:55:52,056 - INFO - ESG3 classification completed for document 656f91ef6423dbf1854704c0. Label: Social
+2023-12-06 03:55:52,276 - INFO - ESG3 classification completed for document 656f922c6423dbf1854704cc. Label: Social
+2023-12-06 03:55:52,516 - INFO - ESG3 classification completed for document 656f922c6423dbf1854704cd. Label: Not ESG Related
+2023-12-06 03:55:52,739 - INFO - ESG3 classification completed for document 656f922c6423dbf1854704ce. Label: Environmental
+2023-12-06 03:55:53,163 - INFO - ESG3 classification completed for document 656f922d6423dbf1854704cf. Label: Social
+2023-12-06 03:55:53,350 - INFO - ESG3 classification completed for document 656f92866423dbf1854704db. Label: Social
+2023-12-06 03:55:53,566 - INFO - ESG3 classification completed for document 656f92876423dbf1854704dc. Label: Not ESG Related
+2023-12-06 03:55:53,741 - INFO - ESG3 classification completed for document 656f92876423dbf1854704dd. Label: Governance
+2023-12-06 03:55:54,319 - INFO - ESG3 classification completed for document 656f92876423dbf1854704de. Label: Governance
+2023-12-06 03:55:54,568 - INFO - ESG3 classification completed for document 656f92876423dbf1854704df. Label: Governance
+2023-12-06 03:55:54,963 - INFO - ESG3 classification completed for document 656f92876423dbf1854704e0. Label: Not ESG Related
+2023-12-06 03:55:55,260 - INFO - ESG3 classification completed for document 656f92886423dbf1854704e1. Label: Governance
+2023-12-06 03:55:55,513 - INFO - ESG3 classification completed for document 656f92886423dbf1854704e2. Label: Social
+2023-12-06 03:55:55,836 - INFO - ESG3 classification completed for document 656f92b56423dbf1854704ee. Label: Social
+2023-12-06 03:55:56,045 - INFO - ESG3 classification completed for document 656f92b56423dbf1854704ef. Label: Social
+2023-12-06 03:55:56,283 - INFO - ESG3 classification completed for document 656f92b66423dbf1854704f0. Label: Not ESG Related
+2023-12-06 03:55:56,537 - INFO - ESG3 classification completed for document 656f92fe6423dbf1854704fc. Label: Social
+2023-12-06 03:55:56,794 - INFO - ESG3 classification completed for document 656f92fe6423dbf1854704fd. Label: Not ESG Related
+2023-12-06 03:55:57,021 - INFO - ESG3 classification completed for document 656f92fe6423dbf1854704fe. Label: Social
+2023-12-06 03:55:57,300 - INFO - ESG3 classification completed for document 656f92ff6423dbf1854704ff. Label: Social
+2023-12-06 03:55:57,611 - INFO - ESG3 classification completed for document 656f92ff6423dbf185470500. Label: Social
+2023-12-06 03:55:57,911 - INFO - ESG3 classification completed for document 656f92ff6423dbf185470501. Label: Social
+2023-12-06 03:55:58,160 - INFO - ESG3 classification completed for document 656f92ff6423dbf185470502. Label: Not ESG Related
+2023-12-06 03:55:58,371 - INFO - ESG3 classification completed for document 656f93006423dbf185470503. Label: Social
+2023-12-06 03:55:58,683 - INFO - ESG3 classification completed for document 656f93456423dbf18547050f. Label: Not ESG Related
+2023-12-06 03:55:58,859 - INFO - ESG3 classification completed for document 656f93456423dbf185470510. Label: Social
+2023-12-06 03:55:59,091 - INFO - ESG3 classification completed for document 656f93456423dbf185470511. Label: Social
+2023-12-06 03:55:59,309 - INFO - ESG3 classification completed for document 656f93456423dbf185470512. Label: Social
+2023-12-06 03:55:59,486 - INFO - ESG3 classification completed for document 656f93456423dbf185470513. Label: Social
+2023-12-06 03:55:59,775 - INFO - ESG3 classification completed for document 656f93a26423dbf18547051f. Label: Social
+2023-12-06 03:55:59,976 - INFO - ESG3 classification completed for document 656f93a26423dbf185470520. Label: Social
+2023-12-06 03:56:00,238 - INFO - ESG3 classification completed for document 656f93a26423dbf185470521. Label: Social
+2023-12-06 03:56:00,452 - INFO - ESG3 classification completed for document 656f93a36423dbf185470522. Label: Social
+2023-12-06 03:56:00,688 - INFO - ESG3 classification completed for document 656f93a36423dbf185470523. Label: Social
+2023-12-06 03:56:00,888 - INFO - ESG3 classification completed for document 656f93a36423dbf185470524. Label: Social
+2023-12-06 03:56:01,192 - INFO - ESG3 classification completed for document 656f93a36423dbf185470525. Label: Social
+2023-12-06 03:56:01,414 - INFO - ESG3 classification completed for document 656f93a46423dbf185470526. Label: Social
+2023-12-06 03:56:01,613 - INFO - ESG3 classification completed for document 656f93a46423dbf185470527. Label: Social
+2023-12-06 03:56:01,827 - INFO - ESG3 classification completed for document 656f93a46423dbf185470528. Label: Environmental
+2023-12-06 03:56:02,045 - INFO - ESG3 classification completed for document 656f93d86423dbf185470534. Label: Not ESG Related
+2023-12-06 03:56:02,243 - INFO - ESG3 classification completed for document 656f93d86423dbf185470535. Label: Social
+2023-12-06 03:56:02,503 - INFO - ESG3 classification completed for document 656f93d86423dbf185470536. Label: Governance
+2023-12-06 03:56:02,684 - INFO - ESG3 classification completed for document 656f93d86423dbf185470537. Label: Social
+2023-12-06 03:56:02,858 - INFO - ESG3 classification completed for document 656f94156423dbf185470543. Label: Social
+2023-12-06 03:56:03,271 - INFO - ESG3 classification completed for document 656f94166423dbf185470544. Label: Social
+2023-12-06 03:56:03,839 - INFO - ESG3 classification completed for document 656f94166423dbf185470545. Label: Social
+2023-12-06 03:56:04,074 - INFO - ESG3 classification completed for document 656f94166423dbf185470546. Label: Social
+2023-12-06 03:56:04,220 - INFO - ESG3 classification completed for document 656f94166423dbf185470547. Label: Social
+2023-12-06 03:56:04,390 - INFO - ESG3 classification completed for document 656f944a6423dbf185470553. Label: Social
+2023-12-06 03:56:04,643 - INFO - ESG3 classification completed for document 656f944a6423dbf185470554. Label: Governance
+2023-12-06 03:56:05,065 - INFO - ESG3 classification completed for document 656f944b6423dbf185470555. Label: Social
+2023-12-06 03:56:05,305 - INFO - ESG3 classification completed for document 656f944b6423dbf185470556. Label: Not ESG Related
+2023-12-06 03:56:05,563 - INFO - ESG3 classification completed for document 656f944c6423dbf185470557. Label: Environmental
+2023-12-06 03:56:05,775 - INFO - ESG3 classification completed for document 656f948e6423dbf185470563. Label: Social
+2023-12-06 03:56:06,103 - INFO - ESG3 classification completed for document 656f948e6423dbf185470564. Label: Not ESG Related
+2023-12-06 03:56:06,286 - INFO - ESG3 classification completed for document 656f948e6423dbf185470565. Label: Not ESG Related
+2023-12-06 03:56:06,535 - INFO - ESG3 classification completed for document 656f948e6423dbf185470566. Label: Not ESG Related
+2023-12-06 03:56:06,836 - INFO - ESG3 classification completed for document 656f948f6423dbf185470567. Label: Social
+2023-12-06 03:56:06,841 - INFO - === Script execution END (ESG3 Classification) at: 2023-12-06 03:56:06.841484 with 1573 labels added to the collection ===
+2023-12-06 05:27:53,296 - INFO - === Script execution START (ESG3 Classification) at: 2023-12-06 05:27:53.296366 ===
