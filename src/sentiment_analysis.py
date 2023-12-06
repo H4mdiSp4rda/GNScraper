@@ -93,11 +93,9 @@ def classify_ESG():
     classify_ESG_logger.info(f'=== Script execution START (ESG3 Classification) at: {datetime.now()} ===')
 
     try:
-        # Load FinBERT ESG model and tokenizer
+        # Load FinBERT ESG model and tokenizer outside the loop
         finbert_esg = BertForSequenceClassification.from_pretrained('yiyanghkust/finbert-esg', num_labels=4)
         tokenizer_esg = BertTokenizer.from_pretrained('yiyanghkust/finbert-esg')
-
-        # Create a text classification pipeline using the ESG model and tokenizer
         nlp_esg = pipeline("text-classification", model=finbert_esg, tokenizer=tokenizer_esg)
 
         # Connect to MongoDB
@@ -112,34 +110,105 @@ def classify_ESG():
         for document in tqdm(cursor, desc="Processing Articles", total=total_documents):
             _id = document["_id"]
             translated_summary = document.get("Translated Summary", "")
+            esg_labels = []  # List to store labels for each segment
 
-            # Perform ESG classification on the translated summary
-            esg_results = nlp_esg([translated_summary])
+            # Process each segment independently
+            max_token_limit = finbert_esg.config.max_position_embeddings
+            tokens = tokenizer_esg.encode(translated_summary, max_length=max_token_limit-2, truncation=True)
 
-            # Extract ESG label and score
-            esg_label = esg_results[0].get('label', 'Not-ESG')  # Replace 'None' with 'Not-ESG'
-            esg_score = esg_results[0].get('score', 0.0)
+            for i in range(0, len(tokens), max_token_limit):
+                segment = tokens[i:i + max_token_limit]
 
-            # Replace "None" with "Not ESG Related"
-            esg_label = esg_label if esg_label != "None" else "Not ESG Related"
+                segment_input_ids = segment[:max_token_limit]
+                attention_mask = [1] * len(segment_input_ids) + [0] * (max_token_limit - len(segment_input_ids))
+                attention_mask = attention_mask[:max_token_limit]
 
-            # Replace the existing TAGS field in the MongoDB document with the new ESG label and score
-            collection.update_one(
-                {"_id": _id},
-                {"$set": {"TAGS": [{"ESG Label": esg_label, "ESG Score": esg_score}]}}
-            )
+                segment_input_ids = torch.tensor([segment_input_ids])
+                attention_mask = torch.tensor([attention_mask])
 
-            classify_ESG_logger.info(f"ESG3 classification completed for document {_id}. Label: {esg_label}, Score: {esg_score}")
+                segmented_summary = tokenizer_esg.decode(segment_input_ids.squeeze().tolist())
+
+                esg_label = nlp_esg(segmented_summary)[0]['label']
+                esg_label = esg_label if esg_label != "None" else "Not ESG Related"
+
+                esg_labels.append(esg_label)
+
+            # Decide the overall label based on individual segment labels
+            overall_esg_label = max(set(esg_labels), key=esg_labels.count)
+
+            # Update the ESG field in the document
+            collection.update_one({"_id": _id}, {"$set": {"ESG": overall_esg_label}}, upsert=True)
 
             esg_labels_added += 1
+            classify_ESG_logger.info(f"ESG3 classification completed for document {_id}. Label: {overall_esg_label}")
 
         print(f"ESG3 Classification complete. {esg_labels_added} labels added to the collection.")
         classify_ESG_logger.info(f'=== Script execution END (ESG3 Classification) at: {datetime.now()} with {esg_labels_added} labels added to the collection ===')
 
     except Exception as e:
         classify_ESG_logger.error(f"Error during ESG3 classification: {str(e)}")
+
     return esg_labels_added
 
+def classify_ESG9():
+    try:
+        classify_ESG9_logger.info(f'=== Script execution START (ESG9 Classification) at: {datetime.now()} ===')
+        
+        # Load FinBERT-ESG model and tokenizer
+        finbert_esg = BertForSequenceClassification.from_pretrained('yiyanghkust/finbert-esg-9-categories', num_labels=9)
+        tokenizer_esg = BertTokenizer.from_pretrained('yiyanghkust/finbert-esg-9-categories')
+        nlp_esg = pipeline("text-classification", model=finbert_esg, tokenizer=tokenizer_esg)
+
+        # Connect to MongoDB
+        collection = connect_to_mongo_atlas()
+        cursor = collection.find()
+
+        esg_labels_added = 0  # Initialize count
+
+        total_documents = collection.count_documents({})  # Use count_documents method on the collection
+
+        # Use tqdm to create a progress bar
+        for document in tqdm(cursor, desc="Processing Articles", total=total_documents):
+            _id = document["_id"]
+            translated_summary = document.get("Translated Summary", "")
+            esg_field = document.get("ESG", "")
+
+            # Check if the article is already marked as "Not ESG Related" in the ESG field
+            if "Not ESG Related" in esg_field:
+                continue
+
+            # Check if summary exceeds token limit
+            max_token_limit = finbert_esg.config.max_position_embeddings
+            tokens = tokenizer_esg.encode(translated_summary, max_length=max_token_limit-2, truncation=True)
+
+            # Perform FinBERT-ESG classification on the translated summary
+            esg_results = nlp_esg([tokenizer_esg.decode(tokens)])
+
+            # Extract ESG label and score
+            esg_label = esg_results[0].get('label', 'Not ESG Related')  # Replace 'None' with 'Not ESG Related'
+            esg_score = esg_results[0].get('score', 0.0)
+
+            # Skip if the article is "Not ESG Related"
+            if esg_label == "Not ESG Related":
+                continue
+
+            # Update the existing ESG9 field in the MongoDB document with the new ESG label and score
+            collection.update_one(
+                {"_id": _id},
+                {"$set": {"ESG9": {"Label": esg_label, "Score": esg_score}}}
+            )
+
+            classify_ESG9_logger.info(f"FinBERT-ESG9 classification completed for document {_id}. Label: {esg_label}, Score: {esg_score}")
+
+            esg_labels_added += 1
+
+        print(f"ESG9 Classification complete. {esg_labels_added} labels added to the collection.")
+        classify_ESG9_logger.info(f'=== Script execution END (ESG9 Classification) at: {datetime.now()} with {esg_labels_added} labels added to the collection ===')
+
+    except Exception as e:
+        classify_ESG9_logger.error(f"Error during ESG9 classification: {str(e)}")
+    
+    return esg_labels_added
 
 def classify_FLS():
     classify_FLS_logger.info(f'=== Script execution START (FLS Classification) at: {datetime.now()} ===')
@@ -164,8 +233,12 @@ def classify_FLS():
             _id = document["_id"]
             translated_summary = document.get("Translated Summary", "")
 
+            # Check if summary exceeds token limit
+            max_token_limit = finbert_fls.config.max_position_embeddings
+            tokens = tokenizer_fls.encode(translated_summary, max_length=max_token_limit-2, truncation=True)
+
             # Perform FinBERT-FLS classification on the translated summary
-            fls_results = nlp_fls([translated_summary])
+            fls_results = nlp_fls([tokenizer_fls.decode(tokens)])
 
             # Extract FinBERT-FLS label and score
             fls_label = fls_results[0].get('label', 'Not-FLS')  # Replace 'None' with 'Not-FLS'
@@ -174,10 +247,10 @@ def classify_FLS():
             # Replace "None" with "Not FLS Related"
             fls_label = fls_label if fls_label != "None" else "Not FLS Related"
 
-            # Update the existing TAGS field in the MongoDB document with the new FinBERT-FLS label and score
+            # Update the existing FLS field in the MongoDB document with the new FinBERT-FLS label and score
             collection.update_one(
                 {"_id": _id},
-                {"$addToSet": {"TAGS": {"FLS Label": fls_label, "FLS Score": fls_score}}}
+                {"$set": {"FLS": {"Label": fls_label, "Score": fls_score}}}
             )
 
             classify_FLS_logger.info(f"FinBERT-FLS classification completed for document {_id}. Label: {fls_label}, Score: {fls_score}")
@@ -192,69 +265,6 @@ def classify_FLS():
     return fls_labels_added
 
 
-def classify_ESG9():
-    try:
-        classify_ESG9_logger.info(f'=== Script execution START (ESG9 Classification) at: {datetime.now()} ===')
-        # Load FinBERT-ESG model and tokenizer
-        finbert_esg = BertForSequenceClassification.from_pretrained('yiyanghkust/finbert-esg-9-categories', num_labels=9)
-        tokenizer_esg = BertTokenizer.from_pretrained('yiyanghkust/finbert-esg-9-categories')
-        nlp_esg = pipeline("text-classification", model=finbert_esg, tokenizer=tokenizer_esg)
-
-        # Define the ESG label mapping
-        ESG_LABEL_MAPPING = {
-            0: "Climate Change",
-            1: "Human Rights",
-            2: "Labor Issues",
-            3: "Product Responsibility",
-            4: "Public Policy",
-            5: "Shareholders and Governance",
-            6: "Social Opportunities",
-            7: "Water Management",
-            8: "Not ESG Related"
-        }
-
-        # Connect to MongoDB
-        collection = connect_to_mongo_atlas()
-        cursor = collection.find()
-
-        esg_labels_added = 0  # Initialize count
-
-        total_documents = collection.count_documents({})  # Use count_documents method on the collection
-
-        # Use tqdm to create a progress bar
-        for document in tqdm(cursor, desc="Processing Articles", total=total_documents):
-            _id = document["_id"]
-            translated_summary = document.get("Translated Summary", "")
-
-            # Perform FinBERT-ESG classification on the translated summary
-            esg_results = nlp_esg([translated_summary])
-
-            # Extract ESG label and score
-            esg_label = esg_results[0].get('label', 'Not ESG Related')  # Replace 'None' with 'Not ESG Related'
-            esg_score = esg_results[0].get('score', 0.0)
-
-            # Skip if the article is "Not ESG Related"
-            if esg_label == "Not ESG Related":
-                continue
-
-            # Update the existing TAGS field in the MongoDB document with the new ESG label and score
-            collection.update_one(
-                {"_id": _id},
-                {"$addToSet": {"TAGS": {"ESG Label": esg_label, "ESG Score": esg_score}}}
-            )
-
-            classify_ESG9_logger.info(f"FinBERT-ESG9 classification completed for document {_id}. Label: {esg_label}, Score: {esg_score}")
-
-            esg_labels_added += 1
-
-        print(f"ESG9 Classification complete. {esg_labels_added} labels added to the collection.")
-        classify_ESG9_logger.info(f'=== Script execution END (ESG9 Classification) at: {datetime.now()} with {esg_labels_added} labels added to the collection ===')
-
-    except Exception as e:
-        classify_ESG9_logger.error(f"Error during ESG9 classification: {str(e)}")
-    return esg_labels_added
-
-
 def classify_NER():
     classify_NER_logger.info(f'=== Script execution START (NER Classification) at: {datetime.now()} ===')
 
@@ -267,6 +277,7 @@ def classify_NER():
         cursor = collection.find()
 
         ner_entities_added = 0  # Initialize count
+        global_entities = set()  # Initialize global set of entities
 
         total_documents = collection.count_documents({})  # Use count_documents method on the collection
 
@@ -282,16 +293,22 @@ def classify_NER():
             tagger.predict(sentence)
 
             # Extract recognized entities
-            entities = [entity.tag for entity in sentence.get_spans('ner')]
+            entities = [(entity.tag, entity.text) for entity in sentence.get_spans('ner')]
 
             # Filter entities to include only ORG and GPE
-            filtered_entities = [entity for entity in entities if entity in ["ORG", "GPE"]]
+            filtered_entities = [(entity_tag, entity_text) for entity_tag, entity_text in entities if entity_tag in ["ORG", "GPE"]]
+
+            # Convert list of tuples to set to remove duplicates, then convert back to list
+            filtered_entities = list(set(filtered_entities))
 
             # Update the MongoDB document, overwriting the existing "Entities" field
             collection.update_one(
                 {"_id": _id},
-                {"$set": {"Entities": filtered_entities}}
+                {"$set": {"Entities": [entity_text for entity_tag, entity_text in filtered_entities if (entity_tag, entity_text) not in global_entities]}}
             )
+
+            # Update the global set of entities
+            global_entities.update(filtered_entities)
 
             classify_NER_logger.info(f"NER classification completed for document {_id}. Entities added: {filtered_entities}")
 
