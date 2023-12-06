@@ -1,7 +1,7 @@
 # Business Intelligence and Deep Learning Project
 
 ## Project Overview
-This project merges Business Intelligence (BI) and Deep Learning to scrap and classify news data into "Fake" and "Real" categories. The project is divided into phases for efficient development and execution.
+This project merges BI and Deep Learning to extract insights from financial news articles. The project is divided into phases for efficient development and execution.
 
 
 # Progress Checklist:
