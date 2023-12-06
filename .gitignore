@@ -3,23 +3,10 @@ __pycache__/
 *.pyc
 
 # Logs
-logs/
+logs/airflow logs
 
 # Data
 data/
-
-# Exclude specific files in data/bert
-!data/bert/c1_fakenews_weights.pt
-!data/bert/c2_new_model_weights.pt
-!data/bert/a1_True.csv
-!data/bert/a2_Fake.csv
-!data/bert/WELFake_Dataset.csv
-!data/bert/sample.csv
-!data/bert/translated_titles.csv
-!data/bert/Fine-Tuning_Dataset.csv
-!data/bert/translated_titles_continued.csv
-!data/bert/c3_new_model_weights.pt
-!data/bert/c3_new_model_weights.pt-20231203T183113Z-001.zip
 
 # VS Code
 .vscode/
@@ -31,7 +18,8 @@ src/
 !src/lang_dict.py
 
 # Dags
-dags/
+dags/test_scraping.py
+dags/scrap_dag.py
 
 # MongoDB
 mongodb-database-tools-ubuntu2204-x86_64-100.9.3.deb
