@@ -13,12 +13,12 @@ This project merges Business Intelligence (BI) and Deep Learning to scrap and cl
 
 ### II) Scraping Script
 #### Data Scraping
-- Error logging (Work in progress) 🔨
+- Error logging (Done) ✔
 - Custom headers (Done) ✔
 - User-agent spoofing (Done) ✔
 - Request throttling (Done) ✔
 - Tor proxy integration (Abandoned due to client request) ✘
-- Multi-threading (Work in progress) 🔨
+- Asynchronous Scraping (Done) ✔
 - Automation with Airflow (Work in progress) 🔨
 
 #### Data Storage and Management in MongoDB
@@ -26,16 +26,25 @@ This project merges Business Intelligence (BI) and Deep Learning to scrap and cl
 - Duplicate Checking (Done) ✔
 - Data Query (Done) ✔
 - Data Purging (Done) ✔
+- Data Back-up Automation (Work in progress) 🔨
 
 ### III) Data Classification (Fake/Real)
+- Data Preprocessing (Done) ✔
+- Model Fine-Tuning (Done) ✔
 - Model Development (Done) ✔
 - Model Evaluation (Done) ✔
 - Integration (Done) ✔
 
-### IV) Data Visualization with Django
+### IV) Opportunity & Threats Analysis
+- Sentiment Analysis (Done) ✔
+- ESG Analysis (Done) ✔
+- Named Entity Recognition (Done) ✔
+- Clustering (To Do) ✘
+- Data Mining ((To Do) ✘
+
+### V) Data Visualization with Django
 - Django Web Application (To Do) ✘
 - User-friendly Dashboards (To Do) ✘
-- User Authentication (To Do) ✘
 - Data Access Control (To Do) ✘
 - Deployment (To Do) ✘
 
@@ -46,6 +55,6 @@ To manage data in MongoDB using the provided script, you can use the following c
   `python script.py --scrap EN auto`
 - `--query`: Use this argument to query the MongoDB collection and retrieve stored data.
 - `--purge`: Clear (purge) the MongoDB collection and remove all data by using this argument.
-- `--classify`: Classify the news articles in MongoDB and add a label (Real news/Fake news) to each one.
+- `--classify`: Classify the news articles in MongoDB. Use the following sub args (R/F, SA, ESG, ESG9, NER).
 
 
