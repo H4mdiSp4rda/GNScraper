@@ -19,7 +19,7 @@ src/
 
 # Dags
 dags/test_scraping.py
-dags\test_dag.py
+dags/test_dag.py
 # MongoDB
 mongodb-database-tools-ubuntu2204-x86_64-100.9.3.deb
 
