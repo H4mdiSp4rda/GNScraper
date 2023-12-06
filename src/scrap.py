@@ -22,9 +22,9 @@ from utils import setup_logging
 
 
 # Create different loggers for different functions
-translate_logger = setup_logging("TranslateLogger", "logs/scrap.log")
-extract_link_logger = setup_logging("ExtractLinkLogger", "logs/scrap.log")
-scrap_articles_logger = setup_logging("ScrapArticlesLogger", "logs/scrap.log")
+translate_logger = setup_logging("TranslateLogger", "logs/Scrap.log")
+extract_link_logger = setup_logging("ExtractLinkLogger", "logs/Scrap.log")
+scrap_articles_logger = setup_logging("ScrapArticlesLogger", "logs/Scrap.log")
 
 
 
