@@ -40,7 +40,8 @@ This project merges BI and Deep Learning to extract insights from financial news
 - ESG Analysis (Done) ✔
 - Named Entity Recognition (Done) ✔
 - Clustering (To Do) ✘
-- Data Mining ((To Do) ✘
+- Data Mining (To Do) ✘
+- FinGPT Integration (To Do) ✘
 
 ### V) Data Visualization with Django
 - Django Web Application (To Do) ✘
