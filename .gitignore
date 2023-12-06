@@ -25,4 +25,5 @@ NER.py
 dags/__pycache__/
 dags/__pycache__/scrapping_dag.cpython-38.pyc
 src/lang_dict.py
-/temp/
+src/temp/*
+src/__pycache__/
