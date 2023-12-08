@@ -38,6 +38,7 @@ This project merges BI and Deep Learning to extract insights from financial news
 ### IV) Opportunity & Threats Analysis
 - Sentiment Analysis (Done) ✔
 - ESG Analysis (Done) ✔
+- Forward Looking Statements Analysis (Done) ✔
 - Named Entity Recognition (Done) ✔
 - Clustering (To Do) ✘
 - Data Mining (To Do) ✘
@@ -56,6 +57,6 @@ To manage data in MongoDB using the provided script, you can use the following c
   `python script.py --scrap EN auto`
 - `--query`: Use this argument to query the MongoDB collection and retrieve stored data.
 - `--purge`: Clear (purge) the MongoDB collection and remove all data by using this argument.
-- `--classify`: Classify the news articles in MongoDB. Use the following sub args (R/F, SA, ESG, ESG9, NER).
+- `--classify`: Classify the news articles in MongoDB. Use the following sub args (R/F, SA, ESG, ESG9, FLS, NER).
 
 
