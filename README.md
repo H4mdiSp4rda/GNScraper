@@ -38,6 +38,7 @@ This project merges BI and Deep Learning to extract insights from financial news
 ### IV) Opportunity & Threats Analysis
 - Sentiment Analysis (Done) ✔
 - ESG Analysis (Done) ✔
+- Forward Looking Statements Analysis (Done) ✔
 - Named Entity Recognition (Done) ✔
 - Clustering (To Do) ✘
 - Data Mining (To Do) ✘
