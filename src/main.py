@@ -15,7 +15,7 @@ from utils import setup_logging
 from datetime import datetime
 
 # Create a logger for main function
-main_logger = setup_logging("MainLogger", "logs/scrap.log")
+main_logger = setup_logging("MainLogger", "Scrap")
 
 
 # Define the main function
@@ -56,16 +56,16 @@ def main():
 
     if args.classify:
         classification_type = args.classify
-        if classification_type in ["R/F", "ESG", "SA", "FLS", "ESG9", "NER"]:  # Add "FLS" to the list of valid classifications
+        if classification_type in ["R/F", "ESG", "SA", "FLS", "ESG9", "NER"]:  
             if classification_type == "R/F":
                 classify_RF()
             elif classification_type == "ESG":
                 classify_ESG()
             elif classification_type == "SA":
                 classify_SA()
-            elif classification_type == "FLS":  # Add this section for FinBERT-FLS classification
+            elif classification_type == "FLS":  
                 classify_FLS()
-            elif classification_type == "ESG9":  # Add this section for ESG classification and adding tags
+            elif classification_type == "ESG9":  
                 classify_ESG9()
             elif classification_type == "NER":
                 classify_NER()
@@ -77,7 +77,7 @@ def main():
     if args.scrap:
         main_logger.info(f'=== Script execution START (Scraping) at: {datetime.now()} ===')
         language, insert_method = args.scrap
-        language = language.lower()  # Convert the language to lowercase for the scrap_articles function
+        language = language.lower() 
         if insert_method not in ["auto", "manual"]:
             print("Error: The insert_method must be 'auto' or 'manual'.")
             sys.exit(1)
