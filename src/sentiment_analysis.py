@@ -11,18 +11,18 @@ from utils import setup_logging
 from datetime import datetime
 
 # Set up logging for sentiment analysis
-analyze_sentiment_logger = setup_logging("AnalyzeSentimentLogger", "logs/SA.log")
+analyze_sentiment_logger = setup_logging("AnalyzeSentimentLogger", "SA")
 
 # Create a logger for classify_SA function
-classify_SA_logger = setup_logging("ClassifySALogger", "logs/SA.log")
+classify_SA_logger = setup_logging("ClassifySALogger", "SA")
 
-classify_ESG_logger = setup_logging("ClassifyESGLogger", "logs/ESG.log")
+classify_ESG_logger = setup_logging("ClassifyESGLogger", "ESG")
 # Create a logger for classify_FLS function
-classify_FLS_logger = setup_logging("ClassifyFLSLogger", "logs/FLS.log")
+classify_FLS_logger = setup_logging("ClassifyFLSLogger", "FLS")
 # Create a logger for classify_ESG9 function
-classify_ESG9_logger = setup_logging("ClassifyESG9Logger", "logs/ESG9.log")
+classify_ESG9_logger = setup_logging("ClassifyESG9Logger", "ESG9")
 
-classify_NER_logger = setup_logging("NERLogger", "logs/NER.log")
+classify_NER_logger = setup_logging("NERLogger", "NER")
 
 
 # Map numeric labels to English language representations
@@ -277,6 +277,8 @@ def classify_NER():
         cursor = collection.find()
 
         ner_entities_added = 0  # Initialize count
+        documents_updated = 0
+
         global_entities = set()  # Initialize global set of entities
 
         total_documents = collection.count_documents({})  # Use count_documents method on the collection
@@ -298,24 +300,36 @@ def classify_NER():
             # Filter entities to include only ORG and GPE
             filtered_entities = [(entity_tag, entity_text) for entity_tag, entity_text in entities if entity_tag in ["ORG", "GPE"]]
 
-            # Convert list of tuples to set to remove duplicates, then convert back to list
-            filtered_entities = list(set(filtered_entities))
+            # Convert list of tuples to a set to remove duplicates
+            unique_entities = set(filtered_entities)
 
-            # Update the MongoDB document, overwriting the existing "Entities" field
-            collection.update_one(
-                {"_id": _id},
-                {"$set": {"Entities": [entity_text for entity_tag, entity_text in filtered_entities if (entity_tag, entity_text) not in global_entities]}}
-            )
+            # Check if there are no ORG or GPE entities
+            if not unique_entities:
+                # Update MongoDB document with "None detected"
+                collection.update_one(
+                    {"_id": _id},
+                    {"$set": {"Entities": "None detected"}}
+                )
+                classify_NER_logger.info(f"No ORG or GPE entities detected for document {_id}. Updated with 'None detected'.")
+            else:
+                # Convert the set back to a list
+                entities_to_add = [entity_text for _, entity_text in unique_entities]
 
-            # Update the global set of entities
-            global_entities.update(filtered_entities)
+                # Update the MongoDB document with unique detected entities
+                collection.update_one(
+                    {"_id": _id},
+                    {"$set": {"Entities": entities_to_add}}
+                )
 
-            classify_NER_logger.info(f"NER classification completed for document {_id}. Entities added: {filtered_entities}")
+                classify_NER_logger.info(f"NER classification completed for document {_id}. Unique entities added: {entities_to_add}")
 
-            ner_entities_added += len(filtered_entities)
+                ner_entities_added += len(filtered_entities)
+                # Increment the documents updated counter
+                documents_updated += 1
 
-        print(f"NER Classification complete. {ner_entities_added} entities added to the collection.")
-        classify_NER_logger.info(f'=== Script execution END (NER Classification) at: {datetime.now()} with {ner_entities_added} entities added to the collection ===')
+
+        print(f"NER Classification complete.{documents_updated} documents updated in the collection. {ner_entities_added} entities added to the collection.")
+        classify_NER_logger.info(f'=== Script execution END (NER Classification) at: {datetime.now()} with {documents_updated} documents updated in the collection and a total of {ner_entities_added} entities added to the collection ===')
 
     except Exception as e:
         classify_NER_logger.error(f"Error during NER classification: {str(e)}")
