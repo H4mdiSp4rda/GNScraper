@@ -29,14 +29,12 @@ scrap_articles_logger = setup_logging("ScrapArticlesLogger", "logs/Scrap.log")
 
 
 # Constants
-NUM_ARTICLES_TO_SCRAP = 10
+NUM_ARTICLES_TO_SCRAP = 5
 max_retries = 3
-retry_delay = 5
 user_agent = UserAgent()
 
 # Define the LANGUAGE_CONFIG dictionary
-
-
+# LANGUAGE_CONFIG is on gitignore due to confidentiality reasons
 
 
 
@@ -85,6 +83,7 @@ def extract_link(url):
 # Define the scrap_articles function
 def scrap_articles(language_code, search_query, insert_method, country, debug_mode=False):
     try:
+        # Assuming LANGUAGE_CONFIG and other necessary configurations are defined
         language_info = LANGUAGE_CONFIG.get(language_code)
         if language_info:
             gn = GoogleNews(lang=language_info['language'], country=country)
@@ -97,30 +96,27 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
 
             for entry in tqdm(search_results['entries'][:NUM_ARTICLES_TO_SCRAP], desc=f"Scraping {country_code} ({search_query.split()[0]})", mininterval=1.0):
                 if debug_mode:
-                    # Print the country, language, and search term being scraped
                     print(f"Scraping: Country - {country}, Language - {language_code}, Search Term - {search_query.split()[0]}")
 
                 article_link = extract_link(entry['link'])
                 published_time = entry['published']
 
-                # Use connect_to_mongodb to create the collection
                 collection = connect_to_mongo_atlas()
 
-                # Check if the article is a duplicate
                 if is_duplicate(collection, article_link, published_time):
                     scrap_articles_logger.info(f"Skipping duplicate article: {article_link}")
-                    continue  # Move to the next article
+                    continue
 
                 for retry_count in range(max_retries):
                     try:
+                        retry_delay = random.uniform(1, 6)
                         headers = {
-                            'User-Agent': user_agent.random,  # Set the User-Agent header
+                            'User-Agent': user_agent.random,
                             'Referer': 'https://www.google.com/',
-                            # Add other headers if needed
                         }
                         config = Config()
                         config.headers = headers
-                        config.request_timeout = 6
+                        config.request_timeout = retry_delay
 
                         article = Article(article_link, config=config)
                         article.download()
@@ -142,22 +138,22 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
                                 "Language": language_code,
                                 "Country": country
                             })
-                            break  # Successful request, exit the retry loop
-                        else:
-                            scrap_articles_logger.warning(f"Failed to parse the article '{article_link}'.")
+                            break
+
                     except requests.exceptions.HTTPError as e:
                         scrap_articles_logger.error(f"HTTPError ({e.response.status_code} {e.response.reason}): {e}")
+                        if e.response.status_code == 403:
+                            time.sleep(retry_delay)
                     except ConnectionError as e:
                         scrap_articles_logger.error(f"ConnectionError: {e}")
-                        if retry_count < max_retries - 1:
-                            scrap_articles_logger.info(f"Retrying the request in {retry_delay} seconds...")
-                            time.sleep(retry_delay)
-                        else:
-                            scrap_articles_logger.error("Max retries reached. Skipping the article.")
-                            break  # Max retries reached, exit the retry loop
                     except Exception as e:
                         scrap_articles_logger.error(f"An error occurred while processing '{article_link}': {e}")
-                time.sleep(random.uniform(1, 6))
+
+                    if retry_count < max_retries - 1:
+                        scrap_articles_logger.info(f"Retrying the request in {retry_delay} seconds...")
+                        time.sleep(retry_delay)
+
+                time.sleep(retry_delay)
 
             if insert_method == "auto":
                 insert_data_into_mongodb(data, country)
