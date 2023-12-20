@@ -22,9 +22,9 @@ from utils import setup_logging
 
 
 # Create different loggers for different functions
-translate_logger = setup_logging("TranslateLogger", "logs/Scrap.log")
-extract_link_logger = setup_logging("ExtractLinkLogger", "logs/Scrap.log")
-scrap_articles_logger = setup_logging("ScrapArticlesLogger", "logs/Scrap.log")
+translate_logger = setup_logging("TranslateLogger", "Scrap")
+extract_link_logger = setup_logging("ExtractLinkLogger", "Scrap")
+scrap_articles_logger = setup_logging("ScrapArticlesLogger", "Scrap")
 
 
 
@@ -83,7 +83,11 @@ def extract_link(url):
 # Define the scrap_articles function
 def scrap_articles(language_code, search_query, insert_method, country, debug_mode=False):
     try:
-        # Assuming LANGUAGE_CONFIG and other necessary configurations are defined
+        # Initialize counters
+        successful_scrapes = 0
+        total_retries = 0
+        total_failures = 0
+
         language_info = LANGUAGE_CONFIG.get(language_code)
         if language_info:
             gn = GoogleNews(lang=language_info['language'], country=country)
@@ -91,12 +95,11 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
             search_results = gn.search(search_query)
             data = []
 
-            # Extract the country code from the country variable
             country_code = country.split()[0]
-
-            for entry in tqdm(search_results['entries'][:NUM_ARTICLES_TO_SCRAP], desc=f"Scraping {country_code} ({search_query.split()[0]})", mininterval=1.0):
+            first_search_term = search_query.split("OR")[0].strip()
+            for entry in tqdm(search_results['entries'][:NUM_ARTICLES_TO_SCRAP], desc=f"Scraping {country_code} ({first_search_term})", mininterval=1.0):
                 if debug_mode:
-                    print(f"Scraping: Country - {country}, Language - {language_code}, Search Term - {search_query.split()[0]}")
+                    print(f"Scraping: Country - {country}, Language - {language_code}, Search Term - {first_search_term}")
 
                 article_link = extract_link(entry['link'])
                 published_time = entry['published']
@@ -107,13 +110,12 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
                     scrap_articles_logger.info(f"Skipping duplicate article: {article_link}")
                     continue
 
+                retries = 0
+                last_exception_message = None
                 for retry_count in range(max_retries):
                     try:
                         retry_delay = random.uniform(1, 6)
-                        headers = {
-                            'User-Agent': user_agent.random,
-                            'Referer': 'https://www.google.com/',
-                        }
+                        headers = {'User-Agent': user_agent.random, 'Referer': 'https://www.google.com/'}
                         config = Config()
                         config.headers = headers
                         config.request_timeout = retry_delay
@@ -138,20 +140,23 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
                                 "Language": language_code,
                                 "Country": country
                             })
+                            successful_scrapes += 1
                             break
 
-                    except requests.exceptions.HTTPError as e:
-                        scrap_articles_logger.error(f"HTTPError ({e.response.status_code} {e.response.reason}): {e}")
-                        if e.response.status_code == 403:
-                            time.sleep(retry_delay)
-                    except ConnectionError as e:
-                        scrap_articles_logger.error(f"ConnectionError: {e}")
                     except Exception as e:
-                        scrap_articles_logger.error(f"An error occurred while processing '{article_link}': {e}")
+                        retries += 1
+                        last_exception_message = str(e)
+                        if retry_count < max_retries - 1:
+                            time.sleep(retry_delay)
 
-                    if retry_count < max_retries - 1:
-                        scrap_articles_logger.info(f"Retrying the request in {retry_delay} seconds...")
-                        time.sleep(retry_delay)
+                total_retries += retries
+                if retries == max_retries:
+                    failure_message = f"FAIL after {max_retries} retries. Last error: {last_exception_message}"
+                    scrap_articles_logger.error(failure_message)
+                    total_failures += 1
+                elif retries > 0:
+                    success_message = f"SUCCESS after {retries} retries. Last error: {last_exception_message}"
+                    scrap_articles_logger.info(success_message)
 
                 time.sleep(retry_delay)
 
@@ -161,6 +166,9 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
                 insert_option = input("Do you want to store the scraped data in the database? (yes/no): ").strip().lower()
                 if insert_option == "yes":
                     insert_data_into_mongodb(data, country)
+
+            # Log summary at the end
+            scrap_articles_logger.info(f"Scraping Summary for {country} - '{first_search_term}': Successful Iterations - {successful_scrapes}, Total Retries - {total_retries}, Total Failures - {total_failures}")
 
     except Exception as e:
         scrap_articles_logger.error(f"An error occurred during scraping for {country}: {e}", exc_info=True)
