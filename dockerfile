@@ -2,7 +2,7 @@
 FROM python:3.10.13-slim
 
 
-# Set environment variables (you can customize these)
+# Set environment variables 
 #ENV APP_HOME /app
 #ENV PYTHONUNBUFFERED 1
 
@@ -10,18 +10,14 @@ FROM python:3.10.13-slim
 #RUN mkdir $APP_HOME
 WORKDIR /gns_code
 
-# Install system dependencies (if needed)
-# RUN apt-get update && apt-get install -y <your-dependencies>
-
+# Install system dependencies 
 RUN pip install setuptools==58
 
 
 
-# Install Python dependencies
+# Install project dependencies
 COPY ./requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
-
-
 RUN pip install --upgrade feedparser
 
 
