@@ -1,34 +1,28 @@
+from datetime import datetime, timedelta
 from airflow import DAG
-from airflow.operators.python_operator import PythonOperator
-from datetime import datetime
+from airflow.operators.bash_operator import BashOperator
 
-start_date = datetime(2023, 10, 15, 21, 40, 0)  # Year, Month, Day, Hour, Minute, Second
-
-# Other default arguments for your DAG
+# DAG configuration
 default_args = {
-    'owner': 'Sparda',
-    'start_date': start_date,  # Set the exact start date here
+    'owner': 'airflow',
+    'depends_on_past': False,
+    'start_date': datetime(2023, 12, 31),
+    'email_on_failure': False,
+    'email_on_retry': False,
     'retries': 1,
+    'retry_delay': timedelta(minutes=5),
 }
 
-dag = DAG(
-    'OLD_SCRAPING_DAG',
-    default_args=default_args,
-    schedule_interval="@daily",  # Set this to None to disable automatic scheduling
-    catchup=False,
-)
+# Define the DAG
+dag = DAG('scrape_news_dag',
+          default_args=default_args,
+          description='A simple DAG to scrape news data',
+          schedule_interval=timedelta(days=1))
 
-def run_scraping_script():
-    import subprocess
-    language = "FR"  # Set the language to French
-    insert_method = "auto"  # Set the insertion method to auto
-    # Execute your script with the provided arguments
-    script_location = '/src/main.py'
-    command = ['python', script_location, '--scrap', language, insert_method]
-    subprocess.run(command, check=True)
+# Define the task
+scrape_task = BashOperator(
+    task_id='scrape_news',
+    bash_command='docker exec 24d0956eb1d4853d64691beceb0bd948f1f7ca2622040b60aa11f3d5f430b5c8 python /gns_code/src/scrap.py --scrap FR auto',
+    dag=dag)
 
-scraping_task = PythonOperator(
-    task_id='NSCRAPING_TASK',
-    python_callable=run_scraping_script,
-    dag=dag,
-)
+scrape_task
