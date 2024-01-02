@@ -22,8 +22,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install --upgrade feedparser
 RUN pip install --upgrade requests
 RUN pip install --upgrade translators
-COPY ./utils/setup_nltk.py ./
-RUN ./utils/setup_nltk.py
+COPY ./utils/setup_nltk.py ./utils/
+RUN python ./utils/setup_nltk.py
 
 
 # Copy your scraping script and other project files into the container
