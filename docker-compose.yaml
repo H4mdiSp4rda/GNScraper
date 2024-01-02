@@ -50,7 +50,7 @@ x-airflow-common:
   # In order to add custom dependencies or upgrade provider packages you can use your extended image.
   # Comment the image line, place your Dockerfile in the directory where you placed the docker-compose.yaml
   # and uncomment the "build" line below, Then run `docker-compose build` to build the images.
-  image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:2.7.3}
+  image: ${AIRFLOW_IMAGE_NAME:-gns-airflow:v1}
   # build: .
   environment:
     &airflow-common-env
@@ -72,13 +72,21 @@ x-airflow-common:
     # WARNING: Use _PIP_ADDITIONAL_REQUIREMENTS option ONLY for a quick checks
     # for other purpose (development, test and especially production usage) build/extend Airflow image.
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
+
   volumes:
-    - ${AIRFLOW_PROJ_DIR:-.}/src:/opt/airflow/src
+    - ${AIRFLOW_PROJ_DIR:-.}/src:/gns_code/src
+    - ${AIRFLOW_PROJ_DIR:-.}/data/bert:/gns_code/data/bert
+    - ${AIRFLOW_PROJ_DIR:-.}/utils:/gns_code/utils
+    - ${AIRFLOW_PROJ_DIR:-.}/logs/GNS_logs:/gns_code/logs/GNS_logs
+    - ${AIRFLOW_PROJ_DIR:-.}/README.md:/gns_code/README.md
+    - ${AIRFLOW_PROJ_DIR:-.}/docker-compose.yaml:/gns_code/docker-compose.yaml
+    - ${AIRFLOW_PROJ_DIR:-.}/dockerfile:/gns_code/dockerfile
     - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags
     - ${AIRFLOW_PROJ_DIR:-.}/logs/airflow logs:/opt/airflow/logs
     - ${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config
     - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
-  user: "${AIRFLOW_UID:-50000}"
+
+  user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
     redis:
