@@ -1,0 +1,339 @@
+2024-01-02 03:53:49,930 - INFO - === Script execution START (Scraping) at: 2024-01-02 03:53:49.930382 ===
+2024-01-02 03:53:52,927 - INFO - Skipping duplicate article: https://www.humanite.fr/social-et-economie/evasion-fiscale/evasion-fiscale-cumcum-la-combine-bancaire-qui-coute-des-milliards-a-letat-francais-788566
+2024-01-02 03:53:54,488 - INFO - Skipping duplicate article: https://www.lemonde.fr/les-decodeurs/article/2023/03/28/la-societe-generale-bnp-paribas-exane-natixis-et-hsbc-visees-par-des-perquisitions-dans-un-scandale-de-fraude-fiscale-hors-norme_6167273_4355770.html
+2024-01-02 03:53:56,069 - INFO - Skipping duplicate article: https://www.novethic.fr/actualite/gouvernance-dentreprise/entreprises-controversees/isr-rse/credit-suisse-une-longue-histoire-de-controverses-151426.html
+2024-01-02 03:53:57,651 - INFO - Skipping duplicate article: https://www.centrepresseaveyron.fr/2023/03/29/scandale-de-fraude-fiscale-geante-ce-que-lon-sait-des-cinq-grandes-banques-perquisitionnees-en-france-11096000.php
+2024-01-02 03:53:59,176 - INFO - Skipping duplicate article: https://www.latribune.fr/entreprises-finance/banques-finance/banque/credit-suisse-la-banque-centrale-suisse-veut-tirer-les-lecons-du-scandale-967065.html
+2024-01-02 03:53:59,238 - INFO - Scraping Summary for FR - 'scandale financier': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 03:54:07,587 - ERROR - FAIL after 3 retries. Last error: Article `download()` failed with 403 Client Error: Forbidden for url: https://fr.timesofisrael.com/une-firme-de-recyclage-soupconnee-de-fraude-fait-lobjet-dun-raid-a-herzliya/ on URL https://fr.timesofisrael.com/une-firme-de-recyclage-soupconnee-de-fraude-fait-lobjet-dun-raid-a-herzliya/
+2024-01-02 03:54:20,429 - ERROR - FAIL after 3 retries. Last error: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.economie.gouv.fr/nouveaux-moyens-lutter-contre-fraude-renovation-energetique-2024 on URL https://www.economie.gouv.fr/nouveaux-moyens-lutter-contre-fraude-renovation-energetique-2024
+2024-01-02 03:54:23,263 - INFO - Skipping duplicate article: https://www.optionfinance.fr/entreprise-finance/fraude-pas-de-repit-pour-les-entreprises.html
+2024-01-02 03:54:24,847 - INFO - Skipping duplicate article: https://gazette-du-midi.fr/edito/opinions/actions-a-mettre-en-place-pour-chaque-risque-de-fraude
+2024-01-02 03:54:39,884 - INFO - Scraping Summary for FR - 'fraude financière': Successful Iterations - 1, Total Retries - 6, Total Failures - 2
+2024-01-02 03:54:42,460 - INFO - Skipping duplicate article: https://www.lemonde.fr/international/article/2023/12/30/au-japon-un-proces-ravive-les-critiques-d-un-systeme-judiciaire-aux-derives-recurrentes_6208401_3210.html
+2024-01-02 03:54:44,026 - INFO - Skipping duplicate article: https://www.usine-digitale.fr/article/google-conclut-un-accord-a-l-amiable-pour-eviter-un-proces-sur-le-mode-incognito-de-chrome.N2205636
+2024-01-02 03:54:45,582 - INFO - Skipping duplicate article: https://www.challenges.fr/entreprise/sante-et-pharmacie/proces-du-mediator-le-groupe-servier-condamne-plus-lourdement-en-appel_877992
+2024-01-02 03:54:47,141 - INFO - Skipping duplicate article: https://france3-regions.francetvinfo.fr/pays-de-la-loire/maine-et-loire/cholet/a-angers-le-proces-en-appel-devant-les-prud-hommes-d-un-patron-voyou-2894585.html
+2024-01-02 03:54:48,745 - INFO - Skipping duplicate article: https://entreprendre.service-public.fr/actualites/A16850
+2024-01-02 03:54:48,797 - INFO - Scraping Summary for FR - 'procès financier': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 03:54:51,517 - INFO - Skipping duplicate article: https://www.lefigaro.fr/lyon/au-tribunal-de-commerce-de-lyon-un-administrateur-judiciaire-soupconne-de-malversation-mis-en-examen-20231229
+2024-01-02 03:54:53,468 - INFO - Skipping duplicate article: https://www.lamontagne.fr/clermont-ferrand-63000/actualites/n-attendez-pas-la-cessation-de-paiement-pour-aller-au-tribunal-de-commerce-de-clermont-ferrand_14423415/
+2024-01-02 03:54:55,010 - INFO - Skipping duplicate article: https://www.capital.fr/entreprises-marches/habitat-baisse-le-rideau-le-tribunal-prononce-sa-liquidation-judiciaire-1489583
+2024-01-02 03:54:56,572 - INFO - Skipping duplicate article: https://france3-regions.francetvinfo.fr/auvergne-rhone-alpes/puy-de-dome/clermont-ferrand/affaires-des-saphirs-de-la-discorde-le-tribunal-de-clermont-ferrand-ordonne-une-expertise-2898029.html
+2024-01-02 03:54:58,192 - INFO - Skipping duplicate article: https://www.latribune.fr/entreprises-finance/industrie/agroalimentaire-biens-de-consommation-luxe/equipements-de-la-maison-l-ex-champion-des-meubles-habitat-sur-le-point-d-etre-liquide-986682.html
+2024-01-02 03:54:58,239 - INFO - Scraping Summary for FR - 'tribunal financier': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 03:55:08,596 - ERROR - FAIL after 3 retries. Last error: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.economie.gouv.fr/dgccrf/allegations-environnementales-ce-quil-faut-retenir on URL https://www.economie.gouv.fr/dgccrf/allegations-environnementales-ce-quil-faut-retenir
+2024-01-02 03:55:12,947 - INFO - Skipping duplicate article: https://www.novethic.fr/actualite/environnement/climat/isr-rse/easyjet-gucci-nestle-ces-entreprises-qui-abandonnent-la-compensation-carbone-pour-atteindre-la-neutralite-151620.html
+2024-01-02 03:55:14,448 - INFO - Skipping duplicate article: https://www.linfodurable.fr/politique/parlement-europeen-vote-linterdiction-des-allegations-environnementales-vagues-38363
+2024-01-02 03:55:15,989 - INFO - Skipping duplicate article: https://www.sudouest.fr/economie/cholesterol-a-aytre-le-laboratoire-lescuyer-en-pointe-avec-son-complement-alimentaire-limicol-16812916.php
+2024-01-02 03:55:17,483 - INFO - Skipping duplicate article: https://lareclame.fr/guide-allegations-environnementales-greenwashing-281325
+2024-01-02 03:55:17,532 - INFO - Scraping Summary for FR - 'allégation financière': Successful Iterations - 0, Total Retries - 3, Total Failures - 1
+2024-01-02 03:55:20,125 - INFO - Skipping duplicate article: https://www.lejdd.fr/societe/accusation-de-viol-sebastien-cauet-porte-plainte-pour-denonciation-calomnieuse-139952
+2024-01-02 03:55:21,709 - INFO - Skipping duplicate article: https://www.lemonde.fr/international/article/2023/08/15/donald-trump-inculpe-en-vertu-de-la-loi-antimafia_6185487_3210.html
+2024-01-02 03:55:23,287 - INFO - Skipping duplicate article: https://www.france24.com/fr/afrique/20230729-s%C3%A9n%C3%A9gal-le-procureur-d%C3%A9taille-les-chefs-d-accusation-retenus-contre-ousmane-sonko
+2024-01-02 03:55:24,820 - INFO - Skipping duplicate article: https://www.mediapart.fr/journal/international/160823/trump-ce-que-dit-le-nouvel-acte-d-accusation-contre-l-ex-president-americain
+2024-01-02 03:55:35,435 - ERROR - FAIL after 3 retries. Last error: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.ouest-france.fr/pays-de-la-loire/enquete-puy-du-fou-pour-combler-lappetit-foncier-du-parc-des-elus-locaux-donnent-carte-blanche-108938b0-4cc8-11ee-a89b-5321d3390afb on URL https://www.ouest-france.fr/pays-de-la-loire/enquete-puy-du-fou-pour-combler-lappetit-foncier-du-parc-des-elus-locaux-donnent-carte-blanche-108938b0-4cc8-11ee-a89b-5321d3390afb
+2024-01-02 03:55:38,085 - INFO - Scraping Summary for FR - 'accusation financière': Successful Iterations - 0, Total Retries - 3, Total Failures - 1
+2024-01-02 03:55:40,786 - INFO - Skipping duplicate article: https://www.francebleu.fr/infos/faits-divers-justice/indre-et-loire-une-enorme-amende-infligee-a-une-entreprise-de-veigne-pour-demarchage-illegal-7985700
+2024-01-02 03:56:10,255 - INFO - Scraping Summary for FR - 'amende financière': Successful Iterations - 4, Total Retries - 0, Total Failures - 0
+2024-01-02 03:56:31,772 - ERROR - FAIL after 3 retries. Last error: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.ouest-france.fr/societe/faits-divers/un-capitaine-de-police-soupconne-davoir-tente-dextorquer-300-000-euros-ecroue-pour-corruption-b918ba9a-a660-11ee-94f8-e053b15ab47c on URL https://www.ouest-france.fr/societe/faits-divers/un-capitaine-de-police-soupconne-davoir-tente-dextorquer-300-000-euros-ecroue-pour-corruption-b918ba9a-a660-11ee-94f8-e053b15ab47c
+2024-01-02 03:56:49,235 - INFO - Skipping duplicate article: https://www.lefigaro.fr/conjoncture/lutte-contre-la-corruption-le-gouvernement-prepare-de-nouvelles-mesures-pour-debut-2024-20231209
+2024-01-02 03:56:50,602 - INFO - Scraping Summary for FR - 'corruption financière': Successful Iterations - 3, Total Retries - 3, Total Failures - 1
+2024-01-02 03:57:13,067 - INFO - Skipping duplicate article: https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/rapport-activite-2022
+2024-01-02 03:57:14,642 - INFO - Skipping duplicate article: https://www.zdnet.fr/actualites/selon-ibm-le-cout-moyen-d-un-piratage-s-etablit-a-375-millions-d-euros-en-france-39960848.htm
+2024-01-02 03:57:16,176 - INFO - Skipping duplicate article: https://www.blogdumoderateur.com/comment-reagir-cyberattaque-outils-bonnes-pratiques/
+2024-01-02 03:57:17,234 - INFO - Scraping Summary for FR - 'cyberattaque financière': Successful Iterations - 2, Total Retries - 0, Total Failures - 0
+2024-01-02 03:57:26,400 - INFO - SUCCESS after 1 retries. Last error: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.ouest-france.fr/sport/rugby/xv-d-irlande/rugby-soupconne-de-mauvaise-conduite-sexton-sera-fixe-sur-son-sort-dans-les-prochains-jours-c312c540-21b3-11ee-bb06-1cbebd7cc801 on URL https://www.ouest-france.fr/sport/rugby/xv-d-irlande/rugby-soupconne-de-mauvaise-conduite-sexton-sera-fixe-sur-son-sort-dans-les-prochains-jours-c312c540-21b3-11ee-bb06-1cbebd7cc801
+2024-01-02 03:57:29,582 - INFO - Skipping duplicate article: https://www.tf1info.fr/transports/video-tf1-vitesse-sur-autoroute-les-mauvaises-habitudes-des-francais-2261276.html
+2024-01-02 03:57:31,698 - INFO - Skipping duplicate article: https://www.guadeloupe.franceantilles.fr/actualite/justice/un-moniteur-dauto-ecole-soupconne-de-mauvaise-conduite-sexuelle-956960.php
+2024-01-02 03:57:33,245 - INFO - Skipping duplicate article: https://www.forbes.fr/business/carlos-ghosn-intente-une-action-en-justice-contre-nissan/
+2024-01-02 03:57:44,603 - INFO - Scraping Summary for FR - 'mauvaise conduite financière': Successful Iterations - 2, Total Retries - 1, Total Failures - 0
+2024-01-02 03:57:57,430 - ERROR - FAIL after 3 retries. Last error: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.consilium.europa.eu/fr/policies/sanctions/ on URL https://www.consilium.europa.eu/fr/policies/sanctions/
+2024-01-02 03:58:01,686 - INFO - Skipping duplicate article: https://www.mediapart.fr/journal/international/061023/violation-de-l-embargo-sur-les-armes-en-libye-le-contrat-secret-avec-haftar-qui-embarrasse-la-franc
+2024-01-02 03:58:18,761 - INFO - SUCCESS after 1 retries. Last error: Article `download()` failed with HTTPSConnectionPool(host='noyb.eu', port=443): Max retries exceeded with url: /fr/data-breach-malta-company-must-disclose-source-within-20-days-or-face-penalties (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f136028d120>: Failed to establish a new connection: [Errno -5] No address associated with hostname')) on URL https://noyb.eu/fr/data-breach-malta-company-must-disclose-source-within-20-days-or-face-penalties
+2024-01-02 03:58:23,211 - INFO - Skipping duplicate article: https://fr.statista.com/infographie/28887/plus-grosses-amendes-infligees-a-une-entreprise-violation-donnees-personnelles-rgpd/
+2024-01-02 03:58:36,416 - ERROR - FAIL after 3 retries. Last error: Article `download()` failed with HTTPSConnectionPool(host='lecourrier.vn', port=443): Max retries exceeded with url: /microsoft-payera-pres-de-3-millions-dusd-pour-violation-des-sanctions-americaines/1177804.html (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)'))) on URL https://lecourrier.vn/microsoft-payera-pres-de-3-millions-dusd-pour-violation-des-sanctions-americaines/1177804.html
+2024-01-02 03:58:40,309 - INFO - Scraping Summary for FR - 'violation de sanctions financières': Successful Iterations - 1, Total Retries - 7, Total Failures - 2
+2024-01-02 03:58:42,954 - INFO - Skipping duplicate article: https://www.lemonde.fr/les-decodeurs/article/2023/11/22/evasion-fiscale-les-panama-papers-et-autres-leaks-ont-rapporte-450-millions-d-euros-a-la-france_6201744_4355770.html
+2024-01-02 03:58:44,528 - INFO - Skipping duplicate article: https://www.letelegramme.fr/france/evasion-fiscale-panama-papers-paradise-papers-450-meur-recuperes-par-le-fisc-francais-6473919.php
+2024-01-02 03:58:46,093 - INFO - Skipping duplicate article: https://www.sudouest.fr/gironde/opera-de-bordeaux-les-societes-de-la-nouvelle-mecene-epinglees-dans-les-panama-papers-15886082.php
+2024-01-02 03:58:47,560 - INFO - Skipping duplicate article: https://www.la-croix.com/Economie/Panama-Papers-Paradise-Papers-rapporte-pres-200-millions-deuros-fisc-francais-2023-01-23-1201251954
+2024-01-02 03:58:49,074 - INFO - Skipping duplicate article: https://actu.fr/nouvelle-aquitaine/bordeaux_33063/la-generosite-d-une-milliardaire-envers-l-opera-de-bordeaux-pose-question-apres-les-panama-papers_59944930.html
+2024-01-02 03:58:49,120 - INFO - Scraping Summary for FR - 'Panama Papers FR': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 03:58:51,897 - INFO - Skipping duplicate article: https://www.francetvinfo.fr/economie/impots/paradis-fiscaux/pandora-papers-qui-sont-les-dirigeants-epingles-pour-des-montages-financiers-offshore_4794657.html
+2024-01-02 03:58:53,531 - INFO - Skipping duplicate article: https://www.sudouest.fr/justice/pandora-papers-pourquoi-tous-les-francais-impliques-ne-sont-pas-connus-6878050.php
+2024-01-02 03:58:55,090 - INFO - Skipping duplicate article: https://www.afrique-sur7.ci/481992-pandora-papers-bruno-le-maire-poursuites
+2024-01-02 03:58:56,634 - INFO - Skipping duplicate article: https://www.france24.com/fr/france/20221215-pandora-papers-strauss-kahn-vis%C3%A9-par-une-enqu%C3%AAte-pour-blanchiment-de-fraude-fiscale-aggrav%C3%A9e
+2024-01-02 03:58:58,192 - INFO - Skipping duplicate article: https://www.leparisien.fr/international/pandora-papers-5-minutes-pour-comprendre-les-nouvelles-revelations-sur-la-fraude-fiscale-04-10-2021-KHQX7C424REGRHALXHJF3EUF6A.php
+2024-01-02 03:58:58,237 - INFO - Scraping Summary for FR - 'Pandora Papers FR': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 03:59:00,925 - INFO - Skipping duplicate article: https://www.letelegramme.fr/france/evasion-fiscale-panama-papers-paradise-papers-450-meur-recuperes-par-le-fisc-francais-6473919.php
+2024-01-02 03:59:02,459 - INFO - Skipping duplicate article: https://www.la-croix.com/Economie/Panama-Papers-Paradise-Papers-rapporte-pres-200-millions-deuros-fisc-francais-2023-01-23-1201251954
+2024-01-02 03:59:04,032 - INFO - Skipping duplicate article: https://www.lemonde.fr/paradise-papers/article/2017/11/05/les-paradise-papers-nouvelles-revelations-sur-les-milliards-caches-de-l-evasion-fiscale_5210518_5209585.html
+2024-01-02 03:59:05,557 - INFO - Skipping duplicate article: https://www.mediapart.fr/journal/fil-dactualites/230123/les-panama-papers-et-les-paradise-papers-ont-rapporte-pres-de-200-millions-d-euros-au-fisc-en-fra
+2024-01-02 03:59:07,075 - INFO - Skipping duplicate article: https://www.leparisien.fr/economie/tout-comprendre-aux-paradise-papers-icij-07-11-2017-7378674.php
+2024-01-02 03:59:07,120 - INFO - Scraping Summary for FR - 'Paradise Papers FR': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 03:59:09,342 - INFO - Skipping duplicate article: https://www.paris-normandie.fr/id447414/article/2023-09-11/football-leaks-le-lanceur-dalerte-connaitra-son-jugement-en-debut-dapres-midi
+2024-01-02 03:59:10,915 - INFO - Skipping duplicate article: https://www.france24.com/fr/afrique/20200120-luanda-leaks-r%C3%A9v%C3%A9lations-sur-la-famille-dos-santos-accus%C3%A9e-de-corruption-1
+2024-01-02 03:59:12,553 - INFO - Skipping duplicate article: https://www.rfi.fr/fr/afrique/20200119-luanda-leaks-sindika-dokolo-empire-ombre-dos-santos
+2024-01-02 03:59:14,053 - INFO - Skipping duplicate article: https://www.consultor.fr/articles/luanda-leaks-nouvelles-accusations-contre-bcg-mckinsey-et-pwc
+2024-01-02 03:59:15,575 - INFO - Skipping duplicate article: https://afrique.latribune.fr/finances/2020-01-20/luanda-leaks-pwc-bcg-kmpg-ces-cabinets-qui-auraient-facilite-la-construction-de-la-fortune-d-isabel-dos-santos-837580.html
+2024-01-02 03:59:15,620 - INFO - Scraping Summary for FR - 'Luanda Leaks FR': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 03:59:47,135 - INFO - Skipping duplicate article: https://www.leparisien.fr/faits-divers/blanchiment-dargent-en-ile-de-france-mario-le-petit-patron-voyou-qui-voulait-payer-moins-dimpots-01-12-2023-OIOFRQJORRGHDDNRFO42OY4SIM.php
+2024-01-02 03:59:58,442 - INFO - Scraping Summary for FR - 'blanchiment d'argent FR': Successful Iterations - 4, Total Retries - 0, Total Failures - 0
+2024-01-02 04:00:08,685 - INFO - SUCCESS after 1 retries. Last error: Article `download()` failed with HTTPSConnectionPool(host='actusen.sn', port=443): Read timed out. (read timeout=1.4552943882079996) on URL https://actusen.sn/outres-par-les-scandales-repetitifs-au-cms-les-syndicalistes-vilipendent-le-dg-aupres-du-ministre-des-finances/
+2024-01-02 04:00:13,217 - INFO - Skipping duplicate article: https://rewmi.com/la-sn-hlm-au-coeur-dun-scandale-foncier/
+2024-01-02 04:00:31,618 - INFO - Skipping duplicate article: https://lequotidien.sn/banque-mondiale-dun-scandale-a-lautre/
+2024-01-02 04:00:32,888 - INFO - Scraping Summary for SN - 'scandale financier': Successful Iterations - 3, Total Retries - 1, Total Failures - 0
+2024-01-02 04:00:42,848 - INFO - Skipping duplicate article: https://actusen.sn/fraude-fiscale-et-detournement-de-deniers-publics-la-dgid-poursuit-4-entreprises-pour-plus-de-5-milliards-de-f-cfa/
+2024-01-02 04:00:44,388 - INFO - Skipping duplicate article: https://www.xalimasn.com/fraude-fiscale-4-entreprises-poursuivies-par-la-dgid-pour-plus-de-5-milliards-de-f-cfa/
+2024-01-02 04:00:59,704 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/donald-trump-entendu-par-la-justice-a-new-york-dans-une-affaire-de-fraude/
+2024-01-02 04:01:00,644 - INFO - Scraping Summary for SN - 'fraude financière': Successful Iterations - 2, Total Retries - 0, Total Failures - 0
+2024-01-02 04:01:03,522 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/accuse-descroquerie-et-emprisonne-abibou-ndiaye-samb-remporte-son-proces-face-aux-gmd/
+2024-01-02 04:01:05,104 - INFO - Skipping duplicate article: https://actusen.sn/proces-de-ousmane-sonko-a-ziguinchor-la-replique-de-lunion-des-magistrats-du-senegal-a-lagent-judiciaire-de-letat/
+2024-01-02 04:01:06,652 - INFO - Skipping duplicate article: https://aps.sn/debut-du-proces-ousmane-sonko-adji-sarr/
+2024-01-02 04:01:08,209 - INFO - Skipping duplicate article: https://lequotidien.sn/dialogue-revision-du-proces-de-wade-fils-le-krim-parfait/
+2024-01-02 04:01:24,514 - INFO - Scraping Summary for SN - 'procès financier': Successful Iterations - 1, Total Retries - 0, Total Failures - 0
+2024-01-02 04:01:36,770 - INFO - Skipping duplicate article: https://actusen.sn/traine-en-justice-par-des-commercants-pour-escroquerie-portant-sur-58-millions-un-chef-dentreprise-jete-en-prison/
+2024-01-02 04:01:38,316 - INFO - Skipping duplicate article: https://aps.sn/le-tribunal-des-pairs-du-cored-sert-9-avertissements-et-3-blames/
+2024-01-02 04:01:39,837 - INFO - Skipping duplicate article: https://www.lenouveleconomiste.fr/procedures-collectives-nattendez-pas-quil-soit-trop-tard-pour-prendre-les-devants-82213/
+2024-01-02 04:01:51,940 - INFO - Scraping Summary for SN - 'tribunal financier': Successful Iterations - 2, Total Retries - 0, Total Failures - 0
+2024-01-02 04:01:54,171 - INFO - Skipping duplicate article: https://actusen.sn/tribunal-de-ziguinchor-la-demande-formulee-par-lagent-judiciaire-de-letat-pour-que-sonko-ne-soit-pas-reintegre-dans-les-listes-electorales/
+2024-01-02 04:01:55,762 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/cybersecurite-thales-enquete-sur-une-allegation-de-vol-de-donnees/
+2024-01-02 04:01:57,301 - INFO - Skipping duplicate article: https://www.seneplus.com/politique/affaire-sonko-la-verite-de-modern-ghana
+2024-01-02 04:01:58,798 - INFO - Skipping duplicate article: https://actusen.sn/information-judiciaire-contre-des-agents-de-lhopital-maguette-lo-de-linguere-le-sames-denonce-une-chasse-aux-sorcieres/
+2024-01-02 04:02:00,453 - INFO - Skipping duplicate article: https://ici.radio-canada.ca/nouvelle/809797/agression-sexuelle-parti-liberal-couillard-universite-laval
+2024-01-02 04:02:00,496 - INFO - Scraping Summary for SN - 'allégation financière': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 04:02:02,918 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/tribunal-de-dakar-le-procureur-alourdit-les-chefs-daccusations-sur-ousmane-sonko/
+2024-01-02 04:02:04,466 - INFO - Skipping duplicate article: https://actusen.sn/justice-le-juge-maham-diallo-corse-le-dossier-de-bassirou-diomaye-faye-desormais-poursuivi-pour-6-chefs-daccusation/
+2024-01-02 04:02:06,007 - INFO - Skipping duplicate article: https://lequotidien.sn/accusation-disparition-de-300-jeunes-aux-larges-de-latlantique-sonko-sen-prend-aux-politiques-publiques-du-regime/
+2024-01-02 04:02:07,508 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/khalil-kamara-de-senego-defere-pour-trois-chefs-daccusation/
+2024-01-02 04:02:18,661 - INFO - Scraping Summary for SN - 'accusation financière': Successful Iterations - 1, Total Retries - 0, Total Failures - 0
+2024-01-02 04:02:21,083 - INFO - Skipping duplicate article: https://lequotidien.sn/participation-de-khalifa-sall-nllus-dubium-comprendre-les-implications-du-quitus-fiscal-et-de-lamende-penale/
+2024-01-02 04:02:22,669 - INFO - Skipping duplicate article: https://aps.sn/violences-une-amende-dun-million-et-le-huis-clos-infliges-a-las-pikine/
+2024-01-02 04:02:24,221 - INFO - Skipping duplicate article: https://actusen.sn/la-grande-surface-china-mall-sanctionnee-par-le-ministere-du-commerce-suite-a-une-infraction-abdou-karim-fofana-donne-les-details/
+2024-01-02 04:02:30,921 - INFO - SUCCESS after 1 retries. Last error: Article `download()` failed with HTTPSConnectionPool(host='actusen.sn', port=443): Read timed out. (read timeout=1.2676459298807887) on URL https://actusen.sn/affaire-sweet-beauty-ousmane-sonko-condamne-a-2-ans-de-prison-ferme-pour-corruption-de-jeunesse/
+2024-01-02 04:02:34,784 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/la-loi-02-2025-punit-la-traite-de-la-mendicite-les-coupables-passibles-dun-emprisonnement-de-2-a-5-ans-et-une-amende-de-500-000-a-2-millions-de-francs-cfa/
+2024-01-02 04:02:35,725 - INFO - Scraping Summary for SN - 'amende financière': Successful Iterations - 1, Total Retries - 1, Total Failures - 0
+2024-01-02 04:02:48,601 - INFO - Skipping duplicate article: https://aps.sn/la-lutte-contre-la-corruption-est-une-affaire-de-tous-selon-le-president-de-lofnac/
+2024-01-02 04:02:50,170 - INFO - Skipping duplicate article: https://aps.sn/lutte-contre-la-corruption-ladoption-de-la-norme-iso-37001-au-menu-dun-atelier/
+2024-01-02 04:02:51,684 - INFO - Skipping duplicate article: https://lequotidien.sn/corruption-de-la-jeunesse-linfraction-expliquee/
+2024-01-02 04:02:53,199 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/saly-portudal-lutte-contre-la-corruption-le-president-de-lofnac-appelle-a-la-credibilisation-des-institutions-adhoc/
+2024-01-02 04:02:54,092 - INFO - Scraping Summary for SN - 'corruption financière': Successful Iterations - 1, Total Retries - 0, Total Failures - 0
+2024-01-02 04:02:56,284 - INFO - Skipping duplicate article: https://ici.radio-canada.ca/nouvelle/1193991/scandale-fuite-vol-renseignements-personnel
+2024-01-02 04:02:56,344 - INFO - Scraping Summary for SN - 'cyberattaque financière': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 04:03:08,351 - INFO - Skipping duplicate article: https://www.seneweb.com/news/International/tesla-rappelle-2-millions-de-vehicules-a_n_428064.html
+2024-01-02 04:03:09,901 - INFO - Skipping duplicate article: https://www.seneweb.com/news/Politique/laquo-ce-n-rsquo-est-pas-idy-qui-a-deman_n_407910.html
+2024-01-02 04:03:11,429 - INFO - Skipping duplicate article: https://lequotidien.sn/lindiscipline-au-volant-un-mal-dont-il-faut-guerir/
+2024-01-02 04:03:12,970 - INFO - Skipping duplicate article: https://actusen.sn/surprises-en-train-de-fumer-du-chanvre-indien-5-jeunes-filles-agees-entre-18-et-21-ans-a-la-barre-des-flagrants-delits/
+2024-01-02 04:03:13,959 - INFO - Scraping Summary for SN - 'mauvaise conduite financière': Successful Iterations - 1, Total Retries - 0, Total Failures - 0
+2024-01-02 04:03:16,275 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/le-senegal-merite-une-presse-responsable/
+2024-01-02 04:03:17,868 - INFO - Skipping duplicate article: https://www.lefigaro.fr/maison/entrer-chez-quelqu-un-sans-autorisation-que-dit-la-loi-20230926
+2024-01-02 04:03:19,464 - INFO - Skipping duplicate article: https://www.seneplus.com/politique/dakar-viole-t-il-les-sanctions-de-lonu-contre-pyongyang
+2024-01-02 04:03:20,978 - INFO - Skipping duplicate article: https://www.pressafrik.com/Suspension-du-signal-de-SenTV-les-preuves-de-la-violation-flagrante-de-la-loi-par-le-CNRA-Documents_a209924.html
+2024-01-02 04:03:22,604 - INFO - Skipping duplicate article: https://lequotidien.sn/proces-affaire-madiambal-diagne-teliko-article-19-denonce-des-peines-disproportionnees/
+2024-01-02 04:03:22,651 - INFO - Scraping Summary for SN - 'violation de sanctions financières': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 04:03:36,996 - INFO - Skipping duplicate article: https://www.xalimasn.com/panama-papers-les-979-societes-offshore-creees-par-la-societe-generale/
+2024-01-02 04:03:39,674 - INFO - Skipping duplicate article: https://actusen.sn/panama-papers-aliko-dangote-au-coeur-de-laffaire/
+2024-01-02 04:03:41,216 - INFO - Skipping duplicate article: https://lequotidien.sn/evasion-fiscale-elizabeth-ii-une-reine-dans-les-paradise-papers/
+2024-01-02 04:03:47,888 - INFO - Scraping Summary for SN - 'Panama Papers SN': Successful Iterations - 2, Total Retries - 0, Total Failures - 0
+2024-01-02 04:03:50,134 - INFO - Skipping duplicate article: https://www.xalimasn.com/gloire-a-atepa-goudiaby-le-batisseur-par-boubacar-sadio/
+2024-01-02 04:03:51,663 - INFO - Skipping duplicate article: https://www.senenews.com/actualites/pandora-papers-la-presidence-senegalaise-dominique-strauss-kahn-et-les-574-millions_370259.html
+2024-01-02 04:03:53,218 - INFO - Skipping duplicate article: https://www.seneplus.com/economie/pandora-papers-dominique-strauss-kahn-capte-574-millions-fcfa-la
+2024-01-02 04:03:54,757 - INFO - Skipping duplicate article: https://www.leral.net/Pandora-Papers-le-Kremlin-rejette-des-allegations-infondees_a316089.html
+2024-01-02 04:03:56,298 - INFO - Skipping duplicate article: https://lequotidien.sn/etre-ou-ne-pas-etre-gabonais-mon-bonheur-detre-senegalais/
+2024-01-02 04:03:56,349 - INFO - Scraping Summary for SN - 'Pandora Papers SN': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 04:03:58,683 - INFO - Skipping duplicate article: https://lequotidien.sn/evasion-fiscale-elizabeth-ii-une-reine-dans-les-paradise-papers/
+2024-01-02 04:04:00,191 - INFO - Skipping duplicate article: https://www.xalimasn.com/des-magnats-libanais-au-coeur-des-paradise-papers-de-dakar-aux-iles-vierges-britanniques/
+2024-01-02 04:04:01,732 - INFO - Skipping duplicate article: https://www.leral.net/Evasion-fiscale-de-2-milliards-de-FCfa-Jamal-Kaawar-patron-d-Orca-indexe_a226731.html
+2024-01-02 04:04:03,375 - INFO - Skipping duplicate article: https://lequotidien.sn/khadim-bamba-diagne-sur-les-flux-financiers-illicites-plus-de-60-milliards-de-dollar-quittent-lafrique-pour-les-pays-developpes/
+2024-01-02 04:04:04,994 - INFO - Skipping duplicate article: https://xalimasn.com/lutte-contre-levasion-fiscale-lenfer-pour-les-paradis-fiscaux-amadou-ba-compte-sur-la-cooperation-de-paris/
+2024-01-02 04:04:05,048 - INFO - Scraping Summary for SN - 'Paradise Papers SN': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 04:04:07,393 - INFO - Skipping duplicate article: https://lequotidien.sn/luanda-leaks-le-hacker-portugais-rui-pinto-a-lorigine-des-revelations/
+2024-01-02 04:04:20,494 - INFO - Skipping duplicate article: https://xalimasn.com/comment-isabel-dos-santos-a-vide-les-caisses-de-langola/
+2024-01-02 04:04:22,088 - INFO - Skipping duplicate article: https://lequotidien.sn/angola-mise-en-examen-isabel-dos-santos-est-poursuivie-pour-mauvaise-gestion-et-detournement/
+2024-01-02 04:04:23,587 - INFO - Skipping duplicate article: https://lequotidien.sn/respect-des-accords-le-g7-met-la-pression-sur-letat/
+2024-01-02 04:04:24,605 - INFO - Scraping Summary for SN - 'Luanda Leaks SN': Successful Iterations - 1, Total Retries - 0, Total Failures - 0
+2024-01-02 04:04:26,980 - INFO - Skipping duplicate article: https://lequotidien.sn/soupcons-de-blanchiment-dargent-une-vieille-affaire-rattrape-aly-ngouille-ndiaye/
+2024-01-02 04:04:28,482 - INFO - Skipping duplicate article: https://www.xalimasn.com/soupcons-de-blanchiment-dargent-aly-ngouille-ndiaye-rattrape-par-une-vielle-affaire/
+2024-01-02 04:04:29,997 - INFO - Skipping duplicate article: https://lequotidien.sn/blanchiment-dargent-des-assujettis-font-dans-le-noir/
+2024-01-02 04:04:31,660 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/colombie-les-aveux-du-fils-du-president-petro-accuse-de-blanchiment-dargent-mettent-son-pere-dans-lembarras/
+2024-01-02 04:04:33,309 - INFO - Skipping duplicate article: https://actusen.sn/escroquerie-faux-et-blanchiment-dargent-un-chef-de-reseau-de-yup-encaisse-371-millions-f-cfa-des-commercants-et-sest-cree-une-vie-de-richard/
+2024-01-02 04:04:33,374 - INFO - Scraping Summary for SN - 'blanchiment d'argent SN': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 04:04:33,377 - INFO - === Script Execution End (Scraping) at: 2024-01-02 04:04:33.377047 ===
+2024-01-02 11:53:16,904 - INFO - === Script execution START (Scraping) at: 2024-01-02 11:53:16.904962 ===
+2024-01-02 11:53:20,046 - INFO - Skipping duplicate article: https://www.humanite.fr/social-et-economie/evasion-fiscale/evasion-fiscale-cumcum-la-combine-bancaire-qui-coute-des-milliards-a-letat-francais-788566
+2024-01-02 11:53:21,625 - INFO - Skipping duplicate article: https://www.lemonde.fr/les-decodeurs/article/2023/03/28/la-societe-generale-bnp-paribas-exane-natixis-et-hsbc-visees-par-des-perquisitions-dans-un-scandale-de-fraude-fiscale-hors-norme_6167273_4355770.html
+2024-01-02 11:53:23,211 - INFO - Skipping duplicate article: https://www.novethic.fr/actualite/gouvernance-dentreprise/entreprises-controversees/isr-rse/credit-suisse-une-longue-histoire-de-controverses-151426.html
+2024-01-02 11:53:24,804 - INFO - Skipping duplicate article: https://www.centrepresseaveyron.fr/2023/03/29/scandale-de-fraude-fiscale-geante-ce-que-lon-sait-des-cinq-grandes-banques-perquisitionnees-en-france-11096000.php
+2024-01-02 11:53:26,337 - INFO - Skipping duplicate article: https://www.latribune.fr/entreprises-finance/banques-finance/banque/credit-suisse-la-banque-centrale-suisse-veut-tirer-les-lecons-du-scandale-967065.html
+2024-01-02 11:53:26,375 - INFO - Scraping Summary for FR - 'scandale financier': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 11:53:39,156 - ERROR - FAIL after 3 retries. Last error: Article `download()` failed with 403 Client Error: Forbidden for url: https://fr.timesofisrael.com/une-firme-de-recyclage-soupconnee-de-fraude-fait-lobjet-dun-raid-a-herzliya/ on URL https://fr.timesofisrael.com/une-firme-de-recyclage-soupconnee-de-fraude-fait-lobjet-dun-raid-a-herzliya/
+2024-01-02 11:53:48,052 - ERROR - FAIL after 3 retries. Last error: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.economie.gouv.fr/nouveaux-moyens-lutter-contre-fraude-renovation-energetique-2024 on URL https://www.economie.gouv.fr/nouveaux-moyens-lutter-contre-fraude-renovation-energetique-2024
+2024-01-02 11:53:51,909 - INFO - Skipping duplicate article: https://www.optionfinance.fr/entreprise-finance/fraude-pas-de-repit-pour-les-entreprises.html
+2024-01-02 11:53:53,636 - INFO - Skipping duplicate article: https://gazette-du-midi.fr/edito/opinions/actions-a-mettre-en-place-pour-chaque-risque-de-fraude
+2024-01-02 11:54:02,376 - INFO - Scraping Summary for FR - 'fraude financière': Successful Iterations - 1, Total Retries - 6, Total Failures - 2
+2024-01-02 11:54:05,276 - INFO - Skipping duplicate article: https://www.usine-digitale.fr/article/google-conclut-un-accord-a-l-amiable-pour-eviter-un-proces-sur-le-mode-incognito-de-chrome.N2205636
+2024-01-02 11:54:06,854 - INFO - Skipping duplicate article: https://www.lemonde.fr/international/article/2023/12/30/au-japon-un-proces-ravive-les-critiques-d-un-systeme-judiciaire-aux-derives-recurrentes_6208401_3210.html
+2024-01-02 11:54:08,464 - INFO - Skipping duplicate article: https://www.challenges.fr/entreprise/sante-et-pharmacie/proces-du-mediator-le-groupe-servier-condamne-plus-lourdement-en-appel_877992
+2024-01-02 11:54:10,009 - INFO - Skipping duplicate article: https://france3-regions.francetvinfo.fr/pays-de-la-loire/maine-et-loire/cholet/a-angers-le-proces-en-appel-devant-les-prud-hommes-d-un-patron-voyou-2894585.html
+2024-01-02 11:54:20,872 - INFO - Scraping Summary for FR - 'procès financier': Successful Iterations - 1, Total Retries - 0, Total Failures - 0
+2024-01-02 11:54:23,829 - INFO - Skipping duplicate article: https://www.lefigaro.fr/lyon/au-tribunal-de-commerce-de-lyon-un-administrateur-judiciaire-soupconne-de-malversation-mis-en-examen-20231229
+2024-01-02 11:54:25,457 - INFO - Skipping duplicate article: https://france3-regions.francetvinfo.fr/auvergne-rhone-alpes/puy-de-dome/clermont-ferrand/affaires-des-saphirs-de-la-discorde-le-tribunal-de-clermont-ferrand-ordonne-une-expertise-2898029.html
+2024-01-02 11:54:26,989 - INFO - Skipping duplicate article: https://www.capital.fr/entreprises-marches/habitat-baisse-le-rideau-le-tribunal-prononce-sa-liquidation-judiciaire-1489583
+2024-01-02 11:54:28,581 - INFO - Skipping duplicate article: https://www.lepoint.fr/economie/liquidation-judiciaire-comment-ca-marche-28-12-2023-2548544_28.php
+2024-01-02 11:54:30,206 - INFO - Skipping duplicate article: https://www.lamontagne.fr/clermont-ferrand-63000/actualites/n-attendez-pas-la-cessation-de-paiement-pour-aller-au-tribunal-de-commerce-de-clermont-ferrand_14423415/
+2024-01-02 11:54:30,246 - INFO - Scraping Summary for FR - 'tribunal financier': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 11:54:41,182 - ERROR - FAIL after 3 retries. Last error: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.economie.gouv.fr/dgccrf/allegations-environnementales-ce-quil-faut-retenir on URL https://www.economie.gouv.fr/dgccrf/allegations-environnementales-ce-quil-faut-retenir
+2024-01-02 11:54:48,461 - INFO - Skipping duplicate article: https://www.novethic.fr/actualite/environnement/climat/isr-rse/easyjet-gucci-nestle-ces-entreprises-qui-abandonnent-la-compensation-carbone-pour-atteindre-la-neutralite-151620.html
+2024-01-02 11:54:50,380 - INFO - Skipping duplicate article: https://www.linfodurable.fr/politique/parlement-europeen-vote-linterdiction-des-allegations-environnementales-vagues-38363
+2024-01-02 11:54:51,921 - INFO - Skipping duplicate article: https://www.sudouest.fr/economie/cholesterol-a-aytre-le-laboratoire-lescuyer-en-pointe-avec-son-complement-alimentaire-limicol-16812916.php
+2024-01-02 11:54:53,515 - INFO - Skipping duplicate article: https://lareclame.fr/guide-allegations-environnementales-greenwashing-281325
+2024-01-02 11:54:53,554 - INFO - Scraping Summary for FR - 'allégation financière': Successful Iterations - 0, Total Retries - 3, Total Failures - 1
+2024-01-02 11:54:56,115 - INFO - Skipping duplicate article: https://www.lejdd.fr/societe/accusation-de-viol-sebastien-cauet-porte-plainte-pour-denonciation-calomnieuse-139952
+2024-01-02 11:54:57,702 - INFO - Skipping duplicate article: https://www.lemonde.fr/international/article/2023/08/15/donald-trump-inculpe-en-vertu-de-la-loi-antimafia_6185487_3210.html
+2024-01-02 11:54:59,258 - INFO - Skipping duplicate article: https://www.france24.com/fr/afrique/20230729-s%C3%A9n%C3%A9gal-le-procureur-d%C3%A9taille-les-chefs-d-accusation-retenus-contre-ousmane-sonko
+2024-01-02 11:55:00,852 - INFO - Skipping duplicate article: https://www.mediapart.fr/journal/international/160823/trump-ce-que-dit-le-nouvel-acte-d-accusation-contre-l-ex-president-americain
+2024-01-02 11:55:02,423 - INFO - Skipping duplicate article: https://www.ladepeche.fr/2023/09/22/suicide-dun-agent-arrets-maladies-demissions-les-methodes-dune-mairie-de-normandie-en-accusation-11471043.php
+2024-01-02 11:55:02,505 - INFO - Scraping Summary for FR - 'accusation financière': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 11:55:05,578 - INFO - Skipping duplicate article: https://www.francebleu.fr/infos/faits-divers-justice/indre-et-loire-une-enorme-amende-infligee-a-une-entreprise-de-veigne-pour-demarchage-illegal-7985700
+2024-01-02 11:55:31,433 - INFO - Skipping duplicate article: https://www.jeuxvideo.com/news/1838273/la-france-vient-d-infliger-une-amende-de-91-millions-d-euros-a-rolex-oui-les-montres-de-l-entreprise-sont-censees-etre-cheres-mais-pas-a-ce-point.htm
+2024-01-02 11:55:32,444 - INFO - Scraping Summary for FR - 'amende financière': Successful Iterations - 3, Total Retries - 0, Total Failures - 0
+2024-01-02 11:55:35,632 - INFO - Skipping duplicate article: https://www.novethic.fr/actualite/gouvernance-dentreprise/corruption/isr-rse/anticor-perd-son-agrement-precieux-sesame-dans-la-lutte-contre-la-corruption-151992.html
+2024-01-02 11:55:49,144 - ERROR - FAIL after 3 retries. Last error: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.ouest-france.fr/societe/faits-divers/un-capitaine-de-police-soupconne-davoir-tente-dextorquer-300-000-euros-ecroue-pour-corruption-b918ba9a-a660-11ee-94f8-e053b15ab47c on URL https://www.ouest-france.fr/societe/faits-divers/un-capitaine-de-police-soupconne-davoir-tente-dextorquer-300-000-euros-ecroue-pour-corruption-b918ba9a-a660-11ee-94f8-e053b15ab47c
+2024-01-02 11:55:52,225 - INFO - Skipping duplicate article: https://www.leparisien.fr/hauts-de-seine-92/antony-92160/a-ta-place-je-ne-reflechirais-pas-un-capitaine-de-police-ecroue-pour-corruption-28-12-2023-Y232KXCII5DQFIXA7OQI4QYFJ4.php
+2024-01-02 11:55:57,331 - INFO - Skipping duplicate article: https://www.lefigaro.fr/conjoncture/lutte-contre-la-corruption-le-gouvernement-prepare-de-nouvelles-mesures-pour-debut-2024-20231209
+2024-01-02 11:55:58,180 - INFO - Scraping Summary for FR - 'corruption financière': Successful Iterations - 1, Total Retries - 3, Total Failures - 1
+2024-01-02 11:56:00,787 - INFO - Skipping duplicate article: https://www.bfmtv.com/tech/actualites/donnees-personnelles/piratage-d-easy-park-les-donnees-personnelles-des-utilisateurs-ont-ete-derobees_AV-202312270362.html
+2024-01-02 11:56:08,364 - INFO - Skipping duplicate article: https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/rapport-activite-2022
+2024-01-02 11:56:10,007 - INFO - Skipping duplicate article: https://www.zdnet.fr/actualites/selon-ibm-le-cout-moyen-d-un-piratage-s-etablit-a-375-millions-d-euros-en-france-39960848.htm
+2024-01-02 11:56:11,630 - INFO - Skipping duplicate article: https://www.blogdumoderateur.com/comment-reagir-cyberattaque-outils-bonnes-pratiques/
+2024-01-02 11:56:12,486 - INFO - Scraping Summary for FR - 'cyberattaque financière': Successful Iterations - 1, Total Retries - 0, Total Failures - 0
+2024-01-02 11:56:15,304 - INFO - Skipping duplicate article: https://www.ouest-france.fr/sport/rugby/xv-d-irlande/rugby-soupconne-de-mauvaise-conduite-sexton-sera-fixe-sur-son-sort-dans-les-prochains-jours-c312c540-21b3-11ee-bb06-1cbebd7cc801
+2024-01-02 11:56:16,926 - INFO - Skipping duplicate article: https://www.tf1info.fr/transports/video-tf1-vitesse-sur-autoroute-les-mauvaises-habitudes-des-francais-2261276.html
+2024-01-02 11:56:18,515 - INFO - Skipping duplicate article: https://www.guadeloupe.franceantilles.fr/actualite/justice/un-moniteur-dauto-ecole-soupconne-de-mauvaise-conduite-sexuelle-956960.php
+2024-01-02 11:56:20,137 - INFO - Skipping duplicate article: https://www.forbes.fr/business/carlos-ghosn-intente-une-action-en-justice-contre-nissan/
+2024-01-02 11:56:21,727 - INFO - Skipping duplicate article: https://www.lapresse.ca/sports/2023-12-10/mauvaise-conduite/qui-est-votre-commentateur-ou-analyste-sportif-prefere.php
+2024-01-02 11:56:21,766 - INFO - Scraping Summary for FR - 'mauvaise conduite financière': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 11:56:33,408 - ERROR - FAIL after 3 retries. Last error: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.consilium.europa.eu/fr/policies/sanctions/ on URL https://www.consilium.europa.eu/fr/policies/sanctions/
+2024-01-02 11:56:39,884 - INFO - Skipping duplicate article: https://www.mediapart.fr/journal/international/061023/violation-de-l-embargo-sur-les-armes-en-libye-le-contrat-secret-avec-haftar-qui-embarrasse-la-franc
+2024-01-02 11:56:41,486 - INFO - Skipping duplicate article: https://noyb.eu/fr/data-breach-malta-company-must-disclose-source-within-20-days-or-face-penalties
+2024-01-02 11:56:43,078 - INFO - Skipping duplicate article: https://fr.statista.com/infographie/28887/plus-grosses-amendes-infligees-a-une-entreprise-violation-donnees-personnelles-rgpd/
+2024-01-02 11:56:54,890 - ERROR - FAIL after 3 retries. Last error: Article `download()` failed with HTTPSConnectionPool(host='lecourrier.vn', port=443): Max retries exceeded with url: /microsoft-payera-pres-de-3-millions-dusd-pour-violation-des-sanctions-americaines/1177804.html (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)'))) on URL https://lecourrier.vn/microsoft-payera-pres-de-3-millions-dusd-pour-violation-des-sanctions-americaines/1177804.html
+2024-01-02 11:56:58,014 - INFO - Scraping Summary for FR - 'violation de sanctions financières': Successful Iterations - 0, Total Retries - 6, Total Failures - 2
+2024-01-02 11:57:00,828 - INFO - Skipping duplicate article: https://www.lemonde.fr/les-decodeurs/article/2023/11/22/evasion-fiscale-les-panama-papers-et-autres-leaks-ont-rapporte-450-millions-d-euros-a-la-france_6201744_4355770.html
+2024-01-02 11:57:02,376 - INFO - Skipping duplicate article: https://www.letelegramme.fr/france/evasion-fiscale-panama-papers-paradise-papers-450-meur-recuperes-par-le-fisc-francais-6473919.php
+2024-01-02 11:57:03,903 - INFO - Skipping duplicate article: https://www.sudouest.fr/gironde/opera-de-bordeaux-les-societes-de-la-nouvelle-mecene-epinglees-dans-les-panama-papers-15886082.php
+2024-01-02 11:57:05,462 - INFO - Skipping duplicate article: https://www.la-croix.com/Economie/Panama-Papers-Paradise-Papers-rapporte-pres-200-millions-deuros-fisc-francais-2023-01-23-1201251954
+2024-01-02 11:57:07,060 - INFO - Skipping duplicate article: https://actu.fr/nouvelle-aquitaine/bordeaux_33063/la-generosite-d-une-milliardaire-envers-l-opera-de-bordeaux-pose-question-apres-les-panama-papers_59944930.html
+2024-01-02 11:57:07,104 - INFO - Scraping Summary for FR - 'Panama Papers FR': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 11:57:09,957 - INFO - Skipping duplicate article: https://www.francetvinfo.fr/economie/impots/paradis-fiscaux/pandora-papers-qui-sont-les-dirigeants-epingles-pour-des-montages-financiers-offshore_4794657.html
+2024-01-02 11:57:11,542 - INFO - Skipping duplicate article: https://www.sudouest.fr/justice/pandora-papers-pourquoi-tous-les-francais-impliques-ne-sont-pas-connus-6878050.php
+2024-01-02 11:57:13,080 - INFO - Skipping duplicate article: https://www.afrique-sur7.ci/481992-pandora-papers-bruno-le-maire-poursuites
+2024-01-02 11:57:14,621 - INFO - Skipping duplicate article: https://www.france24.com/fr/france/20221215-pandora-papers-strauss-kahn-vis%C3%A9-par-une-enqu%C3%AAte-pour-blanchiment-de-fraude-fiscale-aggrav%C3%A9e
+2024-01-02 11:57:16,237 - INFO - Skipping duplicate article: https://www.leparisien.fr/international/pandora-papers-5-minutes-pour-comprendre-les-nouvelles-revelations-sur-la-fraude-fiscale-04-10-2021-KHQX7C424REGRHALXHJF3EUF6A.php
+2024-01-02 11:57:16,290 - INFO - Scraping Summary for FR - 'Pandora Papers FR': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 11:57:19,086 - INFO - Skipping duplicate article: https://www.letelegramme.fr/france/evasion-fiscale-panama-papers-paradise-papers-450-meur-recuperes-par-le-fisc-francais-6473919.php
+2024-01-02 11:57:20,676 - INFO - Skipping duplicate article: https://www.la-croix.com/Economie/Panama-Papers-Paradise-Papers-rapporte-pres-200-millions-deuros-fisc-francais-2023-01-23-1201251954
+2024-01-02 11:57:22,229 - INFO - Skipping duplicate article: https://www.lemonde.fr/paradise-papers/article/2017/11/05/les-paradise-papers-nouvelles-revelations-sur-les-milliards-caches-de-l-evasion-fiscale_5210518_5209585.html
+2024-01-02 11:57:23,849 - INFO - Skipping duplicate article: https://www.mediapart.fr/journal/fil-dactualites/230123/les-panama-papers-et-les-paradise-papers-ont-rapporte-pres-de-200-millions-d-euros-au-fisc-en-fra
+2024-01-02 11:57:25,478 - INFO - Skipping duplicate article: https://www.francetvinfo.fr/economie/impots/paradis-fiscaux/l-article-a-lire-pour-comprendre-le-scandale-des-paradise-papers_2454436.html
+2024-01-02 11:57:25,523 - INFO - Scraping Summary for FR - 'Paradise Papers FR': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 11:57:27,949 - INFO - Skipping duplicate article: https://www.paris-normandie.fr/id447414/article/2023-09-11/football-leaks-le-lanceur-dalerte-connaitra-son-jugement-en-debut-dapres-midi
+2024-01-02 11:57:29,494 - INFO - Skipping duplicate article: https://www.france24.com/fr/afrique/20200120-luanda-leaks-r%C3%A9v%C3%A9lations-sur-la-famille-dos-santos-accus%C3%A9e-de-corruption-1
+2024-01-02 11:57:31,184 - INFO - Skipping duplicate article: https://www.rfi.fr/fr/afrique/20200119-luanda-leaks-sindika-dokolo-empire-ombre-dos-santos
+2024-01-02 11:57:32,782 - INFO - Skipping duplicate article: https://www.consultor.fr/articles/luanda-leaks-nouvelles-accusations-contre-bcg-mckinsey-et-pwc
+2024-01-02 11:57:34,347 - INFO - Skipping duplicate article: https://afrique.latribune.fr/finances/2020-01-20/luanda-leaks-pwc-bcg-kmpg-ces-cabinets-qui-auraient-facilite-la-construction-de-la-fortune-d-isabel-dos-santos-837580.html
+2024-01-02 11:57:34,390 - INFO - Scraping Summary for FR - 'Luanda Leaks FR': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 11:57:48,954 - INFO - Skipping duplicate article: https://presse.economie.gouv.fr/?p=117372
+2024-01-02 11:57:50,541 - INFO - Skipping duplicate article: https://www.20minutes.fr/economie/4068224-20231226-banque-francaise-prise-enquete-blanchiment-lien-chypre
+2024-01-02 11:57:52,172 - INFO - Skipping duplicate article: https://www.leparisien.fr/faits-divers/blanchiment-dargent-en-ile-de-france-mario-le-petit-patron-voyou-qui-voulait-payer-moins-dimpots-01-12-2023-OIOFRQJORRGHDDNRFO42OY4SIM.php
+2024-01-02 11:57:53,729 - INFO - Skipping duplicate article: https://www.challenges.fr/entreprise/bnp-paribas-soupconnee-de-blanchiment-aggrave-ce-que-l-on-sait-de-l-affaire_878374
+2024-01-02 11:57:54,579 - INFO - Scraping Summary for FR - 'blanchiment d'argent FR': Successful Iterations - 1, Total Retries - 0, Total Failures - 0
+2024-01-02 11:58:05,647 - INFO - SUCCESS after 1 retries. Last error: Article `download()` failed with HTTPSConnectionPool(host='actusen.sn', port=443): Read timed out. (read timeout=1.9204867002081203) on URL https://actusen.sn/outres-par-les-scandales-repetitifs-au-cms-les-syndicalistes-vilipendent-le-dg-aupres-du-ministre-des-finances/
+2024-01-02 11:58:11,643 - INFO - Skipping duplicate article: https://rewmi.com/la-sn-hlm-au-coeur-dun-scandale-foncier/
+2024-01-02 11:58:13,195 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/greve-continue-des-agents-de-la-cbao-les-clients-expriment-leur-ras-le-bol/
+2024-01-02 11:58:14,836 - INFO - Skipping duplicate article: https://www.senenews.com/actualites/alaune/un-scandale-de-6-milliards-fcfa-eclabousse-le-ministere-de-la-sante_437127.html
+2024-01-02 11:58:16,373 - INFO - Skipping duplicate article: https://lequotidien.sn/banque-mondiale-dun-scandale-a-lautre/
+2024-01-02 11:58:17,253 - INFO - Scraping Summary for SN - 'scandale financier': Successful Iterations - 1, Total Retries - 1, Total Failures - 0
+2024-01-02 11:58:28,981 - INFO - Skipping duplicate article: https://actusen.sn/fraude-fiscale-et-detournement-de-deniers-publics-la-dgid-poursuit-4-entreprises-pour-plus-de-5-milliards-de-f-cfa/
+2024-01-02 11:58:30,605 - INFO - Skipping duplicate article: https://www.xalimasn.com/fraude-fiscale-4-entreprises-poursuivies-par-la-dgid-pour-plus-de-5-milliards-de-f-cfa/
+2024-01-02 11:58:43,410 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/donald-trump-entendu-par-la-justice-a-new-york-dans-une-affaire-de-fraude/
+2024-01-02 11:58:44,328 - INFO - Scraping Summary for SN - 'fraude financière': Successful Iterations - 2, Total Retries - 0, Total Failures - 0
+2024-01-02 11:58:46,769 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/accuse-descroquerie-et-emprisonne-abibou-ndiaye-samb-remporte-son-proces-face-aux-gmd/
+2024-01-02 11:58:48,747 - INFO - Skipping duplicate article: https://actusen.sn/proces-de-ousmane-sonko-a-ziguinchor-la-replique-de-lunion-des-magistrats-du-senegal-a-lagent-judiciaire-de-letat/
+2024-01-02 11:58:50,329 - INFO - Skipping duplicate article: https://aps.sn/le-proces-dousmane-sonko-contre-adji-sarr-renvoye-a-mardi-prochain/
+2024-01-02 11:58:51,881 - INFO - Skipping duplicate article: https://lequotidien.sn/dialogue-revision-du-proces-de-wade-fils-le-krim-parfait/
+2024-01-02 11:58:53,470 - INFO - Skipping duplicate article: https://www.seneplus.com/femmes/le-proces-du-patriarcat
+2024-01-02 11:58:53,530 - INFO - Scraping Summary for SN - 'procès financier': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 11:59:00,905 - INFO - Skipping duplicate article: https://actusen.sn/traine-en-justice-par-des-commercants-pour-escroquerie-portant-sur-58-millions-un-chef-dentreprise-jete-en-prison/
+2024-01-02 11:59:02,431 - INFO - Skipping duplicate article: https://aps.sn/le-tribunal-des-pairs-du-cored-sert-9-avertissements-et-3-blames/
+2024-01-02 11:59:04,078 - INFO - Skipping duplicate article: https://www.lenouveleconomiste.fr/procedures-collectives-nattendez-pas-quil-soit-trop-tard-pour-prendre-les-devants-82213/
+2024-01-02 11:59:05,616 - INFO - Skipping duplicate article: https://www.senenews.com/actualites/sedima-lagent-de-recouvrement-detourne-19-millions-fcfa_437923.html
+2024-01-02 11:59:06,495 - INFO - Scraping Summary for SN - 'tribunal financier': Successful Iterations - 1, Total Retries - 0, Total Failures - 0
+2024-01-02 11:59:08,769 - INFO - Skipping duplicate article: https://actusen.sn/tribunal-de-ziguinchor-la-demande-formulee-par-lagent-judiciaire-de-letat-pour-que-sonko-ne-soit-pas-reintegre-dans-les-listes-electorales/
+2024-01-02 11:59:10,337 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/cybersecurite-thales-enquete-sur-une-allegation-de-vol-de-donnees/
+2024-01-02 11:59:11,885 - INFO - Skipping duplicate article: https://www.seneplus.com/politique/affaire-sonko-la-verite-de-modern-ghana
+2024-01-02 11:59:13,408 - INFO - Skipping duplicate article: https://actusen.sn/information-judiciaire-contre-des-agents-de-lhopital-maguette-lo-de-linguere-le-sames-denonce-une-chasse-aux-sorcieres/
+2024-01-02 11:59:14,928 - INFO - Skipping duplicate article: https://ici.radio-canada.ca/nouvelle/809797/agression-sexuelle-parti-liberal-couillard-universite-laval
+2024-01-02 11:59:14,980 - INFO - Scraping Summary for SN - 'allégation financière': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 11:59:17,514 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/tribunal-de-dakar-le-procureur-alourdit-les-chefs-daccusations-sur-ousmane-sonko/
+2024-01-02 11:59:19,055 - INFO - Skipping duplicate article: https://actusen.sn/justice-le-juge-maham-diallo-corse-le-dossier-de-bassirou-diomaye-faye-desormais-poursuivi-pour-6-chefs-daccusation/
+2024-01-02 11:59:20,572 - INFO - Skipping duplicate article: https://lequotidien.sn/accusation-disparition-de-300-jeunes-aux-larges-de-latlantique-sonko-sen-prend-aux-politiques-publiques-du-regime/
+2024-01-02 11:59:22,145 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/khalil-kamara-de-senego-defere-pour-trois-chefs-daccusation/
+2024-01-02 11:59:23,751 - INFO - Skipping duplicate article: https://lequotidien.sn/fatick-accusation-de-sory-kaba-de-la-coalition-and-nawle-des-traitres-cotoient-le-chef-de-letat/
+2024-01-02 11:59:23,799 - INFO - Scraping Summary for SN - 'accusation financière': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 11:59:26,288 - INFO - Skipping duplicate article: https://lequotidien.sn/participation-de-khalifa-sall-nllus-dubium-comprendre-les-implications-du-quitus-fiscal-et-de-lamende-penale/
+2024-01-02 11:59:27,822 - INFO - Skipping duplicate article: https://aps.sn/violences-une-amende-dun-million-et-le-huis-clos-infliges-a-las-pikine/
+2024-01-02 11:59:29,414 - INFO - Skipping duplicate article: https://actusen.sn/la-grande-surface-china-mall-sanctionnee-par-le-ministere-du-commerce-suite-a-une-infraction-abdou-karim-fofana-donne-les-details/
+2024-01-02 11:59:30,956 - INFO - Skipping duplicate article: https://actusen.sn/apres-sa-suspension-sadio-mane-ecope-dune-amende-de-plus-de-327-millions-de-f-cfa/
+2024-01-02 11:59:32,582 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/la-loi-02-2025-punit-la-traite-de-la-mendicite-les-coupables-passibles-dun-emprisonnement-de-2-a-5-ans-et-une-amende-de-500-000-a-2-millions-de-francs-cfa/
+2024-01-02 11:59:32,621 - INFO - Scraping Summary for SN - 'amende financière': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 11:59:44,903 - INFO - Skipping duplicate article: https://aps.sn/la-lutte-contre-la-corruption-est-une-affaire-de-tous-selon-le-president-de-lofnac/
+2024-01-02 11:59:46,440 - INFO - Skipping duplicate article: https://aps.sn/lutte-contre-la-corruption-ladoption-de-la-norme-iso-37001-au-menu-dun-atelier/
+2024-01-02 11:59:48,482 - INFO - Skipping duplicate article: https://lequotidien.sn/corruption-de-la-jeunesse-linfraction-expliquee/
+2024-01-02 11:59:50,741 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/saly-portudal-lutte-contre-la-corruption-le-president-de-lofnac-appelle-a-la-credibilisation-des-institutions-adhoc/
+2024-01-02 11:59:51,583 - INFO - Scraping Summary for SN - 'corruption financière': Successful Iterations - 1, Total Retries - 0, Total Failures - 0
+2024-01-02 11:59:53,870 - INFO - Skipping duplicate article: https://ici.radio-canada.ca/nouvelle/1193991/scandale-fuite-vol-renseignements-personnel
+2024-01-02 11:59:53,918 - INFO - Scraping Summary for SN - 'cyberattaque financière': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 11:59:56,263 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/abus-sexuels-et-mauvaise-conduite-la-monusco-prend-des-mesures-fortes/
+2024-01-02 11:59:57,784 - INFO - Skipping duplicate article: https://www.seneweb.com/news/International/tesla-rappelle-2-millions-de-vehicules-a_n_428064.html
+2024-01-02 11:59:59,325 - INFO - Skipping duplicate article: https://www.seneweb.com/news/Politique/laquo-ce-n-rsquo-est-pas-idy-qui-a-deman_n_407910.html
+2024-01-02 12:00:01,371 - INFO - Skipping duplicate article: https://lequotidien.sn/lindiscipline-au-volant-un-mal-dont-il-faut-guerir/
+2024-01-02 12:00:03,019 - INFO - Skipping duplicate article: https://actusen.sn/surprises-en-train-de-fumer-du-chanvre-indien-5-jeunes-filles-agees-entre-18-et-21-ans-a-la-barre-des-flagrants-delits/
+2024-01-02 12:00:03,062 - INFO - Scraping Summary for SN - 'mauvaise conduite financière': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 12:00:05,971 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/le-senegal-merite-une-presse-responsable/
+2024-01-02 12:00:07,549 - INFO - Skipping duplicate article: https://www.lefigaro.fr/maison/entrer-chez-quelqu-un-sans-autorisation-que-dit-la-loi-20230926
+2024-01-02 12:00:09,340 - INFO - Skipping duplicate article: https://www.seneplus.com/politique/dakar-viole-t-il-les-sanctions-de-lonu-contre-pyongyang
+2024-01-02 12:00:11,001 - INFO - Skipping duplicate article: https://www.pressafrik.com/Suspension-du-signal-de-SenTV-les-preuves-de-la-violation-flagrante-de-la-loi-par-le-CNRA-Documents_a209924.html
+2024-01-02 12:00:12,565 - INFO - Skipping duplicate article: https://lequotidien.sn/proces-affaire-madiambal-diagne-teliko-article-19-denonce-des-peines-disproportionnees/
+2024-01-02 12:00:12,613 - INFO - Scraping Summary for SN - 'violation de sanctions financières': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 12:00:15,336 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/isabelle-adjani-jugee-le-19-octobre-a-paris-pour-fraude-fiscale-et-blanchiment/
+2024-01-02 12:00:16,945 - INFO - Skipping duplicate article: https://www.xalimasn.com/panama-papers-les-979-societes-offshore-creees-par-la-societe-generale/
+2024-01-02 12:00:18,597 - INFO - Skipping duplicate article: https://actusen.sn/panama-papers-aliko-dangote-au-coeur-de-laffaire/
+2024-01-02 12:00:20,200 - INFO - Skipping duplicate article: https://lequotidien.sn/evasion-fiscale-elizabeth-ii-une-reine-dans-les-paradise-papers/
+2024-01-02 12:00:21,853 - INFO - Skipping duplicate article: https://www.leral.net/Panama-papers-et-societes-offshore-sur-la-piste-des-fonds-de-Karim-Wade-Exclusif-Ouestafnews_a168772.html
+2024-01-02 12:00:21,893 - INFO - Scraping Summary for SN - 'Panama Papers SN': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 12:00:24,331 - INFO - Skipping duplicate article: https://www.xalimasn.com/gloire-a-atepa-goudiaby-le-batisseur-par-boubacar-sadio/
+2024-01-02 12:00:25,912 - INFO - Skipping duplicate article: https://www.senenews.com/actualites/pandora-papers-la-presidence-senegalaise-dominique-strauss-kahn-et-les-574-millions_370259.html
+2024-01-02 12:00:27,543 - INFO - Skipping duplicate article: https://www.seneplus.com/economie/pandora-papers-dominique-strauss-kahn-capte-574-millions-fcfa-la
+2024-01-02 12:00:29,119 - INFO - Skipping duplicate article: https://www.leral.net/Pandora-Papers-le-Kremlin-rejette-des-allegations-infondees_a316089.html
+2024-01-02 12:00:30,723 - INFO - Skipping duplicate article: https://lequotidien.sn/etre-ou-ne-pas-etre-gabonais-mon-bonheur-detre-senegalais/
+2024-01-02 12:00:30,769 - INFO - Scraping Summary for SN - 'Pandora Papers SN': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 12:00:33,134 - INFO - Skipping duplicate article: https://lequotidien.sn/evasion-fiscale-elizabeth-ii-une-reine-dans-les-paradise-papers/
+2024-01-02 12:00:34,734 - INFO - Skipping duplicate article: https://www.xalimasn.com/des-magnats-libanais-au-coeur-des-paradise-papers-de-dakar-aux-iles-vierges-britanniques/
+2024-01-02 12:00:36,419 - INFO - Skipping duplicate article: https://www.leral.net/Evasion-fiscale-de-2-milliards-de-FCfa-Jamal-Kaawar-patron-d-Orca-indexe_a226731.html
+2024-01-02 12:00:53,216 - INFO - SUCCESS after 1 retries. Last error: Article `download()` failed with HTTPSConnectionPool(host='senegal7.com', port=443): Read timed out. (read timeout=1.4191401108240749) on URL https://senegal7.com/scandale-sur-des-comptes-offshore-ouverts-a-la-hsbc-jamal-kaawar-patron-dorca-pris-en-suisse/
+2024-01-02 12:01:00,040 - INFO - Scraping Summary for SN - 'Paradise Papers SN': Successful Iterations - 2, Total Retries - 1, Total Failures - 0
+2024-01-02 12:01:02,317 - INFO - Skipping duplicate article: https://lequotidien.sn/luanda-leaks-le-hacker-portugais-rui-pinto-a-lorigine-des-revelations/
+2024-01-02 12:01:03,973 - INFO - Skipping duplicate article: https://lequotidien.sn/portugal-les-luanda-leaks-suscitent-embarras-et-inquietude/
+2024-01-02 12:01:05,668 - INFO - Skipping duplicate article: https://xalimasn.com/comment-isabel-dos-santos-a-vide-les-caisses-de-langola/
+2024-01-02 12:01:07,231 - INFO - Skipping duplicate article: https://lequotidien.sn/angola-mise-en-examen-isabel-dos-santos-est-poursuivie-pour-mauvaise-gestion-et-detournement/
+2024-01-02 12:01:08,876 - INFO - Skipping duplicate article: https://lequotidien.sn/respect-des-accords-le-g7-met-la-pression-sur-letat/
+2024-01-02 12:01:08,917 - INFO - Scraping Summary for SN - 'Luanda Leaks SN': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 12:01:11,347 - INFO - Skipping duplicate article: https://lequotidien.sn/soupcons-de-blanchiment-dargent-une-vieille-affaire-rattrape-aly-ngouille-ndiaye/
+2024-01-02 12:01:13,111 - INFO - Skipping duplicate article: https://www.xalimasn.com/soupcons-de-blanchiment-dargent-aly-ngouille-ndiaye-rattrape-par-une-vielle-affaire/
+2024-01-02 12:01:14,755 - INFO - Skipping duplicate article: https://lequotidien.sn/blanchiment-dargent-des-assujettis-font-dans-le-noir/
+2024-01-02 12:01:16,417 - INFO - Skipping duplicate article: https://www.sudquotidien.sn/colombie-les-aveux-du-fils-du-president-petro-accuse-de-blanchiment-dargent-mettent-son-pere-dans-lembarras/
+2024-01-02 12:01:18,078 - INFO - Skipping duplicate article: https://www.leral.net/Blanchiment-d-argent-Le-Senegal-le-Burkina-Faso-le-Maroc-et-les-Iles-Caiman-places-sous-surveillance-par-le-GAFI_a297201.html
+2024-01-02 12:01:18,122 - INFO - Scraping Summary for SN - 'blanchiment d'argent SN': Successful Iterations - 0, Total Retries - 0, Total Failures - 0
+2024-01-02 12:01:18,123 - INFO - === Script Execution End (Scraping) at: 2024-01-02 12:01:18.123372 ===
