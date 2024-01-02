@@ -19,7 +19,7 @@ This project merges BI and Deep Learning to extract insights from financial news
 - Request throttling (Done) ✔
 - Tor proxy integration (Abandoned due to client request) ✘
 - Asynchronous Scraping (Done) ✔
-- Automation with Airflow ((Done) ✔
+- Automation with Airflow (Done) ✔
 
 #### Data Storage and Management in MongoDB
 - Data Insertion (Done) ✔
