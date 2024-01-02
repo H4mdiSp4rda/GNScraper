@@ -4,7 +4,7 @@ from airflow.operators.bash_operator import BashOperator
 
 # DAG configuration
 default_args = {
-    'owner': 'airflow',
+    'owner': 'sparda',
     'depends_on_past': False,
     'start_date': datetime(2023, 12, 31),
     'email_on_failure': False,
@@ -14,15 +14,15 @@ default_args = {
 }
 
 # Define the DAG
-dag = DAG('scrape_news_dag',
+dag = DAG('NEWS_SCRAPING_DAG',
           default_args=default_args,
-          description='A simple DAG to scrape news data',
+          description='Scraps news data with a daily interval',
           schedule_interval=timedelta(days=1))
 
 # Define the task
 scrape_task = BashOperator(
     task_id='scrape_news',
-    bash_command='docker exec 24d0956eb1d4853d64691beceb0bd948f1f7ca2622040b60aa11f3d5f430b5c8 python /gns_code/src/scrap.py --scrap FR auto',
+    bash_command='python /gns_code/src/main.py --scrap FR auto',
     dag=dag)
 
 scrape_task
