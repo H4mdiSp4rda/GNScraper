@@ -41,16 +41,13 @@ def main():
 
     if args.purge:
         purge_db()
-        # Exit after purging without adding any messages
         sys.exit(0)
 
     if args.query:
         query_mongodb()
-        # Exit after querying without adding any messages
         sys.exit(0)
 
     if args.backup:
-        # Call the backup function here
         backup_atlas()
         sys.exit(0)
 
