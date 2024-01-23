@@ -9,6 +9,7 @@ from flair.models import SequenceTagger
 from tqdm import tqdm
 from utils import setup_logging
 from datetime import datetime
+import pymongo
 
 # Set up logging for sentiment analysis
 analyze_sentiment_logger = setup_logging("AnalyzeSentimentLogger", "SA")
@@ -52,45 +53,67 @@ def analyze_sentiment(text):
         analyze_sentiment_logger.error(f"Error during sentiment analysis: {str(e)}")
         return None, None
 
-def classify_SA():
+def classify_SA(skip_existing=False):
     classify_SA_logger.info(f'=== Script execution START (Sentiment Analysis) at: {datetime.now()} ===')
     collection = connect_to_mongo_atlas()
-    cursor = collection.find()
 
+    last_processed_id = None  # Variable to keep track of the last processed document ID
     sentiment_labels_added = 0  # Initialize count
-
     total_documents = collection.count_documents({})  # Use count_documents method on the collection
 
-    # Use tqdm to create a progress bar
-    for document in tqdm(cursor, desc="Processing Articles", total=total_documents):
-        _id = document["_id"]
-        translated_summary = document.get("Translated Summary", "")
-        sentiment_label, probabilities = analyze_sentiment(translated_summary)
+    while True:
+        try:
+            # If the cursor was lost, start from the next document
+            if last_processed_id:
+                cursor = collection.find({"_id": {"$gt": last_processed_id}})
+            else:
+                cursor = collection.find()
 
-        # Initialize sentiment_label_text outside of the if block
-        sentiment_label_text = "Unknown"
+            for document in tqdm(cursor, desc="Processing Articles", total=total_documents):
+                _id = document["_id"]
+                last_processed_id = _id  # Update the last processed document ID
 
-        # Add the sentiment label and probabilities to the log with timestamp
-        if sentiment_label is not None and probabilities is not None:
-            sentiment_label_text = LABEL_MAPPING.get(sentiment_label, "Unknown")
-            classify_SA_logger.info(f"Sentiment analysis completed for document {_id}. Sentiment: {sentiment_label_text}")
+                # Skip if skip_existing is True and sentiment label already exists
+                if skip_existing and 'Sentiment Label' in document:
+                    continue
 
-        # Add the sentiment label to the MongoDB document
-        collection.update_one(
-            {"_id": _id},
-            {"$set": {"Sentiment Label": sentiment_label_text}}
-        )
+                translated_summary = document.get("Translated Summary", "")
+                sentiment_label, probabilities = analyze_sentiment(translated_summary)
 
-        if sentiment_label is not None:
-            sentiment_labels_added += 1
+                # Initialize sentiment_label_text outside of the if block
+                sentiment_label_text = "Unknown"
+
+                # Add the sentiment label and probabilities to the log with timestamp
+                if sentiment_label is not None and probabilities is not None:
+                    sentiment_label_text = LABEL_MAPPING.get(sentiment_label, "Unknown")
+                    classify_SA_logger.info(f"Sentiment analysis completed for document {_id}. Sentiment: {sentiment_label_text}")
+
+                # Add the sentiment label to the MongoDB document
+                collection.update_one(
+                    {"_id": _id},
+                    {"$set": {"Sentiment Label": sentiment_label_text}}
+                )
+
+                if sentiment_label is not None:
+                    sentiment_labels_added += 1
+
+            # Break the loop if all documents have been processed
+            break
+
+        except pymongo.errors.CursorNotFound:
+            classify_SA_logger.error("Cursor lost. Restarting from last processed document ID.")
+            continue  # This continues the while loop, recreating the cursor
+
     print(f"SA Classification complete. {sentiment_labels_added} labels added to the collection.")
-
     classify_SA_logger.info(f'=== Script execution END (Sentiment Analysis) at: {datetime.now()} with {sentiment_labels_added} labels added to the collection. ===')
     return sentiment_labels_added
 
 
-def classify_ESG():
+def classify_ESG(skip_existing=False):
     classify_ESG_logger.info(f'=== Script execution START (ESG3 Classification) at: {datetime.now()} ===')
+
+    last_processed_id = None  # Keep track of the last processed document ID
+    esg_labels_added = 0  # Initialize count
 
     try:
         # Load FinBERT ESG model and tokenizer outside the loop
@@ -100,47 +123,63 @@ def classify_ESG():
 
         # Connect to MongoDB
         collection = connect_to_mongo_atlas()
-        cursor = collection.find()
-
-        esg_labels_added = 0  # Initialize count
-
         total_documents = collection.count_documents({})  # Use count_documents method on the collection
 
-        # Use tqdm to create a progress bar
-        for document in tqdm(cursor, desc="Processing Articles", total=total_documents):
-            _id = document["_id"]
-            translated_summary = document.get("Translated Summary", "")
-            esg_labels = []  # List to store labels for each segment
+        while True:
+            try:
+                # If the cursor was lost, start from the next document
+                if last_processed_id:
+                    cursor = collection.find({"_id": {"$gt": last_processed_id}})
+                else:
+                    cursor = collection.find()
 
-            # Process each segment independently
-            max_token_limit = finbert_esg.config.max_position_embeddings
-            tokens = tokenizer_esg.encode(translated_summary, max_length=max_token_limit-2, truncation=True)
+                for document in tqdm(cursor, desc="Processing Articles", total=total_documents):
+                    _id = document["_id"]
+                    last_processed_id = _id  # Update the last processed document ID
 
-            for i in range(0, len(tokens), max_token_limit):
-                segment = tokens[i:i + max_token_limit]
+                    # Skip if skip_existing is True and ESG label already exists
+                    if skip_existing and 'ESG' in document:
+                        continue
 
-                segment_input_ids = segment[:max_token_limit]
-                attention_mask = [1] * len(segment_input_ids) + [0] * (max_token_limit - len(segment_input_ids))
-                attention_mask = attention_mask[:max_token_limit]
+                    translated_summary = document.get("Translated Summary", "")
+                    esg_labels = []  # List to store labels for each segment
 
-                segment_input_ids = torch.tensor([segment_input_ids])
-                attention_mask = torch.tensor([attention_mask])
+                    # Process each segment independently
+                    max_token_limit = finbert_esg.config.max_position_embeddings
+                    tokens = tokenizer_esg.encode(translated_summary, max_length=max_token_limit-2, truncation=True)
 
-                segmented_summary = tokenizer_esg.decode(segment_input_ids.squeeze().tolist())
+                    for i in range(0, len(tokens), max_token_limit):
+                        segment = tokens[i:i + max_token_limit]
 
-                esg_label = nlp_esg(segmented_summary)[0]['label']
-                esg_label = esg_label if esg_label != "None" else "Not ESG Related"
+                        segment_input_ids = segment[:max_token_limit]
+                        attention_mask = [1] * len(segment_input_ids) + [0] * (max_token_limit - len(segment_input_ids))
+                        attention_mask = attention_mask[:max_token_limit]
 
-                esg_labels.append(esg_label)
+                        segment_input_ids = torch.tensor([segment_input_ids])
+                        attention_mask = torch.tensor([attention_mask])
 
-            # Decide the overall label based on individual segment labels
-            overall_esg_label = max(set(esg_labels), key=esg_labels.count)
+                        segmented_summary = tokenizer_esg.decode(segment_input_ids.squeeze().tolist())
 
-            # Update the ESG field in the document
-            collection.update_one({"_id": _id}, {"$set": {"ESG": overall_esg_label}}, upsert=True)
+                        esg_label = nlp_esg(segmented_summary)[0]['label']
+                        esg_label = esg_label if esg_label != "None" else "Not ESG Related"
 
-            esg_labels_added += 1
-            classify_ESG_logger.info(f"ESG3 classification completed for document {_id}. Label: {overall_esg_label}")
+                        esg_labels.append(esg_label)
+
+                    # Decide the overall label based on individual segment labels
+                    overall_esg_label = max(set(esg_labels), key=esg_labels.count)
+
+                    # Update the ESG field in the document
+                    collection.update_one({"_id": _id}, {"$set": {"ESG": overall_esg_label}}, upsert=True)
+
+                    esg_labels_added += 1
+                    classify_ESG_logger.info(f"ESG3 classification completed for document {_id}. Label: {overall_esg_label}")
+
+                # Break the loop if all documents have been processed
+                break
+
+            except pymongo.errors.CursorNotFound:
+                classify_ESG_logger.error("Cursor lost. Restarting from last processed document ID.")
+                continue  # This continues the while loop, recreating the cursor
 
         print(f"ESG3 Classification complete. {esg_labels_added} labels added to the collection.")
         classify_ESG_logger.info(f'=== Script execution END (ESG3 Classification) at: {datetime.now()} with {esg_labels_added} labels added to the collection ===')
@@ -150,10 +189,13 @@ def classify_ESG():
 
     return esg_labels_added
 
-def classify_ESG9():
+def classify_ESG9(skip_existing=False):
+    classify_ESG9_logger.info(f'=== Script execution START (ESG9 Classification) at: {datetime.now()} ===')
+
+    last_processed_id = None  # Keep track of the last processed document ID
+    esg_labels_added = 0  # Initialize count
+
     try:
-        classify_ESG9_logger.info(f'=== Script execution START (ESG9 Classification) at: {datetime.now()} ===')
-        
         # Load FinBERT-ESG model and tokenizer
         finbert_esg = BertForSequenceClassification.from_pretrained('yiyanghkust/finbert-esg-9-categories', num_labels=9)
         tokenizer_esg = BertTokenizer.from_pretrained('yiyanghkust/finbert-esg-9-categories')
@@ -161,107 +203,139 @@ def classify_ESG9():
 
         # Connect to MongoDB
         collection = connect_to_mongo_atlas()
-        cursor = collection.find()
-
-        esg_labels_added = 0  # Initialize count
-
         total_documents = collection.count_documents({})  # Use count_documents method on the collection
 
-        # Use tqdm to create a progress bar
-        for document in tqdm(cursor, desc="Processing Articles", total=total_documents):
-            _id = document["_id"]
-            translated_summary = document.get("Translated Summary", "")
-            esg_field = document.get("ESG", "")
+        while True:
+            try:
+                # If the cursor was lost, start from the next document
+                if last_processed_id:
+                    cursor = collection.find({"_id": {"$gt": last_processed_id}})
+                else:
+                    cursor = collection.find()
 
-            # Check if the article is already marked as "Not ESG Related" in the ESG field
-            if "Not ESG Related" in esg_field:
-                continue
+                for document in tqdm(cursor, desc="Processing Articles", total=total_documents):
+                    _id = document["_id"]
+                    last_processed_id = _id  # Update the last processed document ID
 
-            # Check if summary exceeds token limit
-            max_token_limit = finbert_esg.config.max_position_embeddings
-            tokens = tokenizer_esg.encode(translated_summary, max_length=max_token_limit-2, truncation=True)
+                    # Skip if skip_existing is True and ESG9 label already exists
+                    if skip_existing and 'ESG9' in document:
+                        continue
 
-            # Perform FinBERT-ESG classification on the translated summary
-            esg_results = nlp_esg([tokenizer_esg.decode(tokens)])
+                    translated_summary = document.get("Translated Summary", "")
+                    esg_field = document.get("ESG", "")
 
-            # Extract ESG label and score
-            esg_label = esg_results[0].get('label', 'Not ESG Related')  # Replace 'None' with 'Not ESG Related'
-            esg_score = esg_results[0].get('score', 0.0)
+                    # Skip if the article is already marked as "Not ESG Related"
+                    if "Not ESG Related" in esg_field:
+                        continue
 
-            # Skip if the article is "Not ESG Related"
-            if esg_label == "Not ESG Related":
-                continue
+                    # Check if summary exceeds token limit
+                    max_token_limit = finbert_esg.config.max_position_embeddings
+                    tokens = tokenizer_esg.encode(translated_summary, max_length=max_token_limit-2, truncation=True)
 
-            # Update the existing ESG9 field in the MongoDB document with the new ESG label and score
-            collection.update_one(
-                {"_id": _id},
-                {"$set": {"ESG9": {"Label": esg_label, "Score": esg_score}}}
-            )
+                    # Perform FinBERT-ESG classification on the translated summary
+                    esg_results = nlp_esg([tokenizer_esg.decode(tokens)])
 
-            classify_ESG9_logger.info(f"FinBERT-ESG9 classification completed for document {_id}. Label: {esg_label}, Score: {esg_score}")
+                    # Extract ESG label and score
+                    esg_label = esg_results[0].get('label', 'Not ESG Related')  # Replace 'None' with 'Not ESG Related'
+                    esg_score = esg_results[0].get('score', 0.0)
 
-            esg_labels_added += 1
+                    # Skip if the article is "Not ESG Related"
+                    if esg_label == "Not ESG Related":
+                        continue
+
+                    # Update the existing ESG9 field in the MongoDB document
+                    collection.update_one(
+                        {"_id": _id},
+                        {"$set": {"ESG9": {"Label": esg_label, "Score": esg_score}}}
+                    )
+
+                    classify_ESG9_logger.info(f"FinBERT-ESG9 classification completed for document {_id}. Label: {esg_label}, Score: {esg_score}")
+
+                    esg_labels_added += 1
+
+                # Break the loop if all documents have been processed
+                break
+
+            except pymongo.errors.CursorNotFound:
+                classify_ESG9_logger.error("Cursor lost. Restarting from last processed document ID.")
+                continue  # This continues the while loop, recreating the cursor
 
         print(f"ESG9 Classification complete. {esg_labels_added} labels added to the collection.")
         classify_ESG9_logger.info(f'=== Script execution END (ESG9 Classification) at: {datetime.now()} with {esg_labels_added} labels added to the collection ===')
 
     except Exception as e:
         classify_ESG9_logger.error(f"Error during ESG9 classification: {str(e)}")
-    
+
     return esg_labels_added
 
-def classify_FLS():
+def classify_FLS(skip_existing=False):
     classify_FLS_logger.info(f'=== Script execution START (FLS Classification) at: {datetime.now()} ===')
+
+    last_processed_id = None  # Keep track of the last processed document ID
+    fls_labels_added = 0  # Initialize count
+
     try:
         # Load FinBERT-FLS model and tokenizer
         finbert_fls = BertForSequenceClassification.from_pretrained('yiyanghkust/finbert-fls', num_labels=3)
         tokenizer_fls = BertTokenizer.from_pretrained('yiyanghkust/finbert-fls')
-
-        # Create a text classification pipeline using the FinBERT-FLS model and tokenizer
         nlp_fls = pipeline("text-classification", model=finbert_fls, tokenizer=tokenizer_fls)
 
         # Connect to MongoDB
         collection = connect_to_mongo_atlas()
-        cursor = collection.find()
-
-        fls_labels_added = 0  # Initialize count
-
         total_documents = collection.count_documents({})  # Use count_documents method on the collection
 
-        # Use tqdm to create a progress bar
-        for document in tqdm(cursor, desc="Processing Articles", total=total_documents):
-            _id = document["_id"]
-            translated_summary = document.get("Translated Summary", "")
+        while True:
+            try:
+                # If the cursor was lost, start from the next document
+                if last_processed_id:
+                    cursor = collection.find({"_id": {"$gt": last_processed_id}})
+                else:
+                    cursor = collection.find()
 
-            # Check if summary exceeds token limit
-            max_token_limit = finbert_fls.config.max_position_embeddings
-            tokens = tokenizer_fls.encode(translated_summary, max_length=max_token_limit-2, truncation=True)
+                for document in tqdm(cursor, desc="Processing Articles", total=total_documents):
+                    _id = document["_id"]
+                    last_processed_id = _id  # Update the last processed document ID
 
-            # Perform FinBERT-FLS classification on the translated summary
-            fls_results = nlp_fls([tokenizer_fls.decode(tokens)])
+                    # Skip if skip_existing is True and FLS label already exists
+                    if skip_existing and 'FLS' in document:
+                        continue
 
-            # Extract FinBERT-FLS label and score
-            fls_label = fls_results[0].get('label', 'Not-FLS')  # Replace 'None' with 'Not-FLS'
-            fls_score = fls_results[0].get('score', 0.0)
+                    translated_summary = document.get("Translated Summary", "")
 
-            # Replace "None" with "Not FLS Related"
-            fls_label = fls_label if fls_label != "None" else "Not FLS Related"
+                    # Check if summary exceeds token limit
+                    max_token_limit = finbert_fls.config.max_position_embeddings
+                    tokens = tokenizer_fls.encode(translated_summary, max_length=max_token_limit-2, truncation=True)
 
-            # Update the existing FLS field in the MongoDB document with the new FinBERT-FLS label and score
-            collection.update_one(
-                {"_id": _id},
-                {"$set": {"FLS": {"Label": fls_label, "Score": fls_score}}}
-            )
+                    # Perform FinBERT-FLS classification on the translated summary
+                    fls_results = nlp_fls([tokenizer_fls.decode(tokens)])
 
-            classify_FLS_logger.info(f"FinBERT-FLS classification completed for document {_id}. Label: {fls_label}, Score: {fls_score}")
+                    # Extract FinBERT-FLS label and score
+                    fls_label = fls_results[0].get('label', 'Not FLS Related')
+                    fls_score = fls_results[0].get('score', 0.0)
 
-            fls_labels_added += 1
+                    # Update the existing FLS field in the MongoDB document
+                    collection.update_one(
+                        {"_id": _id},
+                        {"$set": {"FLS": {"Label": fls_label, "Score": fls_score}}}
+                    )
+
+                    classify_FLS_logger.info(f"FinBERT-FLS classification completed for document {_id}. Label: {fls_label}, Score: {fls_score}")
+
+                    fls_labels_added += 1
+
+                # Break the loop if all documents have been processed
+                break
+
+            except pymongo.errors.CursorNotFound:
+                classify_FLS_logger.error("Cursor lost. Restarting from last processed document ID.")
+                continue  # This continues the while loop, recreating the cursor
 
         print(f"FinBERT-FLS Classification complete. {fls_labels_added} labels added to the collection.")
         classify_FLS_logger.info(f'=== Script execution END (FLS Classification) at: {datetime.now()} with {fls_labels_added} labels added to the collection ===')
 
     except Exception as e:
         classify_FLS_logger.error(f"Error during FinBERT-FLS classification: {str(e)}")
+
     return fls_labels_added
 
 
