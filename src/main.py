@@ -28,7 +28,7 @@ def main():
                         help="Scrape news articles for a specific language and specify the insertion method. "
                              "Example: --scrap FR auto or --scrap AR auto.")
     parser.add_argument("--query", action="store_true", help="Query and display documents in the MongoDB collection.")
-    parser.add_argument("--classify", metavar="CLASSIFICATION", help="F/R to classify news articles as real or fake, SA for Sentiment Analysis, ESG for ESG classification.")
+    parser.add_argument("--classify", nargs='+', help="Classify news articles. Options: R/F, ESG, SA, FLS, ESG9, NER. Add 'skip' after the classification type to skip already labeled documents.")
     parser.add_argument("--backup", action="store_true", help="Create a backup of MongoDB Atlas and restore it in a Docker container.")
 
     # Add the --help option as a default action
@@ -55,21 +55,22 @@ def main():
         sys.exit(0)
 
     if args.classify:
-        classification_type = args.classify
-        if classification_type in ["R/F", "ESG", "SA", "FLS", "ESG9", "NER"]:  
+        classification_type = args.classify[0]
+        skip_existing = 'skip' in args.classify
+
+        if classification_type in ["R/F", "ESG", "SA", "FLS", "ESG9", "NER"]:
             if classification_type == "R/F":
-                classify_RF()
+                classify_RF
             elif classification_type == "ESG":
-                classify_ESG()
+                classify_ESG(skip_existing=skip_existing)
             elif classification_type == "SA":
-                classify_SA()
-            elif classification_type == "FLS":  
-                classify_FLS()
-            elif classification_type == "ESG9":  
-                classify_ESG9()
+                classify_SA(skip_existing=skip_existing)
+            elif classification_type == "FLS":
+                classify_FLS(skip_existing=skip_existing)
+            elif classification_type == "ESG9":
+                classify_ESG9(skip_existing=skip_existing)
             elif classification_type == "NER":
                 classify_NER()
-
         else:
             print("Error: The sub-argument for --classify must be 'R/F', 'ESG', ESG9,'SA', or 'FLS'.")
             sys.exit(1)
