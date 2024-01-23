@@ -71,7 +71,7 @@ def main():
                 classify_NER()
 
         else:
-            print("Error: The sub-argument for --classify must be 'R/F', 'ESG', 'SA', or 'FLS'.")
+            print("Error: The sub-argument for --classify must be 'R/F', 'ESG', ESG9,'SA', or 'FLS'.")
             sys.exit(1)
 
     if args.scrap:

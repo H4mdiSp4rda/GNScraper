@@ -16,7 +16,7 @@ def setup_logging(log_name, base_log_file_name):
     # Generate log file name with current date
     current_date = datetime.now().strftime("%Y-%m-%d")
     log_file_name = f"{base_log_file_name}-{current_date}.log"
-    log_file_path = f"./logs/GNS_logs/{log_file_name}"
+    log_file_path = f"/gns_code/logs/GNS_logs/{log_file_name}"
 
     # Set up a timed rotating file handler
     file_handler = TimedRotatingFileHandler(log_file_path, when='midnight', interval=1, backupCount=5)
