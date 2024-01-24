@@ -105,10 +105,17 @@ networks:
 
 
 services:
-  # scrap:
-  #     image: gns-image
-  #     restart: always
-
+  # django:
+  #   image: fcd9b961085e9532d02b41f8977f221aa53b675c36c6b8d8ed486c182a58d643
+  #   command: python manage.py runserver 0.0.0.0:8000
+  #   volumes:
+  #     - ./django:/gns_app
+  #   ports:
+  #     - "8000:8000"
+  #   environment:
+  #     - DATABASE_URL=postgresql+psycopg2://airflow:airflow@postgres/airflow 
+  #   networks:
+  #     - gns-network
 
   mongo:
     image: mongo
