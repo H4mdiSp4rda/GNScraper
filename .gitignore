@@ -2,31 +2,27 @@
 __pycache__/
 *.pyc
 
-# Logs
-logs/airflow logs
-
 # Data
 data/
 
-# VS Code
+# local env
 .vscode/
 gns-django_env
 django/GNS_Django_APP/GNS_Django_APP/settings.py
 
 # Source
-src/
-
-# Exclude specific files in src
-!src/lang_dict.py
+src/lang_dict.py
+src/temp
 
 # Dags
 dags/test_scraping.py
 dags/test_dag.py
+
 # MongoDB
 mongodb-database-tools-ubuntu2204-x86_64-100.9.3.deb
 
-# Other files
-NER.py
+# Logs
+logs/airflow logs
 logs/GNS_logs/Scrap-2024-01-23.log
 logs/GNS_logs/Scrap-2024-01-22.log.2024-01-22
 logs/GNS_logs/Scrap-2024-01-22.log
@@ -48,3 +44,5 @@ logs/GNS_logs/ESG9-2024-01-02.log
 logs/GNS_logs/ESG-2024-01-23.log
 logs/GNS_logs/ESG-2024-01-22.log
 logs/GNS_logs/ESG-2024-01-02.log
+
+# Other files
