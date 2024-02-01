@@ -10,6 +10,8 @@ data/
 
 # VS Code
 .vscode/
+gns-django_env
+django/GNS_Django_APP/GNS_Django_APP/settings.py
 
 # Source
 src/
