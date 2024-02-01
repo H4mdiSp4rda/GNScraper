@@ -105,17 +105,21 @@ networks:
 
 
 services:
-  # django:
-  #   image: fcd9b961085e9532d02b41f8977f221aa53b675c36c6b8d8ed486c182a58d643
-  #   command: python manage.py runserver 0.0.0.0:8000
-  #   volumes:
-  #     - ./django:/gns_app
-  #   ports:
-  #     - "8000:8000"
-  #   environment:
-  #     - DATABASE_URL=postgresql+psycopg2://airflow:airflow@postgres/airflow 
-  #   networks:
-  #     - gns-network
+  django:
+    build: ./django/GNS_Django_APP
+    # environment:
+    #   - DEBUG=1
+    #   - SECRET_KEY=django-insecure-#05u0si6qu7t#b*3m=s^3x@)k6ye^#mxod6kqw3sgypz_@&=10
+    #   - ALLOWED_HOSTS= localhost,127.0.0.1
+    #   - DATABASE_URL=postgresql+psycopg2://airflow:airflow@postgres/airflow 
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./django/GNS_Django_APP:/gns_app
+    ports:
+      - "8000:8000"
+    # environment:
+    networks:
+      - gns-network
 
   mongo:
     image: mongo

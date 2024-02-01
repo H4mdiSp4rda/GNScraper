@@ -1,0 +1,14 @@
+Django==5.0.1
+djongo
+pymongo[srv]
+djangorestframework
+psycopg2
+
+# Data visualization and manipulation libraries
+matplotlib
+seaborn
+pandas
+numpy
+
+# For integrating Plotly Dash apps with Django
+django-plotly-dash
