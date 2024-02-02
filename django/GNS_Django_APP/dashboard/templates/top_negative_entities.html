@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top Negative Sentiment Entities</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Top 10 Entities with Negative Sentiment</h1>
+    <div>{{ plot_div|safe }}</div>  <!-- This div will contain the Plotly chart -->
+
+    <!-- Optionally, add a link to navigate back to the dashboard or another page -->
+    <p><a href="{% url 'dashboard' %}">Back to Dashboard</a></p>
+</body>
+</html>

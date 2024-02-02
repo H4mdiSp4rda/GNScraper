@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div>{{ visualizations.sentiment_chart|safe }}</div>
+    <div>{{ visualizations.esg_chart|safe }}</div>
+    <div>{{ visualizations.esg9_chart|safe }}</div>
+    <div>{{ visualizations.fls_chart|safe }}</div>
+</body>
+</html>
