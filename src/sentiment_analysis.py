@@ -339,7 +339,7 @@ def classify_FLS(skip_existing=False):
     return fls_labels_added
 
 
-def classify_NER():
+def classify_NER(): #might add Location field in db using GPE tag.
     classify_NER_logger.info(f'=== Script execution START (NER Classification) at: {datetime.now()} ===')
 
     try:
@@ -372,7 +372,7 @@ def classify_NER():
             entities = [(entity.tag, entity.text) for entity in sentence.get_spans('ner')]
 
             # Filter entities to include only ORG and GPE
-            filtered_entities = [(entity_tag, entity_text) for entity_tag, entity_text in entities if entity_tag in ["ORG", "GPE"]]
+            filtered_entities = [(entity_tag, entity_text) for entity_tag, entity_text in entities if entity_tag == "ORG"]
 
             # Convert list of tuples to a set to remove duplicates
             unique_entities = set(filtered_entities)
@@ -384,7 +384,7 @@ def classify_NER():
                     {"_id": _id},
                     {"$set": {"Entities": "None detected"}}
                 )
-                classify_NER_logger.info(f"No ORG or GPE entities detected for document {_id}. Updated with 'None detected'.")
+                classify_NER_logger.info(f"No ORG entities detected for document {_id}. Updated with 'None detected'.")
             else:
                 # Convert the set back to a list
                 entities_to_add = [entity_text for _, entity_text in unique_entities]
