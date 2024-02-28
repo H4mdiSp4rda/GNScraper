@@ -178,3 +178,35 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
 
     except Exception as e:
         scrap_articles_logger.error(f"An error occurred during scraping for {country}: {e}", exc_info=True)
+
+
+# def extract_link(url, proxy):
+#     user_agent = UserAgent().random
+#     headers = {'User-Agent': user_agent}
+
+#     try:
+#         # Create a list of grequests to make asynchronous requests
+#         requests = [grequests.get(url, headers=headers, proxies={'http': proxy, 'https': proxy})]
+
+#         # Send the requests asynchronously
+#         responses = grequests.map(requests)
+
+#         if responses and responses[0].status_code == 200:
+#             response = responses[0]
+#             soup = BeautifulSoup(response.content, 'html.parser')
+#             try:
+#                 link = soup.find('a', jsname='tljFtd')['href']
+#                 return link
+#             except TypeError:
+#                 extract_link_logger.error(f"Error extracting link from {url}")  # Log the error
+#                 return None
+#         else:
+#             extract_link_logger.error(f"Response returned status code {responses[0].status_code}")  # Log the error
+#             sleep_time = random.randint(1, 6)
+#             extract_link_logger.info(f"Sleeping for {sleep_time} seconds...")  # Log info
+#             time.sleep(sleep_time)
+#             return extract_link(url, proxy)
+
+#     except Exception as e:
+#         extract_link_logger.error(f"An error occurred while processing '{url}': {e}")  # Log the error
+#         return None
