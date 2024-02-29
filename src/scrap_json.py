@@ -210,3 +210,32 @@ def scrap_articles(language_code, search_query, insert_method, country, debug_mo
 #     except Exception as e:
 #         extract_link_logger.error(f"An error occurred while processing '{url}': {e}")  # Log the error
 #         return None
+import requests
+from pypac import PACSession
+
+def extract_link(url):
+    try:
+        # Create a PACSession to handle proxy settings
+        session = PACSession()
+
+        # Make a request using the session
+        response = session.get(url)
+
+        if response.status_code == 200:
+            soup = BeautifulSoup(response.content, 'html.parser')
+            try:
+                link = soup.find('a', jsname='tljFtd')['href']
+                return link
+            except TypeError:
+                extract_link_logger.error(f"Error extracting link from {url}")  # Log the error
+                return None
+        else:
+            extract_link_logger.error(f"Response returned status code {response.status_code}")  # Log the error
+            sleep_time = random.randint(1, 6)
+            extract_link_logger.info(f"Sleeping for {sleep_time} seconds...")  # Log info
+            time.sleep(sleep_time)
+            return extract_link(url)
+
+    except Exception as e:
+        extract_link_logger.error(f"An error occurred while processing '{url}': {e}")  # Log the error
+        return None
