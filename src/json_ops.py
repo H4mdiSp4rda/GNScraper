@@ -58,3 +58,35 @@ def query_json():
             print("No articles found in the JSON file.")
     except Exception as e:
         print(f"An error occurred while querying the JSON file: {e}")
+
+
+
+keywords = [
+    "Ecological transition",
+    "Environmental sustainability",
+    "Climate change mitigation",
+    "Green economy",
+    "Carbon neutrality",
+    "Renewable energy",
+    "Solar power",
+    "Wind energy",
+    "Hydroelectric power",
+    "Geothermal energy",
+    "Bioenergy",
+    "Energy conservation",
+    "Energy efficiency",
+    "Energy-saving technology",
+    "Low-energy buildings",
+    "Smart grid",
+    "Electric vehicles",
+    "Hybrid vehicles",
+    "Public transportation",
+    "Cycling infrastructure",
+    "Carpooling",
+    "Conservation",
+    "Biodiversity",
+    "Deforestation",
+    "Water management",
+    "Waste management"
+]
+
